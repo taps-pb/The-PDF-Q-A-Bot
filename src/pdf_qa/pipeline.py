@@ -16,11 +16,12 @@ import numpy as np
 import ollama
 
 from pdf_qa.extract import chunk_pages, extract_pages
+from pdf_qa.retrieval import HYBRID_CONFIG, hybrid_rank
 from pdf_qa.types import Answer, AppError, Chunk, Page, SearchHit, Settings
 
 INDEX_VERSION = 1
 EXTRACTION_VERSION = 1
-RETRIEVAL_CONFIG = {"version": "dense-v1", "method": "dense", "score": "cosine"}
+RETRIEVAL_CONFIG = HYBRID_CONFIG
 PROMPT_VERSION = "grounded-v1"
 QUERY_INSTRUCTION = (
     "Given a question, retrieve relevant document passages that answer the question."
@@ -454,12 +455,11 @@ def retrieve(document: DocumentIndex, question: str, models, k: int = 4) -> list
     vector = _vectors(models.embed([question], query=True), 1)
     if vector.shape[1] != document.index.d:
         raise AppError("Embedding dimensions changed. Rebuild this index.")
-    scores, positions = document.index.search(vector, min(k, len(document.chunks)))
-    return [
-        SearchHit(document.chunks[int(pos)], float(score))
-        for pos, score in zip(positions[0], scores[0], strict=True)
-        if pos >= 0
-    ]
+    _, positions = document.index.search(
+        vector, min(RETRIEVAL_CONFIG["dense_candidates"], len(document.chunks))
+    )
+    ranked = hybrid_rank(document.chunks, question, [int(p) for p in positions[0] if p >= 0], k)
+    return [SearchHit(document.chunks[position], float(score)) for position, score in ranked]
 
 
 def answer(question: str, hits: list[SearchHit], models) -> Answer:

@@ -188,7 +188,10 @@ if "last_answer" in st.session_state:
 if "last_hits" in st.session_state:
     hits = st.session_state.last_hits
     with st.expander(f"Retrieved passages ({len(hits)})"):
-        st.caption("Similarity scores rank passages. They are not confidence probabilities.")
+        st.caption(
+            "Hybrid search combines semantic and keyword ranks. Scores are reciprocal rank "
+            "fusion values, not cosine similarities or confidence probabilities."
+        )
         for rank, hit in enumerate(hits, 1):
             st.markdown(f"**Passage {rank} · PDF page {hit.chunk.page} · score {hit.score:.4f}**")
             st.caption(f"Chunk {hit.chunk.id} · extraction: {hit.chunk.method}")
