@@ -69,4 +69,11 @@ reproduce the run and replace those judgments with independently documented grad
 
 For the three-document development/held-out suite and paired OCR checks, see
 [Phase 2A](PHASE2A.md) and its [baseline results](PHASE2A-RESULTS.md). The original
-ten-question experiment below remains a separate, unchanged regression suite.
+ten-question experiment above remains a separate, unchanged regression suite.
+
+For paired experiments, [Phase 2B](PHASE2B-RESULTS.md) documents generation-only
+comparison and [Phase 2C](PHASE2C-RESULTS.md) documents `--mode retrieval` with fixed
+generation, extraction, and source indexes. Both reject their candidates and
+preserve the original production behavior. A successful comparison command does
+not imply promotion; inspect its acceptance gates and review legacy results
+separately.

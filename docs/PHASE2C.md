@@ -56,3 +56,11 @@ only when all gates pass. If the candidate fails, preserve its outputs and retai
 dense retrieval; do not silently tune another candidate or rewrite annotations.
 Finish this phase with a report and stop for review before another phase or any
 held-out evaluation.
+
+## Outcome (added after review)
+
+The candidate is rejected: complete evidence improves from 21/24 to 24/24, but
+supported accuracy falls from 12/24 to 11/24 and unsupported-answer counts rise
+from one to two. Dense retrieval is retained. See the
+[full results and disclosed regressions](PHASE2C-RESULTS.md), including the
+top-20 versus top-four tie limitation of the candidate's fallback wording.

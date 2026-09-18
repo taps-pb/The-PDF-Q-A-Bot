@@ -1,0 +1,93 @@
+{
+  "document": {
+    "title": "Small Business Safety and Health Handbook",
+    "edition": "NIOSH 2021-120, revised January 2024; OSHA 2209-01R 2024",
+    "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+    "downloaded": "2026-09-18",
+    "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+    "pages": 98,
+    "page_numbering": "Physical PDF pages, one-based (printed page 1 is PDF page 5)",
+    "license": "Public domain; see PDF page 5",
+    "frozen_before_model_runs": true
+  },
+  "grading": {
+    "answer_accuracy": "Correct only if all expected facts are present, cited retrieved passages support them, and there are no material unsupported claims. A refusal on an answerable question is incorrect.",
+    "hit_at_4": "At least one of the four retrieved chunks is from an expected evidence page; denominator is the seven answerable questions. This is a coarse page-level proxy, not passage relevance.",
+    "correct_refusal_rate": "Explicit NOT FOUND refusal on an unanswerable question; denominator is three. Operational errors are not refusals."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Which two agencies developed this handbook?",
+      "answerable": true,
+      "expected_pages": [5],
+      "expected_facts": ["Occupational Safety and Health Administration (OSHA)", "National Institute for Occupational Safety and Health (NIOSH)"]
+    },
+    {
+      "id": "q2",
+      "question": "What are all seven core elements of the Recommended Practices for Safety and Health Programs?",
+      "answerable": true,
+      "expected_pages": [7],
+      "expected_facts": ["Management leadership", "Worker participation", "Hazard identification and assessment", "Hazard prevention and control", "Education and training", "Program evaluation and improvement", "Communication and coordination for host employers, contractors, and staffing agencies"]
+    },
+    {
+      "id": "q3",
+      "question": "Which workplaces are the handbook's self-inspection checklists intended for, and which two industries are excluded?",
+      "answerable": true,
+      "expected_pages": [8],
+      "expected_facts": ["General industry workplaces", "Not construction", "Not maritime"]
+    },
+    {
+      "id": "q4",
+      "question": "How often should fire extinguishers be visually inspected and receive a maintenance check, and should these actions be recorded?",
+      "answerable": true,
+      "expected_pages": [30],
+      "expected_facts": ["Visual inspections monthly", "Maintenance check annually", "Both inspections and maintenance recorded"]
+    },
+    {
+      "id": "q5",
+      "question": "When should workers wearing tight-fitting respirators be fit-tested?",
+      "answerable": true,
+      "expected_pages": [72],
+      "expected_facts": ["Before first use", "At least annually thereafter"]
+    },
+    {
+      "id": "q6",
+      "question": "How far must a portable ladder extend above an elevated surface when used to access it? Give feet and meters.",
+      "answerable": true,
+      "expected_pages": [75],
+      "expected_facts": ["At least 3 feet", "0.9 meters"]
+    },
+    {
+      "id": "q7",
+      "question": "Are OSHA On-Site Consultation services paid or free, are they confidential, and which worksites receive priority?",
+      "answerable": true,
+      "expected_pages": [90],
+      "expected_facts": ["No cost", "Confidential", "Priority to high-hazard worksites"]
+    },
+    {
+      "id": "q8",
+      "question": "What exact percentage discount does this handbook guarantee on my company's workers' compensation premiums?",
+      "answerable": false,
+      "expected_pages": [],
+      "expected_facts": [],
+      "absence_reason": "It discusses possible cost reductions, but guarantees no exact discount."
+    },
+    {
+      "id": "q9",
+      "question": "What is the name and direct telephone number of the safety officer assigned to Acme Bakery?",
+      "answerable": false,
+      "expected_pages": [],
+      "expected_facts": [],
+      "absence_reason": "The handbook has no personnel assignment for this company."
+    },
+    {
+      "id": "q10",
+      "question": "What brand and model of portable ladder does the handbook recommend buying?",
+      "answerable": false,
+      "expected_pages": [],
+      "expected_facts": [],
+      "absence_reason": "It gives ladder safety practices but no recommended brand or model."
+    }
+  ]
+}

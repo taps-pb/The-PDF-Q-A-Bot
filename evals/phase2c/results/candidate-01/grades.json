@@ -1,0 +1,619 @@
+{
+  "osha-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Cited p11-c2 and p32-c1 support covered metal waste cans for oil/paint-soaked rags. The answer supplies the complete required fact."
+  },
+  "osha-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Cited p11-c2 explicitly limits necessary blow-down compressed air to 30 psi. The concise answer preserves that limit."
+  },
+  "osha-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Retrieved and cited p30-c1/p30-c2 jointly support all four mappings: A ordinary combustibles, C energized electrical equipment, D combustible metals, K kitchen cooking oils. No unsupported addition."
+  },
+  "osha-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": true,
+    "failure_category": "unsupported_answer",
+    "notes": "AI-assisted manual review: The answer correctly states both lockout facts, and p49-c1/p49-c2 together retrieve them. However, only p49-c1 is cited; it ends at 'other control', before 'circuit type device' in uncited p49-c2. Under the frozen citation-level support rule (also applied to nist-ai-07), the complete second claim lacks cited support despite being present elsewhere in retrieved context. This is a citation regression, not invented source content."
+  },
+  "osha-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: Rank-one p76-c2 explicitly supplies Dangerous: Do Not Use (or similar language) and removal until repair or replacement. NOT FOUND is a new false refusal despite complete evidence. No answer facts or citations are supplied."
+  },
+  "osha-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Cited p77-c1 states the minimum standard-stair width as 22 inches (56 centimeters). Both units and the minimum qualifier are correct."
+  },
+  "osha-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Cited p21-c1 defines ergonomics as fitting the job to the worker and supports the MSD-prevention explanation. Cited p22-c1 identifies engineering controls as most desirable when possible."
+  },
+  "osha-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: The answer gives supported permission and source-credit conclusions, but omits the public-domain/copyright-free detail required by frozen f1. Retrieved p5-c2/p5-c3 contain the complete fact; only p5-c3 is cited, without the public-domain clause. As in the control, this is a strict completeness omission, not an invented claim. The appreciated-but-not-required credit meaning follows the same control judgment."
+  },
+  "osha-09": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Correct NOT FOUND: retrieved regulatory-assistance, handbook introduction, posting, and sick-leave passages do not establish any required paid annual leave allowance."
+  },
+  "osha-10": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Correct NOT FOUND: retrieved fire-protection contents, alarm maintenance, regulatory references, and extinguisher practices do not recommend an alarm brand/model."
+  },
+  "osha-11": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Correct NOT FOUND: p92-c1 mentions tuition fees for private-sector students but no exact dollar fee; the other training/cooperative-program passages do not supply one."
+  },
+  "osha-12": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Correct NOT FOUND: retrieved tool maintenance/checklist/regulatory passages provide no Riverside Tools inspection appointment or date."
+  },
+  "osha-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Automatic OCR p11-c2 preserves the complete covered-metal-can fact. The concise answer cites that exact passage and physical page 11; it adds no unsupported claim."
+  },
+  "osha-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: Forced OCR p11-c2 preserves covered metal cans for oil, flammable/combustible liquid, and paint rags. The answer cites p11-c2 and p32-c1; both the required fact and additional stated uses are supported."
+  },
+  "nist-ai-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: native physical page 3 preserves the formal-community-review deadline. The hybrid ranking retrieves p3-c2 at rank 3, with the complete no-later-than-2028 sentence. The answer 2028 correctly answers the by-what-year question and cites that exact chunk on page 3. This recovers the control's missing evidence and false refusal without adding claims."
+  },
+  "nist-ai-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: both cited hits p25-c1 and p8-c1 explicitly enumerate the four Core functions, GOVERN, MAP, MEASURE, and MANAGE. The answer supplies all four and no other claims. Its cited physical pages 8 and 25 match those retrieved chunk IDs. Native page 8 also preserves the complete list."
+  },
+  "nist-ai-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: rank-1 p9-c1 contains the full definition of risk as the composite of event probability and consequence magnitude or degree. Both components are preserved in native extraction and accurately stated in the answer, which cites only p9-c1 on physical page 9. This recovers the control's missing definition and false refusal."
+  },
+  "nist-ai-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual semantic review: p18-c4 states required performance without failure, a given time interval, and given conditions; p18-c5 further supplies the reliability goal. p19-c1 supplies closeness to true or accepted-as-true values for accuracy. Native extracted pages 18 and 19 confirm intact definitions. Despite complete retrieved evidence for both facts, the model returns NOT FOUND."
+  },
+  "nist-ai-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual semantic review: rank-1 p22-c3 names de-identification and aggregation and explains that under data sparsity privacy-enhancing techniques can reduce accuracy, affecting fairness and other values. The extracted physical page 22 preserves all three facts. NOT FOUND remains a false refusal despite complete evidence within one retrieved passage."
+  },
+  "nist-ai-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual semantic review: p23-c1 explicitly lists systemic, computational and statistical, and human-cognitive bias, then says each can occur without prejudice, partiality, or discriminatory intent. All frozen required details, including the broader fourth fact, survive native extraction and appear in the first hit. The model nevertheless refuses with NOT FOUND; the possible question-versus-rubric ambiguity for a shorter affirmative answer does not affect this refusal grade."
+  },
+  "nist-ai-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": true,
+    "failure_category": "unsupported_answer",
+    "notes": "AI-assisted manual semantic review: cited p21-c3 defines explainability as underlying mechanisms and interpretability as output meaning in functional context; p21-c4 elaborates these concepts. Both expected facts are correct and supported under their alternative evidence definitions. However, the added claim that these concepts together with transparency support one another appears in retrieved p22-c1, not the cited p21-c3/p21-c4. This retains the control's incomplete citation support for an added claim, rather than fabrication absent from all retrieved context."
+  },
+  "nist-ai-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: rank-1 p28-c1 explicitly labels inventory mechanisms GOVERN 1.6 and states that they are resourced according to organizational risk priorities. Native physical page 28 confirms both details. The answer accurately states both facts and cites p28-c1 on physical page 28 without additional claims."
+  },
+  "nist-ai-09": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: the frozen case requests salary data absent from the document. Retrieved p1-c1, p8-c3, p44-c2, and p36-c4 discuss the title, framework development, related frameworks, and risk-management resources, not a median salary. NOT FOUND correctly refuses without citations."
+  },
+  "nist-ai-10": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: p39-c1 discusses cross-sectoral profiles including language models, p16-c1 describes AI actors, p47-c1 lists framework attributes, and p43-c3 discusses training and model complexity. None supplies a training-token budget for a seven-billion-parameter model, which the frozen source annotation identifies as absent. NOT FOUND is a correct uncited refusal."
+  },
+  "nist-ai-11": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: the retrieved p3-c1, p47-c1, p34-c1, and p37-c1 discuss publication/update information, framework attributes, measurement practices, and risk management. None describes the proposed professional certification exam or a passing percentage; the source annotation likewise identifies that exam as absent. NOT FOUND correctly refuses without citations."
+  },
+  "nist-ai-12": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: p39-c1 mentions cloud-based services only as a cross-sectoral profile topic. The other retrieved passages p8-c3, p1-c1, and p3-c1 concern framework development, title, and update/publication information. None reports inference pricing per thousand requests, consistent with the frozen absence annotation. NOT FOUND is a correct refusal with no citations."
+  },
+  "nist-ai-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: automatic OCR preserves the complete formal-community-review sentence on physical page 3. Rank-1 p3-c2 contains the deadline no later than 2028, and the answer 2028 cites that exact retrieved chunk and physical page. The remaining hits supply development/evaluation context without changing the answer. This paired OCR check remains correct, not an independent benchmark question."
+  },
+  "nist-ai-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual semantic review: forced OCR preserves the update schedule beneath the added native header on physical page 3. Rank-1 p3-c2 states the formal-community-review deadline no later than 2028. The answer 2028 satisfies the by-what-year question and cites precisely p3-c2 on page 3, with no extra claims. This paired OCR outcome remains correct."
+  },
+  "nist-csf-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: rank-one p20-c1 states that numbering gaps identify CSF 1.1 Subcategories relocated in CSF 2.0. The answer gives that complete causal explanation and cites p20-c1 on physical page 20. Under the frozen semantic rubric, separately repeating 'intentionally not sequential' is unnecessary. No unsupported claim is added."
+  },
+  "nist-csf-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f5": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f6": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: rank-one p31-c2 explicitly lists all six Functions: Govern, Identify, Protect, Detect, Respond, and Recover. NOT FOUND is therefore a false refusal despite complete retrieved evidence. No answer facts or citations are supplied."
+  },
+  "nist-csf-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f5": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: rank-two p31-c4 now explicitly provides the four-tier count and all mappings: Partial (Tier 1), Risk Informed (Tier 2), Repeatable (Tier 3), and Adaptive (Tier 4). Rank-one p29-c1 independently supplies Tier 1. Unlike the dense control, the candidate retrieves every required fact, but still returns NOT FOUND without citations. The remaining observed failure is generation, not incomplete retrieval."
+  },
+  "nist-csf-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: rank-one p23-c4 states ID.AM-05 and all four requested prioritization factors: classification, criticality, resources, and impact on the mission. The model nevertheless returns NOT FOUND without citations. This is a false-refusal regression from the dense control's correct supported answer; complete evidence remains retrieved."
+  },
+  "nist-csf-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: p25-c2 contains PR.DS-11's complete creation, protection, maintenance, and testing list; p28-c1 supplies RC.RP-03's integrity check for backups and other restoration assets before use. Both are retrieved and explicitly cited with physical pages 25 and 28. The answer accurately combines both requirements without unsupported additions."
+  },
+  "nist-csf-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: p11-c2 provides both complete definitions and is cited along with p11-c1 on physical page 11. The Current Profile answer includes achieved outcomes and extent of achievement but omits outcomes the organization is attempting to achieve. The frozen complete-fact rubric therefore leaves f1 answer_correct false; the current-profile claims actually expressed are supported. The Target Profile definition and added examples of anticipated changes are supported by cited p11-c2. This remains an omission, not an unsupported added claim."
+  },
+  "nist-csf-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: rank-one p15-c1 explicitly identifies all four negative-risk options in Section 5: mitigating, transferring, avoiding, and accepting. The model returns NOT FOUND despite complete evidence. No answer facts or citations are supplied."
+  },
+  "nist-csf-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review: rank-two p14-c4 explicitly maps new Informative Reference suggestions to olir@nist.gov and additional Quick Start Guide topics to cyberframework@nist.gov. Both complete email addresses and their purposes are retrieved. NOT FOUND is a false refusal with no citations."
+  },
+  "nist-csf-09": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: the four retrieved passages on physical pages 20, 4, and 14 describe categories, numbering, document contents, and resource suggestions, with no numeric password-length mandate. The frozen source annotation identifies no such requirement. NOT FOUND correctly refuses and adds no claim."
+  },
+  "nist-csf-10": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: retrieved pages 4, 14, 12, and 18 discuss figures, supplemental resources, profile scope, and privacy risks. The data-breach example on page 18 does not count organizations breached in 2023. No passage supplies the invented statistic, consistent with the frozen absence annotation. NOT FOUND is correct."
+  },
+  "nist-csf-11": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: retrieved pages 31, 12, 30, and 29 describe Tier names, risk-management progression, governance, and Tier 4 practices. None prescribes an annual dollar budget per employee; the frozen source annotation likewise identifies no numeric threshold. NOT FOUND correctly refuses."
+  },
+  "nist-csf-12": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: retrieved passages on pages 24, 2, and 7 cover vulnerability and risk management, the framework's title, and organization-specific tailoring. None gives a CVSS score threshold for critical vulnerabilities, consistent with the frozen absence annotation. NOT FOUND is a correct refusal."
+  },
+  "nist-csf-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: automatic OCR preserves the full numbering explanation in rank-one p20-c1. The answer correctly explains that CSF 1.1 Subcategories relocated in CSF 2.0 cause the gaps, citing that exact chunk and physical page 20. This supplies the required causal meaning without repeating 'intentionally not sequential' verbatim. No unsupported claim is added."
+  },
+  "nist-csf-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review: forced OCR recovers the full explanation below the synthetic native header in rank-one p20-c1. The answer accurately attributes numbering gaps to relocated CSF 1.1 Subcategories, citing p20-c1 and physical page 20. The header is not used as evidence. The causal paraphrase satisfies the frozen semantic rubric and adds no unsupported claim."
+  }
+}

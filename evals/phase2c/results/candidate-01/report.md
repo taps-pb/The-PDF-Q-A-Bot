@@ -1,0 +1,68 @@
+# Evidence evaluation report
+
+Reviewer: AI-assisted manual review by Codex root (OSHA), phase2c_ai (NIST AI), and phase2c_csf (NIST CSF); root integrated grades and cross-reviewed OSHA citation regression with phase2c_ai. Not independent human adjudication.
+
+Split: development. OCR pairs are not independent questions.
+
+| Group | Metric | Count | Denominator | Rate |
+|---|---|---:|---:|---:|
+| native-overall | hit_at_4 | 24 | 24 | 1.000 |
+| native-overall | evidence_coverage_at_4 | 24 | 24 | 1.000 |
+| native-overall | answer_accuracy | 11 | 24 | 0.458 |
+| native-overall | false_refusal_rate | 9 | 24 | 0.375 |
+| native-overall | correct_refusal_rate | 12 | 12 | 1.000 |
+| native-overall | unsupported_answer_rate | 2 | 15 | 0.133 |
+| native-nist-ai | hit_at_4 | 8 | 8 | 1.000 |
+| native-nist-ai | evidence_coverage_at_4 | 8 | 8 | 1.000 |
+| native-nist-ai | answer_accuracy | 4 | 8 | 0.500 |
+| native-nist-ai | false_refusal_rate | 3 | 8 | 0.375 |
+| native-nist-ai | correct_refusal_rate | 4 | 4 | 1.000 |
+| native-nist-ai | unsupported_answer_rate | 1 | 5 | 0.200 |
+| native-nist-csf | hit_at_4 | 8 | 8 | 1.000 |
+| native-nist-csf | evidence_coverage_at_4 | 8 | 8 | 1.000 |
+| native-nist-csf | answer_accuracy | 2 | 8 | 0.250 |
+| native-nist-csf | false_refusal_rate | 5 | 8 | 0.625 |
+| native-nist-csf | correct_refusal_rate | 4 | 4 | 1.000 |
+| native-nist-csf | unsupported_answer_rate | 0 | 3 | 0.000 |
+| native-osha | hit_at_4 | 8 | 8 | 1.000 |
+| native-osha | evidence_coverage_at_4 | 8 | 8 | 1.000 |
+| native-osha | answer_accuracy | 5 | 8 | 0.625 |
+| native-osha | false_refusal_rate | 1 | 8 | 0.125 |
+| native-osha | correct_refusal_rate | 4 | 4 | 1.000 |
+| native-osha | unsupported_answer_rate | 1 | 7 | 0.143 |
+| ocr-overall | hit_at_4 | 6 | 6 | 1.000 |
+| ocr-overall | evidence_coverage_at_4 | 6 | 6 | 1.000 |
+| ocr-overall | answer_accuracy | 6 | 6 | 1.000 |
+| ocr-overall | false_refusal_rate | 0 | 6 | 0.000 |
+| ocr-overall | correct_refusal_rate | 0 | 0 | N/A |
+| ocr-overall | unsupported_answer_rate | 0 | 6 | 0.000 |
+| ocr-scan | hit_at_4 | 3 | 3 | 1.000 |
+| ocr-scan | evidence_coverage_at_4 | 3 | 3 | 1.000 |
+| ocr-scan | answer_accuracy | 3 | 3 | 1.000 |
+| ocr-scan | false_refusal_rate | 0 | 3 | 0.000 |
+| ocr-scan | correct_refusal_rate | 0 | 0 | N/A |
+| ocr-scan | unsupported_answer_rate | 0 | 3 | 0.000 |
+| ocr-mixed | hit_at_4 | 3 | 3 | 1.000 |
+| ocr-mixed | evidence_coverage_at_4 | 3 | 3 | 1.000 |
+| ocr-mixed | answer_accuracy | 3 | 3 | 1.000 |
+| ocr-mixed | false_refusal_rate | 0 | 3 | 0.000 |
+| ocr-mixed | correct_refusal_rate | 0 | 0 | N/A |
+| ocr-mixed | unsupported_answer_rate | 0 | 3 | 0.000 |
+
+## Failures
+
+- osha-04: unsupported_answer. AI-assisted manual review: The answer correctly states both lockout facts, and p49-c1/p49-c2 together retrieve them. However, only p49-c1 is cited; it ends at 'other control', before 'circuit type device' in uncited p49-c2. Under the frozen citation-level support rule (also applied to nist-ai-07), the complete second claim lacks cited support despite being present elsewhere in retrieved context. This is a citation regression, not invented source content.
+- osha-05: generation_failure. AI-assisted manual review: Rank-one p76-c2 explicitly supplies Dangerous: Do Not Use (or similar language) and removal until repair or replacement. NOT FOUND is a new false refusal despite complete evidence. No answer facts or citations are supplied.
+- osha-08: generation_failure. AI-assisted manual review: The answer gives supported permission and source-credit conclusions, but omits the public-domain/copyright-free detail required by frozen f1. Retrieved p5-c2/p5-c3 contain the complete fact; only p5-c3 is cited, without the public-domain clause. As in the control, this is a strict completeness omission, not an invented claim. The appreciated-but-not-required credit meaning follows the same control judgment.
+- nist-ai-04: generation_failure. AI-assisted manual semantic review: p18-c4 states required performance without failure, a given time interval, and given conditions; p18-c5 further supplies the reliability goal. p19-c1 supplies closeness to true or accepted-as-true values for accuracy. Native extracted pages 18 and 19 confirm intact definitions. Despite complete retrieved evidence for both facts, the model returns NOT FOUND.
+- nist-ai-05: generation_failure. AI-assisted manual semantic review: rank-1 p22-c3 names de-identification and aggregation and explains that under data sparsity privacy-enhancing techniques can reduce accuracy, affecting fairness and other values. The extracted physical page 22 preserves all three facts. NOT FOUND remains a false refusal despite complete evidence within one retrieved passage.
+- nist-ai-06: generation_failure. AI-assisted manual semantic review: p23-c1 explicitly lists systemic, computational and statistical, and human-cognitive bias, then says each can occur without prejudice, partiality, or discriminatory intent. All frozen required details, including the broader fourth fact, survive native extraction and appear in the first hit. The model nevertheless refuses with NOT FOUND; the possible question-versus-rubric ambiguity for a shorter affirmative answer does not affect this refusal grade.
+- nist-ai-07: unsupported_answer. AI-assisted manual semantic review: cited p21-c3 defines explainability as underlying mechanisms and interpretability as output meaning in functional context; p21-c4 elaborates these concepts. Both expected facts are correct and supported under their alternative evidence definitions. However, the added claim that these concepts together with transparency support one another appears in retrieved p22-c1, not the cited p21-c3/p21-c4. This retains the control's incomplete citation support for an added claim, rather than fabrication absent from all retrieved context.
+- nist-csf-02: generation_failure. AI-assisted manual review: rank-one p31-c2 explicitly lists all six Functions: Govern, Identify, Protect, Detect, Respond, and Recover. NOT FOUND is therefore a false refusal despite complete retrieved evidence. No answer facts or citations are supplied.
+- nist-csf-03: generation_failure. AI-assisted manual review: rank-two p31-c4 now explicitly provides the four-tier count and all mappings: Partial (Tier 1), Risk Informed (Tier 2), Repeatable (Tier 3), and Adaptive (Tier 4). Rank-one p29-c1 independently supplies Tier 1. Unlike the dense control, the candidate retrieves every required fact, but still returns NOT FOUND without citations. The remaining observed failure is generation, not incomplete retrieval.
+- nist-csf-04: generation_failure. AI-assisted manual review: rank-one p23-c4 states ID.AM-05 and all four requested prioritization factors: classification, criticality, resources, and impact on the mission. The model nevertheless returns NOT FOUND without citations. This is a false-refusal regression from the dense control's correct supported answer; complete evidence remains retrieved.
+- nist-csf-06: generation_failure. AI-assisted manual review: p11-c2 provides both complete definitions and is cited along with p11-c1 on physical page 11. The Current Profile answer includes achieved outcomes and extent of achievement but omits outcomes the organization is attempting to achieve. The frozen complete-fact rubric therefore leaves f1 answer_correct false; the current-profile claims actually expressed are supported. The Target Profile definition and added examples of anticipated changes are supported by cited p11-c2. This remains an omission, not an unsupported added claim.
+- nist-csf-07: generation_failure. AI-assisted manual review: rank-one p15-c1 explicitly identifies all four negative-risk options in Section 5: mitigating, transferring, avoiding, and accepting. The model returns NOT FOUND despite complete evidence. No answer facts or citations are supplied.
+- nist-csf-08: generation_failure. AI-assisted manual review: rank-two p14-c4 explicitly maps new Informative Reference suggestions to olir@nist.gov and additional Quick Start Guide topics to cyberframework@nist.gov. Both complete email addresses and their purposes are retrieved. NOT FOUND is a false refusal with no citations.
+
+Latency and operational error counts are in summary.json; indexing is in run.json and excluded from query latency. Only the explicitly selected split is included in this report.

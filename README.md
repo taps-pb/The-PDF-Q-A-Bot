@@ -39,6 +39,7 @@ At 300 characters, retrieval truncated the seventh program element; the bot refu
 
 At 1500 characters, the bot refused the ladder-height question despite retrieving both units. This was a generation failure; distracting context and extraction spacing are possible contributors, not proven causes.
 
-Phase 2A adds [three-document evidence and OCR benchmarks](docs/PHASE2A.md).
-[Phase 2B](docs/PHASE2B-RESULTS.md) rejects a higher-accuracy prompt because unsupported
-answers increased. Production retains its original prompt; paired comparisons enforce quality gates.
+[Phase 2A](docs/PHASE2A.md) adds multi-document/OCR benchmarks.
+[Phase 2B](docs/PHASE2B-RESULTS.md) rejects an unsafe prompt;
+[Phase 2C](docs/PHASE2C-RESULTS.md) rejects hybrid retrieval after answer regressions.
+Production retains dense retrieval and its original prompt. Paired comparisons enforce quality gates.

@@ -1,0 +1,48 @@
+{
+  "800": {
+    "q1": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p5-c1 names OSHA and NIOSH in full; both agencies are correctly supplied."
+    },
+    "q2": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p7-c1 lists all seven program elements, including the full communication/coordination scope; the answer preserves all seven."
+    },
+    "q3": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p8-c2 says general industry, excluding construction and maritime; all three required facts are correct."
+    },
+    "q4": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p30-c2 supports monthly visual inspection, annual maintenance, and recording both; the answer includes all requirements."
+    },
+    "q5": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p72-c1 requires fit testing before first use and at least annually thereafter; both facts are reproduced."
+    },
+    "q6": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p75-c2 gives at least 3 feet (0.9 meters) above the elevated surface; both units and the minimum qualifier are preserved."
+    },
+    "q7": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p90-c1 and p90-c4 support no-cost/confidential consultation; p90-c1 also gives high-hazard-worksite priority. The complete answer is supported."
+    },
+    "q8": {
+      "notes": "AI-assisted manual review: NOT FOUND correctly refuses the nonexistent guaranteed percentage discount in the frozen absence annotation."
+    },
+    "q9": {
+      "notes": "AI-assisted manual review: NOT FOUND correctly refuses the company-specific Acme Bakery officer/name/phone information absent from the handbook."
+    },
+    "q10": {
+      "notes": "AI-assisted manual review: NOT FOUND correctly refuses the nonexistent ladder brand/model recommendation in the frozen absence annotation."
+    }
+  }
+}

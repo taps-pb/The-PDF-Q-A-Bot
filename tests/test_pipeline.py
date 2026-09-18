@@ -9,7 +9,9 @@ import pytest
 from reportlab.pdfgen import canvas
 
 from pdf_qa.pipeline import (
+    RETRIEVAL_CONFIG,
     SYSTEM_PROMPT,
+    DocumentIndex,
     LocalModels,
     answer,
     ingest,
@@ -77,6 +79,27 @@ def test_settings_and_embedding_digest_invalidate_cache(tmp_path):
         retrieve(original, "ladder?", models)
     rebuilt = ingest(pdf, "test.pdf", Settings(), models, tmp_path)
     assert rebuilt.path != original.path
+
+
+def test_production_keeps_dense_top_k_and_cosine_scores(tmp_path):
+    chunks = [Chunk(f"p1-c{i}", "same text", 1, "native") for i in range(25)]
+    models = Mock(embedding_model="local")
+    models.digest.return_value = "digest"
+    models.embed.return_value = [[1.0, 0.0]]
+    index = Mock(d=2)
+    index.search.return_value = (
+        np.array([[0.9, 0.8, 0.7, 0.6]]),
+        np.array([[3, 2, 1, 0]]),
+    )
+    document = DocumentIndex(
+        tmp_path, {"embedding_model": "local", "embedding_digest": "digest"}, chunks, index
+    )
+    hits = retrieve(document, "What matches?", models)
+    assert RETRIEVAL_CONFIG == {"version": "dense-v1", "method": "dense", "score": "cosine"}
+    assert index.search.call_args.args[1] == 4
+    assert [hit.chunk for hit in hits] == [chunks[i] for i in [3, 2, 1, 0]]
+    assert [hit.score for hit in hits] == [0.9, 0.8, 0.7, 0.6]
+    models.embed.assert_called_once_with(["What matches?"], query=True)
 
 
 def test_corruption_is_reported_and_explicit_rebuild_preserves_old_files(tmp_path):

@@ -1,0 +1,2133 @@
+{
+  "schema_version": 1,
+  "retrieval_comparison": {
+    "ranked_chunks_identical": false,
+    "scores_changed_cases": [],
+    "max_absolute_score_delta": null,
+    "policy": "Score drift requires the same score metric and identical ranked chunks.",
+    "ranked_chunks_changed_cases": [
+      "osha-01",
+      "osha-02",
+      "osha-03",
+      "osha-04",
+      "osha-05",
+      "osha-06",
+      "osha-07",
+      "osha-08",
+      "osha-09",
+      "osha-10",
+      "osha-11",
+      "osha-12",
+      "nist-ai-01",
+      "nist-ai-02",
+      "nist-ai-03",
+      "nist-ai-04",
+      "nist-ai-05",
+      "nist-ai-06",
+      "nist-ai-08",
+      "nist-ai-09",
+      "nist-ai-10",
+      "nist-ai-11",
+      "nist-ai-12",
+      "nist-csf-01",
+      "nist-csf-02",
+      "nist-csf-03",
+      "nist-csf-04",
+      "nist-csf-05",
+      "nist-csf-06",
+      "nist-csf-07",
+      "nist-csf-08",
+      "nist-csf-09",
+      "nist-csf-10",
+      "nist-csf-11",
+      "nist-csf-12",
+      "osha-01--scan",
+      "osha-01--mixed",
+      "nist-ai-01--scan",
+      "nist-ai-01--mixed",
+      "nist-csf-01--scan",
+      "nist-csf-01--mixed"
+    ],
+    "score_metrics_comparable": false,
+    "baseline": {
+      "version": "dense-v1",
+      "method": "dense",
+      "score": "cosine"
+    },
+    "candidate": {
+      "version": "hybrid-v1",
+      "method": "hybrid",
+      "score": "rrf",
+      "dense_candidates": 20,
+      "lexical_candidates": 20,
+      "rrf_k": 60,
+      "bm25_k1": 1.2,
+      "bm25_b": 0.75,
+      "tokenizer": "alphanumeric-casefold-stopwords-v1"
+    }
+  },
+  "sources": {
+    "baseline": {
+      "directory": "evals/phase2c/results/control-01",
+      "artifact_sha256": {
+        "run": "4c4a809f67fa8fa4b6cb5d48bb37b395f469723a6d93e16752781eab5512bb19",
+        "cases": "7553ecd7f7f101f4f78d7263b4887f8c8b5d44723110826c326dddc197d14c15",
+        "results": "cc41484157a20312ffdd5bd9edd8f707c271d84044addc1d40e3f2c05bf70ebf",
+        "grades": "04a5c20e29a41b0021885b2d1c5f82c7a364772e94ba82ca50806d42791865e3",
+        "summary": "3106ab4336fb769840ddc9cd8d103a9dda35bce1627dcc2463e292440f36734d"
+      }
+    },
+    "candidate": {
+      "directory": "evals/phase2c/results/candidate-01",
+      "artifact_sha256": {
+        "run": "5f32515ea3aed438b75d09c7261d4964592a657531264e0e741daddd6139222f",
+        "cases": "7553ecd7f7f101f4f78d7263b4887f8c8b5d44723110826c326dddc197d14c15",
+        "results": "6d33d29143be3809ae1d212eebe5ee4c79f911b66df927d0867c6b5cc3a93ba4",
+        "grades": "db4779fd47f99248ff95b0a9d4cc046e8bc6c123b187db16ad3e1e64d214f950",
+        "summary": "92c9aeb4cae5afc32fa2defacf39d851f70e4220ab97013d972361596eea6f10"
+      }
+    }
+  },
+  "metrics": {
+    "native": {
+      "overall": {
+        "before": {
+          "hit_at_4": {
+            "count": 21,
+            "denominator": 24,
+            "rate": 0.875
+          },
+          "evidence_coverage_at_4": {
+            "count": 21,
+            "denominator": 24,
+            "rate": 0.875
+          },
+          "answer_accuracy": {
+            "count": 12,
+            "denominator": 24,
+            "rate": 0.5
+          },
+          "false_refusal_rate": {
+            "count": 9,
+            "denominator": 24,
+            "rate": 0.375
+          },
+          "correct_refusal_rate": {
+            "count": 12,
+            "denominator": 12,
+            "rate": 1.0
+          },
+          "unsupported_answer_rate": {
+            "count": 1,
+            "denominator": 15,
+            "rate": 0.06666666666666667
+          },
+          "operational_errors": 0,
+          "latency": {
+            "retrieval": {
+              "count": 36,
+              "median_seconds": 0.03189891650072241,
+              "p95_seconds": 0.07882975000029546
+            },
+            "generation": {
+              "count": 36,
+              "median_seconds": 1.0426251039998533,
+              "p95_seconds": 2.643578332999823
+            }
+          }
+        },
+        "after": {
+          "hit_at_4": {
+            "count": 24,
+            "denominator": 24,
+            "rate": 1.0
+          },
+          "evidence_coverage_at_4": {
+            "count": 24,
+            "denominator": 24,
+            "rate": 1.0
+          },
+          "answer_accuracy": {
+            "count": 11,
+            "denominator": 24,
+            "rate": 0.4583333333333333
+          },
+          "false_refusal_rate": {
+            "count": 9,
+            "denominator": 24,
+            "rate": 0.375
+          },
+          "correct_refusal_rate": {
+            "count": 12,
+            "denominator": 12,
+            "rate": 1.0
+          },
+          "unsupported_answer_rate": {
+            "count": 2,
+            "denominator": 15,
+            "rate": 0.13333333333333333
+          },
+          "operational_errors": 0,
+          "latency": {
+            "retrieval": {
+              "count": 36,
+              "median_seconds": 0.03204437449949182,
+              "p95_seconds": 0.03881554200052051
+            },
+            "generation": {
+              "count": 36,
+              "median_seconds": 0.9331563750001806,
+              "p95_seconds": 2.4987171669999952
+            }
+          }
+        },
+        "delta": {
+          "hit_at_4": {
+            "count": 3,
+            "denominator": 0,
+            "rate": 0.125
+          },
+          "evidence_coverage_at_4": {
+            "count": 3,
+            "denominator": 0,
+            "rate": 0.125
+          },
+          "answer_accuracy": {
+            "count": -1,
+            "denominator": 0,
+            "rate": -0.041666666666666685
+          },
+          "false_refusal_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "correct_refusal_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "unsupported_answer_rate": {
+            "count": 1,
+            "denominator": 0,
+            "rate": 0.06666666666666667
+          },
+          "operational_errors": 0,
+          "latency": {
+            "retrieval": {
+              "count": 0,
+              "median_seconds": 0.000145457998769416,
+              "p95_seconds": -0.04001420799977495
+            },
+            "generation": {
+              "count": 0,
+              "median_seconds": -0.10946872899967275,
+              "p95_seconds": -0.1448611659998278
+            }
+          }
+        }
+      },
+      "by_document": {
+        "nist-ai": {
+          "before": {
+            "hit_at_4": {
+              "count": 6,
+              "denominator": 8,
+              "rate": 0.75
+            },
+            "evidence_coverage_at_4": {
+              "count": 6,
+              "denominator": 8,
+              "rate": 0.75
+            },
+            "answer_accuracy": {
+              "count": 2,
+              "denominator": 8,
+              "rate": 0.25
+            },
+            "false_refusal_rate": {
+              "count": 5,
+              "denominator": 8,
+              "rate": 0.625
+            },
+            "correct_refusal_rate": {
+              "count": 4,
+              "denominator": 4,
+              "rate": 1.0
+            },
+            "unsupported_answer_rate": {
+              "count": 1,
+              "denominator": 3,
+              "rate": 0.3333333333333333
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 12,
+                "median_seconds": 0.032632041499709885,
+                "p95_seconds": 0.03618400000050315
+              },
+              "generation": {
+                "count": 12,
+                "median_seconds": 0.8698026874999414,
+                "p95_seconds": 2.992088083001363
+              }
+            }
+          },
+          "after": {
+            "hit_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 4,
+              "denominator": 8,
+              "rate": 0.5
+            },
+            "false_refusal_rate": {
+              "count": 3,
+              "denominator": 8,
+              "rate": 0.375
+            },
+            "correct_refusal_rate": {
+              "count": 4,
+              "denominator": 4,
+              "rate": 1.0
+            },
+            "unsupported_answer_rate": {
+              "count": 1,
+              "denominator": 5,
+              "rate": 0.2
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 12,
+                "median_seconds": 0.03072685400093178,
+                "p95_seconds": 0.03881554200052051
+              },
+              "generation": {
+                "count": 12,
+                "median_seconds": 0.9070741874993473,
+                "p95_seconds": 2.4987171669999952
+              }
+            }
+          },
+          "delta": {
+            "hit_at_4": {
+              "count": 2,
+              "denominator": 0,
+              "rate": 0.25
+            },
+            "evidence_coverage_at_4": {
+              "count": 2,
+              "denominator": 0,
+              "rate": 0.25
+            },
+            "answer_accuracy": {
+              "count": 2,
+              "denominator": 0,
+              "rate": 0.25
+            },
+            "false_refusal_rate": {
+              "count": -2,
+              "denominator": 0,
+              "rate": -0.25
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 2,
+              "rate": -0.1333333333333333
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 0,
+                "median_seconds": -0.0019051874987781048,
+                "p95_seconds": 0.0026315420000173617
+              },
+              "generation": {
+                "count": 0,
+                "median_seconds": 0.03727149999940593,
+                "p95_seconds": -0.49337091600136773
+              }
+            }
+          }
+        },
+        "nist-csf": {
+          "before": {
+            "hit_at_4": {
+              "count": 7,
+              "denominator": 8,
+              "rate": 0.875
+            },
+            "evidence_coverage_at_4": {
+              "count": 7,
+              "denominator": 8,
+              "rate": 0.875
+            },
+            "answer_accuracy": {
+              "count": 3,
+              "denominator": 8,
+              "rate": 0.375
+            },
+            "false_refusal_rate": {
+              "count": 4,
+              "denominator": 8,
+              "rate": 0.5
+            },
+            "correct_refusal_rate": {
+              "count": 4,
+              "denominator": 4,
+              "rate": 1.0
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 4,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 12,
+                "median_seconds": 0.03138297900022735,
+                "p95_seconds": 0.03542120800011617
+              },
+              "generation": {
+                "count": 12,
+                "median_seconds": 0.9618717085004391,
+                "p95_seconds": 2.643578332999823
+              }
+            }
+          },
+          "after": {
+            "hit_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 2,
+              "denominator": 8,
+              "rate": 0.25
+            },
+            "false_refusal_rate": {
+              "count": 5,
+              "denominator": 8,
+              "rate": 0.625
+            },
+            "correct_refusal_rate": {
+              "count": 4,
+              "denominator": 4,
+              "rate": 1.0
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 12,
+                "median_seconds": 0.029820353999639337,
+                "p95_seconds": 0.034850416999688605
+              },
+              "generation": {
+                "count": 12,
+                "median_seconds": 0.8214683754995349,
+                "p95_seconds": 2.6392793750001147
+              }
+            }
+          },
+          "delta": {
+            "hit_at_4": {
+              "count": 1,
+              "denominator": 0,
+              "rate": 0.125
+            },
+            "evidence_coverage_at_4": {
+              "count": 1,
+              "denominator": 0,
+              "rate": 0.125
+            },
+            "answer_accuracy": {
+              "count": -1,
+              "denominator": 0,
+              "rate": -0.125
+            },
+            "false_refusal_rate": {
+              "count": 1,
+              "denominator": 0,
+              "rate": 0.125
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": -1,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 0,
+                "median_seconds": -0.0015626250005880138,
+                "p95_seconds": -0.0005707910004275618
+              },
+              "generation": {
+                "count": 0,
+                "median_seconds": -0.14040333300090424,
+                "p95_seconds": -0.004298957999708364
+              }
+            }
+          }
+        },
+        "osha": {
+          "before": {
+            "hit_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 7,
+              "denominator": 8,
+              "rate": 0.875
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 8,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 4,
+              "denominator": 4,
+              "rate": 1.0
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 8,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 12,
+                "median_seconds": 0.032212270500167506,
+                "p95_seconds": 0.205569290999847
+              },
+              "generation": {
+                "count": 12,
+                "median_seconds": 1.5867452499996944,
+                "p95_seconds": 2.026253041000018
+              }
+            }
+          },
+          "after": {
+            "hit_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 5,
+              "denominator": 8,
+              "rate": 0.625
+            },
+            "false_refusal_rate": {
+              "count": 1,
+              "denominator": 8,
+              "rate": 0.125
+            },
+            "correct_refusal_rate": {
+              "count": 4,
+              "denominator": 4,
+              "rate": 1.0
+            },
+            "unsupported_answer_rate": {
+              "count": 1,
+              "denominator": 7,
+              "rate": 0.14285714285714285
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 12,
+                "median_seconds": 0.033020208500602166,
+                "p95_seconds": 0.045270291999258916
+              },
+              "generation": {
+                "count": 12,
+                "median_seconds": 1.052421728999434,
+                "p95_seconds": 1.6207468749998952
+              }
+            }
+          },
+          "delta": {
+            "hit_at_4": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "answer_accuracy": {
+              "count": -2,
+              "denominator": 0,
+              "rate": -0.25
+            },
+            "false_refusal_rate": {
+              "count": 1,
+              "denominator": 0,
+              "rate": 0.125
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "unsupported_answer_rate": {
+              "count": 1,
+              "denominator": -1,
+              "rate": 0.14285714285714285
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 0,
+                "median_seconds": 0.0008079380004346604,
+                "p95_seconds": -0.16029899900058808
+              },
+              "generation": {
+                "count": 0,
+                "median_seconds": -0.5343235210002604,
+                "p95_seconds": -0.4055061660001229
+              }
+            }
+          }
+        }
+      }
+    },
+    "ocr": {
+      "overall": {
+        "before": {
+          "hit_at_4": {
+            "count": 6,
+            "denominator": 6,
+            "rate": 1.0
+          },
+          "evidence_coverage_at_4": {
+            "count": 6,
+            "denominator": 6,
+            "rate": 1.0
+          },
+          "answer_accuracy": {
+            "count": 6,
+            "denominator": 6,
+            "rate": 1.0
+          },
+          "false_refusal_rate": {
+            "count": 0,
+            "denominator": 6,
+            "rate": 0.0
+          },
+          "correct_refusal_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "unsupported_answer_rate": {
+            "count": 0,
+            "denominator": 6,
+            "rate": 0.0
+          },
+          "operational_errors": 0,
+          "latency": {
+            "retrieval": {
+              "count": 6,
+              "median_seconds": 0.026349895999373985,
+              "p95_seconds": 0.059068458000183455
+            },
+            "generation": {
+              "count": 6,
+              "median_seconds": 1.488161083499108,
+              "p95_seconds": 1.758490291000271
+            }
+          }
+        },
+        "after": {
+          "hit_at_4": {
+            "count": 6,
+            "denominator": 6,
+            "rate": 1.0
+          },
+          "evidence_coverage_at_4": {
+            "count": 6,
+            "denominator": 6,
+            "rate": 1.0
+          },
+          "answer_accuracy": {
+            "count": 6,
+            "denominator": 6,
+            "rate": 1.0
+          },
+          "false_refusal_rate": {
+            "count": 0,
+            "denominator": 6,
+            "rate": 0.0
+          },
+          "correct_refusal_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "unsupported_answer_rate": {
+            "count": 0,
+            "denominator": 6,
+            "rate": 0.0
+          },
+          "operational_errors": 0,
+          "latency": {
+            "retrieval": {
+              "count": 6,
+              "median_seconds": 0.024205708499721368,
+              "p95_seconds": 0.030790541999522247
+            },
+            "generation": {
+              "count": 6,
+              "median_seconds": 1.1470915624995541,
+              "p95_seconds": 1.70149904200116
+            }
+          }
+        },
+        "delta": {
+          "hit_at_4": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "evidence_coverage_at_4": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "answer_accuracy": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "false_refusal_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "correct_refusal_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "unsupported_answer_rate": {
+            "count": 0,
+            "denominator": 0,
+            "rate": 0.0
+          },
+          "operational_errors": 0,
+          "latency": {
+            "retrieval": {
+              "count": 0,
+              "median_seconds": -0.0021441874996526167,
+              "p95_seconds": -0.028277916000661207
+            },
+            "generation": {
+              "count": 0,
+              "median_seconds": -0.3410695209995538,
+              "p95_seconds": -0.05699124899911112
+            }
+          }
+        }
+      },
+      "by_variant": {
+        "scan": {
+          "before": {
+            "hit_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 3,
+                "median_seconds": 0.027076416999989306,
+                "p95_seconds": 0.030589874999350286
+              },
+              "generation": {
+                "count": 3,
+                "median_seconds": 1.3457341249995807,
+                "p95_seconds": 1.6305880419986352
+              }
+            }
+          },
+          "after": {
+            "hit_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 3,
+                "median_seconds": 0.02895429099953617,
+                "p95_seconds": 0.030790541999522247
+              },
+              "generation": {
+                "count": 3,
+                "median_seconds": 0.8849229999996169,
+                "p95_seconds": 1.70149904200116
+              }
+            }
+          },
+          "delta": {
+            "hit_at_4": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "answer_accuracy": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 0,
+                "median_seconds": 0.001877873999546864,
+                "p95_seconds": 0.00020066700017196126
+              },
+              "generation": {
+                "count": 0,
+                "median_seconds": -0.4608111249999638,
+                "p95_seconds": 0.07091100000252482
+              }
+            }
+          }
+        },
+        "mixed": {
+          "before": {
+            "hit_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 3,
+                "median_seconds": 0.019165000001521548,
+                "p95_seconds": 0.059068458000183455
+              },
+              "generation": {
+                "count": 3,
+                "median_seconds": 1.6944640830006392,
+                "p95_seconds": 1.758490291000271
+              }
+            }
+          },
+          "after": {
+            "hit_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "answer_accuracy": {
+              "count": 3,
+              "denominator": 3,
+              "rate": 1.0
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 3,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 3,
+                "median_seconds": 0.020517082999504055,
+                "p95_seconds": 0.021385333999205614
+              },
+              "generation": {
+                "count": 3,
+                "median_seconds": 1.4092601249994914,
+                "p95_seconds": 1.5416747500003112
+              }
+            }
+          },
+          "delta": {
+            "hit_at_4": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "evidence_coverage_at_4": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "answer_accuracy": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "false_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "correct_refusal_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "unsupported_answer_rate": {
+              "count": 0,
+              "denominator": 0,
+              "rate": 0.0
+            },
+            "operational_errors": 0,
+            "latency": {
+              "retrieval": {
+                "count": 0,
+                "median_seconds": 0.0013520829979825066,
+                "p95_seconds": -0.03768312400097784
+              },
+              "generation": {
+                "count": 0,
+                "median_seconds": -0.28520395800114784,
+                "p95_seconds": -0.21681554099995992
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": "osha-01",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.205569290999847,
+          "after": 0.045270291999258916,
+          "delta": -0.16029899900058808
+        },
+        "generation": {
+          "before": 1.6050794999991922,
+          "after": 0.8313119579997874,
+          "delta": -0.7737675419994048
+        }
+      }
+    },
+    {
+      "case_id": "osha-02",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03261774999918998,
+          "after": 0.03059387499888544,
+          "delta": -0.0020238750003045425
+        },
+        "generation": {
+          "before": 1.5684110000001965,
+          "after": 1.0520920830003888,
+          "delta": -0.5163189169998077
+        }
+      }
+    },
+    {
+      "case_id": "osha-03",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.02832983299958869,
+          "after": 0.03440779099946667,
+          "delta": 0.006077957999877981
+        },
+        "generation": {
+          "before": 2.026253041000018,
+          "after": 1.4156980410007236,
+          "delta": -0.6105549999992945
+        }
+      }
+    },
+    {
+      "case_id": "osha-04",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "incorrect_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "unsupported_answer"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.07882975000029546,
+          "after": 0.03237041600004886,
+          "delta": -0.0464593340002466
+        },
+        "generation": {
+          "before": 1.9989631249991362,
+          "after": 1.6207468749998952,
+          "delta": -0.37821624999924097
+        }
+      }
+    },
+    {
+      "case_id": "osha-05",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.035301957999763545,
+          "after": 0.033774542000173824,
+          "delta": -0.0015274159995897207
+        },
+        "generation": {
+          "before": 1.8332487500010757,
+          "after": 1.0527513749984792,
+          "delta": -0.7804973750025965
+        }
+      }
+    },
+    {
+      "case_id": "osha-06",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.02978849999999511,
+          "after": 0.03604941600133316,
+          "delta": 0.006260916001338046
+        },
+        "generation": {
+          "before": 1.8166772089989536,
+          "after": 1.2884219999996276,
+          "delta": -0.528255208999326
+        }
+      }
+    },
+    {
+      "case_id": "osha-07",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.031896041000436526,
+          "after": 0.03313379200153577,
+          "delta": 0.001237751001099241
+        },
+        "generation": {
+          "before": 1.716579832998832,
+          "after": 1.5242604579998442,
+          "delta": -0.19231937499898777
+        }
+      }
+    },
+    {
+      "case_id": "osha-08",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "incorrect_answer",
+        "after": "incorrect_answer"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03106433399989328,
+          "after": 0.03305587500108231,
+          "delta": 0.0019915410011890344
+        },
+        "generation": {
+          "before": 1.0593357920006383,
+          "after": 1.1681607499995152,
+          "delta": 0.10882495799887693
+        }
+      }
+    },
+    {
+      "case_id": "osha-09",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.030746291000468773,
+          "after": 0.032691749998775776,
+          "delta": 0.0019454589983070036
+        },
+        "generation": {
+          "before": 1.0093702920003125,
+          "after": 0.9057105419997242,
+          "delta": -0.10365975000058825
+        }
+      }
+    },
+    {
+      "case_id": "osha-10",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03207074999954784,
+          "after": 0.03276704199925007,
+          "delta": 0.0006962919997022254
+        },
+        "generation": {
+          "before": 1.3695049580001069,
+          "after": 0.9595571670015488,
+          "delta": -0.40994779099855805
+        }
+      }
+    },
+    {
+      "case_id": "osha-11",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03975516699938453,
+          "after": 0.03203891599878261,
+          "delta": -0.007716251000601915
+        },
+        "generation": {
+          "before": 0.958218832998682,
+          "after": 0.832434915999329,
+          "delta": -0.1257839169993531
+        }
+      }
+    },
+    {
+      "case_id": "osha-12",
+      "document_id": "osha",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03235379100078717,
+          "after": 0.03298454200012202,
+          "delta": 0.0006307509993348503
+        },
+        "generation": {
+          "before": 1.0441835410001659,
+          "after": 0.7404022090013314,
+          "delta": -0.3037813319988345
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-01",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "incomplete_retrieval",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.026310332999855746,
+          "after": 0.02885079199950269,
+          "delta": 0.002540458999646944
+        },
+        "generation": {
+          "before": 0.8197847079991334,
+          "after": 1.0086253749996104,
+          "delta": 0.18884066700047697
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-02",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.02916712499973073,
+          "after": 0.0296939999989263,
+          "delta": 0.0005268749991955701
+        },
+        "generation": {
+          "before": 1.2160415840007772,
+          "after": 1.1224094170011085,
+          "delta": -0.0936321669996687
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-03",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "incomplete_retrieval",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.026508165999985067,
+          "after": 0.029976124998938758,
+          "delta": 0.0034679589989536908
+        },
+        "generation": {
+          "before": 1.042562791999444,
+          "after": 1.760856083001272,
+          "delta": 0.718293291001828
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-04",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.035213375000239466,
+          "after": 0.03881554200052051,
+          "delta": 0.0036021670002810424
+        },
+        "generation": {
+          "before": 0.9322474999989936,
+          "after": 0.7639556670001184,
+          "delta": -0.16829183299887518
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-05",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03411858300023596,
+          "after": 0.02888725000047998,
+          "delta": -0.005231332999755978
+        },
+        "generation": {
+          "before": 0.9198206670007494,
+          "after": 0.6787410409997392,
+          "delta": -0.24107962600101018
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-06",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03319637499953387,
+          "after": 0.03008133300136251,
+          "delta": -0.003115041998171364
+        },
+        "generation": {
+          "before": 0.7182876669994585,
+          "after": 0.7496291249990463,
+          "delta": 0.031341457999587874
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-07",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "incorrect_answer",
+        "after": "incorrect_answer"
+      },
+      "failure": {
+        "before": "unsupported_answer",
+        "after": "unsupported_answer"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03269804099909379,
+          "after": 0.027827166999486508,
+          "delta": -0.004870873999607284
+        },
+        "generation": {
+          "before": 2.992088083001363,
+          "after": 2.4987171669999952,
+          "delta": -0.49337091600136773
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-08",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.033897084000273026,
+          "after": 0.03225525000016205,
+          "delta": -0.0016418340001109755
+        },
+        "generation": {
+          "before": 1.5673847500002012,
+          "after": 1.3608379579982284,
+          "delta": -0.2065467920019728
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-09",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03011170800164109,
+          "after": 0.03204983300020103,
+          "delta": 0.0019381249985599425
+        },
+        "generation": {
+          "before": 0.7178925420012092,
+          "after": 0.621443583000655,
+          "delta": -0.09644895900055417
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-10",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.028624874999877647,
+          "after": 0.0334456250002404,
+          "delta": 0.00482075000036275
+        },
+        "generation": {
+          "before": 0.7235357919998933,
+          "after": 0.8108993329988152,
+          "delta": 0.08736354099892196
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-11",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03256604200032598,
+          "after": 0.03137237500050105,
+          "delta": -0.0011936669998249272
+        },
+        "generation": {
+          "before": 0.8063007910004671,
+          "after": 1.0032490419998794,
+          "delta": 0.19694825099941227
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-12",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03618400000050315,
+          "after": 0.03285633300038171,
+          "delta": -0.003327667000121437
+        },
+        "generation": {
+          "before": 0.7246989579998626,
+          "after": 0.7200877920004132,
+          "delta": -0.00461116599944944
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-01",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.029361625000092317,
+          "after": 0.02855808299864293,
+          "delta": -0.0008035420014493866
+        },
+        "generation": {
+          "before": 1.9821449159990152,
+          "after": 1.7474277919991437,
+          "delta": -0.23471712399987155
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-02",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.031016958000691375,
+          "after": 0.030408791000809288,
+          "delta": -0.0006081669998820871
+        },
+        "generation": {
+          "before": 0.8193876249988534,
+          "after": 0.7432895409983757,
+          "delta": -0.07609808400047768
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-03",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "incomplete_retrieval",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.031698834000053466,
+          "after": 0.029738833000010345,
+          "delta": -0.001960001000043121
+        },
+        "generation": {
+          "before": 0.824599917001251,
+          "after": 0.8049669169995468,
+          "delta": -0.019633000001704204
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-04",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03141941600006248,
+          "after": 0.034850416999688605,
+          "delta": 0.0034310009996261215
+        },
+        "generation": {
+          "before": 1.14246541600005,
+          "after": 0.6399736250004935,
+          "delta": -0.5024917909995565
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-05",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03134654200039222,
+          "after": 0.030899916999260313,
+          "delta": -0.0004466250011319062
+        },
+        "generation": {
+          "before": 2.092542374999539,
+          "after": 1.619108333999975,
+          "delta": -0.4734340409995639
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-06",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "incorrect_answer",
+        "after": "incorrect_answer"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03190179200100829,
+          "after": 0.032686458000171115,
+          "delta": 0.0007846659991628258
+        },
+        "generation": {
+          "before": 2.643578332999823,
+          "after": 2.6392793750001147,
+          "delta": -0.004298957999708364
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-07",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03323354100029974,
+          "after": 0.032531208998989314,
+          "delta": -0.000702332001310424
+        },
+        "generation": {
+          "before": 0.8529339999986405,
+          "after": 0.7472625829996105,
+          "delta": -0.10567141699903004
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-08",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "false_refusal",
+        "after": "false_refusal"
+      },
+      "failure": {
+        "before": "generation_failure",
+        "after": "generation_failure"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.02936487499937357,
+          "after": 0.02858070799993584,
+          "delta": -0.0007841669994377298
+        },
+        "generation": {
+          "before": 0.9299109579987999,
+          "after": 0.837969833999523,
+          "delta": -0.0919411239992769
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-09",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.03542120800011617,
+          "after": 0.02955229199869791,
+          "delta": -0.005868916001418256
+        },
+        "generation": {
+          "before": 1.0426874160002626,
+          "after": 0.9357835829996475,
+          "delta": -0.10690383300061512
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-10",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.028954666999197798,
+          "after": 0.02868141599901719,
+          "delta": -0.00027325100018060766
+        },
+        "generation": {
+          "before": 0.9560871670000779,
+          "after": 0.9305291670007136,
+          "delta": -0.025557999999364256
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-11",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.029457708000336424,
+          "after": 0.02990187499926833,
+          "delta": 0.00044416699893190525
+        },
+        "generation": {
+          "before": 0.8205729999990581,
+          "after": 0.7347998749992257,
+          "delta": -0.08577312499983236
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-12",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "outcome": {
+        "before": "correct_refusal",
+        "after": "correct_refusal"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.033057291999284644,
+          "after": 0.028806750000512693,
+          "delta": -0.004250541998771951
+        },
+        "generation": {
+          "before": 0.9676562500008004,
+          "after": 0.7484683749989927,
+          "delta": -0.2191878750018077
+        }
+      }
+    },
+    {
+      "case_id": "osha-01--scan",
+      "document_id": "osha",
+      "variant": "scan",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.027076416999989306,
+          "after": 0.030790541999522247,
+          "delta": 0.0037141249995329417
+        },
+        "generation": {
+          "before": 1.3457341249995807,
+          "after": 0.6999818330004928,
+          "delta": -0.6457522919990879
+        }
+      }
+    },
+    {
+      "case_id": "osha-01--mixed",
+      "document_id": "osha",
+      "variant": "mixed",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.059068458000183455,
+          "after": 0.021385333999205614,
+          "delta": -0.03768312400097784
+        },
+        "generation": {
+          "before": 1.6944640830006392,
+          "after": 1.5416747500003112,
+          "delta": -0.15278933300032804
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-01--scan",
+      "document_id": "nist-ai",
+      "variant": "scan",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.030589874999350286,
+          "after": 0.02895429099953617,
+          "delta": -0.0016355839998141164
+        },
+        "generation": {
+          "before": 0.8538009169988072,
+          "after": 0.8849229999996169,
+          "delta": 0.031122083000809653
+        }
+      }
+    },
+    {
+      "case_id": "nist-ai-01--mixed",
+      "document_id": "nist-ai",
+      "variant": "mixed",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.01659858300081396,
+          "after": 0.020061166000232333,
+          "delta": 0.0034625829994183732
+        },
+        "generation": {
+          "before": 0.7126952079997864,
+          "after": 0.8627585839985841,
+          "delta": 0.1500633759987977
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-01--scan",
+      "document_id": "nist-csf",
+      "variant": "scan",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.025623374998758663,
+          "after": 0.027026083000237122,
+          "delta": 0.0014027080014784588
+        },
+        "generation": {
+          "before": 1.6305880419986352,
+          "after": 1.70149904200116,
+          "delta": 0.07091100000252482
+        }
+      }
+    },
+    {
+      "case_id": "nist-csf-01--mixed",
+      "document_id": "nist-csf",
+      "variant": "mixed",
+      "outcome": {
+        "before": "correct_answer",
+        "after": "correct_answer"
+      },
+      "failure": {
+        "before": "none",
+        "after": "none"
+      },
+      "latency_seconds": {
+        "retrieval": {
+          "before": 0.019165000001521548,
+          "after": 0.020517082999504055,
+          "delta": 0.0013520829979825066
+        },
+        "generation": {
+          "before": 1.758490291000271,
+          "after": 1.4092601249994914,
+          "delta": -0.3492301660007797
+        }
+      }
+    }
+  ],
+  "acceptance": {
+    "passed": false,
+    "gates": {
+      "native_evidence_coverage_improves": true,
+      "native_accuracy_does_not_drop": false,
+      "native_false_refusals_do_not_rise": true,
+      "native_page_hit_does_not_drop": true,
+      "native_correct_refusals_do_not_drop": true,
+      "native_unsupported_answers_do_not_rise": false,
+      "native_zero_errors_in_both_runs": true,
+      "ocr_correct_refusals_do_not_drop": true,
+      "ocr_unsupported_answers_do_not_rise": true,
+      "ocr_zero_errors_in_both_runs": true,
+      "ocr_evidence_coverage_does_not_drop": true,
+      "ocr_accuracy_does_not_drop": true,
+      "ocr_false_refusals_do_not_rise": true
+    },
+    "legacy_regression": "Separate review required; not included in this gate.",
+    "latency_policy": "Reported without an automatic acceptance threshold."
+  },
+  "mode": "retrieval"
+}

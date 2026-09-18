@@ -1,0 +1,102 @@
+{
+  "recipe": "raster-v1",
+  "dpi": 300,
+  "tools": {
+    "pypdf": "6.19.0",
+    "pypdfium2": "5.13.0",
+    "pillow": "12.3.0",
+    "reportlab": "4.5.1"
+  },
+  "variants": [
+    {
+      "case_id": "osha-01--scan",
+      "question_id": "osha-01",
+      "document_id": "osha",
+      "variant": "scan",
+      "filename": "variants/osha-scan.pdf",
+      "sha256": "7c821fc1609a331d4f30d3017b4a81323a317ae18c2c5f2aa501e83d4e25af40",
+      "source_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "rasterized_pages": [
+        11
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "auto"
+    },
+    {
+      "case_id": "osha-01--mixed",
+      "question_id": "osha-01",
+      "document_id": "osha",
+      "variant": "mixed",
+      "filename": "variants/osha-mixed.pdf",
+      "sha256": "e8dd69d248cff5f47b88cead58e36510906586c20822380bc00cc0878f1cd6ae",
+      "source_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "rasterized_pages": [
+        11
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "force"
+    },
+    {
+      "case_id": "nist-ai-01--scan",
+      "question_id": "nist-ai-01",
+      "document_id": "nist-ai",
+      "variant": "scan",
+      "filename": "variants/nist-ai-scan.pdf",
+      "sha256": "47b92f4bf485aa5f7c0798bb63896bef999a0c32fcf539c92e23de88be7e160b",
+      "source_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "rasterized_pages": [
+        3
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "auto"
+    },
+    {
+      "case_id": "nist-ai-01--mixed",
+      "question_id": "nist-ai-01",
+      "document_id": "nist-ai",
+      "variant": "mixed",
+      "filename": "variants/nist-ai-mixed.pdf",
+      "sha256": "6be4f38d9f4dd8323afbb684074c85a72f9a7b7ba1c97cf82d191c7c13b4fd61",
+      "source_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "rasterized_pages": [
+        3
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "force"
+    },
+    {
+      "case_id": "nist-csf-01--scan",
+      "question_id": "nist-csf-01",
+      "document_id": "nist-csf",
+      "variant": "scan",
+      "filename": "variants/nist-csf-scan.pdf",
+      "sha256": "cfa6066038b83e80858d5d8ce4cedba08b053ae217b3a32a875bcbf8c6eb37f6",
+      "source_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "rasterized_pages": [
+        20
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "auto"
+    },
+    {
+      "case_id": "nist-csf-01--mixed",
+      "question_id": "nist-csf-01",
+      "document_id": "nist-csf",
+      "variant": "mixed",
+      "filename": "variants/nist-csf-mixed.pdf",
+      "sha256": "a4f584127269663b576e2221881a586b1edfa0443eba19fd9e09e0a26a2e869d",
+      "source_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "rasterized_pages": [
+        20
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "force"
+    }
+  ]
+}
