@@ -1,0 +1,257 @@
+{
+  "schema_version": 2,
+  "document": {
+    "id": "nist-csf",
+    "filename": "nist-csf.pdf",
+    "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+    "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+    "pages": 32,
+    "edition": "NIST CSWP 29, February 26, 2024"
+  },
+  "questions": [
+    {
+      "id": "nist-csf-01",
+      "split": "development",
+      "family": "subcategory-numbering",
+      "category": "direct",
+      "question": "Why are there gaps in the numbering of CSF 2.0 Subcategories?",
+      "answerable": true,
+      "facts": [
+        {
+          "id": "f1",
+          "text": "The gaps indicate CSF 1.1 Subcategories that were relocated in CSF 2.0; the numbering is intentionally not sequential.",
+          "evidence": [[{"page": 20, "quote": "The numbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF 1.1 Subcategories that were relocated in CSF 2.0."}]]
+        }
+      ]
+    },
+    {
+      "id": "nist-csf-02",
+      "split": "development",
+      "family": "core-functions",
+      "category": "list",
+      "question": "List all six CSF Core Functions.",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "GOVERN.", "evidence": [[{"page": 8, "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"}], [{"page": 31, "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."}]]},
+        {"id": "f2", "text": "IDENTIFY.", "evidence": [[{"page": 8, "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"}], [{"page": 31, "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."}]]},
+        {"id": "f3", "text": "PROTECT.", "evidence": [[{"page": 8, "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"}], [{"page": 31, "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."}]]},
+        {"id": "f4", "text": "DETECT.", "evidence": [[{"page": 8, "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"}], [{"page": 31, "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."}]]},
+        {"id": "f5", "text": "RESPOND.", "evidence": [[{"page": 8, "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"}], [{"page": 31, "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."}]]},
+        {"id": "f6", "text": "RECOVER.", "evidence": [[{"page": 8, "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"}], [{"page": 31, "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-03",
+      "split": "development",
+      "family": "csf-tiers",
+      "category": "numeric",
+      "question": "How many CSF Tiers are there, and what name corresponds to each numbered Tier?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "There are four Tiers.", "evidence": [[{"page": 31, "quote": "There are four Tiers: Partial (Tier 1), Risk Informed (Tier 2), Repeatable (Tier 3), and Adaptive (Tier 4)."}]]},
+        {"id": "f2", "text": "Tier 1 is Partial.", "evidence": [[{"page": 12, "quote": "Partial (Tier 1)"}], [{"page": 31, "quote": "Partial (Tier 1)"}]]},
+        {"id": "f3", "text": "Tier 2 is Risk Informed.", "evidence": [[{"page": 12, "quote": "Risk Informed (Tier 2)"}], [{"page": 31, "quote": "Risk Informed (Tier 2)"}]]},
+        {"id": "f4", "text": "Tier 3 is Repeatable.", "evidence": [[{"page": 12, "quote": "Repeatable (Tier 3)"}], [{"page": 31, "quote": "Repeatable (Tier 3)"}]]},
+        {"id": "f5", "text": "Tier 4 is Adaptive.", "evidence": [[{"page": 12, "quote": "Adaptive (Tier 4)"}], [{"page": 31, "quote": "Adaptive (Tier 4)"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-04",
+      "split": "development",
+      "family": "asset-prioritization",
+      "category": "list",
+      "question": "According to ID.AM-05, which four factors are used to prioritize assets?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Classification.", "evidence": [[{"page": 23, "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"}]]},
+        {"id": "f2", "text": "Criticality.", "evidence": [[{"page": 23, "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"}]]},
+        {"id": "f3", "text": "Resources.", "evidence": [[{"page": 23, "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"}]]},
+        {"id": "f4", "text": "Impact on the mission.", "evidence": [[{"page": 23, "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-05",
+      "split": "development",
+      "family": "backup-lifecycle",
+      "category": "multi_passage",
+      "question": "What does PR.DS-11 say to do with data backups, and what additional check does RC.RP-03 require before using backups for restoration?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "PR.DS-11 says backups of data are created, protected, maintained, and tested.", "evidence": [[{"page": 25, "quote": "PR.DS-11: Backups of data are created, protected, maintained, and tested"}]]},
+        {"id": "f2", "text": "RC.RP-03 says the integrity of backups and other restoration assets is verified before using them for restoration.", "evidence": [[{"page": 28, "quote": "RC.RP-03: The integrity of backups and other restoration assets is verified before using them for restoration"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-06",
+      "split": "development",
+      "family": "current-target-profiles",
+      "category": "direct",
+      "question": "How does a Current Profile differ from a Target Profile in what it describes?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "A Current Profile specifies outcomes currently achieved or attempted, and how or to what extent they are achieved.", "evidence": [[{"page": 11, "quote": "Profile specifies the Core outcomes that an organization is currently achieving (or attempting to achieve) and characterizes how or to what extent each outcome is being achieved."}], [{"page": 31, "quote": "CSF Current Profile A part of an Organizational Profile that specifies the Core outcomes that an organization is currently achieving (or attempting to achieve) and characterizes how or to what extent each outcome is being achieved."}]]},
+        {"id": "f2", "text": "A Target Profile specifies desired outcomes selected and prioritized to achieve cybersecurity risk management objectives.", "evidence": [[{"page": 11, "quote": "A Target Profile specifies the desired outcomes that an organization has selected and prioritized for achieving its cybersecurity risk management objectives."}], [{"page": 31, "quote": "CSF Target Profile A part of an Organizational Profile that specifies the desired Core outcomes that an organization has selected and prioritized for achieving its cybersecurity risk management objectives."}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-07",
+      "split": "development",
+      "family": "negative-risk-response",
+      "category": "list",
+      "question": "Which four ways of handling negative risks are listed in Section 5?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Mitigating negative risks.", "evidence": [[{"page": 15, "quote": "including mitigating, transferring, avoiding, or accepting negative risks"}]]},
+        {"id": "f2", "text": "Transferring negative risks.", "evidence": [[{"page": 15, "quote": "including mitigating, transferring, avoiding, or accepting negative risks"}]]},
+        {"id": "f3", "text": "Avoiding negative risks.", "evidence": [[{"page": 15, "quote": "including mitigating, transferring, avoiding, or accepting negative risks"}]]},
+        {"id": "f4", "text": "Accepting negative risks.", "evidence": [[{"page": 15, "quote": "including mitigating, transferring, avoiding, or accepting negative risks"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-08",
+      "split": "development",
+      "family": "resource-feedback-addresses",
+      "category": "identifier",
+      "question": "Which email address receives suggestions for new Informative References, and which receives suggestions for additional Quick Start Guide topics?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Suggestions for new Informative References go to olir@nist.gov.", "evidence": [[{"page": 14, "quote": "Suggestions for new Informative References for CSF 2.0 can always be shared with NIST at olir@nist.gov."}]]},
+        {"id": "f2", "text": "Suggestions for additional Quick Start Guide topics go to cyberframework@nist.gov.", "evidence": [[{"page": 14, "quote": "Suggestions for other resources to reference on the NIST CSF website, including additional QSG topics, should be directed to cyberframework@nist.gov."}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-09",
+      "split": "development",
+      "family": "password-length-policy",
+      "category": "unanswerable",
+      "question": "What exact minimum password length in characters does CSF 2.0 mandate for ordinary user accounts?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The PDF gives identity and authentication outcomes but no mandatory numeric password length. External controls referenced by the framework are not reproduced as such a rule."
+    },
+    {
+      "id": "nist-csf-10",
+      "split": "development",
+      "family": "historical-breach-statistics",
+      "category": "unanswerable",
+      "question": "How many organizations using the CSF suffered a data breach in 2023, according to this document?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The PDF discusses cybersecurity risk management but provides no 2023 breach count for organizations using the CSF."
+    },
+    {
+      "id": "nist-csf-11",
+      "split": "development",
+      "family": "csf-tiers",
+      "category": "unanswerable",
+      "question": "What minimum annual cybersecurity budget in US dollars per employee is required to qualify for Tier 4?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "Tier 4 describes a budget informed by the risk environment and risk tolerance, but specifies no dollar amount per employee or numeric qualification threshold."
+    },
+    {
+      "id": "nist-csf-12",
+      "split": "development",
+      "family": "vulnerability-score-threshold",
+      "category": "unanswerable",
+      "question": "What exact CVSS score threshold does this document prescribe for classifying a vulnerability as critical?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "Risk Assessment discusses identifying vulnerabilities and prioritizing risk responses, but the PDF does not prescribe a CVSS criticality threshold."
+    },
+    {
+      "id": "nist-csf-13",
+      "split": "heldout",
+      "family": "privacy-harms",
+      "category": "list",
+      "question": "Which two dignity-type effects and three more tangible harms does Section 5.2 give as examples of problems from data processing?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Embarrassment is a dignity-type effect.", "evidence": [[{"page": 18, "quote": "dignity-type effects (e.g., embarrassment or stigma)"}]]},
+        {"id": "f2", "text": "Stigma is a dignity-type effect.", "evidence": [[{"page": 18, "quote": "dignity-type effects (e.g., embarrassment or stigma)"}]]},
+        {"id": "f3", "text": "Discrimination is a more tangible harm.", "evidence": [[{"page": 18, "quote": "more tangible harms (e.g., discrimination, economic loss, or physical harm)"}]]},
+        {"id": "f4", "text": "Economic loss is a more tangible harm.", "evidence": [[{"page": 18, "quote": "more tangible harms (e.g., discrimination, economic loss, or physical harm)"}]]},
+        {"id": "f5", "text": "Physical harm is a more tangible harm.", "evidence": [[{"page": 18, "quote": "more tangible harms (e.g., discrimination, economic loss, or physical harm)"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-14",
+      "split": "heldout",
+      "family": "supplier-criticality-contracts",
+      "category": "multi_passage",
+      "question": "What does GV.SC-04 say about prioritizing suppliers, and what does GV.SC-05 say about including supply chain cybersecurity requirements in agreements?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "GV.SC-04 says suppliers are known and prioritized by criticality.", "evidence": [[{"page": 22, "quote": "GV.SC-04: Suppliers are known and prioritized by criticality"}]]},
+        {"id": "f2", "text": "GV.SC-05 says cybersecurity risk requirements are established, prioritized, and integrated into contracts and other agreements with suppliers and relevant third parties.", "evidence": [[{"page": 23, "quote": "GV.SC-05: Requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-15",
+      "split": "heldout",
+      "family": "incident-report-triage",
+      "category": "identifier",
+      "question": "Which Subcategory identifier states that incident reports are triaged and validated?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "RS.MA-02.", "evidence": [[{"page": 27, "quote": "RS.MA-02: Incident reports are triaged and validated"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-16",
+      "split": "heldout",
+      "family": "leadership-accountability",
+      "category": "direct",
+      "question": "Under GV.RR-01, who is responsible and accountable for cybersecurity risk, and what kind of culture should they foster?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Organizational leadership is responsible and accountable for cybersecurity risk.", "evidence": [[{"page": 22, "quote": "GV.RR-01: Organizational leadership is responsible and accountable for cybersecurity risk"}]]},
+        {"id": "f2", "text": "They foster a culture that is risk-aware, ethical, and continually improving.", "evidence": [[{"page": 22, "quote": "fosters a culture that is risk-aware, ethical, and continually improving"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-17",
+      "split": "heldout",
+      "family": "unauthorized-software",
+      "category": "identifier",
+      "question": "Which Subcategory identifier calls for preventing the installation and execution of unauthorized software?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "PR.PS-05.", "evidence": [[{"page": 25, "quote": "PR.PS-05: Installation and execution of unauthorized software are prevented"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-18",
+      "split": "heldout",
+      "family": "rmf-publication-identifiers",
+      "category": "identifier",
+      "question": "Which NIST Special Publication numbers does Section 5.2 give for Risk Management Framework for Information Systems and Organizations and Guide for Conducting Risk Assessments, respectively?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "SP 800-37 is Risk Management Framework for Information Systems and Organizations.", "evidence": [[{"page": 17, "quote": "SP 800- 37, Risk Management Framework for Information Systems and Organizations"}]]},
+        {"id": "f2", "text": "SP 800-30 is Guide for Conducting Risk Assessments.", "evidence": [[{"page": 17, "quote": "SP 800-30, Guide for Conducting Risk Assessments"}]]}
+      ]
+    },
+    {
+      "id": "nist-csf-19",
+      "split": "heldout",
+      "family": "vendor-product-selection",
+      "category": "unanswerable",
+      "question": "Which specific commercial SIEM product does this document name as the best choice for implementing continuous monitoring?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The PDF specifies continuous monitoring outcomes but does not identify a commercial SIEM product as the best choice. It does not supply a product ranking."
+    },
+    {
+      "id": "nist-csf-20",
+      "split": "heldout",
+      "family": "adoption-duration-survey",
+      "category": "unanswerable",
+      "question": "What average number of weeks did small organizations take to adopt CSF 2.0 in the survey reported by this document?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The PDF describes tailoring and continuous improvement but reports no adoption-duration survey or average number of weeks for small organizations."
+    }
+  ]
+}
