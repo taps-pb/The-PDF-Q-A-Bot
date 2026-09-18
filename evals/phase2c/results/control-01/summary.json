@@ -1,0 +1,446 @@
+{
+  "native": {
+    "overall": {
+      "hit_at_4": {
+        "count": 21,
+        "denominator": 24,
+        "rate": 0.875
+      },
+      "evidence_coverage_at_4": {
+        "count": 21,
+        "denominator": 24,
+        "rate": 0.875
+      },
+      "answer_accuracy": {
+        "count": 12,
+        "denominator": 24,
+        "rate": 0.5
+      },
+      "false_refusal_rate": {
+        "count": 9,
+        "denominator": 24,
+        "rate": 0.375
+      },
+      "correct_refusal_rate": {
+        "count": 12,
+        "denominator": 12,
+        "rate": 1.0
+      },
+      "unsupported_answer_rate": {
+        "count": 1,
+        "denominator": 15,
+        "rate": 0.06666666666666667
+      },
+      "operational_errors": 0,
+      "latency": {
+        "retrieval": {
+          "count": 36,
+          "median_seconds": 0.03189891650072241,
+          "p95_seconds": 0.07882975000029546
+        },
+        "generation": {
+          "count": 36,
+          "median_seconds": 1.0426251039998533,
+          "p95_seconds": 2.643578332999823
+        }
+      }
+    },
+    "by_document": {
+      "nist-ai": {
+        "hit_at_4": {
+          "count": 6,
+          "denominator": 8,
+          "rate": 0.75
+        },
+        "evidence_coverage_at_4": {
+          "count": 6,
+          "denominator": 8,
+          "rate": 0.75
+        },
+        "answer_accuracy": {
+          "count": 2,
+          "denominator": 8,
+          "rate": 0.25
+        },
+        "false_refusal_rate": {
+          "count": 5,
+          "denominator": 8,
+          "rate": 0.625
+        },
+        "correct_refusal_rate": {
+          "count": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "unsupported_answer_rate": {
+          "count": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 12,
+            "median_seconds": 0.032632041499709885,
+            "p95_seconds": 0.03618400000050315
+          },
+          "generation": {
+            "count": 12,
+            "median_seconds": 0.8698026874999414,
+            "p95_seconds": 2.992088083001363
+          }
+        }
+      },
+      "nist-csf": {
+        "hit_at_4": {
+          "count": 7,
+          "denominator": 8,
+          "rate": 0.875
+        },
+        "evidence_coverage_at_4": {
+          "count": 7,
+          "denominator": 8,
+          "rate": 0.875
+        },
+        "answer_accuracy": {
+          "count": 3,
+          "denominator": 8,
+          "rate": 0.375
+        },
+        "false_refusal_rate": {
+          "count": 4,
+          "denominator": 8,
+          "rate": 0.5
+        },
+        "correct_refusal_rate": {
+          "count": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 4,
+          "rate": 0.0
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 12,
+            "median_seconds": 0.03138297900022735,
+            "p95_seconds": 0.03542120800011617
+          },
+          "generation": {
+            "count": 12,
+            "median_seconds": 0.9618717085004391,
+            "p95_seconds": 2.643578332999823
+          }
+        }
+      },
+      "osha": {
+        "hit_at_4": {
+          "count": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "evidence_coverage_at_4": {
+          "count": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "answer_accuracy": {
+          "count": 7,
+          "denominator": 8,
+          "rate": 0.875
+        },
+        "false_refusal_rate": {
+          "count": 0,
+          "denominator": 8,
+          "rate": 0.0
+        },
+        "correct_refusal_rate": {
+          "count": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 8,
+          "rate": 0.0
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 12,
+            "median_seconds": 0.032212270500167506,
+            "p95_seconds": 0.205569290999847
+          },
+          "generation": {
+            "count": 12,
+            "median_seconds": 1.5867452499996944,
+            "p95_seconds": 2.026253041000018
+          }
+        }
+      }
+    }
+  },
+  "ocr": {
+    "overall": {
+      "hit_at_4": {
+        "count": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "evidence_coverage_at_4": {
+        "count": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "answer_accuracy": {
+        "count": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "false_refusal_rate": {
+        "count": 0,
+        "denominator": 6,
+        "rate": 0.0
+      },
+      "correct_refusal_rate": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unsupported_answer_rate": {
+        "count": 0,
+        "denominator": 6,
+        "rate": 0.0
+      },
+      "operational_errors": 0,
+      "latency": {
+        "retrieval": {
+          "count": 6,
+          "median_seconds": 0.026349895999373985,
+          "p95_seconds": 0.059068458000183455
+        },
+        "generation": {
+          "count": 6,
+          "median_seconds": 1.488161083499108,
+          "p95_seconds": 1.758490291000271
+        }
+      }
+    },
+    "by_variant": {
+      "scan": {
+        "hit_at_4": {
+          "count": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "evidence_coverage_at_4": {
+          "count": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "answer_accuracy": {
+          "count": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "false_refusal_rate": {
+          "count": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "correct_refusal_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 3,
+            "median_seconds": 0.027076416999989306,
+            "p95_seconds": 0.030589874999350286
+          },
+          "generation": {
+            "count": 3,
+            "median_seconds": 1.3457341249995807,
+            "p95_seconds": 1.6305880419986352
+          }
+        }
+      },
+      "mixed": {
+        "hit_at_4": {
+          "count": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "evidence_coverage_at_4": {
+          "count": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "answer_accuracy": {
+          "count": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "false_refusal_rate": {
+          "count": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "correct_refusal_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 3,
+            "median_seconds": 0.019165000001521548,
+            "p95_seconds": 0.059068458000183455
+          },
+          "generation": {
+            "count": 3,
+            "median_seconds": 1.6944640830006392,
+            "p95_seconds": 1.758490291000271
+          }
+        }
+      }
+    },
+    "pairs": [
+      {
+        "question_id": "nist-ai-01",
+        "document_id": "nist-ai",
+        "native_case_id": "nist-ai-01",
+        "scan_case_id": "nist-ai-01--scan",
+        "mixed_case_id": "nist-ai-01--mixed"
+      },
+      {
+        "question_id": "nist-csf-01",
+        "document_id": "nist-csf",
+        "native_case_id": "nist-csf-01",
+        "scan_case_id": "nist-csf-01--scan",
+        "mixed_case_id": "nist-csf-01--mixed"
+      },
+      {
+        "question_id": "osha-01",
+        "document_id": "osha",
+        "native_case_id": "osha-01",
+        "scan_case_id": "osha-01--scan",
+        "mixed_case_id": "osha-01--mixed"
+      }
+    ]
+  },
+  "failures": [
+    {
+      "case_id": "osha-08",
+      "document_id": "osha",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "Strict frozen-fact completeness: p5-c2 plus p5-c3 retrieve both facts, but the answer omits the public-domain/copyright-free detail included in f1. Only p5-c3 is cited; it does not contain the public-domain clause. The requested permission and credit answers themselves are correct and supported. This is a borderline annotation-completeness failure, not an invented claim."
+    },
+    {
+      "case_id": "nist-ai-01",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "incomplete_retrieval",
+      "notes": "AI-assisted manual semantic review: the native extraction of physical page 3 contains the 2028 deadline, but the four hits are p1-c1, p8-c3, p8-c2, and p47-c1. These discuss the title, framework development, and general updates without the review deadline. NOT FOUND is therefore a false refusal caused by missing retrieved evidence, not demonstrated extraction loss."
+    },
+    {
+      "case_id": "nist-ai-03",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "incomplete_retrieval",
+      "notes": "AI-assisted manual semantic review: native physical page 9 contains both probability and consequence magnitude in the risk definition. Retrieved p1-c1, p4-c1, p34-c1, and p47-c1 contain a title, contents, measurement practices, and general framework attributes; none states the two components. NOT FOUND is a false refusal with incomplete retrieval."
+    },
+    {
+      "case_id": "nist-ai-04",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual semantic review: p18-c4 includes the complete reliability definition, including required performance without failure, time interval, and conditions. p19-c1 supplies accuracy as closeness to true or accepted-as-true values. The trailing standards citation is cut in p18-c4, but no requested fact is missing. NOT FOUND occurs despite sufficient evidence for both facts."
+    },
+    {
+      "case_id": "nist-ai-05",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual semantic review: the top hit p22-c3 names de-identification and aggregation, and explicitly explains the loss of accuracy under conditions such as data sparsity and its fairness/value implications. The complete three-fact answer is present in one passage. The model nevertheless returns NOT FOUND."
+    },
+    {
+      "case_id": "nist-ai-06",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual semantic review: p23-c1 lists systemic, computational and statistical, and human-cognitive bias, then explicitly says each can occur without prejudice, partiality, or discriminatory intent. All four requested facts are intact in the top hit, yet the answer is NOT FOUND."
+    },
+    {
+      "case_id": "nist-ai-07",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "unsupported_answer",
+      "notes": "AI-assisted manual semantic review: cited p21-c3 supplies both requested definitions, and p21-c4 elaborates mechanisms and output meaning; the expected facts are correct and supported. However, the answer also claims that these concepts together with transparency support each other. That material relationship is stated in retrieved p22-c1, which is not cited; cited p21-c3/p21-c4 do not establish the three-way relationship. Thus this is incomplete citation support for an added claim, not fabrication absent from the retrieved context."
+    },
+    {
+      "case_id": "nist-csf-02",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual review: rank-one p31-c2 explicitly lists all six functions, Govern, Identify, Protect, Detect, Respond, and Recover. Extraction on physical pages 8 and 31 also preserves the full list. Despite complete retrieved evidence, the model returns NOT FOUND without citations. This is a demonstrated false refusal, not missing retrieval."
+    },
+    {
+      "case_id": "nist-csf-03",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "incomplete_retrieval",
+      "notes": "AI-assisted manual review: p29-c1 supports Tier 1 = Partial, so f2 has semantic evidence even though this alternative page was not enumerated in the frozen annotations. Other hits are contents or introductory references. None gives the four-tier count or Tier 2/3/4 names. Extracted pages 12 and 31 retain the complete list but are not retrieved. NOT FOUND leaves every answer and citation fact false."
+    },
+    {
+      "case_id": "nist-csf-06",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual review: p11-c2 contains both complete definitions and is cited correctly on physical page 11. The answer gives currently achieved outcomes and extent of achievement, but omits the required f1 qualification that a Current Profile also includes outcomes the organization is attempting to achieve. Under complete-fact grading this leaves f1 incomplete; the expressed current-profile statements themselves are supported. The target definition and its extra anticipated-change examples are supported. This is an omission, not an unsupported added claim."
+    },
+    {
+      "case_id": "nist-csf-07",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual review: rank-two p15-c1 contains all four negative-risk options, mitigating, transferring, avoiding, and accepting, within the Section 5 paragraph. The source extraction is complete. The model nevertheless returns NOT FOUND without citations, so all four answer and citation grades are false despite complete evidence."
+    },
+    {
+      "case_id": "nist-csf-08",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual review: p14-c4 explicitly maps new Informative Reference suggestions to olir@nist.gov and additional QSG topics to cyberframework@nist.gov. Both complete addresses and their purposes appear in the retrieved text and source extraction. NOT FOUND is a false refusal with no citations."
+    }
+  ],
+  "failure_counts": {
+    "extraction_loss": 0,
+    "incomplete_retrieval": 3,
+    "generation_failure": 8,
+    "unsupported_answer": 1,
+    "operational_error": 0
+  },
+  "review": {
+    "reviewer": "Phase 2A AI-assisted manual judgments reused by Codex root only after exact equality of cases, ordered chunk objects, and answers/citations; not new human adjudication",
+    "grades_sha256": "04a5c20e29a41b0021885b2d1c5f82c7a364772e94ba82ca50806d42791865e3",
+    "reviewed_at": "2026-09-18T06:40:50.659335+00:00"
+  }
+}

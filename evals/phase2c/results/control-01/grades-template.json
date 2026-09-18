@@ -1,0 +1,619 @@
+{
+  "osha-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-09": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-10": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-11": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-12": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-09": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-10": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-11": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-12": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f5": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f6": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f5": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f3": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f4": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      },
+      "f2": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-09": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-10": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-11": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-12": {
+    "facts": {},
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "osha-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-ai-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  },
+  "nist-csf-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": null,
+        "answer_correct": null,
+        "citation_supported": null
+      }
+    },
+    "unsupported_claims": null,
+    "failure_category": null,
+    "notes": ""
+  }
+}
