@@ -1,0 +1,5 @@
+{
+  "schema_version": 2,
+  "name": "phase2a-v1",
+  "documents": ["osha.json", "nist-ai.json", "nist-csf.json"]
+}

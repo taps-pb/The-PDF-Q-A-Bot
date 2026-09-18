@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "document": {
+    "id": "osha", "filename": "osha.pdf",
+    "title": "Small Business Safety and Health Handbook",
+    "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+    "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+    "pages": 98, "edition": "NIOSH 2021-120, revised January 2024"
+  },
+  "questions": [
+    {"id":"osha-01","split":"development","family":"housekeeping","category":"direct","question":"What type of waste cans should hold rags soaked in oil or paint?","answerable":true,"facts":[
+      {"id":"f1","text":"Covered metal waste cans.","evidence":[[{"page":11,"quote":"Covered metal waste cans are used for rags soaked in oil, flammable/combustible liquid, paint, etc ."}]]}
+    ]},
+    {"id":"osha-02","split":"development","family":"housekeeping","category":"numeric","question":"When blowing down is necessary instead of vacuuming and sweeping, what compressed-air pressure limit does the handbook give?","answerable":true,"facts":[
+      {"id":"f1","text":"30 psi.","evidence":[[{"page":11,"quote":"When it is necessary to blow down in place of vacuuming and sweeping, compressed air pressure is limited to 30 psi"}]]}
+    ]},
+    {"id":"osha-03","split":"development","family":"fire-classes","category":"list","question":"Which fire extinguisher classes correspond to ordinary combustibles, energized electrical equipment, combustible metals, and kitchen cooking oils?","answerable":true,"facts":[
+      {"id":"f1","text":"Class A for ordinary combustibles.","evidence":[[{"page":30,"quote":"Class A - Ordinary combustible materials ."}]]},
+      {"id":"f2","text":"Class C for energized electrical equipment.","evidence":[[{"page":30,"quote":"Class C - Energized-electrical equipment ."}]]},
+      {"id":"f3","text":"Class D for combustible metals.","evidence":[[{"page":30,"quote":"Class D – Combustible metals ."}]]},
+      {"id":"f4","text":"Class K for kitchens cooking with vegetable or animal oils and fats.","evidence":[[{"page":30,"quote":"Class K – Kitchens; cooking with vegetable or animal oils and fats ."}]]}
+    ]},
+    {"id":"osha-04","split":"development","family":"lockout","category":"direct","question":"At what source should machinery be locked out, and which control devices should not be used as the lockout location?","answerable":true,"facts":[
+      {"id":"f1","text":"At the main power source.","evidence":[[{"page":49,"quote":"Machinery or equipment is locked out at the main power source"}]]},
+      {"id":"f2","text":"Not a push button, selector switch, or other control circuit type device.","evidence":[[{"page":49,"quote":"not at a push button, selector switch, or other control circuit type device ."}]]}
+    ]},
+    {"id":"osha-05","split":"development","family":"ladder-defects","category":"identifier","question":"What tag wording does the handbook give for structurally defective ladders, and what happens to those ladders until repaired or replaced?","answerable":true,"facts":[
+      {"id":"f1","text":"Dangerous: Do Not Use, or similar language.","evidence":[[{"page":76,"quote":"Ladders with structural or other defects are immediately tagged “Dangerous: Do Not Use” or with similar language"}]]},
+      {"id":"f2","text":"Removed from service until repaired or replaced.","evidence":[[{"page":76,"quote":"removed from service until repaired or replaced ."}]]}
+    ]},
+    {"id":"osha-06","split":"development","family":"stair-width","category":"numeric","question":"What minimum standard-stair width does the handbook specify, in inches and centimeters?","answerable":true,"facts":[
+      {"id":"f1","text":"At least 22 inches (56 centimeters).","evidence":[[{"page":77,"quote":"Standard stairs are at least 22 inches (56 centimeters) wide ."}]]}
+    ]},
+    {"id":"osha-07","split":"development","family":"ergonomics","category":"multi_passage","question":"What does ergonomics mean, and which type of ergonomic controls is most desirable when possible?","answerable":true,"facts":[
+      {"id":"f1","text":"Fitting the job to the worker.","evidence":[[{"page":21,"quote":"Ergonomics—fitting the job to the worker—helps prevent musculoskeletal disorders"}]]},
+      {"id":"f2","text":"Engineering controls.","evidence":[[{"page":22,"quote":"E ngineering controls are the most desirable when possible ."}]]}
+    ]},
+    {"id":"osha-08","split":"development","family":"reuse-rights","category":"direct","question":"Do I need permission to share the handbook, and is source credit required?","answerable":true,"facts":[
+      {"id":"f1","text":"No permission needed to share all or part; it is public domain and copyright-free.","evidence":[[{"page":5,"quote":"This publication is in the public domain and copyright-free . You can share it, fully or partially, without permission ."}]]},
+      {"id":"f2","text":"Source credit is appreciated but not required.","evidence":[[{"page":5,"quote":"We appreciate, but do not require, source credit ."}]]}
+    ]},
+    {"id":"osha-09","split":"development","family":"paid-leave","category":"unanswerable","question":"How many days of paid annual leave must my small business provide under this handbook?","answerable":false,"facts":[],"absence_reason":"The handbook does not set paid annual leave allowances."},
+    {"id":"osha-10","split":"development","family":"alarm-brand","category":"unanswerable","question":"Which exact brand and model of fire alarm should I buy according to this handbook?","answerable":false,"facts":[],"absence_reason":"Fire alarm practices are described without a purchasing brand or model recommendation."},
+    {"id":"osha-11","split":"development","family":"training-fees","category":"unanswerable","question":"What exact dollar fee will my company pay for an OSHA Training Institute Education Center course?","answerable":false,"facts":[],"absence_reason":"Training resources are referenced, but no exact fee for a company or course is provided."},
+    {"id":"osha-12","split":"development","family":"inspection-calendar","category":"unanswerable","question":"On what exact date will OSHA next inspect Riverside Tools?","answerable":false,"facts":[],"absence_reason":"No company-specific inspection calendar or Riverside Tools appointment appears."},
+    {"id":"osha-13","split":"heldout","family":"noise","category":"numeric","question":"Above what noise level should workplace areas be identified and evaluated according to the Noise Exposure checklist?","answerable":true,"facts":[
+      {"id":"f1","text":"85 decibels.","evidence":[[{"page":64,"quote":"Areas in the workplace where noise levels exceed 85 decibels have been identified and evaluated ."}]]}
+    ]},
+    {"id":"osha-14","split":"heldout","family":"confined-space","category":"direct","question":"Where should exhaust gases be vented when combustion-type equipment is used in a confined space?","answerable":true,"facts":[
+      {"id":"f1","text":"Outside the enclosure.","evidence":[[{"page":67,"quote":"When combustion-type equipment is used in a confined space, provisions are made to ensure the exhaust gases are vented outside of the enclosure ."}]]}
+    ]},
+    {"id":"osha-15","split":"heldout","family":"welding","category":"numeric","question":"What minimum separation distance between stored fuel gas and oxygen cylinders is listed when a barrier is not used?","answerable":true,"facts":[
+      {"id":"f1","text":"At least 20 feet.","evidence":[[{"page":80,"quote":"Fuel gas cylinders and oxygen cylinders in storage are separated by a distance of at least 20 feet"}]]}
+    ]},
+    {"id":"osha-16","split":"heldout","family":"ppe-cost","category":"direct","question":"Who provides and pays for PPE, subject to the regulatory exceptions mentioned in the checklist?","answerable":true,"facts":[
+      {"id":"f1","text":"The employer provides it at no cost to workers, subject to the stated exceptions.","evidence":[[{"page":69,"quote":"PPE is provided by the employer, at no cost to the workers, except as noted"}]]}
+    ]},
+    {"id":"osha-17","split":"heldout","family":"first-aid","category":"direct","question":"If no medical facility is near the workplace, how should first-aid staffing cover each shift?","answerable":true,"facts":[
+      {"id":"f1","text":"At least one worker on each shift adequately trained and qualified to render first aid.","evidence":[[{"page":62,"quote":"If a medical facility is not located near the workplace, at least one worker on each shift is adequately trained and qualified to render first aid ."}]]}
+    ]},
+    {"id":"osha-18","split":"heldout","family":"emergency-plan","category":"list","question":"Whose contact information should the emergency action plan include besides key personnel?","answerable":true,"facts":[
+      {"id":"f1","text":"Local emergency responders, agencies, and contractors.","evidence":[[{"page":25,"quote":"The plan contains a list of key personnel with contact information as well as contact information for local emergency responders, agencies, and contractors ."}]]}
+    ]},
+    {"id":"osha-19","split":"heldout","family":"insurance-vendor","category":"unanswerable","question":"Which insurance company does this handbook recommend for buying workers' compensation insurance?","answerable":false,"facts":[],"absence_reason":"The handbook discusses costs and insurance resources but recommends no named insurer for purchasing a policy."},
+    {"id":"osha-20","split":"heldout","family":"office-hours","category":"unanswerable","question":"What are the exact daily opening and closing hours of the Kansas City Regional Office?","answerable":false,"facts":[],"absence_reason":"The contact listing supplies address and phone details, not daily opening and closing hours."}
+  ]
+}
