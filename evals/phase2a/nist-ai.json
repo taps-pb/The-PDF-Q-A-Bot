@@ -1,0 +1,251 @@
+{
+  "schema_version": 2,
+  "document": {
+    "id": "nist-ai",
+    "filename": "nist-ai.pdf",
+    "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+    "pages": 48,
+    "edition": "NIST AI 100-1, January 2023"
+  },
+  "questions": [
+    {
+      "id": "nist-ai-01",
+      "split": "development",
+      "family": "framework_update_schedule",
+      "category": "numeric",
+      "question": "By what year does NIST expect a review of the AI RMF with formal input from the AI community?",
+      "answerable": true,
+      "facts": [
+        {
+          "id": "f1",
+          "text": "The review is expected no later than 2028.",
+          "evidence": [[{"page": 3, "quote": "a review with formal input from the AI community is expected to take place no later than 2028."}]]
+        }
+      ]
+    },
+    {
+      "id": "nist-ai-02",
+      "split": "development",
+      "family": "core_function_names",
+      "category": "list",
+      "question": "List all four specific functions in the AI RMF Core.",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "GOVERN.", "evidence": [[{"page": 8, "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"}]]},
+        {"id": "f2", "text": "MAP.", "evidence": [[{"page": 8, "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"}]]},
+        {"id": "f3", "text": "MEASURE.", "evidence": [[{"page": 8, "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"}]]},
+        {"id": "f4", "text": "MANAGE.", "evidence": [[{"page": 8, "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-03",
+      "split": "development",
+      "family": "risk_definition",
+      "category": "direct",
+      "question": "In the AI RMF definition, what two components make up the composite measure called risk?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "The probability of an event occurring.", "evidence": [[{"page": 9, "quote": "risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event."}]]},
+        {"id": "f2", "text": "The magnitude or degree of that event's consequences.", "evidence": [[{"page": 9, "quote": "risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-04",
+      "split": "development",
+      "family": "reliability_accuracy_definitions",
+      "category": "multi_passage",
+      "question": "How do the AI RMF definitions of reliability and accuracy differ? Include the conditions and time requirement for reliability and the reference used for accuracy.",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Reliability is performing as required without failure for a given time interval under given conditions.", "evidence": [[{"page": 18, "quote": "ability of an item to perform as required, without failure, for a given time interval, under given conditions"}]]},
+        {"id": "f2", "text": "Accuracy is closeness of observations, computations, or estimates to true values or values accepted as true.", "evidence": [[{"page": 19, "quote": "closeness of results of observations, computations, or estimates to the true values or the values accepted as being true."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-05",
+      "split": "development",
+      "family": "privacy_design_methods",
+      "category": "list",
+      "question": "Which two data-minimizing methods for certain model outputs does the Privacy-Enhanced section name, and what accuracy tradeoff can privacy-enhancing techniques create under data sparsity?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "De-identification is a named data-minimizing method.", "evidence": [[{"page": 22, "quote": "data minimizing methods such as de-identification and aggregation for certain model outputs"}]]},
+        {"id": "f2", "text": "Aggregation is a named data-minimizing method.", "evidence": [[{"page": 22, "quote": "data minimizing methods such as de-identification and aggregation for certain model outputs"}]]},
+        {"id": "f3", "text": "Under conditions such as data sparsity, privacy-enhancing techniques can reduce accuracy, affecting decisions about fairness and other values.", "evidence": [[{"page": 22, "quote": "Under certain conditions such as data sparsity, privacy- enhancing techniques can result in a loss in accuracy, affecting decisions about fairness and other values in certain domains."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-06",
+      "split": "development",
+      "family": "bias_categories",
+      "category": "list",
+      "question": "What are the three major categories of AI bias identified by NIST, and can they occur without discriminatory intent?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Systemic bias.", "evidence": [[{"page": 23, "quote": "three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."}]]},
+        {"id": "f2", "text": "Computational and statistical bias.", "evidence": [[{"page": 23, "quote": "three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."}]]},
+        {"id": "f3", "text": "Human-cognitive bias.", "evidence": [[{"page": 23, "quote": "three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."}]]},
+        {"id": "f4", "text": "Each category can occur without prejudice, partiality, or discriminatory intent.", "evidence": [[{"page": 23, "quote": "Each of these can occur in the absence of prejudice, partiality, or discriminatory intent."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-07",
+      "split": "development",
+      "family": "explainability_interpretability",
+      "category": "direct",
+      "question": "How does the Framework distinguish explainability from interpretability?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Explainability represents the mechanisms underlying AI system operation: how a decision was made.", "evidence": [[{"page": 21, "quote": "Explainability refers to a representation of the mechanisms underlying AI systems’ oper- ation"}], [{"page": 22, "quote": "Ex- plainability can answer the question of “how” a decision was made in the system."}]]},
+        {"id": "f2", "text": "Interpretability concerns the meaning of outputs in their functional context: why a decision was made and its meaning or context for the user.", "evidence": [[{"page": 21, "quote": "interpretability refers to the meaning of AI systems’ output in the context of their designed functional purposes."}], [{"page": 22, "quote": "Inter- pretability can answer the question of “why” a decision was made by the system and its meaning or context to the user."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-08",
+      "split": "development",
+      "family": "inventory_subcategory",
+      "category": "identifier",
+      "question": "Which GOVERN subcategory addresses inventorying AI systems, and how should those mechanisms be resourced?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "GOVERN 1.6 addresses mechanisms to inventory AI systems.", "evidence": [[{"page": 28, "quote": "GOVERN 1.6: Mechanisms are in place to inventory AI systems"}]]},
+        {"id": "f2", "text": "The mechanisms should be resourced according to organizational risk priorities.", "evidence": [[{"page": 28, "quote": "GOVERN 1.6: Mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-09",
+      "split": "development",
+      "family": "risk_manager_salary",
+      "category": "unanswerable",
+      "question": "What median annual salary in US dollars does the Framework report for an AI risk manager?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The document describes AI actor roles and risk management responsibilities but contains no salary survey or median salary for an AI risk manager."
+    },
+    {
+      "id": "nist-ai-10",
+      "split": "development",
+      "family": "llm_training_token_budget",
+      "category": "unanswerable",
+      "question": "How many training tokens does the AI RMF recommend for a seven-billion-parameter language model?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The document discusses model training risks and large language models, but gives no model-size-specific training token budget."
+    },
+    {
+      "id": "nist-ai-11",
+      "split": "development",
+      "family": "certification_exam_score",
+      "category": "unanswerable",
+      "question": "What percentage score is required to pass the NIST AI RMF professional certification exam described in this document?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The document does not describe a NIST AI RMF professional certification exam or a passing percentage; references to training and certifications do not specify such an exam."
+    },
+    {
+      "id": "nist-ai-12",
+      "split": "development",
+      "family": "cloud_inference_pricing",
+      "category": "unanswerable",
+      "question": "What average price per thousand cloud inference requests does the Framework report?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The document mentions cloud services and computational costs but provides no inference pricing or average price per thousand requests."
+    },
+    {
+      "id": "nist-ai-13",
+      "split": "heldout",
+      "family": "temporal_profiles",
+      "category": "direct",
+      "question": "What does comparing an AI RMF Current Profile with a Target Profile reveal, and what can be developed to address the result?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "The comparison reveals gaps to address to meet AI risk management objectives.", "evidence": [[{"page": 38, "quote": "Comparing Current and Target Profiles likely reveals gaps to be addressed to meet AI risk management objectives."}]]},
+        {"id": "f2", "text": "Action plans can be developed to address the gaps and fulfill category or subcategory outcomes.", "evidence": [[{"page": 38, "quote": "Action plans can be developed to address these gaps to fulfill outcomes in a given category or subcategory."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-14",
+      "split": "heldout",
+      "family": "risk_tolerance_policy",
+      "category": "direct",
+      "question": "Does the AI RMF prescribe risk tolerance, and what should organizations do when established tolerance guidelines do not exist?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "The AI RMF does not prescribe risk tolerance.", "evidence": [[{"page": 12, "quote": "While the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance."}]]},
+        {"id": "f2", "text": "Organizations should define reasonable risk tolerance when established guidelines do not exist.", "evidence": [[{"page": 12, "quote": "Where established guidelines do not exist, organizations should define reasonable risk tolerance."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-15",
+      "split": "heldout",
+      "family": "tevv_actor_separation",
+      "category": "multi_passage",
+      "question": "When in the AI lifecycle are TEVV tasks performed, and ideally how should verification and validation actors relate to test and evaluation actors?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "TEVV tasks are performed throughout the AI lifecycle.", "evidence": [[{"page": 40, "quote": "Test, Evaluation, Verification, and Validation (TEVV) tasks are performed throughout the AI lifecycle."}]]},
+        {"id": "f2", "text": "Ideally, actors performing verification and validation are distinct from those performing test and evaluation.", "evidence": [[{"page": 40, "quote": "Ideally, AI actors carrying out verification"}, {"page": 41, "quote": "and validation tasks are distinct from those who perform test and evaluation actions."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-16",
+      "split": "heldout",
+      "family": "maintenance_drift_types",
+      "category": "list",
+      "question": "Which three types of drift can cause AI systems to need more frequent maintenance and corrective-maintenance triggers?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Data drift.", "evidence": [[{"page": 43, "quote": "maintenance due to data, model, or concept drift."}]]},
+        {"id": "f2", "text": "Model drift.", "evidence": [[{"page": 43, "quote": "maintenance due to data, model, or concept drift."}]]},
+        {"id": "f3", "text": "Concept drift.", "evidence": [[{"page": 43, "quote": "maintenance due to data, model, or concept drift."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-17",
+      "split": "heldout",
+      "family": "unacceptable_risk_response",
+      "category": "direct",
+      "question": "What should happen to development and deployment when an AI system presents unacceptable negative risk levels, and until when?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Development and deployment should cease in a safe manner.", "evidence": [[{"page": 13, "quote": "development and deployment should cease in a safe manner until risks can be sufficiently managed."}]]},
+        {"id": "f2", "text": "They should remain stopped until the risks can be sufficiently managed.", "evidence": [[{"page": 13, "quote": "development and deployment should cease in a safe manner until risks can be sufficiently managed."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-18",
+      "split": "heldout",
+      "family": "security_resilience_relationship",
+      "category": "direct",
+      "question": "How does the Framework distinguish security from resilience in their relationship to adverse events and attacks?",
+      "answerable": true,
+      "facts": [
+        {"id": "f1", "text": "Resilience is the ability to return to normal function after an unexpected adverse event.", "evidence": [[{"page": 20, "quote": "While resilience is the abil- ity to return to normal function after an unexpected adverse event"}]]},
+        {"id": "f2", "text": "Security includes resilience and protocols to avoid, protect against, respond to, or recover from attacks.", "evidence": [[{"page": 20, "quote": "security includes re- silience but also encompasses protocols to avoid, protect against, respond to, or recover from attacks."}]]}
+      ]
+    },
+    {
+      "id": "nist-ai-19",
+      "split": "heldout",
+      "family": "penetration_test_frequency",
+      "category": "unanswerable",
+      "question": "How many penetration tests per year does the Framework require every AI system to undergo?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The document discusses testing and security risk management but sets no universal annual number of penetration tests."
+    },
+    {
+      "id": "nist-ai-20",
+      "split": "heldout",
+      "family": "adoption_grant_amount",
+      "category": "unanswerable",
+      "question": "What federal grant amount in dollars does an organization receive for adopting AI RMF 1.0?",
+      "answerable": false,
+      "facts": [],
+      "absence_reason": "The document presents voluntary framework adoption and organizational resource considerations but specifies no adoption grant program or dollar amount."
+    }
+  ]
+}
