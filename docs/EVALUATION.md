@@ -8,8 +8,8 @@ expected facts, physical PDF pages, and grading rules before tuning.
 With Ollama running and both documented models installed:
 
 ```sh
-uv run python -m pdf_qa.evaluate run --pdf ../data/handbook.pdf \
-  --questions evals/questions.json --output evals/results/run-01
+uv run python -m pdf_qa.evaluate run --pdf ../data/osha-small-business.pdf \
+  --questions evals/questions.json --output evals/results/my-run
 ```
 
 The default run evaluates 300, 800, and 1500 **characters**, each with 60-character
@@ -41,8 +41,8 @@ For unanswerable questions supply review notes; refusal success is computed from
 the recorded answer, never from a human override. Do not change the raw outputs.
 
 ```sh
-uv run python -m pdf_qa.evaluate report --results evals/results/run-01 \
-  --grades evals/results/run-01/grades.json
+uv run python -m pdf_qa.evaluate report --results evals/results/my-run \
+  --grades evals/results/my-run/grades.json
 ```
 
 Reporting rejects missing grades, missing justifications, inconsistent grades,
@@ -61,3 +61,7 @@ Select the highest hit@4, then highest answer accuracy, then highest refusal rat
 then smaller chunk size. Metrics are development-set results, not an independent
 generalization estimate. Record two observed failures with actual evidence in
 the README; additional exploratory questions must remain outside these metrics.
+
+The committed run uses AI-assisted manual review by Codex, not independent human
+grading. See [measured results and failure analysis](RESULTS.md). A reviewer can
+reproduce the run and replace those judgments with independently documented grades.

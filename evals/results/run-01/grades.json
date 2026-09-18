@@ -1,0 +1,38 @@
+{
+  "300": {
+    "q1": {"answer_correct": true, "citation_supported": true, "notes": "Both agency names are correct and supported by cited p5-c1."},
+    "q2": {"answer_correct": false, "citation_supported": false, "notes": "False refusal on a document-answerable question. Retrieval includes page 7, but p7-c3 truncates the final core element after 'for host'; the rest of that element was not retrieved. Page-level hit@4 hides incomplete passage coverage."},
+    "q3": {"answer_correct": true, "citation_supported": true, "notes": "General industry, construction exclusion, and maritime exclusion are all supported by p8-c4."},
+    "q4": {"answer_correct": true, "citation_supported": true, "notes": "Monthly visual inspections and recording appear in p30-c5; annual maintenance and recording appear in p30-c6. Both are cited."},
+    "q5": {"answer_correct": true, "citation_supported": true, "notes": "Before first use and at least annually thereafter are both present in cited p72-c1."},
+    "q6": {"answer_correct": false, "citation_supported": false, "notes": "False refusal despite p75-c6 explicitly containing at least 3 feet (0 .9 meters). Evidence was retrieved; generation failed to use it. Extraction spacing may contribute, but this run does not isolate the cause."},
+    "q7": {"answer_correct": true, "citation_supported": true, "notes": "No cost and confidentiality are supported by p90-c2/p90-c11, and high-hazard priority by p90-c3. All cited."},
+    "q8": {"notes": "Correct NOT FOUND. No exact guaranteed percentage discount is provided by the handbook."},
+    "q9": {"notes": "Correct NOT FOUND. The handbook has no Acme Bakery officer assignment or direct contact number."},
+    "q10": {"notes": "Correct NOT FOUND. The handbook gives ladder practices without a purchasing brand or model recommendation."}
+  },
+  "800": {
+    "q1": {"answer_correct": true, "citation_supported": true, "notes": "Both full agency names are present and supported by p5-c1."},
+    "q2": {"answer_correct": true, "citation_supported": true, "notes": "All seven core elements, including the complete communication/coordination element, match p7-c1."},
+    "q3": {"answer_correct": true, "citation_supported": true, "notes": "General industry scope and both exclusions are supported by p8-c2."},
+    "q4": {"answer_correct": true, "citation_supported": true, "notes": "Monthly inspection, annual maintenance, and recording of both are supported by p30-c2."},
+    "q5": {"answer_correct": true, "citation_supported": true, "notes": "Before first use and at least annually thereafter are supported by p72-c1."},
+    "q6": {"answer_correct": true, "citation_supported": true, "notes": "At least 3 feet and 0.9 meters are supported by p75-c2. The answer preserves the PDF's spaced decimal, 0 .9, but retains its meaning."},
+    "q7": {"answer_correct": true, "citation_supported": true, "notes": "No cost, confidentiality, and high-hazard priority all appear in p90-c1; p90-c4 corroborates no-cost/confidential services."},
+    "q8": {"notes": "Correct NOT FOUND; no exact percentage discount is guaranteed."},
+    "q9": {"notes": "Correct NOT FOUND; no company-specific safety officer is assigned in the handbook."},
+    "q10": {"notes": "Correct NOT FOUND; no ladder brand/model purchasing recommendation is present."}
+  },
+  "1500": {
+    "q1": {"answer_correct": true, "citation_supported": true, "notes": "OSHA and NIOSH correctly identify the two agencies; p5-c1 supplies both acronym expansions and authorship."},
+    "q2": {"answer_correct": false, "citation_supported": false, "notes": "False refusal even though p7-c1 contains the complete seven-element list. This is a generation/evidence-use failure, not missing page retrieval."},
+    "q3": {"answer_correct": true, "citation_supported": true, "notes": "General industry scope and construction/maritime exclusions are supported by p8-c1."},
+    "q4": {"answer_correct": true, "citation_supported": true, "notes": "Monthly inspection, annual maintenance, and recording are all supported by p30-c1."},
+    "q5": {"answer_correct": true, "citation_supported": true, "notes": "Before first use and at least annually thereafter are supported by p72-c1."},
+    "q6": {"answer_correct": false, "citation_supported": false, "notes": "False refusal despite p75-c1 explicitly containing both units. The retrieved context also contains other measurements from unrelated safety checks; distraction or conservative refusal are hypotheses, not demonstrated causes."},
+    "q7": {"answer_correct": true, "citation_supported": true, "notes": "No-cost, confidential services and priority for high-hazard worksites are all supported by p90-c1."},
+    "q8": {"notes": "Correct NOT FOUND; no exact guaranteed percentage discount is in the handbook."},
+    "q9": {"notes": "Correct NOT FOUND; the handbook does not assign an Acme Bakery safety officer."},
+    "q10": {"notes": "Correct NOT FOUND; no ladder brand/model recommendation appears."}
+  }
+}

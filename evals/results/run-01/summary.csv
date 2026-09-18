@@ -1,0 +1,4 @@
+chunk_size,hit_at_4_count,hit_at_4_denominator,hit_at_4,answer_accuracy_count,answer_accuracy_denominator,answer_accuracy,correct_refusal_count,correct_refusal_denominator,correct_refusal_rate,operational_errors
+300,7,7,1.0,5,7,0.7142857142857143,3,3,1.0,0
+800,7,7,1.0,7,7,1.0,3,3,1.0,0
+1500,7,7,1.0,5,7,0.7142857142857143,3,3,1.0,0

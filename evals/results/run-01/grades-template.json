@@ -1,0 +1,140 @@
+{
+  "300": {
+    "q1": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q2": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q3": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q4": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q5": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q6": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q7": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q8": {
+      "notes": ""
+    },
+    "q9": {
+      "notes": ""
+    },
+    "q10": {
+      "notes": ""
+    }
+  },
+  "800": {
+    "q1": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q2": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q3": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q4": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q5": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q6": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q7": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q8": {
+      "notes": ""
+    },
+    "q9": {
+      "notes": ""
+    },
+    "q10": {
+      "notes": ""
+    }
+  },
+  "1500": {
+    "q1": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q2": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q3": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q4": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q5": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q6": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q7": {
+      "answer_correct": null,
+      "citation_supported": null,
+      "notes": ""
+    },
+    "q8": {
+      "notes": ""
+    },
+    "q9": {
+      "notes": ""
+    },
+    "q10": {
+      "notes": ""
+    }
+  }
+}

@@ -21,7 +21,7 @@ Model downloads need roughly 6 GB of disk space; leave additional room for depen
 Run Ollama in a separate terminal. For this workspace, store weights outside the repository:
 
 ```sh
-export OLLAMA_MODELS="/Users/taps-pb/Documents/SELF-PROJECTS/RAG_Model/data/models"
+export OLLAMA_MODELS="$PWD/../data/models"
 OLLAMA_HOST=127.0.0.1:11434 OLLAMA_NO_CLOUD=1 ollama serve
 ```
 
@@ -41,7 +41,7 @@ Both models must be available locally, and `eng` must appear in the language lis
 From the repository root:
 
 ```sh
-export PDF_QA_DATA_DIR="/Users/taps-pb/Documents/SELF-PROJECTS/RAG_Model/data/app"
+export PDF_QA_DATA_DIR="$PWD/../data/app"
 uv run streamlit run app.py
 ```
 
@@ -56,6 +56,7 @@ Automatic OCR applies to pages with fewer than 40 non-whitespace extracted chara
 Download the public-domain handbook outside Git:
 
 ```sh
+mkdir -p ../data
 curl -fL https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf -o ../data/osha-small-business.pdf
 shasum -a 256 ../data/osha-small-business.pdf
 ```
