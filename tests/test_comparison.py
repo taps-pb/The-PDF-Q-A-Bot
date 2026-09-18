@@ -244,3 +244,187 @@ def test_errors_fail_acceptance_and_cli_reports_validation_failures(runs, capsys
         == 1
     )
     assert "already exists" in capsys.readouterr().err
+
+
+@pytest.fixture
+def retrieval_runs(runs):
+    baseline, candidate, _, old, new = runs
+    old["results"][0]["hits"][0]["chunk"].update(text="Missing evidence", page=2)
+    old["grades"]["q1"]["facts"]["f1"]["evidence_present"] = False
+    old["grades"]["q1"]["failure_category"] = "incomplete_retrieval"
+    for directory, data in ((baseline, old), (candidate, new)):
+        data["run"].update(
+            prompt_sha256="fixed",
+            prompt_version="grounded-v1",
+            generation_implementation="fixed",
+            extraction_sha256="fixed",
+            retrieval={"method": "dense", "score": "cosine"},
+            indexes=[
+                {
+                    "document_id": "doc",
+                    "variant": variant,
+                    "manifest": {
+                        "index_id": variant,
+                        "pdf_sha256": variant,
+                        "settings": {},
+                        "embedding_model": "local",
+                        "embedding_digest": "fixed",
+                        "version": 1,
+                        "extraction_version": 1,
+                        "query_instruction": "fixed",
+                        "page_count": 2,
+                        "chunk_count": 2,
+                        "dimension": 4,
+                        "checksums": {"chunks.json": "fixed", "index.faiss": "fixed"},
+                    },
+                }
+                for variant in ("native", "scan", "mixed")
+            ],
+        )
+        _refresh(directory, data)
+    return runs
+
+
+def test_retrieval_comparison_accepts_evidence_changes_and_ignores_unmatched_scores(retrieval_runs):
+    baseline, candidate, output, _, new = retrieval_runs
+    new["run"]["retrieval"] = {"method": "hybrid", "score": "rrf"}
+    for record in new["results"]:
+        record["hits"][0]["score"] = 0.02
+    _refresh(candidate, new)
+    result = compare(baseline, candidate, output, mode="retrieval")
+    assert result["acceptance"]["passed"] is True
+    assert result["mode"] == "retrieval"
+    assert result["metrics"]["native"]["overall"]["delta"]["evidence_coverage_at_4"]["count"] == 1
+    diagnostics = result["retrieval_comparison"]
+    assert diagnostics["ranked_chunks_changed_cases"] == ["q1"]
+    assert diagnostics["ranked_chunks_identical"] is False
+    assert diagnostics["score_metrics_comparable"] is False
+    assert diagnostics["scores_changed_cases"] == []
+    assert diagnostics["max_absolute_score_delta"] is None
+    with pytest.raises(AppError, match="ranked retrieved chunks"):
+        compare(baseline, candidate, output.with_name("generation.json"))
+
+
+def test_retrieval_scores_compare_only_unchanged_ranked_chunks(retrieval_runs):
+    baseline, candidate, output, _, new = retrieval_runs
+    new["results"][0]["hits"][0]["score"] = 100
+    new["results"][1]["hits"][0]["score"] += 0.1
+    _refresh(candidate, new)
+    result = compare(baseline, candidate, output, mode="retrieval")
+    assert result["retrieval_comparison"]["scores_changed_cases"] == ["q2"]
+    assert result["retrieval_comparison"]["max_absolute_score_delta"] == pytest.approx(0.1)
+
+
+@pytest.mark.parametrize(
+    "field",
+    [
+        "prompt_sha256",
+        "prompt_version",
+        "generation_implementation",
+        "extraction_sha256",
+        "extraction_version",
+        "index_version",
+    ],
+)
+def test_retrieval_rejects_changed_generation_or_extraction(retrieval_runs, field):
+    baseline, candidate, output, _, new = retrieval_runs
+    new["run"][field] = "changed"
+    _refresh(candidate, new)
+    with pytest.raises(AppError, match=field):
+        compare(baseline, candidate, output, mode="retrieval")
+
+
+@pytest.mark.parametrize("field", ["retrieval", "indexes", "extraction_sha256"])
+def test_retrieval_rejects_missing_controls(retrieval_runs, field):
+    baseline, candidate, output, _, new = retrieval_runs
+    del new["run"][field]
+    _refresh(candidate, new)
+    with pytest.raises(AppError):
+        compare(baseline, candidate, output, mode="retrieval")
+
+
+@pytest.mark.parametrize(
+    "field",
+    ["checksums", "pdf_sha256", "settings", "embedding_digest", "extraction_version", "version"],
+)
+def test_retrieval_rejects_changed_source_indexes(retrieval_runs, field):
+    baseline, candidate, output, _, new = retrieval_runs
+    manifest = new["run"]["indexes"][0]["manifest"]
+    if field == "checksums":
+        manifest[field]["chunks.json"] = "changed"
+    else:
+        manifest[field] = "changed"
+    _refresh(candidate, new)
+    with pytest.raises(AppError, match="source indexes"):
+        compare(baseline, candidate, output, mode="retrieval")
+
+
+def test_retrieval_requires_strict_evidence_gain(retrieval_runs):
+    baseline, candidate, output, old, new = retrieval_runs
+    old["results"][0]["hits"] = new["results"][0]["hits"]
+    old["grades"]["q1"]["facts"]["f1"]["evidence_present"] = True
+    old["grades"]["q1"]["failure_category"] = "generation_failure"
+    _refresh(baseline, old)
+    result = compare(baseline, candidate, output, mode="retrieval")
+    assert result["acceptance"]["passed"] is False
+    assert result["acceptance"]["gates"]["native_evidence_coverage_improves"] is False
+
+
+def test_retrieval_rejects_ocr_evidence_regression_in_gate(retrieval_runs):
+    baseline, candidate, output, _, new = retrieval_runs
+    record = new["results"][2]
+    record["hits"][0]["chunk"]["text"] = "Missing evidence"
+    record["answer"].update(text="NOT FOUND", refused=True, citations=[], chunk_ids=[])
+    new["grades"]["q1--scan"]["facts"]["f1"].update(
+        evidence_present=False, answer_correct=False, citation_supported=False
+    )
+    new["grades"]["q1--scan"]["failure_category"] = "incomplete_retrieval"
+    _refresh(candidate, new)
+    result = compare(baseline, candidate, output, mode="retrieval")
+    assert result["acceptance"]["passed"] is False
+    assert result["acceptance"]["gates"]["ocr_evidence_coverage_does_not_drop"] is False
+
+
+def test_retrieval_native_quality_regressions_fail_gates(retrieval_runs):
+    baseline, candidate, output, old, new = retrieval_runs
+    # Reverse the improvement: the candidate loses the supporting page and refuses.
+    old["results"][0], new["results"][0] = new["results"][0], old["results"][0]
+    old["grades"]["q1"], new["grades"]["q1"] = new["grades"]["q1"], old["grades"]["q1"]
+    _refresh(baseline, old)
+    _refresh(candidate, new)
+    result = compare(baseline, candidate, output, mode="retrieval")
+    gates = result["acceptance"]["gates"]
+    assert gates["native_accuracy_does_not_drop"] is False
+    assert gates["native_false_refusals_do_not_rise"] is False
+    assert gates["native_page_hit_does_not_drop"] is False
+    assert result["acceptance"]["passed"] is False
+
+
+def test_retrieval_cannot_regrade_unchanged_evidence(retrieval_runs):
+    baseline, candidate, output, old, new = retrieval_runs
+    old["results"][0]["hits"] = new["results"][0]["hits"]
+    _refresh(baseline, old)
+    with pytest.raises(AppError, match="evidence judgments changed"):
+        compare(baseline, candidate, output, mode="retrieval")
+
+
+def test_unknown_mode_and_retrieval_cli(retrieval_runs):
+    baseline, candidate, output, _, _ = retrieval_runs
+    with pytest.raises(AppError, match="mode"):
+        compare(baseline, candidate, output, mode="anything")
+    assert (
+        main(
+            [
+                "--baseline",
+                str(baseline),
+                "--candidate",
+                str(candidate),
+                "--output",
+                str(output),
+                "--mode",
+                "retrieval",
+            ]
+        )
+        == 0
+    )
+    assert json.loads(output.read_text())["mode"] == "retrieval"

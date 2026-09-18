@@ -1,4 +1,4 @@
-"""Compare fully reviewed development runs with unchanged retrieval and runtime settings."""
+"""Compare reviewed development runs while controlling generation or retrieval changes."""
 
 import argparse
 import json
@@ -22,6 +22,57 @@ MATCHED_METADATA = (
     "generation",
     "query_instruction",
 )
+
+
+def _retrieval_controls(before, after):
+    for run in (before, after):
+        if not isinstance(run["run"].get("retrieval"), dict) or not run["run"]["retrieval"]:
+            raise AppError(
+                "Retrieval comparison requires explicit retrieval metadata in both runs."
+            )
+        if not run["run"].get("extraction_sha256"):
+            raise AppError("Retrieval comparison requires extraction_sha256 in both runs.")
+    for key in ("extraction_sha256", "extraction_version", "index_version"):
+        values = [run["run"].get(key) for run in (before, after)]
+        if key in before["run"] or key in after["run"]:
+            if any(value is None for value in values) or values[0] != values[1]:
+                raise AppError(f"Retrieval-only comparison requires matching {key}.")
+    identities = []
+    fields = (
+        "index_id",
+        "pdf_sha256",
+        "settings",
+        "embedding_model",
+        "embedding_digest",
+        "version",
+        "extraction_version",
+        "query_instruction",
+        "page_count",
+        "chunk_count",
+        "dimension",
+        "checksums",
+    )
+    for run in (before, after):
+        expected = {(case["document_id"], case["variant"]) for case in run["cases"]}
+        indexes = run["run"].get("indexes")
+        if not isinstance(indexes, list) or len(indexes) != len(expected):
+            raise AppError("Retrieval comparison requires every source index manifest.")
+        identity = {}
+        for index in indexes:
+            key = (index["document_id"], index["variant"])
+            manifest = index["manifest"]
+            if (
+                key not in expected
+                or key in identity
+                or any(field not in manifest for field in fields)
+            ):
+                raise AppError("Missing or duplicate source index provenance.")
+            if not all(manifest["checksums"].get(name) for name in ("chunks.json", "index.faiss")):
+                raise AppError("Source index checksums are required.")
+            identity[key] = {field: manifest[field] for field in fields}
+        identities.append(identity)
+    if identities[0] != identities[1]:
+        raise AppError("Retrieval-only comparison requires matching source indexes and chunks.")
 
 
 def _load(directory):
@@ -75,34 +126,57 @@ def _outcome(case, record, grade):
     return "correct_answer" if case["answerable"] and validated["correct"] else "incorrect_answer"
 
 
-def compare(baseline, candidate, output):
+def compare(baseline, candidate, output, *, mode="generation"):
     """Write an immutable JSON comparison; legacy regression approval stays separate."""
+    if mode not in ("generation", "retrieval"):
+        raise AppError("Comparison mode must be generation or retrieval.")
     output = Path(output)
     if output.exists():
         raise AppError("Comparison output already exists; choose a new path.")
     before, after = _load(baseline), _load(candidate)
-    for key in MATCHED_METADATA:
+    matched = MATCHED_METADATA + (
+        ("prompt_sha256", "prompt_version", "generation_implementation")
+        if mode == "retrieval"
+        else ()
+    )
+    for key in matched:
         if key not in before["run"] or key not in after["run"]:
             raise AppError(f"Missing comparison provenance: {key}.")
         if before["run"][key] != after["run"][key]:
-            raise AppError(f"Generation-only comparison requires matching {key}.")
+            raise AppError(f"{mode.capitalize()}-only comparison requires matching {key}.")
     if before["cases"] != after["cases"]:
-        raise AppError("Generation-only comparison requires exactly the same frozen cases.")
+        raise AppError(
+            f"{mode.capitalize()}-only comparison requires exactly the same frozen cases."
+        )
+    if mode == "retrieval":
+        _retrieval_controls(before, after)
     records = [{record["case_id"]: record for record in run["results"]} for run in (before, after)]
-    case_changes, scores_changed_cases = [], []
+    score_metrics_match = mode == "generation" or (
+        before["run"]["retrieval"].get("score") is not None
+        and before["run"]["retrieval"].get("score") == after["run"]["retrieval"].get("score")
+    )
+    case_changes, scores_changed_cases, ranked_chunks_changed_cases = [], [], []
     max_absolute_score_delta = 0.0
     for case in before["cases"]:
         case_id = case["case_id"]
         first, second = records[0][case_id], records[1][case_id]
-        if [hit["chunk"] for hit in first["hits"]] != [hit["chunk"] for hit in second["hits"]]:
-            raise AppError(f"{case_id}: ranked retrieved chunks changed.")
+        ranked_changed = [hit["chunk"] for hit in first["hits"]] != [
+            hit["chunk"] for hit in second["hits"]
+        ]
+        if ranked_changed:
+            if mode == "generation":
+                raise AppError(f"{case_id}: ranked retrieved chunks changed.")
+            ranked_chunks_changed_cases.append(case_id)
         # Generation receives ranked chunks, never retrieval scores. Record numeric drift.
         deltas = []
-        for old_hit, new_hit in zip(first["hits"], second["hits"], strict=True):
-            scores = (old_hit["score"], new_hit["score"])
-            if any(type(score) not in (int, float) or not math.isfinite(score) for score in scores):
+        for hit in first["hits"] + second["hits"]:
+            if type(hit["score"]) not in (int, float) or not math.isfinite(hit["score"]):
                 raise AppError(f"{case_id}: retrieval scores must be finite numbers.")
-            deltas.append(abs(scores[1] - scores[0]))
+        if not ranked_changed and score_metrics_match:
+            deltas = [
+                abs(new_hit["score"] - old_hit["score"])
+                for old_hit, new_hit in zip(first["hits"], second["hits"], strict=True)
+            ]
         if any(deltas):
             scores_changed_cases.append(case_id)
             max_absolute_score_delta = max(max_absolute_score_delta, *deltas)
@@ -111,7 +185,7 @@ def compare(baseline, candidate, output):
             {key: fact["evidence_present"] for key, fact in grade["facts"].items()}
             for grade in grades
         ]
-        if evidence[0] != evidence[1]:
+        if evidence[0] != evidence[1] and not ranked_changed:
             raise AppError(f"{case_id}: evidence judgments changed despite identical retrieval.")
         case_changes.append(
             {
@@ -148,6 +222,17 @@ def compare(baseline, candidate, output):
         "native_false_refusals_drop": new_native["false_refusal_rate"]["count"]
         < old_native["false_refusal_rate"]["count"],
     }
+    if mode == "retrieval":
+        gates = {
+            "native_evidence_coverage_improves": new_native["evidence_coverage_at_4"]["count"]
+            > old_native["evidence_coverage_at_4"]["count"],
+            "native_accuracy_does_not_drop": new_native["answer_accuracy"]["count"]
+            >= old_native["answer_accuracy"]["count"],
+            "native_false_refusals_do_not_rise": new_native["false_refusal_rate"]["count"]
+            <= old_native["false_refusal_rate"]["count"],
+            "native_page_hit_does_not_drop": new_native["hit_at_4"]["count"]
+            >= old_native["hit_at_4"]["count"],
+        }
     for group in ("native", "ocr"):
         old, new = (run["summary"][group]["overall"] for run in (before, after))
         gates[f"{group}_correct_refusals_do_not_drop"] = (
@@ -160,6 +245,10 @@ def compare(baseline, candidate, output):
             old["operational_errors"] == new["operational_errors"] == 0
         )
         if group == "ocr":
+            if mode == "retrieval":
+                gates["ocr_evidence_coverage_does_not_drop"] = (
+                    new["evidence_coverage_at_4"]["count"] >= old["evidence_coverage_at_4"]["count"]
+                )
             gates["ocr_accuracy_does_not_drop"] = (
                 new["answer_accuracy"]["count"] >= old["answer_accuracy"]["count"]
             )
@@ -169,7 +258,7 @@ def compare(baseline, candidate, output):
     result = {
         "schema_version": 1,
         "retrieval_comparison": {
-            "ranked_chunks_identical": True,
+            "ranked_chunks_identical": not ranked_chunks_changed_cases,
             "scores_changed_cases": scores_changed_cases,
             "max_absolute_score_delta": max_absolute_score_delta,
             "policy": "Generation receives ranked chunks, not scores. Score drift is diagnostic.",
@@ -187,6 +276,17 @@ def compare(baseline, candidate, output):
             "latency_policy": "Reported without an automatic acceptance threshold.",
         },
     }
+    if mode == "retrieval":
+        result["mode"] = mode
+        result["retrieval_comparison"].update(
+            ranked_chunks_changed_cases=ranked_chunks_changed_cases,
+            score_metrics_comparable=score_metrics_match,
+            policy="Score drift requires the same score metric and identical ranked chunks.",
+            baseline=before["run"]["retrieval"],
+            candidate=after["run"]["retrieval"],
+        )
+        if not score_metrics_match:
+            result["retrieval_comparison"]["max_absolute_score_delta"] = None
     with output.open("x") as handle:
         json.dump(result, handle, indent=2, ensure_ascii=False, allow_nan=False)
         handle.write("\n")
@@ -198,9 +298,10 @@ def main(argv=None):
     parser.add_argument("--baseline", type=Path, required=True)
     parser.add_argument("--candidate", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--mode", choices=("generation", "retrieval"), default="generation")
     args = parser.parse_args(argv)
     try:
-        result = compare(args.baseline, args.candidate, args.output)
+        result = compare(args.baseline, args.candidate, args.output, mode=args.mode)
     except (AppError, OSError, ValueError, KeyError, TypeError) as exc:
         print(f"Comparison failed: {exc}", file=sys.stderr)
         return 1
