@@ -184,3 +184,26 @@ def test_settings_validation():
         replace(Settings(), chunk_size=0)
     with pytest.raises(AppError):
         Settings(ocr_mode="cloud")
+
+
+def test_missing_manifest_field_and_invalid_extraction_cache_recover(tmp_path):
+    models = FakeModels()
+    pdf = pdf_bytes()
+    document = ingest(pdf, "test.pdf", Settings(), models, tmp_path)
+    manifest_path = document.path / "manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    del manifest["embedding_model"]
+    manifest_path.write_text(json.dumps(manifest))
+    with pytest.raises(AppError, match="damaged"):
+        load_index(document.path)
+    cache = next((tmp_path / "extractions").glob("*.json"))
+    cache.write_text(
+        json.dumps(
+            {
+                "pages": [{"number": 1, "text": None, "method": "native"}],
+                "warnings": [],
+            }
+        )
+    )
+    changed = ingest(pdf, "test.pdf", Settings(chunk_size=300), models, tmp_path)
+    assert "Ladder" in changed.chunks[0].text

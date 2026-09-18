@@ -215,6 +215,44 @@ def load_index(path: Path) -> DocumentIndex:
         if manifest["version"] != INDEX_VERSION or manifest["index_id"] != path.name:
             raise ValueError("Incompatible index format or identity")
         Settings(**manifest["settings"])
+        if (
+            any(
+                not isinstance(manifest[key], str) or not manifest[key]
+                for key in (
+                    "filename",
+                    "embedding_model",
+                    "embedding_digest",
+                    "pdf_sha256",
+                    "created_at",
+                )
+            )
+            or any(
+                type(manifest[key]) is not int or manifest[key] < 1
+                for key in (
+                    "page_count",
+                    "chunk_count",
+                    "dimension",
+                )
+            )
+            or manifest["page_count"] > 200
+            or not isinstance(manifest["warnings"], list)
+            or any(not isinstance(w, str) for w in manifest["warnings"])
+        ):
+            raise ValueError("Invalid manifest fields")
+        identity = {
+            key: manifest[key]
+            for key in (
+                "pdf_sha256",
+                "settings",
+                "embedding_model",
+                "embedding_digest",
+                "version",
+                "extraction_version",
+                "query_instruction",
+            )
+        }
+        if _hash(_json_bytes(identity)) != path.name:
+            raise ValueError("Index identity mismatch")
         for filename in ("chunks.json", "index.faiss"):
             if _hash((path / filename).read_bytes()) != manifest["checksums"][filename]:
                 raise ValueError(f"Checksum mismatch: {filename}")
@@ -226,7 +264,15 @@ def load_index(path: Path) -> DocumentIndex:
             or len(chunks) != manifest["chunk_count"]
             or index.d != manifest["dimension"]
             or len({c.id for c in chunks}) != len(chunks)
-            or any(not c.text or not 1 <= c.page <= manifest["page_count"] for c in chunks)
+            or any(
+                not isinstance(c.text, str)
+                or not c.text
+                or type(c.page) is not int
+                or not 1 <= c.page <= manifest["page_count"]
+                or not isinstance(c.id, str)
+                or c.method not in ("native", "ocr")
+                for c in chunks
+            )
             or index.metric_type != faiss.METRIC_INNER_PRODUCT
         ):
             raise ValueError("Index and metadata do not agree")
@@ -274,7 +320,16 @@ def _cached_pages(pdf_bytes, settings, root, progress, rebuild):
         try:
             saved = json.loads(cache.read_text())
             pages = [Page(**p) for p in saved["pages"]]
-            if not pages or [p.number for p in pages] != list(range(1, len(pages) + 1)):
+            if (
+                not pages
+                or len(pages) > 200
+                or [p.number for p in pages] != list(range(1, len(pages) + 1))
+                or any(
+                    not isinstance(p.text, str) or p.method not in ("native", "ocr") for p in pages
+                )
+                or not isinstance(saved["warnings"], list)
+                or any(not isinstance(w, str) for w in saved["warnings"])
+            ):
                 raise ValueError("Invalid extraction cache")
             return pages, saved["warnings"]
         except (OSError, ValueError, KeyError, TypeError):
