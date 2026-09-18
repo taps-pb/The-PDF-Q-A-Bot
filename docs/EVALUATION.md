@@ -65,3 +65,8 @@ the README; additional exploratory questions must remain outside these metrics.
 The committed run uses AI-assisted manual review by Codex, not independent human
 grading. See [measured results and failure analysis](RESULTS.md). A reviewer can
 reproduce the run and replace those judgments with independently documented grades.
+# Expanded benchmark
+
+For the three-document development/held-out suite and paired OCR checks, see
+[Phase 2A](PHASE2A.md) and its [baseline results](PHASE2A-RESULTS.md). The original
+ten-question experiment below remains a separate, unchanged regression suite.

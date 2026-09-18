@@ -39,4 +39,6 @@ At 300 characters, retrieval truncated the seventh program element; the bot refu
 
 At 1500 characters, the bot refused the ladder-height question despite retrieving both units. This was a generation failure; distracting context and extraction spacing are possible contributors, not proven causes.
 
-Next: evaluate additional documents, measure passage-level coverage, and test reranking against these failures. [Evaluation instructions](docs/EVALUATION.md) explain reproduction and limitations.
+Phase 2A adds three-document benchmarks, evidence coverage, and paired OCR checks.
+[Phase 2A instructions](docs/PHASE2A.md) explain reproduction and limitations;
+[results](docs/PHASE2A-RESULTS.md) identify the next measured priorities. Reranking remains deferred.

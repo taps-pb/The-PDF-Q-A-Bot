@@ -16,6 +16,43 @@ def write_json(path, value):
     path.write_text(json.dumps(value))
 
 
+def test_provenance_records_actual_generation_settings_without_network(monkeypatch):
+    def command(args, **kwargs):
+        if args[0] == "tesseract":
+            return "tesseract test-version\n"
+        return "a" * 40 if "rev-parse" in args else ""
+
+    monkeypatch.setattr(suite.subprocess, "check_output", command)
+    monkeypatch.setattr(
+        suite.httpx,
+        "get",
+        lambda *args, **kwargs: SimpleNamespace(
+            raise_for_status=lambda: None, json=lambda: {"version": "test-version"}
+        ),
+    )
+    models = SimpleNamespace(
+        answer_model="local-answer",
+        embedding_model="local-embedding",
+        digest=lambda model: "digest-" + model,
+    )
+    metadata = suite.provenance({"name": "fixture"}, "development", models)
+    assert metadata["generation"] == {
+        "options": {"temperature": 0, "seed": 42, "num_ctx": 8192, "num_predict": 1200},
+        "think": False,
+        "keep_alive": "30m",
+    }
+    assert metadata["code_revision"] == "a" * 40
+    assert metadata["dirty_state"] == ""
+    assert metadata["runtime"]["ollama"] == "test-version"
+    assert metadata["models"]["answer"]["digest"] == "digest-local-answer"
+    assert len(metadata["lock_sha256"]) == len(metadata["prompt_sha256"]) == 64
+
+
+def test_generation_provenance_rejects_unrecognized_implementation():
+    with pytest.raises(AppError, match="Generation parameters changed"):
+        suite.generation_parameters(write_json)
+
+
 @pytest.fixture
 def corpus(tmp_path):
     manifests = tmp_path / "suite"

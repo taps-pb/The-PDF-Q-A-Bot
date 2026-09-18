@@ -1,0 +1,48 @@
+{
+  "800": {
+    "q1": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: p5-c1 explicitly identifies OSHA and NIOSH as developers; answer names both and cites that passage."
+    },
+    "q2": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p7-c1 contains all seven program elements intact, including the complete host-employer/contractor/staffing-agency item; answer reproduces all seven."
+    },
+    "q3": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p8-c2 says general industry and excludes construction and maritime; answer covers all three facts without unsupported additions."
+    },
+    "q4": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p30-c2 states monthly visual inspections, annual maintenance, and recording both; answer correctly includes each requirement."
+    },
+    "q5": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p72-c1 states before first use and at least annually thereafter for tight-fitting respirators; answer retains both conditions."
+    },
+    "q6": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p75-c2 gives at least 3 feet (0.9 meters) above elevated surfaces; answer preserves the minimum and both units."
+    },
+    "q7": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review: cited p90-c1 establishes no cost, confidentiality, and high-hazard-worksite priority; p90-c4 corroborates no cost and confidentiality. Answer fully supported."
+    },
+    "q8": {
+      "notes": "AI-assisted manual review: correct NOT FOUND; retrieved p6-c2 discusses premium reductions but guarantees no percentage."
+    },
+    "q9": {
+      "notes": "AI-assisted manual review: correct NOT FOUND; regional office contacts are not an Acme Bakery personnel assignment."
+    },
+    "q10": {
+      "notes": "AI-assisted manual review: correct NOT FOUND; retrieved ladder practices give no purchasing brand/model."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-18T06:08:15.864042+00:00",
+  "completed_at": "2026-09-18T06:08:31.389309+00:00",
+  "sizes": [
+    800
+  ],
+  "retrieval_only": false,
+  "question_sha256": "189ff11a06a22b7347ba2975eb8cdf656bc52d638ed1dd6d60801400c7a71301",
+  "pdf_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+  "document": {
+    "title": "Small Business Safety and Health Handbook",
+    "edition": "NIOSH 2021-120, revised January 2024; OSHA 2209-01R 2024",
+    "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+    "downloaded": "2026-09-18",
+    "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+    "pages": 98,
+    "page_numbering": "Physical PDF pages, one-based (printed page 1 is PDF page 5)",
+    "license": "Public domain; see PDF page 5",
+    "frozen_before_model_runs": true
+  },
+  "prompt_version": "grounded-v1",
+  "models": {
+    "embedding": {
+      "name": "qwen3-embedding:0.6b",
+      "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+    },
+    "answer": {
+      "name": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
+    }
+  }
+}
