@@ -10,6 +10,7 @@ dependencies = [
   "pytesseract>=0.3.13,<0.4",
   "pillow>=11,<13",
   "ollama>=0.5,<1",
+  "httpx>=0.28,<1",
   "faiss-cpu>=1.10,<2",
   "numpy>=2,<3",
   "matplotlib>=3.10,<4",

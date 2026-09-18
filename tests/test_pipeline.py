@@ -2,7 +2,7 @@ import io
 import json
 from dataclasses import replace
 from types import SimpleNamespace
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 import numpy as np
 import pytest
@@ -207,3 +207,26 @@ def test_missing_manifest_field_and_invalid_extraction_cache_recover(tmp_path):
     )
     changed = ingest(pdf, "test.pdf", Settings(chunk_size=300), models, tmp_path)
     assert "Ladder" in changed.chunks[0].text
+
+
+def test_cloud_alias_is_rejected_before_document_text_is_sent():
+    import httpx
+
+    models = LocalModels()
+    models.client = Mock()
+    models.client.list.return_value = SimpleNamespace(
+        models=[
+            SimpleNamespace(model=models.embedding_model, digest="cloud-alias-digest"),
+        ]
+    )
+    response = httpx.Response(
+        200,
+        json={"remote_host": "https://ollama.com", "remote_model": "example-cloud"},
+        request=httpx.Request("POST", "http://127.0.0.1:11434/api/show"),
+    )
+    with patch("pdf_qa.pipeline.httpx.post", return_value=response) as post:
+        with pytest.raises(AppError, match="Cloud-backed"):
+            models.embed(["Private PDF content"])
+    models.client.embed.assert_not_called()
+    assert post.call_args.kwargs["trust_env"] is False
+    assert "Private PDF content" not in str(post.call_args)

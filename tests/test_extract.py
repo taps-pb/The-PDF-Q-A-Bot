@@ -1,10 +1,13 @@
 """Deterministic boundary checks plus an opt-in real Tesseract smoke test."""
 
+from contextlib import closing
 from io import BytesIO
 from unittest.mock import Mock, patch
 
+import pypdfium2 as pdfium
 import pytest
 from pypdf import PdfWriter
+from reportlab.lib.utils import ImageReader
 from reportlab.pdfgen import canvas
 
 from pdf_qa.extract import chunk_pages, extract_pages
@@ -49,8 +52,9 @@ def test_validation_and_no_readable_content():
         extract_pages(b"%PDF-1.7")
     with patch("pdf_qa.extract.MAX_PAGES", 1), pytest.raises(AppError, match="200-page"):
         extract_pages(make_pdf(["page one", "page two"]))
-    with patch("pdf_qa.extract._ocr_page", return_value=" \n"), pytest.raises(
-        AppError, match="No readable text"
+    with (
+        patch("pdf_qa.extract._ocr_page", return_value=" \n"),
+        pytest.raises(AppError, match="No readable text"),
     ):
         extract_pages(make_pdf([""]))
     output = BytesIO()
@@ -111,3 +115,24 @@ def test_real_english_ocr():
     assert "LOCAL OCR TEST NUMBER 12345" in pages[0].text
     assert pages[0].method == "ocr"
     assert not warnings
+
+
+@pytest.mark.integration
+def test_scanned_and_mixed_image_text():
+    source = make_pdf(["SCANNED IMAGE SECRET CODE 98765"])
+    with pdfium.PdfDocument(source) as document, closing(document[0]) as page:
+        with closing(page.render(scale=2)) as bitmap, closing(bitmap.to_pil()) as image:
+            for native_text in (False, True):
+                output = BytesIO()
+                writer = canvas.Canvas(output)
+                writer.drawImage(ImageReader(image), 30, 100, width=500, height=647)
+                if native_text:
+                    writer.drawString(
+                        30, 800, "This selectable text bypasses the automatic OCR threshold."
+                    )
+                writer.save()
+                pages, _ = extract_pages(output.getvalue())
+                if native_text:
+                    assert pages[0].method == "native" and "98765" not in pages[0].text
+                    pages, _ = extract_pages(output.getvalue(), "force")
+                assert pages[0].method == "ocr" and "98765" in pages[0].text

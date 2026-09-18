@@ -95,7 +95,11 @@ class LocalModels:
 
     def _call(self, method, **kwargs):
         try:
-            return method(**kwargs)
+            result = method(**kwargs)
+            if isinstance(result, httpx.Response):
+                result.raise_for_status()
+                return result.json()
+            return result
         except (ollama.ResponseError, httpx.HTTPError, ConnectionError) as exc:
             raise AppError(
                 "Local Ollama request failed. Start `OLLAMA_NO_CLOUD=1 ollama serve`, "
@@ -107,8 +111,15 @@ class LocalModels:
         for item in self._call(self.client.list).models:
             if item.model == model and item.digest:
                 # A cloud alias must never be used to send PDF data off the machine.
-                info = self._call(self.client.show, model=model)
-                if getattr(info, "remote_host", None) or getattr(info, "remote_model", None):
+                # The SDK's ShowResponse drops unknown remote_* fields; inspect raw JSON.
+                info = self._call(
+                    httpx.post,
+                    url="http://127.0.0.1:11434/api/show",
+                    json={"model": model},
+                    timeout=30,
+                    trust_env=False,
+                )
+                if info.get("remote_host") or info.get("remote_model"):
                     raise AppError("Cloud-backed models are not supported. Download local weights.")
                 return item.digest
         raise AppError(f"Local model {model} is missing. Run `ollama pull {model}` first.")
@@ -116,6 +127,7 @@ class LocalModels:
     def embed(self, texts: list[str], query: bool = False) -> np.ndarray:
         if not texts:
             raise AppError("There is no text to embed.")
+        self.digest(self.embedding_model)
         inputs = [f"Instruct: {QUERY_INSTRUCTION}\nQuery: {t}" for t in texts] if query else texts
         response = self._call(
             self.client.embed,

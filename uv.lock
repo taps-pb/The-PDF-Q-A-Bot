@@ -456,6 +456,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "faiss-cpu" },
+    { name = "httpx" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "ollama" },
@@ -476,6 +477,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "faiss-cpu", specifier = ">=1.10,<2" },
+    { name = "httpx", specifier = ">=0.28,<1" },
     { name = "matplotlib", specifier = ">=3.10,<4" },
     { name = "numpy", specifier = ">=2,<3" },
     { name = "ollama", specifier = ">=0.5,<1" },
