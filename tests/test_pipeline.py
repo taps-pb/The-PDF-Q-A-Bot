@@ -149,7 +149,7 @@ def test_model_repairs_once_then_reports_generation_failure():
     assert answer("question", [], models).refused
 
 
-def test_generation_uses_evidence_first_prompt_without_retrying_valid_refusal():
+def test_generation_keeps_untrusted_payload_separate_and_does_not_retry_valid_refusal():
     models = LocalModels()
     models.digest = Mock(return_value="digest")
     models.client = Mock()
@@ -161,8 +161,8 @@ def test_generation_uses_evidence_first_prompt_without_retrying_valid_refusal():
     assert models.client.chat.call_count == 1
     request = models.client.chat.call_args.kwargs
     assert request["messages"][0] == {"role": "system", "content": SYSTEM_PROMPT}
-    assert "untrusted data" in SYSTEM_PROMPT and "ALL supplied passages" in SYSTEM_PROMPT
-    assert "EVERY substantive claim" in SYSTEM_PROMPT
+    assert "untrusted data" in SYSTEM_PROMPT and "Do not use prior knowledge" in SYSTEM_PROMPT
+    assert "every substantive claim" in SYSTEM_PROMPT
     payload = json.loads(request["messages"][1]["content"])
     assert payload == {
         "question": "What is the missing date?",

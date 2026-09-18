@@ -471,7 +471,7 @@ def report(results, grades, reviewer):
         **{f"ocr-{k}": v for k, v in summary["ocr"]["by_variant"].items()},
     }
     lines = [
-        "# Phase 2A evidence report",
+        "# Evidence evaluation report",
         "",
         f"Reviewer: {reviewer}",
         "",

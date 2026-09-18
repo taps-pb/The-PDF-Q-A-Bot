@@ -49,3 +49,10 @@ documented experiment with the previous production prompt retained.
 After this phase, stop for review. Retrieval improvements and any final held-out
 evaluation remain separate decisions; no Phase 2C implementation is authorized
 by this phase boundary.
+
+## Recorded outcome
+
+The one frozen candidate failed the unsupported-answer gate. Its outputs are
+preserved, and the production prompt is restored to `grounded-v1`. The paired
+comparison tool remains available. See [the measured results](PHASE2B-RESULTS.md)
+for the rejection decision, limits, and reproduction commands.

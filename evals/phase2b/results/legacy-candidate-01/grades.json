@@ -1,0 +1,48 @@
+{
+  "800": {
+    "q1": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p5-c1 names OSHA and NIOSH as handbook developers; candidate correctly names both."
+    },
+    "q2": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p7-c1 contains all seven elements, including communication and coordination for host employers, contractors, and staffing agencies. Candidate lists all seven."
+    },
+    "q3": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p8-c2 says general industry, not construction or maritime; candidate covers both exclusions and intended workplaces."
+    },
+    "q4": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p30-c2 gives monthly visual inspection, annual maintenance, and recording both; candidate includes every condition."
+    },
+    "q5": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p72-c1 supports fit-testing before first use and at least annually thereafter; both are preserved."
+    },
+    "q6": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p75-c2 supports the minimum 3 feet (0.9 meters) above elevated surfaces; candidate retains both units."
+    },
+    "q7": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual semantic review of new candidate output: Cited p90-c1 and p90-c4 support free, confidential consultation and priority for high-hazard worksites; candidate answers all parts."
+    },
+    "q8": {
+      "notes": "AI-assisted manual semantic review of new candidate output: Correct NOT FOUND: unchanged retrieved p6-c2 mentions premium reductions without any guaranteed percentage."
+    },
+    "q9": {
+      "notes": "AI-assisted manual semantic review of new candidate output: Correct NOT FOUND: unchanged regional office contacts do not supply an Acme Bakery safety officer."
+    },
+    "q10": {
+      "notes": "AI-assisted manual semantic review of new candidate output: Correct NOT FOUND: unchanged ladder practices contain no recommended purchase brand/model."
+    }
+  }
+}
