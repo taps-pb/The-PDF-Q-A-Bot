@@ -1,0 +1,38 @@
+[project]
+name = "pdf-qa-bot"
+version = "0.1.0"
+description = "A local PDF question-answering app with citations, OCR, and measured retrieval"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "streamlit>=1.45,<2",
+  "pypdf>=6,<7",
+  "pypdfium2>=4.30,<6",
+  "pytesseract>=0.3.13,<0.4",
+  "pillow>=11,<13",
+  "ollama>=0.5,<1",
+  "faiss-cpu>=1.10,<2",
+  "numpy>=2,<3",
+  "matplotlib>=3.10,<4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "reportlab>=4,<5"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pdf_qa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires local Ollama models or OCR"]
+addopts = "-m 'not integration'"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
