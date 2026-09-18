@@ -305,7 +305,7 @@ def generation_parameters(generate):
 
 
 def provenance(suite, split, models):
-    from pdf_qa import pipeline
+    from pdf_qa import extract, pipeline
 
     repo = Path(__file__).resolve().parents[2]
 
@@ -324,6 +324,8 @@ def provenance(suite, split, models):
         "dirty_state": git("status", "--porcelain"),
         "lock_sha256": sha((repo / "uv.lock").read_bytes()),
         "pipeline_sha256": sha(Path(pipeline.__file__).read_bytes()),
+        "extraction_sha256": sha(Path(extract.__file__).read_bytes()),
+        "retrieval": pipeline.RETRIEVAL_CONFIG,
         "suite_sha256": sha(json.dumps(suite, sort_keys=True).encode()),
         "prompt_sha256": sha(pipeline.SYSTEM_PROMPT.encode()),
         "prompt_version": pipeline.PROMPT_VERSION,

@@ -20,6 +20,7 @@ from pdf_qa.types import Answer, AppError, Chunk, Page, SearchHit, Settings
 
 INDEX_VERSION = 1
 EXTRACTION_VERSION = 1
+RETRIEVAL_CONFIG = {"version": "dense-v1", "method": "dense", "score": "cosine"}
 PROMPT_VERSION = "grounded-v1"
 QUERY_INSTRUCTION = (
     "Given a question, retrieve relevant document passages that answer the question."
