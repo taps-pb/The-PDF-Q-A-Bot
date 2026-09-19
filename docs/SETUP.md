@@ -49,6 +49,10 @@ Open http://127.0.0.1:8501. In other checkouts, set PDF_QA_DATA_DIR to your own 
 
 Upload a PDF, select automatic extraction or forced OCR, then build/load its index. You can reopen saved indexes after restarting. Questions do not rebuild document embeddings. Changing OCR mode or chunk size requires indexing that configuration once.
 
+Optional local cross-encoder reranking has separate [setup instructions](RERANKING.md).
+It is off by default and does not require rebuilding indexes. Multiple saved PDFs
+can be selected individually; the app does not search several PDFs together.
+
 Automatic OCR applies to pages with fewer than 40 non-whitespace extracted characters. For pages that contain both native text and text within images, select forced OCR. Photos and diagrams without readable text are not interpreted. Citations use physical PDF page numbers, not the numbers printed in the document.
 
 ## Reproduce the evaluation

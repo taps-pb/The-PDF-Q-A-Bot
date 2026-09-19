@@ -181,3 +181,32 @@ def test_saved_index_loads_after_session_restart_and_refreshes_after_rebuild(ui)
     click(ui.app, "Load index")
     assert ui.load.call_count == 2
     assert not ui.app.exception
+
+
+def test_reranking_is_opt_in_clears_results_and_preserves_document(ui):
+    from pdf_qa import rerank
+
+    app = load_saved(ui)
+    ask(app)
+    assert "reranker" not in ui.retrieve.call_args.kwargs
+    app.checkbox(key="use_reranker").check().run()
+    assert "last_answer" not in app.session_state
+    assert "last_hits" not in app.session_state
+    assert not app.text_input(key="question").disabled
+    ask(app)
+    assert ui.retrieve.call_args.kwargs["reranker"] is rerank.rerank
+    assert any("relevance logits" in c.value for c in app.caption)
+    app.selectbox(key="saved_path").set_value(str(ui.documents[1].path)).run()
+    assert "last_hits" not in app.session_state
+    click(app, "Load index")
+    ask(app)
+    assert ui.retrieve.call_args.args[0] is ui.documents[1]
+    ui.retrieve.side_effect = AppError("Reranker files are missing.")
+    ask(app)
+    assert "last_answer" not in app.session_state
+    assert "last_hits" not in app.session_state
+    assert "Reranker files are missing." in app.error[0].value
+    app.checkbox(key="use_reranker").uncheck().run()
+    ui.retrieve.side_effect = None
+    ask(app)
+    assert "reranker" not in ui.retrieve.call_args.kwargs

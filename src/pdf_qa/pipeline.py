@@ -443,7 +443,9 @@ def ingest(
         return load_index(destination)
 
 
-def retrieve(document: DocumentIndex, question: str, models, k: int = 4) -> list[SearchHit]:
+def retrieve(
+    document: DocumentIndex, question: str, models, k: int = 4, *, reranker=None
+) -> list[SearchHit]:
     question = _question(question)
     if not 1 <= k <= 20:
         raise AppError("Retrieve between 1 and 20 chunks.")
@@ -456,12 +458,14 @@ def retrieve(document: DocumentIndex, question: str, models, k: int = 4) -> list
     vector = _vectors(models.embed([question], query=True), 1)
     if vector.shape[1] != document.index.d:
         raise AppError("Embedding dimensions changed. Rebuild this index.")
-    scores, positions = document.index.search(vector, min(k, len(document.chunks)))
-    return [
+    candidates = 20 if reranker is not None else k
+    scores, positions = document.index.search(vector, min(candidates, len(document.chunks)))
+    hits = [
         SearchHit(document.chunks[int(pos)], float(score))
         for pos, score in zip(positions[0], scores[0], strict=True)
         if pos >= 0
     ]
+    return reranker(question, hits, k=k) if reranker is not None else hits
 
 
 def answer(question: str, hits: list[SearchHit], models) -> Answer:

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from pdf_qa import pipeline
+from pdf_qa import pipeline, rerank
 from pdf_qa.types import AppError, Settings
 
 st.set_page_config(page_title="PDF Q&A", page_icon="📄", layout="wide")
@@ -27,6 +27,15 @@ st.caption("Answers from your document, with page citations. Processing stays on
 
 with st.sidebar:
     st.header("Your document")
+    use_reranker = st.checkbox(
+        "Rerank passages (experimental)",
+        key="use_reranker",
+        help="Score up to 20 passages locally and keep four. Requires the optional reranker setup.",
+    )
+    if st.session_state.get("last_retrieval_mode") != use_reranker:
+        for key in ("last_answer", "last_hits", "last_question"):
+            st.session_state.pop(key, None)
+        st.session_state.last_retrieval_mode = use_reranker
     source = st.radio("Document source", ["Upload PDF", "Saved index"], key="source")
     upload = None
     selected = None
@@ -166,7 +175,8 @@ if submit and document is not None:
         try:
             with st.spinner("Finding relevant passages and writing an answer…"):
                 models = pipeline.LocalModels()
-                hits = pipeline.retrieve(document, question.strip(), models)
+                options = {"reranker": rerank.rerank} if use_reranker else {}
+                hits = pipeline.retrieve(document, question.strip(), models, **options)
                 st.session_state.last_hits = hits
                 st.session_state.last_question = question.strip()
                 st.session_state.last_answer = pipeline.answer(question.strip(), hits, models)
@@ -189,7 +199,11 @@ if "last_answer" in st.session_state:
 if "last_hits" in st.session_state:
     hits = st.session_state.last_hits
     with st.expander(f"Retrieved passages ({len(hits)})"):
-        st.caption("Similarity scores rank passages. They are not confidence probabilities.")
+        st.caption(
+            "Reranker relevance logits rank passages. They are not confidence probabilities."
+            if use_reranker
+            else "Similarity scores rank passages. They are not confidence probabilities."
+        )
         for rank, hit in enumerate(hits, 1):
             st.markdown(f"**Passage {rank} · PDF page {hit.chunk.page} · score {hit.score:.4f}**")
             st.caption(f"Chunk {hit.chunk.id} · extraction: {hit.chunk.method}")
