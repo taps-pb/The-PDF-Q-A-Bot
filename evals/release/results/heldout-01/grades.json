@@ -1,0 +1,324 @@
+{
+  "osha-13": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p64-c1 explicitly says areas exceeding 85 decibels are identified and evaluated. The concise threshold answer is correct."
+  },
+  "osha-14": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Retrieved and cited p67-c1/p67-c2 jointly complete the instruction to vent combustion-equipment exhaust outside the enclosure. The answer supplies the required location."
+  },
+  "osha-15": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review by Codex root: Rank-one p80-c2 explicitly gives at least 20 feet when the barrier alternative is not used. NOT FOUND is a false refusal despite complete evidence."
+  },
+  "osha-16": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p69-c1 supports employer-provided PPE at no cost to workers, subject to the regulatory exception. The answer preserves that exception; the normalized 29 CFR 1910.132(h) reference is supported by the extracted text."
+  },
+  "osha-17": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p62-c1 states that at least one worker on each shift must be trained and qualified to provide first aid when no medical facility is nearby. All required conditions are retained."
+  },
+  "osha-18": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p25-c2 explicitly lists local emergency responders, agencies, and contractors in addition to key personnel. The answer is complete."
+  },
+  "osha-19": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND: introduction, scope, and title passages do not name an insurer to buy compensation coverage from, consistent with the frozen absence annotation."
+  },
+  "osha-20": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND: p97-c1 lists the Kansas City address and phone/fax but no opening/closing hours. Other regional-office passages do not supply them."
+  },
+  "nist-ai-13": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": true,
+    "failure_category": "unsupported_answer",
+    "notes": "AI-assisted manual review by Codex root: The displayed answer identifies gaps toward risk-management goals; p38-c3 supplies the comparison/gap clause and the preceding Target Profile goal definition, so f1 is supported semantically despite the final line break. However, the action-plan sentence is absent from every retrieved chunk. Full extracted page 38 contains it after p38-c3's cutoff, confirming retrieval loss rather than extraction loss. The proposed strategies/actions recommendation lacks cited support; it also omits the frozen category/subcategory-outcome detail, so f2 is incomplete. This is not proof of fabricated source content: the full source, unavailable to generation, does discuss action plans."
+  },
+  "nist-ai-14": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p12-c1 says the AI RMF does not prescribe tolerance; p12-c3 says organizations should define reasonable tolerance without established guidelines. The additional statement about managing risks/documenting processes also appears in cited p12-c3."
+  },
+  "nist-ai-15": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": true,
+    "failure_category": "unsupported_answer",
+    "notes": "AI-assisted manual review by Codex root: Cited p40-c5/p41-c1 supply lifecycle-wide TEVV and the ideal separation of verification/validation actors from test/evaluation actors. The design-phase detail is supported by p41-c1. However, the added claim that the actors work together to manage lifecycle risks appears in retrieved p14-c3, not the cited p40-c5/p41-c1/p16-c1. Under the unchanged citation-level rubric, that material extra claim lacks cited support, as in development nist-ai-07."
+  },
+  "nist-ai-16": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review by Codex root: Rank-one p43-c4 explicitly names data, model, and concept drift as reasons for more frequent maintenance and corrective-maintenance triggers. NOT FOUND is a false refusal despite all three retrieved facts."
+  },
+  "nist-ai-17": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p13-c1 says development/deployment should cease safely until risks can be sufficiently managed. Both facts are reproduced. The repeated final sentence is redundant, not a substantive unsupported addition."
+  },
+  "nist-ai-18": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p20-c3 supplies the return-to-normal resilience definition and security's inclusion of resilience plus attack-avoidance/protection/response/recovery protocols. The additional robustness and unexpected/adversarial-use statement is also in that cited chunk."
+  },
+  "nist-ai-19": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND: retrieved title, development-history, comment-update, and version-review passages provide no annual penetration-test count, consistent with the frozen absence annotation."
+  },
+  "nist-ai-20": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND: retrieved voluntary-framework attributes, publication disclaimer, title, and roadmap passages provide no federal grant amount for adoption."
+  },
+  "nist-csf-13": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f5": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "incomplete_retrieval",
+    "notes": "AI-assisted manual review by Codex root: Retrieved p18-c1 supplies embarrassment as a dignity-type effect but cuts off before stigma and the three tangible harms. Full extracted page 18 contains all five examples, confirming retrieval loss rather than extraction loss. NOT FOUND is a document-level false refusal with incomplete retrieved evidence."
+  },
+  "nist-csf-14": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p22-c4 supports suppliers known/prioritized by criticality; cited p23-c1 supports establishing, prioritizing, and integrating supply-chain cybersecurity requirements into supplier/relevant-third-party agreements. Both complete facts are reproduced."
+  },
+  "nist-csf-15": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p27-c1 explicitly maps incident-report triage/validation to RS.MA-02. The identifier is correct."
+  },
+  "nist-csf-16": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p22-c1 assigns cybersecurity risk responsibility/accountability to organizational leadership and names a risk-aware, ethical, continually improving culture. Both facts are complete."
+  },
+  "nist-csf-17": {
+    "facts": {
+      "f1": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "incomplete_retrieval",
+    "notes": "AI-assisted manual review by Codex root: None of the four retrieved chunks contains PR.PS-05 or the unauthorized-software requirement. Full extracted page 25 contains it intact. NOT FOUND is a document-level false refusal caused by incomplete retrieval, not extraction loss."
+  },
+  "nist-csf-18": {
+    "facts": {
+      "f1": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "incomplete_retrieval",
+    "notes": "AI-assisted manual review by Codex root: Retrieved p17-c4 starts after the requested publication-number mappings; the other chunks do not supply either mapping. Full extracted page 17 contains SP 800-37 and SP 800-30 with both titles intact. NOT FOUND is a document-level false refusal with incomplete retrieval."
+  },
+  "nist-csf-19": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND: continuous-monitoring outcomes and category listings name no preferred commercial SIEM product, consistent with the frozen absence annotation."
+  },
+  "nist-csf-20": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND: retrieved adoption guidance, supplemental-resource descriptions, and profile/function definitions provide no survey average in weeks for small organizations."
+  }
+}

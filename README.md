@@ -1,17 +1,18 @@
 # The PDF Q&A Bot
 
-Ask questions about one English PDF and inspect the evidence behind each answer. This Streamlit app runs entirely locally: selectable text is extracted directly, scanned pages use Tesseract OCR, and Ollama generates answers with physical PDF page citations. An expandable panel shows retrieved passages and cosine similarity scores. Unsupported questions return `NOT FOUND`; operational errors appear separately.
+Ask questions about one English PDF and inspect its evidence. This local Streamlit app uses native extraction, Tesseract OCR, FAISS, and Ollama. Answers cite physical PDF pages; expandable passages show cosine similarity scores. Refusals return `NOT FOUND`; operational errors appear separately. Answers can be wrong or incomplete: verify cited passages.
 
 ## Run locally
 
-Install Python 3.12, uv, Ollama, and Tesseract English. Start `OLLAMA_NO_CLOUD=1 ollama serve`, then download `qwen3:8b` and `qwen3-embedding:0.6b`. From this repository:
+Install Python 3.12, uv, Ollama, and Tesseract English. Start Ollama with cloud disabled and download `qwen3:8b` and `qwen3-embedding:0.6b`; follow [setup instructions](docs/SETUP.md). From this repository:
 
 ```sh
 uv sync --locked
+export PDF_QA_DATA_DIR="$PWD/../data/app"
 uv run streamlit run app.py
 ```
 
-See [setup instructions](docs/SETUP.md) for model storage, private data directories, and verification. Downloads require internet once; document processing needs no cloud service. Uploads are limited to 50 MiB and 200 pages. Choose forced OCR when images contain text alongside selectable text. Diagram interpretation and conversation memory are outside this release.
+Downloads need internet once; processing stays local. Uploads are limited to 50 MiB and 200 pages. Use forced OCR when images contain text alongside selectable text. Diagram interpretation and conversation memory are outside scope.
 
 ## Architecture in five lines
 
@@ -23,7 +24,7 @@ See [setup instructions](docs/SETUP.md) for model storage, private data director
 
 ## Measured choices
 
-The frozen evaluation uses seven answerable and three unanswerable questions from the public-domain OSHA/NIOSH handbook. Grades use AI-assisted manual evidence review; these are development results, not independent validation.
+The OSHA/NIOSH development evaluation uses seven answerable and three unanswerable questions, graded through AI-assisted manual evidence review:
 
 | Chunk characters | Hit@4 | Supported accuracy | Correct refusals |
 |---|---|---|---|
@@ -31,15 +32,18 @@ The frozen evaluation uses seven answerable and three unanswerable questions fro
 | **800** | **7/7** | **7/7** | **3/3** |
 | 1500 | 7/7 | 5/7 | 3/3 |
 
-Choose **800 characters**, fixed **60-character overlap**, and **k=4**: accuracy breaks the retrieval tie. Generation uses temperature zero with thinking disabled. [Raw results, grades, and plot](evals/results/run-01/) preserve every response.
+Production uses **800 characters**, **60-character overlap**, and **k=4**, with temperature zero and thinking disabled. [Original results and plot](evals/results/run-01/) preserve the experiment.
 
 ## What went wrong
 
-At 300 characters, retrieval truncated the seventh program element; the bot refused an answerable question. Page-level hit@4 still counted success.
+At 300 characters, retrieval truncated the seventh program element and caused a false refusal despite a page-level retrieval hit.
 
-At 1500 characters, the bot refused the ladder-height question despite retrieving both units. This was a generation failure; distracting context and extraction spacing are possible contributors, not proven causes.
+At 1500 characters, the ladder-height answer was refused despite complete evidence. The cause was not isolated.
 
-[Phase 2A](docs/PHASE2A.md) adds multi-document/OCR benchmarks.
-[Phase 2B](docs/PHASE2B-RESULTS.md) rejects an unsafe prompt;
-[Phase 2C](docs/PHASE2C-RESULTS.md) rejects hybrid retrieval after answer regressions.
-Production retains dense retrieval and its original prompt. Paired comparisons enforce quality gates.
+Prompt, hybrid-retrieval, and quote-validation experiments failed quality gates; none replaced the original pipeline.
+
+## Final verification
+
+The one-time held-out run achieved **11/18 supported answers**, **6/6 correct refusals**, and zero operational errors. Five answerable questions were refused; two responses lacked complete cited support. These small-corpus, AI-assisted grades are not a production reliability guarantee.
+
+All **117 tests** pass, including local model/OCR checks. The final legacy regression retains 7/7 supported answers and 3/3 refusals. See [release results, limitations, and audit records](docs/RELEASE.md). Capstone complete; no further feature phase planned.

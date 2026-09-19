@@ -1,0 +1,1524 @@
+[
+  {
+    "case_id": "osha-13",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p64-c1",
+          "text": "60 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nNoise Exposure\nNoise Exposure Yes No N/A Comments\nAreas in the workplace where noise levels\nexceed 85 decibels have been identified\nand evaluated .\n  \nNoise levels have been measured with a\nsound level meter or an octave band analyzer\nand records are being kept .\n  \nWhen determined by an evaluation of worker\nnoise exposure, a hearing conservation\nprogram has been implemented .\n  \nAn ongoing preventive health program is in\nplace to educate workers about safe levels\nof noise, exposures, effects of noise on their\nhealth, and the use of personal protection .\n  \nWhen workers are subjected to sound\nexceeding the levels in 29 CFR 1910 .9 5,\nTable G-16, engineering controls,\nadministrative control, and/or personnel",
+          "page": 64,
+          "method": "native"
+        },
+        "score": 0.7007994055747986
+      },
+      {
+        "chunk": {
+          "id": "p65-c1",
+          "text": "61 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nNoise Exposure Yes No N/A Comments\nA copy of OSHA’s Occupational Noise\nExposure standard is available and posted in\nthe workplace .\n  \nWarning signs are posted where hearing\nprotection is needed .   \nAdditional Resources\n• OSHA Regulations: 29 CFR 1910 .95 , Occupational Noise Exposure\n• OSHA: Occupational Noise Exposure\n• NIOSH: Noise and Hearing Loss Prevention\n• NIOSH Sound Level Meter App",
+          "page": 65,
+          "method": "native"
+        },
+        "score": 0.6418373584747314
+      },
+      {
+        "chunk": {
+          "id": "p64-c2",
+          "text": "ineering controls,\nadministrative control, and/or personnel\nprotective equipment are used to reduce\nthe level of sound exposure to be within the\nlevels of the table .\n  \nApproved hearing protective equipment\n(noise attenuating devices) is available to\nevery worker working in noisy areas .\n  \nWorkers are properly fitted and instructed in\nthe use of hearing protectors .   \nWorkers in high noise areas are given\nperiodic audiometric testing to ensure that\nthe hearing protection system is effective .\n  ",
+          "page": 64,
+          "method": "native"
+        },
+        "score": 0.5961887836456299
+      },
+      {
+        "chunk": {
+          "id": "p4-c3",
+          "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . 55\nPowered Industrial Trucks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56\nMedical Services and First Aid . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58\nNoise Exposure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60\nPermit-Required Confined Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62",
+          "page": 4,
+          "method": "native"
+        },
+        "score": 0.5665813684463501
+      }
+    ],
+    "answer": {
+      "text": "85 decibels",
+      "citations": [
+        64
+      ],
+      "chunk_ids": [
+        "p64-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 64,
+        "text": "60  |  SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nNoise Exposure\nNoise Exposure Yes No N/A Comments\nAreas in the workplace where noise levels \nexceed 85 decibels have been identified \nand evaluated .\n  \nNoise levels have been measured with a \nsound level meter or an octave band analyzer \nand records are being kept .\n  \nWhen determined by an evaluation of worker \nnoise exposure, a hearing conservation \nprogram has been implemented .\n  \nAn ongoing preventive health program is in \nplace to educate workers about safe levels \nof noise, exposures, effects of noise on their \nhealth, and the use of personal protection .\n  \nWhen workers are subjected to sound \nexceeding the levels in 29 CFR 1910 .9 5, \nTable G-16, engineering controls, \nadministrative control, and/or personnel \nprotective equipment are used to reduce \nthe level of sound exposure to be within the \nlevels of the table .\n  \nApproved hearing protective equipment \n(noise attenuating devices) is available to \nevery worker working in noisy areas .\n  \nWorkers are properly fitted and instructed in \nthe use of hearing protectors .   \nWorkers in high noise areas are given \nperiodic audiometric testing to ensure that \nthe hearing protection system is effective .\n  ",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.0399831249997078,
+    "generation_seconds": 1.2509702080023999,
+    "generation_responses": [
+      "{\"answer\":\"85 decibels\",\"chunk_ids\":[\"p64-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.3015690840002208
+  },
+  {
+    "case_id": "osha-14",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p67-c2",
+          "text": "ons are made to\nensure the exhaust gases are vented outside\nof the enclosure .\n  \nIf the confined space is below ground and\nnear areas where motor vehicles operate,\nsteps are taken to prevent vehicle exhaust or\ncarbon monoxide entering the space .\n  \nUse of approved respiratory equipment is\nused if the atmosphere inside the confined\nspace cannot be made acceptable .\n  \nA trained and equipped attendant is\npositioned outside the confined space,\nwhose sole responsibility is to watch\nthe work in progress, sound an alarm if\nnecessary, and render assistance .\n  \nOperable communications between the\nentrant(s) and the attendant is maintained\nwhile workers are in the confined space .\n  ",
+          "page": 67,
+          "method": "native"
+        },
+        "score": 0.751889705657959
+      },
+      {
+        "chunk": {
+          "id": "p67-c1",
+          "text": "63 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPermit-Required Confined Spaces Yes No N/A Comments\nThe confined space is checked for\npossible industrial waste that could\ncontain toxic properties .\n  \nEither natural or mechanical ventilation is\nprovided prior to confined space entry .   \nThe atmosphere inside the confined space is\nfrequently tested or continuously monitored\nduring work .\n  \nWhen workers are using oxygen-consuming\nequipment such as salamanders, torches,\nfurnaces, etc ., i n a confined space, sufficient\nair is provided to assure combustion without\nreducing the oxygen concentration of the\natmosphere below 19 .5 p ercent by volume .\n  \nWhen combustion-type equipment is used\nin a confined space, provisions are made to\nensure the exhaust gases are vented outside",
+          "page": 67,
+          "method": "native"
+        },
+        "score": 0.7196882367134094
+      },
+      {
+        "chunk": {
+          "id": "p66-c2",
+          "text": "e entry .\n  \nAll sources of mechanical energy, including\nimpellers, agitators, or other moving parts\nand equipment inside confined spaces, are\nlocked out if they present a hazard .\n  \nAll portable electrical equipment used\ninside confined spaces is either grounded\nand insulated, or equipped with ground\nfault protection .\n  \nBefore entry, confined spaces are thoroughly\nemptied of any decaying vegetation or\nanimal matter that may produce methane, or\ncreate an oxygen-deficient atmosphere .\n  \nAppropriate atmospheric tests are\nperformed to check for oxygen deficiency,\nflammable gases and vapors, and for\npotential toxic air contaminants in the\nconfined space before entry .\n  ",
+          "page": 66,
+          "method": "native"
+        },
+        "score": 0.6514241695404053
+      },
+      {
+        "chunk": {
+          "id": "p68-c1",
+          "text": "64 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPermit-Required Confined Spaces Yes No N/A Comments\nThe attendant is appropriately trained and\nequipped to handle an emergency .   \nA means for quick removal of workers is\nprovided, in case of an emergency .   \nIn an emergency situation, if there\nis any question as to the cause, the\nrescue workers have lifelines, retrieval\nequipment, and appropriate PPE including\nrespiratory protection .\n  \nBefore entry, operable communications with\nand availability of rescue services are verified .   \nCompressed gas cylinders are prohibited\ninside confined spaces .   \nBefore gas welding or burning is started in a\nconfined space, hoses are checked for leaks,\ntorches are lighted only outside the confined",
+          "page": 68,
+          "method": "native"
+        },
+        "score": 0.6304903626441956
+      }
+    ],
+    "answer": {
+      "text": "Outside the enclosure",
+      "citations": [
+        67
+      ],
+      "chunk_ids": [
+        "p67-c2",
+        "p67-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 67,
+        "text": "63  |  SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPermit-Required Confined Spaces Yes No N/A Comments\nThe confined space is checked for \npossible industrial waste that could \ncontain toxic properties .  \n  \nEither natural or mechanical ventilation is \nprovided prior to confined space entry .   \nThe atmosphere inside the confined space is \nfrequently tested or continuously monitored \nduring work . \n  \nWhen workers are using oxygen-consuming \nequipment such as salamanders, torches, \nfurnaces, etc ., i n a confined space, sufficient \nair is provided to assure combustion without \nreducing the oxygen concentration of the \natmosphere below 19 .5 p ercent by volume .\n  \nWhen combustion-type equipment is used \nin a confined space, provisions are made to \nensure the exhaust gases are vented outside \nof the enclosure .\n  \nIf the confined space is below ground and \nnear areas where motor vehicles operate, \nsteps are taken to prevent vehicle exhaust or \ncarbon monoxide entering the space .\n  \nUse of approved respiratory equipment is \nused if the atmosphere inside the confined \nspace cannot be made acceptable .\n  \nA trained and equipped attendant is \npositioned outside the confined space, \nwhose sole responsibility is to watch \nthe work in progress, sound an alarm if \nnecessary, and render assistance .\n  \nOperable communications between the \nentrant(s) and the attendant is maintained \nwhile workers are in the confined space .  \n  ",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.025290041998232482,
+    "generation_seconds": 1.2564603329992678,
+    "generation_responses": [
+      "{\"answer\":\"Outside the enclosure\",\"chunk_ids\":[\"p67-c2\",\"p67-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.2842295839982398
+  },
+  {
+    "case_id": "osha-15",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p80-c2",
+          "text": "bstances .\n  \nCylinders are stored in assigned locations\naway from sources of heat, and from\nelevators, stairs, and gangways .\n  \nFuel gas cylinders and oxygen cylinders\nin storage are separated by a distance of\nat least 20 feet, or by a non-combustible\nbarrier at least 5 feet (1 .5 m) high, having a\nfire-r esistance rating of at least 30 minutes .\n  \nRegulators are removed and valve-protection\ncaps put in place before moving cylinders,\nunless they are secured on special trucks .\n  ",
+          "page": 80,
+          "method": "native"
+        },
+        "score": 0.799047589302063
+      },
+      {
+        "chunk": {
+          "id": "p81-c1",
+          "text": "77 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nWelding, Cutting, and Brazing Yes No N/A Comments\nWorkers are trained to never crack open a fuel\ngas cylinder valve near sources of ignition .   \nBefore a regulator is removed, the valve is\nclosed and gas is released .   \nRed is used to identify the acetylene (and\nother fuel-gas) hose, green is used for the\noxygen hose, and black is used for inert gas\nand air hoses .\n  \nPressure-reducing regulators are used\nonly for the gas and pressures for which\nthey are intended .\nOpen circuit (no-load) voltage of arc welding\nand cutting machines is as low as possible\nand not in excess of the recommended limits .\n  \nGrounding of the machine frame and safety\nground connections of portable machines is\nchecked periodically .\n  ",
+          "page": 81,
+          "method": "native"
+        },
+        "score": 0.6312873363494873
+      },
+      {
+        "chunk": {
+          "id": "p16-c2",
+          "text": "rvice .\n  \nLiquefied gases are stored and shipped valve-\nend up with valve-protection caps in place .   \nValve-protection caps are placed on\ncylinders when the cylinders are not in use,\nor connected for use .\n  \nValves are closed before cylinders are\nmoved, when cylinders are empty, and at\nthe completion of each job .\n  \nEmpty cylinders are appropriately marked\nand their valves are closed .   \nAdditional Resources\n• OSHA Regulations:\n– 29 CFR 1910 .10 1, Compressed Gases\n– 29 CFR 1910 .1 1 0, Storage and Handling of Liquid Petroleum Gases\n• OSHA: Compressed Gas and Equipment",
+          "page": 16,
+          "method": "native"
+        },
+        "score": 0.6276839971542358
+      },
+      {
+        "chunk": {
+          "id": "p82-c2",
+          "text": "ht develop .\n  \nSuitable fire extinguishing equipment is\navailable for immediate use .   \nUsed drums, barrels, tanks and other\ncontainers are thoroughly cleaned of\nsubstances that could explode, ignite, or\nproduce toxic vapors, before hot work begins .\n  \nAdequate ventilation is provided in areas\nwhere welding or cutting is performed .   \nOxygen cylinders in storage are separated\nfrom fuel gas cylinders .   ",
+          "page": 82,
+          "method": "native"
+        },
+        "score": 0.6113077402114868
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 80,
+        "text": "76  |  SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nWelding, Cutting, and Brazing\nWelding, Cutting, and Brazing Yes No N/A Comments\nOnly authorized and trained workers are \npermitted to use welding, cutting, and \nbrazing equipment . \n  \nEach worker has a copy of, and follows the \nappropriate operating instructions .   \nOnly approved apparatuses (torches, \nregulators, pressure reducing valves, acetylene \ngenerators, manifolds, etc .) a re used . \n  \nPrecautions are taken to prevent the mixture \nof air or oxygen with flammable gases, \nexcept at a burner or in a standard torch .\n  \nFuel gas and oxygen gas cylinders, \ncylinder valves, couplings, regulators, hoses, \nand apparatuses are kept free of oily or \ngreasy substances . \n  \nCylinders are stored in assigned locations \naway from sources of heat, and from \nelevators, stairs, and gangways .  \n  \nFuel gas cylinders and oxygen cylinders \nin storage are separated by a distance of \nat least 20 feet, or by a non-combustible \nbarrier at least 5 feet (1 .5 m) high, having a \nfire-r esistance rating of at least 30 minutes  .\n  \nRegulators are removed and valve-protection \ncaps put in place before moving cylinders, \nunless they are secured on special trucks .  \n  ",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.028497291001258418,
+    "generation_seconds": 1.0122601250004664,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.043700958001864
+  },
+  {
+    "case_id": "osha-16",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p69-c1",
+          "text": "65 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPersonal Protective Equipment (PPE)\nPersonal Protective Equipment (PPE) Yes No N/A Comments\nHazards that require the use of PPE (e .g .,\nhead, eye, face, hand, or foot protection)\nhave been identified .\n  \nFor the hazards identified, the appropriate\nand properly fitted PPE has been selected to\nprovide suitable protection from these hazards .\n  \nAffected workers use the appropriate PPE .   \nPPE is provided by the employer, at no cost\nto the workers, except as noted in 29 CFR\n1910 .1 32(h) .\n  \nWorkers have been trained on PPE\nprocedures, including what PPE is necessary\nfor job tasks, when it is needed, and how to\nproperly wear and adjust it .\n  \nAppropriate eye or face protection is used",
+          "page": 69,
+          "method": "native"
+        },
+        "score": 0.6295435428619385
+      },
+      {
+        "chunk": {
+          "id": "p70-c2",
+          "text": "ed when sound levels\nexceed those of the Occupational Noise\nExposure standard (29 CFR 1910 .95 ) .\n  \nPPE is maintained in a sanitary condition and\nready for use .   \nAppropriate procedures are in place\nto dispose of or decontaminate PPE\ncontaminated with, or reasonably anticipated\nto be contaminated with, blood or other\npotentially infectious materials .\n  \nAdditional Resources\n• OSHA Regulations:\n– 29 CFR 1910 .13 2, PPE General Requirements\n– 29 CFR 1910 .13 3, Eye and Face Protection\n– 29 CFR 1910 .13 5, Head Protection\n– 29 CFR 1910 .13 6, Foot Protection\n– 29 CFR 1910 .13 7 , Electrical Protective Equipment\n– 29 CFR 1910 .13 8, Hand Protection\n• OSHA: Personal Protective Equipment\n• OSHA: Eye and Face Protection\n• NIOSH: Personal Protective Equipment",
+          "page": 70,
+          "method": "native"
+        },
+        "score": 0.5690101385116577
+      },
+      {
+        "chunk": {
+          "id": "p70-c1",
+          "text": "66 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPersonal Protective Equipment (PPE) Yes No N/A Comments\nProtective gloves, aprons, shields, or other\nmeans are used where workers could be\ncut or where there is reasonably anticipated\nexposure to corrosive liquids, chemicals, or\nblood or other potentially infectious materials .\n  \nHard hats are worn where the danger of\nfalling objects exists .   \nHard hats are periodically inspected for\ndamage to the shell and suspension system .   \nAppropriate foot protection is used where\nthere is the risk of foot injuries from hot,\ncorrosive, or poisonous substances, falling\nobjects, crushing, or penetrating actions .\n  \nProtection against the effects of\noccupational noise is used when sound levels\nexceed those of the Occupational Noise",
+          "page": 70,
+          "method": "native"
+        },
+        "score": 0.543188750743866
+      },
+      {
+        "chunk": {
+          "id": "p62-c2",
+          "text": "y are provided with appropriate\nPPE, such as gloves .\n  \nWorkers who are expected to respond\nto medical emergencies as part of their\njob responsibilities have received first aid\ntraining; had hepatitis B vaccinations made\navailable to them; had appropriate training on\nprocedures to protect them from bloodborne\npathogens, including universal precautions;\nand have available and understand how to use\nappropriate PPE to protect against exposure\nto bloodborne diseases .\n  ",
+          "page": 62,
+          "method": "native"
+        },
+        "score": 0.5232360363006592
+      }
+    ],
+    "answer": {
+      "text": "The employer provides and pays for PPE, at no cost to the workers, except as noted in 29 CFR 1910.132(h).",
+      "citations": [
+        69
+      ],
+      "chunk_ids": [
+        "p69-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 69,
+        "text": "65  |  SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPersonal Protective Equipment (PPE)\nPersonal Protective Equipment (PPE) Yes No N/A Comments\nHazards that require the use of PPE (e .g ., \nhead, eye, face, hand, or foot protection) \nhave been identified .\n  \nFor the hazards identified, the appropriate \nand properly fitted PPE has been selected to \nprovide suitable protection from these hazards . \n  \nAffected workers use the appropriate PPE .   \nPPE is provided by the employer, at no cost \nto the workers, except as noted in 29 CFR \n1910 .1 32(h)  .\n  \nWorkers have been trained on PPE \nprocedures, including what PPE is necessary \nfor job tasks, when it is needed, and how to \nproperly wear and adjust it .\n  \nAppropriate eye or face protection is used \nwhen workers are exposed to hazards such as \nflying particles, molten metal, liquid chemicals, \nacids or caustic liquids, chemical gases or \nvapors, or potentially injurious light radiation .\n  \nWorkers who wear corrective lenses \n(glasses or contacts) in workplaces with \nharmful exposures wear eye protection that \nincorporates the prescription in its design, or \nwear eye protections that fits properly over \nthe prescription lenses .\n  \nProtective eye and face protection devices \ncomply with the requirements of the \nappropriate ANSI standards, or provide \nprotection that is at least as effective as the \ncomparable ANSI standard . \n  ",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.024930749998020474,
+    "generation_seconds": 1.8561734590002743,
+    "generation_responses": [
+      "{\"answer\":\"The employer provides and pays for PPE, at no cost to the workers, except as noted in 29 CFR 1910.132(h).\",\"chunk_ids\":[\"p69-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.8833310830013943
+  },
+  {
+    "case_id": "osha-17",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p62-c1",
+          "text": "58 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nMedical Services and First Aid\nMedical Services and First Aid Yes No N/A Comments\nA hospital, clinic, or infirmary for medical care\nis located near the workplace .   \nIf a medical facility is not located near the\nworkplace, at least one worker on each shift\nis adequately trained and qualified to render\nfirst aid .\n  \nMedical personnel are readily available\nfor advice and consultation on matters of\nworkers’ health .\n  \nFully supplied first aid kits are easily\naccessible to each work area, are adequate\nfor the particular area or operation, and\nare periodically inspected and replenished\nas needed .\n  \nWorkers who only render first aid as a\ncollateral duty are provided with appropriate\nPPE, such as gloves .\n  ",
+          "page": 62,
+          "method": "native"
+        },
+        "score": 0.7650196552276611
+      },
+      {
+        "chunk": {
+          "id": "p43-c3",
+          "text": "lated illness .   \nSupervisors and workers have a way to\ncontact emergency services . I nstructions for\nwhat to do in case of a heat-related medical\nemergency are posted at the worksite .\n  ",
+          "page": 43,
+          "method": "native"
+        },
+        "score": 0.5720952749252319
+      },
+      {
+        "chunk": {
+          "id": "p62-c2",
+          "text": "y are provided with appropriate\nPPE, such as gloves .\n  \nWorkers who are expected to respond\nto medical emergencies as part of their\njob responsibilities have received first aid\ntraining; had hepatitis B vaccinations made\navailable to them; had appropriate training on\nprocedures to protect them from bloodborne\npathogens, including universal precautions;\nand have available and understand how to use\nappropriate PPE to protect against exposure\nto bloodborne diseases .\n  ",
+          "page": 62,
+          "method": "native"
+        },
+        "score": 0.5241270065307617
+      },
+      {
+        "chunk": {
+          "id": "p63-c1",
+          "text": "59 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nMedical Services and First Aid Yes No N/A Comments\nAny worker that had an exposure incident\ninvolving bloodborne pathogens, received\nan immediate post-exposure confidential\nmedical evaluation and follow-up .\n  \nEmergency phone numbers are posted .   \nAdditional Resources\n• OSHA Regulations:\n– 29 CFR 1910 .15 1, Medical Services and First Aid\n– 29 CFR 1910 .10 30, Bloodborne Pathogens\n• OSHA: Medical and First Aid\n• OSHA: Bloodborne Pathogens and Needlestick Prevention\n• NIOSH: Bloodborne Infectious Diseases",
+          "page": 63,
+          "method": "native"
+        },
+        "score": 0.5209793448448181
+      }
+    ],
+    "answer": {
+      "text": "If a medical facility is not located near the workplace, at least one worker on each shift is adequately trained and qualified to render first aid.",
+      "citations": [
+        62
+      ],
+      "chunk_ids": [
+        "p62-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 62,
+        "text": "58  |  SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nMedical Services and First Aid\nMedical Services and First Aid Yes No N/A Comments\nA hospital, clinic, or infirmary for medical care \nis located near the workplace .   \nIf a medical facility is not located near the \nworkplace, at least one worker on each shift \nis adequately trained and qualified to render \nfirst aid . \n  \nMedical personnel are readily available \nfor advice and consultation on matters of \nworkers’ health . \n  \n Fully supplied first aid kits are easily \naccessible to each work area, are adequate \nfor the particular area or operation, and \nare periodically inspected and replenished \nas needed .  \n  \nWorkers who only render first aid as a \ncollateral duty are provided with appropriate \nPPE, such as gloves .  \n  \nWorkers who are expected to respond \nto medical emergencies as part of their \njob responsibilities have received first aid \ntraining; had hepatitis B vaccinations made \navailable to them; had appropriate training on \nprocedures to protect them from bloodborne \npathogens, including universal precautions; \nand have available and understand how to use \nappropriate PPE to protect against exposure \nto bloodborne diseases . \n  ",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.029450083999108756,
+    "generation_seconds": 1.4854264589994273,
+    "generation_responses": [
+      "{\"answer\":\"If a medical facility is not located near the workplace, at least one worker on each shift is adequately trained and qualified to render first aid.\",\"chunk_ids\":[\"p62-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.5181009590014582
+  },
+  {
+    "case_id": "osha-18",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p25-c2",
+          "text": "workplace .\n  \nThe plan contains a list of key personnel\nwith contact information as well as contact\ninformation for local emergency responders,\nagencies, and contractors .\n  \nThe plan contains the names, titles,\ndepartments, and telephone numbers\nof individuals to contact for additional\ninformation or an explanation of duties and\nresponsibilities under the plan .\n  \nThe plan addresses how medical assistance\nwill be provided .   ",
+          "page": 25,
+          "method": "native"
+        },
+        "score": 0.7880180478096008
+      },
+      {
+        "chunk": {
+          "id": "p26-c1",
+          "text": "22 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nEmergency Action Plans Yes No N/A Comments\nThe plan identifies how or where personal\ninformation on workers can be obtained in\nan emergency .\n  \nThe plan identifies the conditions under\nwhich an evacuation would be necessary .   \nThe plan identifies a clear chain of command\nand designates a person authorized to order\nan evacuation or shutdown of operations .\n  \nThe plan addresses the types of actions\nexpected of different workers for the various\ntypes of potential emergencies .\n  \nThe plan designates who, if anyone, will\nstay to shut down critical operations during\nan evacuation .\n  \nThe plan outlines specific evacuation routes\nand exits and these are posted in the\nworkplace where they are easily accessible\nto all workers .",
+          "page": 26,
+          "method": "native"
+        },
+        "score": 0.6923776268959045
+      },
+      {
+        "chunk": {
+          "id": "p25-c1",
+          "text": "21 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nEmergency Action Plans Yes No N/A Comments\nAn emergency action plan is in place to\nguide employer and worker actions during\nworkplace emergencies .\nNOTE: While an emergency action plan\nis only required when an OSHA standard\nrequires one, having a plan is a good way\nto prepare and protect workers and the\nbusiness during an emergency .\n  \nThe plan considers all potential natural or\nman-made emergencies that could disrupt\nthe workplace .\n  \nThe plan considers all potential internal\nsources of emergencies that could disrupt\nthe workplace .\n  \nThe plan considers the impact of these\ninternal and external emergencies on\nworkplace operations and the response is\ntailored to the workplace .\n  \nThe plan contains a list of key personnel",
+          "page": 25,
+          "method": "native"
+        },
+        "score": 0.6445558667182922
+      },
+      {
+        "chunk": {
+          "id": "p27-c1",
+          "text": "23 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nEmergency Action Plans Yes No N/A Comments\nThe plan identifies a preferred method for\nreporting fires and other emergencies .   \nThe plan describes the method to be used to\nalert workers, including disabled workers, to\nevacuate or take other action .\n  \nAdditional Resources\n• OSHA Regulations:\n– 29 CFR 1910 .38 , Emergency Action Plans\n– 29 CFR 1910 .39 , Fire Prevention Plans\n• OSHA: Evacuation Plans and Procedures\n• OSHA: Emergency Preparedness and Response\n• OSHA: COVID-19\n• CDC: COVID-19",
+          "page": 27,
+          "method": "native"
+        },
+        "score": 0.5921428203582764
+      }
+    ],
+    "answer": {
+      "text": "The emergency action plan should include contact information for local emergency responders, agencies, and contractors besides key personnel.",
+      "citations": [
+        25
+      ],
+      "chunk_ids": [
+        "p25-c2"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 25,
+        "text": "21  |  SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nEmergency Action Plans Yes No N/A Comments\nAn emergency action plan is in place to \nguide employer and worker actions during \nworkplace emergencies . \nNOTE: While an emergency action plan \nis only required when an OSHA standard \nrequires one, having a plan is a good way \nto prepare and protect workers and the \nbusiness during an emergency . \n  \nThe plan considers all potential natural or \nman-made emergencies that could disrupt \nthe workplace .\n  \nThe plan considers all potential internal \nsources of emergencies that could disrupt \nthe workplace .\n  \nThe plan considers the impact of these \ninternal and external emergencies on \nworkplace operations and the response is \ntailored to the workplace .\n  \nThe plan contains a list of key personnel \nwith contact information as well as contact \ninformation for local emergency responders, \nagencies, and contractors .\n  \nThe plan contains the names, titles, \ndepartments, and telephone numbers \nof individuals to contact for additional \ninformation or an explanation of duties and \nresponsibilities under the plan .\n  \nThe plan addresses how medical assistance \nwill be provided .   ",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.02748004199747811,
+    "generation_seconds": 1.8139447499997914,
+    "generation_responses": [
+      "{\"answer\":\"The emergency action plan should include contact information for local emergency responders, agencies, and contractors besides key personnel.\",\"chunk_ids\":[\"p25-c2\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.8442838750015653
+  },
+  {
+    "case_id": "osha-19",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p5-c1",
+          "text": "1 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nAbout this Handbook\nThe Occupational Safety and Health\nAdministration (OSHA) and the National Institute\nfor Occupational Safety and Health (NIOSH)\ndeveloped this handbook to provide small\nbusiness employers with workplace safety and\nhealth information .\nThe handbook summarizes the benefits of an\neffective safety and health program, provides\nself-inspection checklists for employers to identify\nworkplace hazards, and reviews key workplace\nsafety and health resources for small businesses .\nThis handbook is a general guide . Employers\nshould not use it to assess compliance with the\nOccupational Safety and Health Act of 1970 (OSH\nAct) or federal OSHA standards . This handbook\ndoes not provide legal interpretations of the",
+          "page": 5,
+          "method": "native"
+        },
+        "score": 0.5096136927604675
+      },
+      {
+        "chunk": {
+          "id": "p8-c2",
+          "text": "s with this process at no cost .\nSelf-Inspection Checklists\nThe checklists in the handbook are intended\nfor general industry workplaces, but not for\nconstruction or maritime industries . They are a\nstarting point for identifying workplace hazards .\nThe checklists can give you some indication\nof where to begin taking action to make your\nbusiness safer and more healthful for your\nworkers . The checklists are based on several\nsources, including OSHA standards and generally\naccepted safety and health principles . Do not use\nthe checklists to assess your compliance with the\nOSH Act or OSHA standards .\nCompile information from your completed\nchecklists with workplace injury and illness\nrecords, worker training information, and process\nand equipment information (e .g ., maintenance",
+          "page": 8,
+          "method": "native"
+        },
+        "score": 0.4933474063873291
+      },
+      {
+        "chunk": {
+          "id": "p2-c1",
+          "text": "DHHS (NIOSH) Publication Number 2021-120 (revised 01/2024) | OSHA Publication Number 2209-01R 2024\nSmall Business Safety\nand Health Handbook",
+          "page": 2,
+          "method": "native"
+        },
+        "score": 0.48846733570098877
+      },
+      {
+        "chunk": {
+          "id": "p1-c1",
+          "text": "Small Business Safety\nand Health Handbook\n\nOccupational Safety CL\nCENTERS FOR DISEASE ~~!\nCONTROL AND PREVENTION\n\nand Health Administration",
+          "page": 1,
+          "method": "ocr"
+        },
+        "score": 0.48081138730049133
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [],
+    "retrieval_seconds": 0.02833437499793945,
+    "generation_seconds": 1.1936086670029908,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.2260985419998178
+  },
+  {
+    "case_id": "osha-20",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p97-c1",
+          "text": "93 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nRegion 7\nKansas City Regional Office\n(IA*, KS, MO, NE)\nTwo Pershing Square Building\n2300 Main Street, Suite 1010\nKansas City, MO 64108-2416\n(816) 283-8745 (816) 283-0547 Fax\nRegion 8\nDenver Regional Office\n(CO, MT, ND, SD, UT*, WY*)\nCesar Chavez Memorial Building\n1244 Speer Boulevard, Suite 551\nDenver, CO 80204\n(720) 264-6550 (720) 264-6585 Fax\nRegion 9\nSan Francisco Regional Office\n(AZ*, CA*, HI*, NV*, and American Samoa,\nGuam\nand the Northern Mariana Islands)\nSan Francisco Federal Building\n90 7th Street, Suite 2650\nSan Francisco, CA 94103\n(415) 625-2547 (415) 625-2534 Fax\nRegion 10\nSeattle Regional Office\n(AK*, ID, OR*, WA*)\n909 1st Ave, Suite 201A\nSeattle, WA 98104\nMailing address:\n20425 72nd Ave South, Suite 150A\nKent, WA 98032-2388",
+          "page": 97,
+          "method": "native"
+        },
+        "score": 0.6692861914634705
+      },
+      {
+        "chunk": {
+          "id": "p96-c3",
+          "text": "w York, NY 10014\n(212) 337-2378 (212) 337-2371 Fax\nRegion 3\nPhiladelphia Regional Office\n(DE, DC, MD*, PA, VA*, WV)\n1835 Market Street\nMailstop OSHA-RO/19\nPhiladelphia, PA 19103\n(215) 861-4900 (215) 861-4904 Fax\nRegion 4\nAtlanta Regional Office\n(AL, FL, GA, KY*, MS, NC*, SC*, TN*)\nSam Nunn Atlanta Federal Center\n61 Forsyth Street, SW, Room 6T50\nAtlanta, GA 30303\n(678) 237-0400 (678) 237-0447 Fax\nRegion 5\nChicago Regional Office\n(IL *, IN*, MI*, MN*, OH, WI)\nJohn C . Kluczynski Federal Building\n230 South Dearborn Street, Room 3244\nChicago, IL 60604\n(312) 353-2220 (312) 353-7774 Fax\nRegion 6\nDallas Regional Office\n(AR, LA, NM*, OK, TX)\nA . Maceo Smith Federal Building\n525 Griffin Street, Room 602\nDallas, TX 75202\n(972) 850-4145 (972) 850-4149 Fax",
+          "page": 96,
+          "method": "native"
+        },
+        "score": 0.5517785549163818
+      },
+      {
+        "chunk": {
+          "id": "p97-c2",
+          "text": "dress:\n20425 72nd Ave South, Suite 150A\nKent, WA 98032-2388\n(206) 757-6700 (206) 757-6705 Fax\n*These states and territories operate their own\nOSHA-approved job safety and health plans and\ncover state and local government employees\nas well as private sector employees . Th e\nConnecticut, Illinois, Maine, Massachusetts, New\nJersey, New York and Virgin Islands programs\ncover public employees only . (P rivate sector\nworkers in these states are covered by Federal\nOSHA) . States with approved programs must\nhave standards that are identical to, or at least as\neffective as, the Federal OSHA standards .\nNote: To get contact information for OSHA area\noffices, OSHA-approved State Plans and OSHA\nconsultation projects, please visit www . osha .gov\nor call 1-800-321-OSHA (6742) .\nContact OSHA",
+          "page": 97,
+          "method": "native"
+        },
+        "score": 0.4037112295627594
+      },
+      {
+        "chunk": {
+          "id": "p96-c2",
+          "text": "ation\n409 3rd Street, S .W ., MC2 120\nWa\nshington, DC 20416\nFor more information on SBREFA or to view the\nSBREFA Act in its entirety, visit the webpage:\nwww .sba .gov/advocacy .\nNOTE: Filing a complaint with the SBA\nOmbudsman does not affect any obligation that\nyou may have to comply with an OSHA citation or\nother enforcement action . Nor does it mean that\nyou need not take other available legal steps to\nprotect your interests .\nOSHA Regional Offices\nRegion 1\nBoston Regional Office\n(CT*, ME*, MA*, NH, RI, VT*)\nJFK Federal Building\n25 New Sudbury Street, Room E340\nBoston, MA 02203\n(617) 565-9860 (617) 565-9827 Fax\nRegion 2\nNew York Regional Office\n(NJ*, NY*, PR*, VI*)\nFederal Building\n201 Varick Street, Room 670\nNew York, NY 10014\n(212) 337-2378 (212) 337-2371 Fax\nRegion 3",
+          "page": 96,
+          "method": "native"
+        },
+        "score": 0.38607436418533325
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [],
+    "retrieval_seconds": 0.024356249999982538,
+    "generation_seconds": 1.7559939170023426,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.782326207998267
+  },
+  {
+    "case_id": "nist-ai-13",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p38-c3",
+          "text": "assist organizations in deciding how they might best manage\nAI risk that is well-aligned with their goals, considers legal/regulatory requirements and\nbest practices, and reflects risk management priorities.\nAI RMF temporal profiles are descriptions of either the current state or the desired, target\nstate of specific AI risk management activities within a given sector, industry, organization,\nor application context. An AI RMF Current Profile indicates how AI is currently being\nmanaged and the related risks in terms of current outcomes. A Target Profile indicates the\noutcomes needed to achieve the desired or target AI risk management goals.\nComparing Current and Target Profiles likely reveals gaps to be addressed to meet AI risk",
+          "page": 38,
+          "method": "native"
+        },
+        "score": 0.7029900550842285
+      },
+      {
+        "chunk": {
+          "id": "p38-c2",
+          "text": "NAGE 4.3: Incidents and errors are communicated to relevant\nAI actors, including affected communities. Processes for track-\ning, responding to, and recovering from incidents and errors are\nfollowed and documented.\nCategories Subcategories\n6. AI RMF Profiles\nAI RMF use-case profiles are implementations of the AI RMF functions, categories, and\nsubcategories for a specific setting or application based on the requirements, risk tolerance,\nand resources of the Framework user: for example, an AI RMF hiring profile or an AI\nRMF fair housing profile. Profiles may illustrate and offer insights into how risk can be\nmanaged at various stages of the AI lifecycle or in specific sector, technology, or end-use\napplications. AI RMF profiles assist organizations in deciding how they might best manage",
+          "page": 38,
+          "method": "native"
+        },
+        "score": 0.5887740850448608
+      },
+      {
+        "chunk": {
+          "id": "p1-c1",
+          "text": "NIST AI 100-1\nArtificial Intelligence Risk Management\nFramework (AI RMF 1.0)",
+          "page": 1,
+          "method": "native"
+        },
+        "score": 0.523566722869873
+      },
+      {
+        "chunk": {
+          "id": "p39-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nAI RMF cross-sectoral profilescover risks of models or applications that can be used across\nuse cases or sectors. Cross-sectoral profiles can also cover how to govern, map, measure,\nand manage risks for activities or business processes common across sectors such as the\nuse of large language models, cloud-based services or acquisition.\nThis Framework does not prescribe profile templates, allowing for flexibility in implemen-\ntation.\nPage 34",
+          "page": 39,
+          "method": "native"
+        },
+        "score": 0.5227976441383362
+      }
+    ],
+    "answer": {
+      "text": "Comparing an AI RMF Current Profile with a Target Profile reveals gaps to be addressed to meet AI risk management goals. To address these gaps, organizations can develop strategies and actions that align with the desired outcomes outlined in the Target Profile.",
+      "citations": [
+        38
+      ],
+      "chunk_ids": [
+        "p38-c3"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 38,
+        "text": "NIST AI 100-1 AI RMF 1.0\nTable 4: Categories and subcategories for the MANAGE function. (Continued)\nMANAGE 4: Risk\ntreatments,\nincluding response\nand recovery, and\ncommunication\nplans for the\nidentified and\nmeasured AI risks\nare documented and\nmonitored regularly.\nMANAGE 4.1: Post-deployment AI system monitoring plans\nare implemented, including mechanisms for capturing and eval-\nuating input from users and other relevant AI actors, appeal\nand override, decommissioning, incident response, recovery, and\nchange management.\nMANAGE 4.2: Measurable activities for continual improvements\nare integrated into AI system updates and include regular engage-\nment with interested parties, including relevant AI actors.\nMANAGE 4.3: Incidents and errors are communicated to relevant\nAI actors, including affected communities. Processes for track-\ning, responding to, and recovering from incidents and errors are\nfollowed and documented.\nCategories Subcategories\n6. AI RMF Profiles\nAI RMF use-case profiles are implementations of the AI RMF functions, categories, and\nsubcategories for a specific setting or application based on the requirements, risk tolerance,\nand resources of the Framework user: for example, an AI RMF hiring profile or an AI\nRMF fair housing profile. Profiles may illustrate and offer insights into how risk can be\nmanaged at various stages of the AI lifecycle or in specific sector, technology, or end-use\napplications. AI RMF profiles assist organizations in deciding how they might best manage\nAI risk that is well-aligned with their goals, considers legal/regulatory requirements and\nbest practices, and reflects risk management priorities.\nAI RMF temporal profiles are descriptions of either the current state or the desired, target\nstate of specific AI risk management activities within a given sector, industry, organization,\nor application context. An AI RMF Current Profile indicates how AI is currently being\nmanaged and the related risks in terms of current outcomes. A Target Profile indicates the\noutcomes needed to achieve the desired or target AI risk management goals.\nComparing Current and Target Profiles likely reveals gaps to be addressed to meet AI risk\nmanagement objectives. Action plans can be developed to address these gaps to fulfill\noutcomes in a given category or subcategory. Prioritization of gap mitigation is driven by\nthe user’s needs and risk management processes. This risk-based approach also enables\nFramework users to compare their approaches with other approaches and to gauge the\nresources needed (e.g., staffing, funding) to achieve AI risk management goals in a cost-\neffective, prioritized manner.\nPage 33",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.02421491600034642,
+    "generation_seconds": 1.7671676250029122,
+    "generation_responses": [
+      "{\"answer\":\"Comparing an AI RMF Current Profile with a Target Profile reveals gaps to be addressed to meet AI risk management goals. To address these gaps, organizations can develop strategies and actions that align with the desired outcomes outlined in the Target Profile.\",\"chunk_ids\":[\"p38-c3\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.8000984999998764
+  },
+  {
+    "case_id": "nist-ai-14",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p12-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\n1.2.2 Risk Tolerance\nWhile the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance. Risk\ntolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the\nrisk in order to achieve its objectives. Risk tolerance can be influenced by legal or regula-\ntory requirements (Adapted from: ISO GUIDE 73). Risk tolerance and the level of risk that\nis acceptable to organizations or society are highly contextual and application and use-case\nspecific. Risk tolerances can be influenced by policies and norms established by AI sys-\ntem owners, organizations, industries, communities, or policy makers. Risk tolerances are\nlikely to change over time as AI systems, policies, and norms evolve. Different organiza-",
+          "page": 12,
+          "method": "native"
+        },
+        "score": 0.8012515902519226
+      },
+      {
+        "chunk": {
+          "id": "p12-c3",
+          "text": "egulations and guidelines for risk criteria, tolerance, and\nresponse established by organizational, domain, discipline, sector, or professional\nrequirements. Some sectors or industries may have established definitions of harm or\nestablished documentation, reporting, and disclosure requirements. Within sectors,\nrisk management may depend on existing guidelines for specific applications and\nuse case settings. Where established guidelines do not exist, organizations should\ndefine reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used\nto manage risks and to document risk management processes.\n1.2.3 Risk Prioritization\nAttempting to eliminate negative risk entirely can be counterproductive in practice because",
+          "page": 12,
+          "method": "native"
+        },
+        "score": 0.7335004210472107
+      },
+      {
+        "chunk": {
+          "id": "p4-c1",
+          "text": "Table of Contents\nExecutive Summary 1\nPart 1: Foundational Information 4\n1 Framing Risk 4\n1.1 Understanding and Addressing Risks, Impacts, and Harms 4\n1.2 Challenges for AI Risk Management 5\n1.2.1 Risk Measurement 5\n1.2.2 Risk Tolerance 7\n1.2.3 Risk Prioritization 7\n1.2.4 Organizational Integration and Management of Risk 8\n2 Audience 9\n3 AI Risks and Trustworthiness 12\n3.1 Valid and Reliable 13\n3.2 Safe 14\n3.3 Secure and Resilient 15\n3.4 Accountable and Transparent 15\n3.5 Explainable and Interpretable 16\n3.6 Privacy-Enhanced 17\n3.7 Fair – with Harmful Bias Managed 17\n4 Effectiveness of the AI RMF 19\nPart 2: Core and Profiles 20\n5 AI RMF Core 20\n5.1 Govern 21\n5.2 Map 24\n5.3 Measure 28\n5.4 Manage 31\n6 AI RMF Profiles 33\nAppendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35",
+          "page": 4,
+          "method": "native"
+        },
+        "score": 0.6768483519554138
+      },
+      {
+        "chunk": {
+          "id": "p12-c2",
+          "text": "AI systems, policies, and norms evolve. Different organiza-\ntions may have varied risk tolerances due to their particular organizational priorities and\nresource considerations.\nEmerging knowledge and methods to better inform harm/cost-benefit tradeoffs will con-\ntinue to be developed and debated by businesses, governments, academia, and civil society.\nTo the extent that challenges for specifying AI risk tolerances remain unresolved, there may\nbe contexts where a risk management framework is not yet readily applicable for mitigating\nnegative AI risks.\nThe Framework is intended to be flexible and to augment existing risk practices\nwhich should align with applicable laws, regulations, and norms. Organizations\nshould follow existing regulations and guidelines for risk criteria, tolerance, and",
+          "page": 12,
+          "method": "native"
+        },
+        "score": 0.6765156984329224
+      }
+    ],
+    "answer": {
+      "text": "The AI RMF does not prescribe risk tolerance. When established tolerance guidelines do not exist, organizations should define reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used to manage risks and to document risk management processes.",
+      "citations": [
+        12
+      ],
+      "chunk_ids": [
+        "p12-c1",
+        "p12-c3"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 12,
+        "text": "NIST AI 100-1 AI RMF 1.0\n1.2.2 Risk Tolerance\nWhile the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance. Risk\ntolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the\nrisk in order to achieve its objectives. Risk tolerance can be influenced by legal or regula-\ntory requirements (Adapted from: ISO GUIDE 73). Risk tolerance and the level of risk that\nis acceptable to organizations or society are highly contextual and application and use-case\nspecific. Risk tolerances can be influenced by policies and norms established by AI sys-\ntem owners, organizations, industries, communities, or policy makers. Risk tolerances are\nlikely to change over time as AI systems, policies, and norms evolve. Different organiza-\ntions may have varied risk tolerances due to their particular organizational priorities and\nresource considerations.\nEmerging knowledge and methods to better inform harm/cost-benefit tradeoffs will con-\ntinue to be developed and debated by businesses, governments, academia, and civil society.\nTo the extent that challenges for specifying AI risk tolerances remain unresolved, there may\nbe contexts where a risk management framework is not yet readily applicable for mitigating\nnegative AI risks.\nThe Framework is intended to be flexible and to augment existing risk practices\nwhich should align with applicable laws, regulations, and norms. Organizations\nshould follow existing regulations and guidelines for risk criteria, tolerance, and\nresponse established by organizational, domain, discipline, sector, or professional\nrequirements. Some sectors or industries may have established definitions of harm or\nestablished documentation, reporting, and disclosure requirements. Within sectors,\nrisk management may depend on existing guidelines for specific applications and\nuse case settings. Where established guidelines do not exist, organizations should\ndefine reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used\nto manage risks and to document risk management processes.\n1.2.3 Risk Prioritization\nAttempting to eliminate negative risk entirely can be counterproductive in practice because\nnot all incidents and failures can be eliminated. Unrealistic expectations about risk may\nlead organizations to allocate resources in a manner that makes risk triage inefficient or\nimpractical or wastes scarce resources. A risk management culture can help organizations\nrecognize that not all AI risks are the same, and resources can be allocated purposefully.\nActionable risk management efforts lay out clear guidelines for assessing trustworthiness\nof each AI system an organization develops or deploys. Policies and resources should be\nprioritized based on the assessed risk level and potential impact of an AI system. The extent\nto which an AI system may be customized or tailored to the specific context of use by the\nAI deployer can be a contributing factor.\nPage 7",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.02762316699954681,
+    "generation_seconds": 2.4949642079991463,
+    "generation_responses": [
+      "{\"answer\":\"The AI RMF does not prescribe risk tolerance. When established tolerance guidelines do not exist, organizations should define reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used to manage risks and to document risk management processes.\",\"chunk_ids\":[\"p12-c1\",\"p12-c3\"],\"refused\":false}"
+    ],
+    "total_seconds": 2.5242083330012974
+  },
+  {
+    "case_id": "nist-ai-15",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p40-c5",
+          "text": "zational management, and members of\nthe research community.\nTest, Evaluation, Verification, and Validation (TEVV) tasks are performed throughout\nthe AI lifecycle. They are carried out by AI actors who examine the AI system or its\ncomponents, or detect and remediate problems. Ideally, AI actors carrying out verification\nPage 35",
+          "page": 40,
+          "method": "native"
+        },
+        "score": 0.8951793909072876
+      },
+      {
+        "chunk": {
+          "id": "p41-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nand validation tasks are distinct from those who perform test and evaluation actions. Tasks\ncan be incorporated into a phase as early as design, where tests are planned in accordance\nwith the design requirement.\n• TEVV tasks for design, planning, and data may center on internal and external vali-\ndation of assumptions for system design, data collection, and measurements relative\nto the intended context of deployment or application.\n• TEVV tasks for development (i.e., model building) include model validation and\nassessment.\n• TEVV tasks for deployment include system validation and integration in production,\nwith testing, and recalibration for systems and process integration, user experience,",
+          "page": 41,
+          "method": "native"
+        },
+        "score": 0.751607358455658
+      },
+      {
+        "chunk": {
+          "id": "p16-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nFig. 3. AI actors across AI lifecycle stages. See Appendix A for detailed descriptions of AI actor tasks, including details about testing,\nevaluation, verification, and validation tasks. Note that AI actors in the AI Model dimension (Figure 2) are separated as a best practice, with\nthose building and using the models separated from those verifying and validating the models.\nPage 11",
+          "page": 16,
+          "method": "native"
+        },
+        "score": 0.7233953475952148
+      },
+      {
+        "chunk": {
+          "id": "p14-c3",
+          "text": "for purposes of this framework. The NIST modification high-\nlights the importance of test, evaluation, verification, and validation (TEVV) processes\nthroughout an AI lifecycle and generalizes the operational context of an AI system.\nAI dimensions displayed in Figure 2 are the Application Context, Data and Input, AI\nModel, and Task and Output. AI actors involved in these dimensions who perform or\nmanage the design, development, deployment, evaluation, and use of AI systems and drive\nAI risk management efforts are the primary AI RMF audience.\nRepresentative AI actors across the lifecycle dimensions are listed in Figure 3 and described\nin detail in Appendix A. Within the AI RMF, all AI actors work together to manage risks",
+          "page": 14,
+          "method": "native"
+        },
+        "score": 0.7093921899795532
+      }
+    ],
+    "answer": {
+      "text": "TEVV tasks are performed throughout the AI lifecycle, starting as early as the design phase. Ideally, verification and validation actors should be distinct from test and evaluation actors. These actors should work together to manage risks across the AI lifecycle.",
+      "citations": [
+        16,
+        40,
+        41
+      ],
+      "chunk_ids": [
+        "p40-c5",
+        "p41-c1",
+        "p16-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 40,
+        "text": "NIST AI 100-1 AI RMF 1.0\nAppendix A:\nDescriptions of AI Actor Tasks from Figures 2 and 3\nAI Design tasks are performed during the Application Context and Data and Input phases\nof the AI lifecycle in Figure 2. AI Design actors create the concept and objectives of AI\nsystems and are responsible for the planning, design, and data collection and processing\ntasks of the AI system so that the AI system is lawful and fit-for-purpose. Tasks include ar-\nticulating and documenting the system’s concept and objectives, underlying assumptions,\ncontext, and requirements; gathering and cleaning data; and documenting the metadata\nand characteristics of the dataset. AI actors in this category include data scientists, do-\nmain experts, socio-cultural analysts, experts in the field of diversity, equity, inclusion,\nand accessibility, members of impacted communities, human factors experts (e.g., UX/UI\ndesign), governance experts, data engineers, data providers, system funders, product man-\nagers, third-party entities, evaluators, and legal and privacy governance.\nAI Development tasks are performed during the AI Model phase of the lifecycle in Figure\n2. AI Development actors provide the initial infrastructure of AI systems and are responsi-\nble for model building and interpretation tasks, which involve the creation, selection, cali-\nbration, training, and/or testing of models or algorithms. AI actors in this category include\nmachine learning experts, data scientists, developers, third-party entities, legal and privacy\ngovernance experts, and experts in the socio-cultural and contextual factors associated with\nthe deployment setting.\nAI Deployment tasks are performed during the Task and Output phase of the lifecycle in\nFigure 2. AI Deployment actors are responsible for contextual decisions relating to how\nthe AI system is used to assure deployment of the system into production. Related tasks\ninclude piloting the system, checking compatibility with legacy systems, ensuring regu-\nlatory compliance, managing organizational change, and evaluating user experience. AI\nactors in this category include system integrators, software developers, end users, oper-\nators and practitioners, evaluators, and domain experts with expertise in human factors,\nsocio-cultural analysis, and governance.\nOperation and Monitoring tasks are performed in the Application Context/Operate and\nMonitor phase of the lifecycle in Figure 2. These tasks are carried out by AI actors who are\nresponsible for operating the AI system and working with others to regularly assess system\noutput and impacts. AI actors in this category include system operators, domain experts, AI\ndesigners, users who interpret or incorporate the output of AI systems, product developers,\nevaluators and auditors, compliance experts, organizational management, and members of\nthe research community.\nTest, Evaluation, Verification, and Validation (TEVV) tasks are performed throughout\nthe AI lifecycle. They are carried out by AI actors who examine the AI system or its\ncomponents, or detect and remediate problems. Ideally, AI actors carrying out verification\nPage 35",
+        "method": "native"
+      },
+      {
+        "number": 41,
+        "text": "NIST AI 100-1 AI RMF 1.0\nand validation tasks are distinct from those who perform test and evaluation actions. Tasks\ncan be incorporated into a phase as early as design, where tests are planned in accordance\nwith the design requirement.\n• TEVV tasks for design, planning, and data may center on internal and external vali-\ndation of assumptions for system design, data collection, and measurements relative\nto the intended context of deployment or application.\n• TEVV tasks for development (i.e., model building) include model validation and\nassessment.\n• TEVV tasks for deployment include system validation and integration in production,\nwith testing, and recalibration for systems and process integration, user experience,\nand compliance with existing legal, regulatory, and ethical specifications.\n• TEVV tasks for operations involve ongoing monitoring for periodic updates, testing,\nand subject matter expert (SME) recalibration of models, the tracking of incidents\nor errors reported and their management, the detection of emergent properties and\nrelated impacts, and processes for redress and response.\nHuman Factors tasks and activities are found throughout the dimensions of the AI life-\ncycle. They include human-centered design practices and methodologies, promoting the\nactive involvement of end users and other interested parties and relevant AI actors, incor-\nporating context-specific norms and values in system design, evaluating and adapting end\nuser experiences, and broad integration of humans and human dynamics in all phases of the\nAI lifecycle. Human factors professionals provide multidisciplinary skills and perspectives\nto understand context of use, inform interdisciplinary and demographic diversity, engage\nin consultative processes, design and evaluate user experience, perform human-centered\nevaluation and testing, and inform impact assessments.\nDomain Expert tasks involve input from multidisciplinary practitioners or scholars who\nprovide knowledge or expertise in – and about – an industry sector, economic sector, con-\ntext, or application area where an AI system is being used. AI actors who are domain\nexperts can provide essential guidance for AI system design and development, and inter-\npret outputs in support of work performed by TEVV and AI impact assessment teams.\nAI Impact Assessment tasks include assessing and evaluating requirements for AI system\naccountability, combating harmful bias, examining impacts of AI systems, product safety,\nliability, and security, among others. AI actors such as impact assessors and evaluators\nprovide technical, human factor, socio-cultural, and legal expertise.\nProcurement tasks are conducted by AI actors with financial, legal, or policy management\nauthority for acquisition of AI models, products, or services from a third-party developer,\nvendor, or contractor.\nGovernance and Oversight tasks are assumed by AI actors with management, fiduciary,\nand legal authority and responsibility for the organization in which an AI system is de-\nPage 36",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.029381042000750313,
+    "generation_seconds": 1.9870889160010847,
+    "generation_responses": [
+      "{\"answer\":\"TEVV tasks are performed throughout the AI lifecycle, starting as early as the design phase. Ideally, verification and validation actors should be distinct from test and evaluation actors. These actors should work together to manage risks across the AI lifecycle.\",\"chunk_ids\":[\"p40-c5\",\"p41-c1\",\"p16-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 2.0181043749980745
+  },
+  {
+    "case_id": "nist-ai-16",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p43-c4",
+          "text": "due to enhanced data aggregation capability for AI systems.\n• AI systems may require more frequent maintenance and triggers for conducting cor-\nrective maintenance due to data, model, or concept drift.\n• Increased opacity and concerns about reproducibility.\n• Underdeveloped software testing standards and inability to document AI-based prac-\ntices to the standard expected of traditionally engineered software for all but the\nsimplest of cases.\n• Difficulty in performing regular AI-based software testing, or determining what to\ntest, since AI systems are not subject to the same controls as traditional code devel-\nopment.\nPage 38",
+          "page": 43,
+          "method": "native"
+        },
+        "score": 0.6523849368095398
+      },
+      {
+        "chunk": {
+          "id": "p37-c4",
+          "text": "MANAGE 3.2: Pre-trained models which are used for develop-\nment are monitored as part of AI system regular monitoring and\nmaintenance.\nCategories Subcategories\nContinued on next page\nPage 32",
+          "page": 37,
+          "method": "native"
+        },
+        "score": 0.5699247121810913
+      },
+      {
+        "chunk": {
+          "id": "p38-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nTable 4: Categories and subcategories for the MANAGE function. (Continued)\nMANAGE 4: Risk\ntreatments,\nincluding response\nand recovery, and\ncommunication\nplans for the\nidentified and\nmeasured AI risks\nare documented and\nmonitored regularly.\nMANAGE 4.1: Post-deployment AI system monitoring plans\nare implemented, including mechanisms for capturing and eval-\nuating input from users and other relevant AI actors, appeal\nand override, decommissioning, incident response, recovery, and\nchange management.\nMANAGE 4.2: Measurable activities for continual improvements\nare integrated into AI system updates and include regular engage-\nment with interested parties, including relevant AI actors.\nMANAGE 4.3: Incidents and errors are communicated to relevant",
+          "page": 38,
+          "method": "native"
+        },
+        "score": 0.527312695980072
+      },
+      {
+        "chunk": {
+          "id": "p28-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nTable 1: Categories and subcategories for the GOVERN function. (Continued)\nGOVERN 1.5: Ongoing monitoring and periodic review of the\nrisk management process and its outcomes are planned and or-\nganizational roles and responsibilities clearly defined, including\ndetermining the frequency of periodic review.\nGOVERN 1.6: Mechanisms are in place to inventory AI systems\nand are resourced according to organizational risk priorities.\nGOVERN 1.7: Processes and procedures are in place for decom-\nmissioning and phasing out AI systems safely and in a man-\nner that does not increase risks or decrease the organization’s\ntrustworthiness.\nGOVERN 2:\nAccountability\nstructures are in\nplace so that the\nappropriate teams\nand individuals are\nempowered,\nresponsible, and",
+          "page": 28,
+          "method": "native"
+        },
+        "score": 0.505219578742981
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 43,
+        "text": "NIST AI 100-1 AI RMF 1.0\nAppendix B:\nHow AI Risks Differ from Traditional Software Risks\nAs with traditional software, risks from AI-based technology can be bigger than an en-\nterprise, span organizations, and lead to societal impacts. AI systems also bring a set of\nrisks that are not comprehensively addressed by current risk frameworks and approaches.\nSome AI system features that present risks also can be beneficial. For example, pre-trained\nmodels and transfer learning can advance research and increase accuracy and resilience\nwhen compared to other models and approaches. Identifying contextual factors in theMAP\nfunction will assist AI actors in determining the level of risk and potential management\nefforts.\nCompared to traditional software, AI-specific risks that are new or increased include the\nfollowing:\n• The data used for building an AI system may not be a true or appropriate representa-\ntion of the context or intended use of the AI system, and the ground truth may either\nnot exist or not be available. Additionally, harmful bias and other data quality issues\ncan affect AI system trustworthiness, which could lead to negative impacts.\n• AI system dependency and reliance on data for training tasks, combined with in-\ncreased volume and complexity typically associated with such data.\n• Intentional or unintentional changes during training may fundamentally alter AI sys-\ntem performance.\n• Datasets used to train AI systems may become detached from their original and in-\ntended context or may become stale or outdated relative to deployment context.\n• AI system scale and complexity (many systems contain billions or even trillions of\ndecision points) housed within more traditional software applications.\n• Use of pre-trained models that can advance research and improve performance can\nalso increase levels of statistical uncertainty and cause issues with bias management,\nscientific validity, and reproducibility.\n• Higher degree of difficulty in predicting failure modes for emergent properties of\nlarge-scale pre-trained models.\n• Privacy risk due to enhanced data aggregation capability for AI systems.\n• AI systems may require more frequent maintenance and triggers for conducting cor-\nrective maintenance due to data, model, or concept drift.\n• Increased opacity and concerns about reproducibility.\n• Underdeveloped software testing standards and inability to document AI-based prac-\ntices to the standard expected of traditionally engineered software for all but the\nsimplest of cases.\n• Difficulty in performing regular AI-based software testing, or determining what to\ntest, since AI systems are not subject to the same controls as traditional code devel-\nopment.\nPage 38",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.02766745799817727,
+    "generation_seconds": 1.2466284580004867,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.2758092080002825
+  },
+  {
+    "case_id": "nist-ai-17",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p13-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nWhen applying the AI RMF, risks which the organization determines to be highest for the\nAI systems within a given context of use call for the most urgent prioritization and most\nthorough risk management process. In cases where an AI system presents unacceptable\nnegative risk levels – such as where significant negative impacts are imminent, severe harms\nare actually occurring, or catastrophic risks are present – development and deployment\nshould cease in a safe manner until risks can be sufficiently managed. If an AI system’s\ndevelopment, deployment, and use cases are found to be low-risk in a specific context, that\nmay suggest potentially lower prioritization.\nRisk prioritization may differ between AI systems that are designed or deployed to directly",
+          "page": 13,
+          "method": "native"
+        },
+        "score": 0.7193949222564697
+      },
+      {
+        "chunk": {
+          "id": "p19-c4",
+          "text": "onment is endangered” (Source: ISO /IEC TS 5723:2022). Safe\noperation of AI systems is improved through:\n• responsible design, development, and deployment practices;\n• clear information to deployers on responsible use of the system;\n• responsible decision-making by deployers and end users; and\n• explanations and documentation of risks based on empirical evidence of incidents.\nDifferent types of safety risks may require tailored AI risk management approaches based\non context and the severity of potential risks presented. Safety risks that pose a potential\nrisk of serious injury or death call for the most urgent prioritization and most thorough risk\nmanagement process.\nPage 14",
+          "page": 19,
+          "method": "native"
+        },
+        "score": 0.6356908679008484
+      },
+      {
+        "chunk": {
+          "id": "p38-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nTable 4: Categories and subcategories for the MANAGE function. (Continued)\nMANAGE 4: Risk\ntreatments,\nincluding response\nand recovery, and\ncommunication\nplans for the\nidentified and\nmeasured AI risks\nare documented and\nmonitored regularly.\nMANAGE 4.1: Post-deployment AI system monitoring plans\nare implemented, including mechanisms for capturing and eval-\nuating input from users and other relevant AI actors, appeal\nand override, decommissioning, incident response, recovery, and\nchange management.\nMANAGE 4.2: Measurable activities for continual improvements\nare integrated into AI system updates and include regular engage-\nment with interested parties, including relevant AI actors.\nMANAGE 4.3: Incidents and errors are communicated to relevant",
+          "page": 38,
+          "method": "native"
+        },
+        "score": 0.6322022676467896
+      },
+      {
+        "chunk": {
+          "id": "p28-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nTable 1: Categories and subcategories for the GOVERN function. (Continued)\nGOVERN 1.5: Ongoing monitoring and periodic review of the\nrisk management process and its outcomes are planned and or-\nganizational roles and responsibilities clearly defined, including\ndetermining the frequency of periodic review.\nGOVERN 1.6: Mechanisms are in place to inventory AI systems\nand are resourced according to organizational risk priorities.\nGOVERN 1.7: Processes and procedures are in place for decom-\nmissioning and phasing out AI systems safely and in a man-\nner that does not increase risks or decrease the organization’s\ntrustworthiness.\nGOVERN 2:\nAccountability\nstructures are in\nplace so that the\nappropriate teams\nand individuals are\nempowered,\nresponsible, and",
+          "page": 28,
+          "method": "native"
+        },
+        "score": 0.6311596632003784
+      }
+    ],
+    "answer": {
+      "text": "When an AI system presents unacceptable negative risk levels, development and deployment should cease in a safe manner until risks can be sufficiently managed. This should happen until the risks are sufficiently managed.",
+      "citations": [
+        13
+      ],
+      "chunk_ids": [
+        "p13-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 13,
+        "text": "NIST AI 100-1 AI RMF 1.0\nWhen applying the AI RMF, risks which the organization determines to be highest for the\nAI systems within a given context of use call for the most urgent prioritization and most\nthorough risk management process. In cases where an AI system presents unacceptable\nnegative risk levels – such as where significant negative impacts are imminent, severe harms\nare actually occurring, or catastrophic risks are present – development and deployment\nshould cease in a safe manner until risks can be sufficiently managed. If an AI system’s\ndevelopment, deployment, and use cases are found to be low-risk in a specific context, that\nmay suggest potentially lower prioritization.\nRisk prioritization may differ between AI systems that are designed or deployed to directly\ninteract with humans as compared to AI systems that are not. Higher initial prioritization\nmay be called for in settings where the AI system is trained on large datasets comprised of\nsensitive or protected data such as personally identifiable information, or where the outputs\nof the AI systems have direct or indirect impact on humans. AI systems designed to interact\nonly with computational systems and trained on non-sensitive datasets (for example, data\ncollected from the physical environment) may call for lower initial prioritization. Nonethe-\nless, regularly assessing and prioritizing risk based on context remains important because\nnon-human-facing AI systems can have downstream safety or social implications.\nResidual risk – defined as risk remaining after risk treatment (Source: ISO GUIDE 73) –\ndirectly impacts end users or affected individuals and communities. Documenting residual\nrisks will call for the system provider to fully consider the risks of deploying the AI product\nand will inform end users about potential negative impacts of interacting with the system.\n1.2.4 Organizational Integration and Management of Risk\nAI risks should not be considered in isolation. Different AI actors have different responsi-\nbilities and awareness depending on their roles in the lifecycle. For example, organizations\ndeveloping an AI system often will not have information about how the system may be\nused. AI risk management should be integrated and incorporated into broader enterprise\nrisk management strategies and processes. Treating AI risks along with other critical risks,\nsuch as cybersecurity and privacy, will yield a more integrated outcome and organizational\nefficiencies.\nThe AI RMF may be utilized along with related guidance and frameworks for managing\nAI system risks or broader enterprise risks. Some risks related to AI systems are common\nacross other types of software development and deployment. Examples of overlapping risks\ninclude: privacy concerns related to the use of underlying data to train AI systems; the en-\nergy and environmental implications associated with resource-heavy computing demands;\nsecurity concerns related to the confidentiality, integrity, and availability of the system and\nits training and output data; and general security of the underlying software and hardware\nfor AI systems.\nPage 8",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.032733249998273095,
+    "generation_seconds": 2.1007920840020233,
+    "generation_responses": [
+      "{\"answer\":\"When an AI system presents unacceptable negative risk levels, development and deployment should cease in a safe manner until risks can be sufficiently managed. This should happen until the risks are sufficiently managed.\",\"chunk_ids\":[\"p13-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 2.1354763749986887
+  },
+  {
+    "case_id": "nist-ai-18",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p20-c3",
+          "text": "elines in the NIST Cybersecurity Framework and Risk Manage-\nment Framework are among those which are applicable here.\nSecurity and resilience are related but distinct characteristics. While resilience is the abil-\nity to return to normal function after an unexpected adverse event, security includes re-\nsilience but also encompasses protocols to avoid, protect against, respond to, or recover\nfrom attacks. Resilience relates to robustness and goes beyond the provenance of the data\nto encompass unexpected or adversarial use (or abuse or misuse) of the model or data.\n3.4 Accountable and Transparent\nTrustworthy AI depends upon accountability. Accountability presupposes transparency.\nTransparencyreflects the extent to which information about an AI system and its outputs is",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.6567957997322083
+      },
+      {
+        "chunk": {
+          "id": "p20-c2",
+          "text": "cosystems in which they are deployed, may be said to be re-\nsilient if they can withstand unexpected adverse events or unexpected changes in their envi-\nronment or use – or if they can maintain their functions and structure in the face of internal\nand external change and degrade safely and gracefully when this is necessary (Adapted\nfrom: ISO /IEC TS 5723:2022). Common security concerns relate to adversarial examples,\ndata poisoning, and the exfiltration of models, training data, or other intellectual property\nthrough AI system endpoints. AI systems that can maintain confidentiality, integrity, and\navailability through protection mechanisms that prevent unauthorized access and use may\nbe said to be secure. Guidelines in the NIST Cybersecurity Framework and Risk Manage-",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.6057393550872803
+      },
+      {
+        "chunk": {
+          "id": "p44-c2",
+          "text": "lable standards and guidance that provide broad guidance to\norganizations to reduce security and privacy risks, such as, but not limited to, the NIST Cy-\nbersecurity Framework, the NIST Privacy Framework, the NIST Risk Management Frame-\nwork, and the Secure Software Development Framework. These frameworks have some\nfeatures in common with the AI RMF. Like most risk management approaches, they are\noutcome-based rather than prescriptive and are often structured around a Core set of func-\ntions, categories, and subcategories. While there are significant differences between these\nframeworks based on the domain addressed – and because AI risk management calls for\naddressing many other types of risks – frameworks like those mentioned above may inform",
+          "page": 44,
+          "method": "native"
+        },
+        "score": 0.5805233716964722
+      },
+      {
+        "chunk": {
+          "id": "p1-c1",
+          "text": "NIST AI 100-1\nArtificial Intelligence Risk Management\nFramework (AI RMF 1.0)",
+          "page": 1,
+          "method": "native"
+        },
+        "score": 0.5186728239059448
+      }
+    ],
+    "answer": {
+      "text": "Security and resilience are related but distinct characteristics. While resilience is the ability to return to normal function after an unexpected adverse event, security includes resilience but also encompasses protocols to avoid, protect against, respond to, or recover from attacks. Resilience relates to robustness and goes beyond the provenance of the data to encompass unexpected or adversarial use (or abuse or misuse) of the model or data.",
+      "citations": [
+        20
+      ],
+      "chunk_ids": [
+        "p20-c3"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 20,
+        "text": "NIST AI 100-1 AI RMF 1.0\nEmploying safety considerations during the lifecycle and starting as early as possible with\nplanning and design can prevent failures or conditions that can render a system dangerous.\nOther practical approaches for AI safety often relate to rigorous simulation and in-domain\ntesting, real-time monitoring, and the ability to shut down, modify, or have human inter-\nvention into systems that deviate from intended or expected functionality.\nAI safety risk management approaches should take cues from efforts and guidelines for\nsafety in fields such as transportation and healthcare, and align with existing sector- or\napplication-specific guidelines or standards.\n3.3 Secure and Resilient\nAI systems, as well as the ecosystems in which they are deployed, may be said to be re-\nsilient if they can withstand unexpected adverse events or unexpected changes in their envi-\nronment or use – or if they can maintain their functions and structure in the face of internal\nand external change and degrade safely and gracefully when this is necessary (Adapted\nfrom: ISO /IEC TS 5723:2022). Common security concerns relate to adversarial examples,\ndata poisoning, and the exfiltration of models, training data, or other intellectual property\nthrough AI system endpoints. AI systems that can maintain confidentiality, integrity, and\navailability through protection mechanisms that prevent unauthorized access and use may\nbe said to be secure. Guidelines in the NIST Cybersecurity Framework and Risk Manage-\nment Framework are among those which are applicable here.\nSecurity and resilience are related but distinct characteristics. While resilience is the abil-\nity to return to normal function after an unexpected adverse event, security includes re-\nsilience but also encompasses protocols to avoid, protect against, respond to, or recover\nfrom attacks. Resilience relates to robustness and goes beyond the provenance of the data\nto encompass unexpected or adversarial use (or abuse or misuse) of the model or data.\n3.4 Accountable and Transparent\nTrustworthy AI depends upon accountability. Accountability presupposes transparency.\nTransparencyreflects the extent to which information about an AI system and its outputs is\navailable to individuals interacting with such a system – regardless of whether they are even\naware that they are doing so. Meaningful transparency provides access to appropriate levels\nof information based on the stage of the AI lifecycle and tailored to the role or knowledge\nof AI actors or individuals interacting with or using the AI system. By promoting higher\nlevels of understanding, transparency increases confidence in the AI system.\nThis characteristic’s scope spans from design decisions and training data to model train-\ning, the structure of the model, its intended use cases, and how and when deployment,\npost-deployment, or end user decisions were made and by whom. Transparency is often\nnecessary for actionable redress related to AI system outputs that are incorrect or otherwise\nlead to negative impacts. Transparency should consider human-AI interaction: for exam-\nPage 15",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.030148707999615,
+    "generation_seconds": 2.4099437500008207,
+    "generation_responses": [
+      "{\"answer\":\"Security and resilience are related but distinct characteristics. While resilience is the ability to return to normal function after an unexpected adverse event, security includes resilience but also encompasses protocols to avoid, protect against, respond to, or recover from attacks. Resilience relates to robustness and goes beyond the provenance of the data to encompass unexpected or adversarial use (or abuse or misuse) of the model or data.\",\"chunk_ids\":[\"p20-c3\"],\"refused\":false}"
+    ],
+    "total_seconds": 2.441699791997962
+  },
+  {
+    "case_id": "nist-ai-19",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p3-c3",
+          "text": "k may be sent via email to AIframework@nist.gov at any time\nand will be reviewed and integrated on a semi-annual basis.",
+          "page": 3,
+          "method": "native"
+        },
+        "score": 0.6543668508529663
+      },
+      {
+        "chunk": {
+          "id": "p1-c1",
+          "text": "NIST AI 100-1\nArtificial Intelligence Risk Management\nFramework (AI RMF 1.0)",
+          "page": 1,
+          "method": "native"
+        },
+        "score": 0.6166886687278748
+      },
+      {
+        "chunk": {
+          "id": "p8-c3",
+          "text": "paper and two drafts of the Framework, discussions at mul-\ntiple public forums, and many small group meetings – has informed development of the AI\nRMF 1.0 as well as AI research and development and evaluation conducted by NIST and\nothers. Priority research and additional guidance that will enhance this Framework will be\ncaptured in an associated AI Risk Management Framework Roadmap to which NIST and\nthe broader community can contribute.\nPage 3",
+          "page": 8,
+          "method": "native"
+        },
+        "score": 0.5912854075431824
+      },
+      {
+        "chunk": {
+          "id": "p3-c2",
+          "text": "the Framework regularly to determine if an update is appro-\npriate; a review with formal input from the AI community is expected to take place no later than 2028. The\nFramework will employ a two-number versioning system to track and identify major and minor changes. The\nfirst number will represent the generation of the AI RMF and its companion documents (e.g., 1.0) and will\nchange only with major revisions. Minor revisions will be tracked using “.n” after the generation number\n(e.g., 1.1). All changes will be tracked using a Version Control Table which identifies the history, including\nversion number, date of change, and description of change. NIST plans to update the AI RMF Playbook\nfrequently. Comments on the AI RMF Playbook may be sent via email to AIframework@nist.gov at any time",
+          "page": 3,
+          "method": "native"
+        },
+        "score": 0.5912144780158997
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [],
+    "retrieval_seconds": 0.0372615410014987,
+    "generation_seconds": 1.094697290998738,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.1346868750006252
+  },
+  {
+    "case_id": "nist-ai-20",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p1-c1",
+          "text": "NIST AI 100-1\nArtificial Intelligence Risk Management\nFramework (AI RMF 1.0)",
+          "page": 1,
+          "method": "native"
+        },
+        "score": 0.6528330445289612
+      },
+      {
+        "chunk": {
+          "id": "p47-c1",
+          "text": "NIST AI 100-1 AI RMF 1.0\nAppendix D:\nAttributes of the AI RMF\nNIST described several key attributes of the AI RMF when work on the Framework first\nbegan. These attributes have remained intact and were used to guide the AI RMF’s devel-\nopment. They are provided here as a reference.\nThe AI RMF strives to:\n1. Be risk-based, resource-efficient, pro-innovation, and voluntary.\n2. Be consensus-driven and developed and regularly updated through an open, trans-\nparent process. All stakeholders should have the opportunity to contribute to the AI\nRMF’s development.\n3. Use clear and plain language that is understandable by a broad audience, including\nsenior executives, government officials, non-governmental organization leadership,",
+          "page": 47,
+          "method": "native"
+        },
+        "score": 0.6027367115020752
+      },
+      {
+        "chunk": {
+          "id": "p3-c1",
+          "text": "Certain commercial entities, equipment, or materials may be identified in this document in order to describe\nan experimental procedure or concept adequately. Such identification is not intended to imply recommenda-\ntion or endorsement by the National Institute of Standards and Technology, nor is it intended to imply that\nthe entities, materials, or equipment are necessarily the best available for the purpose.\nThis publication is available free of charge from: https://doi.org/10.6028/NIST.AI.100-1\nUpdate Schedule and Versions\nThe Artificial Intelligence Risk Management Framework (AI RMF) is intended to be a living document.\nNIST will review the content and usefulness of the Framework regularly to determine if an update is appro-",
+          "page": 3,
+          "method": "native"
+        },
+        "score": 0.5762981176376343
+      },
+      {
+        "chunk": {
+          "id": "p8-c3",
+          "text": "paper and two drafts of the Framework, discussions at mul-\ntiple public forums, and many small group meetings – has informed development of the AI\nRMF 1.0 as well as AI research and development and evaluation conducted by NIST and\nothers. Priority research and additional guidance that will enhance this Framework will be\ncaptured in an associated AI Risk Management Framework Roadmap to which NIST and\nthe broader community can contribute.\nPage 3",
+          "page": 8,
+          "method": "native"
+        },
+        "score": 0.5730552077293396
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [],
+    "retrieval_seconds": 0.02396870799930184,
+    "generation_seconds": 1.0227126669997233,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.0478257499999017
+  },
+  {
+    "case_id": "nist-csf-13",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p24-c4",
+          "text": "o PR.AA-03: Users, services, and hardware are authenticated\no PR.AA-04: Identity assertions are protected, conveyed, and verified",
+          "page": 24,
+          "method": "native"
+        },
+        "score": 0.4512811303138733
+      },
+      {
+        "chunk": {
+          "id": "p18-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n13\n\nFig. 6. Cybersecurity and privacy risk relationship\nCybersecurity risk management is essential for addressing privacy risks related to the\nloss of the confidentiality, integrity, and availability of individuals’ data. For example,\ndata breaches could lead to identity theft. However, privacy risks can also arise by\nmeans that are unrelated to cybersecurity incidents.\nAn organization processes data to achieve mission or business purposes, which can\nsometimes give rise to privacy events whereby individuals may experience problems as\na result of the data processing. These problems can be expressed in various ways, but\nNIST describes them as ranging from dignity-type effects (e.g., embarrassment or",
+          "page": 18,
+          "method": "native"
+        },
+        "score": 0.4028855562210083
+      },
+      {
+        "chunk": {
+          "id": "p26-c3",
+          "text": "o DE.AE-03: Information is correlated from multiple sources\no DE.AE-04: The estimated impact and scope of adverse events are understood\no DE.AE-06: Information on adverse events is provided to authorized staff and tools\no DE.AE-07: Cyber threat intelligence and other contextual information are integrated into\nthe analysis\no DE.AE-08: Incidents are declared when adverse events meet the defined incident\ncriteria",
+          "page": 26,
+          "method": "native"
+        },
+        "score": 0.39802056550979614
+      },
+      {
+        "chunk": {
+          "id": "p25-c2",
+          "text": "s to perform general tasks with cybersecurity risks in mind\no PR.AT-02: Individuals in specialized roles are provided with awareness and training so\nthat they possess the knowledge and skills to perform relevant tasks with cybersecurity\nrisks in mind\n• D ata Security (PR.DS): Data are managed consistent with the organization’s risk strategy to\nprotect the confidentiality, integrity, and availability of information\no P R.DS- 01: The confidentiality, integrity, and availability of data-at-rest are protected\no PR.DS-02: The confidentiality, integrity, and availability of data-in-transit are protected\no PR.DS-10: The confidentiality, integrity, and availability of data-in-use are protected\no PR.DS-11: Backups of data are created, protected, maintained, and tested",
+          "page": 25,
+          "method": "native"
+        },
+        "score": 0.37712088227272034
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 18,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n  13 \n \nFig. 6. Cybersecurity and privacy risk relationship \nCybersecurity risk management is essential for addressing privacy risks related to the \nloss of the confidentiality, integrity, and availability of individuals’ data. For example, \ndata breaches could lead to identity theft. However, privacy risks can also arise by \nmeans that are unrelated to cybersecurity incidents.  \nAn organization processes data to achieve mission or business purposes, which can \nsometimes give rise to privacy events whereby individuals may experience problems as \na result of the data processing. These problems can be expressed in various ways, but \nNIST describes them as ranging from dignity-type effects (e.g., embarrassment or \nstigma) to more tangible harms (e.g., discrimination, economic loss, or physical harm). \nThe NIST Privacy Framework a nd Cybersecurity Framework can be used together to \naddress the different aspects of cybersecurity and privacy risks. Additionally, NIST’s \nPrivacy Risk Assessment Methodology (PRAM) h as a catalog of example problems for \nuse in privacy risk assessments. \n• Suppl y chain risk s: An organization can use the CSF to foster cybersecurity risk oversight \nand communications with stakeholders across supply chains. All types of technology rely \non a complex, globally distributed, extensive, and interconnected supply chain \necosystem with geographically diverse routes and multiple levels of outsourcing. This \necosystem is composed of public- and private-sector entities (e.g., acquirers, suppliers, \ndevelopers, system integrators, external system service providers, and other \ntechnology-related service providers) that interact to research, develop, design, \nmanufacture, acquire, deliver, integrate, operate, maintain, dispose of, and otherwise \nutilize or manage technology products and services. These interactions are shaped and \ninfluenced by technologies, laws, policies, procedures, and practices. \nGiven the complex and interconnected relationships in this ecosystem, supply chain risk \nmanagement (SCRM) is critical for organizations. Cybersecurity SCRM (C-SCRM) is a \nsystematic process for managing exposure to cybersecurity risk throughout supply \nchains and developing appropriate response strategies, policies, processes, and \nprocedures. The Subcategories within the CSF C-SCRM Category [GV.SC] provide a \nconnection between outcomes that focus purely on cybersecurity and those that focus",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.024322417000803398,
+    "generation_seconds": 1.1083942080003908,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 1.1422764160015504
+  },
+  {
+    "case_id": "nist-csf-14",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p22-c4",
+          "text": "re established and agreed to by organizational stakeholders\no GV.SC-02: Cybersecurity roles and responsibilities for suppliers, customers, and partners\nare established, communicated, and coordinated internally and externally\no GV.SC-03: Cybersecurity supply chain risk management is integrated into cybersecurity\nand enterprise risk management, risk assessment, and improvement processes\no GV.SC-04: Suppliers are known and prioritized by criticality",
+          "page": 22,
+          "method": "native"
+        },
+        "score": 0.7030436992645264
+      },
+      {
+        "chunk": {
+          "id": "p23-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n\n18\no GV.SC-05: Requirements to address cybersecurity risks in supply chains are established,\nprioritized, and integrated into contracts and other types of agreements with suppliers\nand other relevant third parties\no GV.SC-06: Planning and due diligence are performed to reduce risks before entering into\nformal supplier or other third-party relationships\no GV.SC-07: The risks posed by a supplier, their products and services, and other third\nparties are understood, recorded, prioritized, assessed, responded to, and monitored\nover the course of the relationship\no GV.SC-08: Relevant suppliers and other third parties are included in incident planning,\nresponse, and recovery activities",
+          "page": 23,
+          "method": "native"
+        },
+        "score": 0.6844145655632019
+      },
+      {
+        "chunk": {
+          "id": "p23-c2",
+          "text": "ded in incident planning,\nresponse, and recovery activities\no GV.SC-09: Supply chain security practices are integrated into cybersecurity and\nenterprise risk management programs, and their performance is monitored throughout\nthe technology product and service life cycle\no GV.SC-10: Cybersecurity supply chain risk management plans include provisions for\nactivities that occur after the conclusion of a partnership or service agreement",
+          "page": 23,
+          "method": "native"
+        },
+        "score": 0.6155904531478882
+      },
+      {
+        "chunk": {
+          "id": "p22-c3",
+          "text": "to inform, improve, and adjust the risk management strategy\no GV.OV-01: Cybersecurity risk management strategy outcomes are reviewed to inform\nand adjust strategy and direction\no GV.OV-02: The cybersecurity risk management strategy is reviewed and adjusted to\nensure coverage of organizational requirements and risks\no GV.OV-03: Organizational cybersecurity risk management performance is evaluated and\nreviewed for adjustments needed\n• Cybersecurity Supply Chain Risk Management (GV.SC): Cyber supply chain risk\nmanagement processes are identified, established, managed, monitored, and improved by\norganizational stakeholders\no GV.SC-01: A cybersecurity supply chain risk management program, strategy, objectives,\npolicies, and processes are established and agreed to by organizational stakeholders",
+          "page": 22,
+          "method": "native"
+        },
+        "score": 0.5629224181175232
+      }
+    ],
+    "answer": {
+      "text": "GV.SC-04 states that suppliers are known and prioritized by criticality. GV.SC-05 states that requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties.",
+      "citations": [
+        22,
+        23
+      ],
+      "chunk_ids": [
+        "p22-c4",
+        "p23-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 22,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n \n  17 \n• Roles, Responsibilities, and Authorities (GV.RR): Cybersecurity roles, responsibilities, and \nauthorities to foster accountability, performance assessment, and continuous improvement \nare established and communicated \no GV.RR-01: Organizational leadership is responsible and accountable for cybersecurity \nrisk and fosters a culture that is risk-aware, ethical, and continually improving \no GV.RR-02: Roles, responsibilities, and authorities related to cybersecurity risk \nmanagement are established, communicated, understood, and enforced \no GV.RR-03: Adequate resources are allocated commensurate with the cybersecurity risk \nstrategy, roles, responsibilities, and policies \no GV.RR-04: Cybersecurity is included in human resources practices \n• Policy (GV.PO): Organizational cybersecurity policy is established, communicated, and \nenforced \no GV.PO-01: Policy for managing cybersecurity risks is established based on organizational \ncontext, cybersecurity strategy, and priorities and is communicated and enforced \no GV.PO-02: Policy for managing cybersecurity risks is reviewed, updated, communicated, \nand enforced to reflect changes in requirements, threats, technology, and \norganizational mission \n• Oversight (GV.OV): Results of organization-wide cybersecurity risk management activities \nand performance are used to inform, improve, and adjust the risk management strategy \no GV.OV-01: Cybersecurity risk management strategy outcomes are reviewed to inform \nand adjust strategy and direction \no GV.OV-02: The cybersecurity risk management strategy is reviewed and adjusted to \nensure coverage of organizational requirements and risks \no GV.OV-03: Organizational cybersecurity risk management performance is evaluated and \nreviewed for adjustments needed \n• Cybersecurity Supply Chain Risk Management (GV.SC): Cyber supply chain risk \nmanagement processes are identified, established, managed, monitored, and improved by \norganizational stakeholders \no GV.SC-01: A cybersecurity supply chain risk management program, strategy, objectives, \npolicies, and processes are established and agreed to by organizational stakeholders \no GV.SC-02: Cybersecurity roles and responsibilities for suppliers, customers, and partners \nare established, communicated, and coordinated internally and externally \no GV.SC-03: Cybersecurity supply chain risk management is integrated into cybersecurity \nand enterprise risk management, risk assessment, and improvement processes \no GV.SC-04: Suppliers are known and prioritized by criticality",
+        "method": "native"
+      },
+      {
+        "number": 23,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n \n  18 \no GV.SC-05: Requirements to address cybersecurity risks in supply chains are established, \nprioritized, and integrated into contracts and other types of agreements with suppliers \nand other relevant third parties \no GV.SC-06: Planning and due diligence are performed to reduce risks before entering into \nformal supplier or other third-party relationships \no GV.SC-07: The risks posed by a supplier, their products and services, and other third \nparties are understood, recorded, prioritized, assessed, responded to, and monitored \nover the course of the relationship \no GV.SC-08: Relevant suppliers and other third parties are included in incident planning, \nresponse, and recovery activities \no GV.SC-09: Supply chain security practices are integrated into cybersecurity and \nenterprise risk management programs, and their performance is monitored throughout \nthe technology product and service life cycle \no GV.SC-10: Cybersecurity supply chain risk management plans include provisions for \nactivities that occur after the conclusion of a partnership or service agreement \n \nIDENTIFY (ID): The organization’s current cybersecurity risks are understood \n• Asset Management (ID.AM): Assets (e.g., data, hardware, software, systems, facilities, \nservices, people) that enable the organization to achieve business purposes are identified \nand managed consistent with their relative importance to organizational objectives and the \norganization’s risk strategy \no ID.AM-01: Inventories of hardware managed by the organization are maintained \no ID.AM-02: Inventories of software, services, and systems managed by the organization \nare maintained \no ID.AM-03: Representations of the organization’s authorized network communication \nand internal and external network data flows are maintained \no ID.AM-04: Inventories of services provided by suppliers are maintained \no ID.AM-05: Assets are prioritized based on classification, criticality, resources, and \nimpact on the mission \no ID.AM-07: Inventories of data and corresponding metadata for designated data types \nare maintained \no ID.AM-08: Systems, hardware, software, services, and data are managed throughout \ntheir life cycles \n• Ri sk Assessment (ID.RA): The cybersecurity risk to the organization, assets, and individuals \nis understood by the organization \no ID .RA -01: Vulnerabilities in assets are identified, validated, and recorded",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.024788541999441804,
+    "generation_seconds": 2.3514712500000314,
+    "generation_responses": [
+      "{\"answer\":\"GV.SC-04 states that suppliers are known and prioritized by criticality. GV.SC-05 states that requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\",\"chunk_ids\":[\"p22-c4\",\"p23-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 2.3772162499990372
+  },
+  {
+    "case_id": "nist-csf-15",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p26-c3",
+          "text": "o DE.AE-03: Information is correlated from multiple sources\no DE.AE-04: The estimated impact and scope of adverse events are understood\no DE.AE-06: Information on adverse events is provided to authorized staff and tools\no DE.AE-07: Cyber threat intelligence and other contextual information are integrated into\nthe analysis\no DE.AE-08: Incidents are declared when adverse events meet the defined incident\ncriteria",
+          "page": 26,
+          "method": "native"
+        },
+        "score": 0.5825711488723755
+      },
+      {
+        "chunk": {
+          "id": "p27-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n\n22\nRESPOND (RS): Actions regarding a detected cybersecurity incident are taken\n• Incident Management (RS.MA): Responses to detected cybersecurity incidents are\nmanaged\no RS.MA-01: The incident response plan is executed in coordination with relevant third\nparties once an incident is declared\no RS.MA-02: Incident reports are triaged and validated\no RS.MA-03: Incidents are categorized and prioritized\no RS.MA-04: Incidents are escalated or elevated as needed\no RS.MA-05: The criteria for initiating incident recovery are applied\n• Inc ident Analysis (RS.AN): Investigations are conducted to ensure effective response and\nsupport forensics and recovery activities",
+          "page": 27,
+          "method": "native"
+        },
+        "score": 0.576024055480957
+      },
+      {
+        "chunk": {
+          "id": "p20-c3",
+          "text": "tion, and Access Control PR.AA\nAwareness and Training PR.AT\nData Security PR.DS\nPlatform Security PR.PS\nTechnology Infrastructure Resilience PR.IR\nDetect (DE) Continuous Monitoring DE.CM\nAdverse Event Analysis DE.AE\nRespond (RS) Incident Management RS.MA\nIncident Analysis RS.AN\nIncident Response Reporting and Communication RS.CO\nIncident Mitigation RS.MI\nRecover (RC) Incident Recovery Plan Execution RC.RP\nIncident Recovery Communication RC.CO",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.5534199476242065
+      },
+      {
+        "chunk": {
+          "id": "p27-c2",
+          "text": "tive response and\nsupport forensics and recovery activities\no RS. AN -03: Analysis is performed to establish what has taken place during an incident\nand the root cause of the incident\no RS.AN-06: Actions performed during an investigation are recorded, and the records’\nintegrity and provenance are preserved\no RS.AN-07: Incident data and metadata are collected, and their integrity and provenance\nare preserved\no RS.AN-08: An incident’s magnitude is estimated and validated\n• Inc ident Response Reporting and Communication (RS.CO): Response activities are\ncoordinated with internal and external stakeholders as required by laws, regulations, or\npolicies\no RS. CO -02: Internal and external stakeholders are notified of incidents",
+          "page": 27,
+          "method": "native"
+        },
+        "score": 0.5402383804321289
+      }
+    ],
+    "answer": {
+      "text": "RS.MA-02",
+      "citations": [
+        27
+      ],
+      "chunk_ids": [
+        "p27-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 27,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n \n  22 \nRESPOND (RS): Actions regarding a detected cybersecurity incident are taken \n• Incident Management (RS.MA): Responses to detected cybersecurity incidents are \nmanaged \no RS.MA-01: The incident response plan is executed in coordination with relevant third \nparties once an incident is declared  \no RS.MA-02: Incident reports are triaged and validated \no RS.MA-03: Incidents are categorized and prioritized \no RS.MA-04: Incidents are escalated or elevated as needed \no RS.MA-05: The criteria for initiating incident recovery are applied \n• Inc ident Analysis (RS.AN): Investigations are conducted to ensure effective response and \nsupport forensics and recovery activities \no RS. AN -03: Analysis is performed to establish what has taken place during an incident \nand the root cause of the incident \no RS.AN-06: Actions performed during an investigation are recorded, and the records’ \nintegrity and provenance are preserved \no RS.AN-07: Incident data and metadata are collected, and their integrity and provenance \nare preserved \no RS.AN-08: An incident’s magnitude is estimated and validated \n• Inc ident Response Reporting and Communication (RS.CO): Response activities are \ncoordinated with internal and external stakeholders as required by laws, regulations, or \npolicies \no RS. CO -02: Internal and external stakeholders are notified of incidents \no RS.CO-03: Information is shared with designated internal and external stakeholders \n• Inc ident Mitigation (RS.MI): Activities are performed to prevent expansion of an event and \nmitigate its effects \no RS. MI -01: Incidents are contained \no RS.MI-02: Incidents are eradicated \n \nRECOVER (RC): Assets and operations affected by a cybersecurity incident are restored \n• Incident Recovery Plan Execution (RC.RP): Restoration activities are performed to ensure \noperational availability of systems and services affected by cybersecurity incidents \no RC.RP-01: The recovery portion of the incident response plan is executed once initiated \nfrom the incident response process",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.029090249998262152,
+    "generation_seconds": 1.0650595410006645,
+    "generation_responses": [
+      "{\"answer\":\"RS.MA-02\",\"chunk_ids\":[\"p27-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.095321666001837
+  },
+  {
+    "case_id": "nist-csf-16",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p22-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n\n17\n• Roles, Responsibilities, and Authorities (GV.RR): Cybersecurity roles, responsibilities, and\nauthorities to foster accountability, performance assessment, and continuous improvement\nare established and communicated\no GV.RR-01: Organizational leadership is responsible and accountable for cybersecurity\nrisk and fosters a culture that is risk-aware, ethical, and continually improving\no GV.RR-02: Roles, responsibilities, and authorities related to cybersecurity risk\nmanagement are established, communicated, understood, and enforced\no GV.RR-03: Adequate resources are allocated commensurate with the cybersecurity risk\nstrategy, roles, responsibilities, and policies",
+          "page": 22,
+          "method": "native"
+        },
+        "score": 0.6967772245407104
+      },
+      {
+        "chunk": {
+          "id": "p21-c4",
+          "text": "itizing cybersecurity risks is established and communicated\no GV.RM-07: Strategic opportunities (i.e., positive risks) are characterized and are\nincluded in organizational cybersecurity risk discussions",
+          "page": 21,
+          "method": "native"
+        },
+        "score": 0.6885785460472107
+      },
+      {
+        "chunk": {
+          "id": "p22-c2",
+          "text": "curity risk\nstrategy, roles, responsibilities, and policies\no GV.RR-04: Cybersecurity is included in human resources practices\n• Policy (GV.PO): Organizational cybersecurity policy is established, communicated, and\nenforced\no GV.PO-01: Policy for managing cybersecurity risks is established based on organizational\ncontext, cybersecurity strategy, and priorities and is communicated and enforced\no GV.PO-02: Policy for managing cybersecurity risks is reviewed, updated, communicated,\nand enforced to reflect changes in requirements, threats, technology, and\norganizational mission\n• Oversight (GV.OV): Results of organization-wide cybersecurity risk management activities\nand performance are used to inform, improve, and adjust the risk management strategy",
+          "page": 22,
+          "method": "native"
+        },
+        "score": 0.637622594833374
+      },
+      {
+        "chunk": {
+          "id": "p21-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n\n16\nGOVERN (GV): The organization’s cybersecurity risk management strategy, expectations, and\npolicy are established, communicated, and monitored\n• Organizational Context (GV.OC): The circumstances — mission, stakeholder expectations,\ndependencies, and legal, regulatory, and contractual requirements — surrounding the\norganization’s cybersecurity risk management decisions are understood\no GV.OC-01: The organizational mission is understood and informs cybersecurity risk\nmanagement\no GV.OC-02: Internal and external stakeholders are understood, and their needs and\nexpectations regarding cybersecurity risk management are understood and considered",
+          "page": 21,
+          "method": "native"
+        },
+        "score": 0.6279802918434143
+      }
+    ],
+    "answer": {
+      "text": "Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving",
+      "citations": [
+        22
+      ],
+      "chunk_ids": [
+        "p22-c1"
+      ],
+      "refused": false
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 22,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n \n  17 \n• Roles, Responsibilities, and Authorities (GV.RR): Cybersecurity roles, responsibilities, and \nauthorities to foster accountability, performance assessment, and continuous improvement \nare established and communicated \no GV.RR-01: Organizational leadership is responsible and accountable for cybersecurity \nrisk and fosters a culture that is risk-aware, ethical, and continually improving \no GV.RR-02: Roles, responsibilities, and authorities related to cybersecurity risk \nmanagement are established, communicated, understood, and enforced \no GV.RR-03: Adequate resources are allocated commensurate with the cybersecurity risk \nstrategy, roles, responsibilities, and policies \no GV.RR-04: Cybersecurity is included in human resources practices \n• Policy (GV.PO): Organizational cybersecurity policy is established, communicated, and \nenforced \no GV.PO-01: Policy for managing cybersecurity risks is established based on organizational \ncontext, cybersecurity strategy, and priorities and is communicated and enforced \no GV.PO-02: Policy for managing cybersecurity risks is reviewed, updated, communicated, \nand enforced to reflect changes in requirements, threats, technology, and \norganizational mission \n• Oversight (GV.OV): Results of organization-wide cybersecurity risk management activities \nand performance are used to inform, improve, and adjust the risk management strategy \no GV.OV-01: Cybersecurity risk management strategy outcomes are reviewed to inform \nand adjust strategy and direction \no GV.OV-02: The cybersecurity risk management strategy is reviewed and adjusted to \nensure coverage of organizational requirements and risks \no GV.OV-03: Organizational cybersecurity risk management performance is evaluated and \nreviewed for adjustments needed \n• Cybersecurity Supply Chain Risk Management (GV.SC): Cyber supply chain risk \nmanagement processes are identified, established, managed, monitored, and improved by \norganizational stakeholders \no GV.SC-01: A cybersecurity supply chain risk management program, strategy, objectives, \npolicies, and processes are established and agreed to by organizational stakeholders \no GV.SC-02: Cybersecurity roles and responsibilities for suppliers, customers, and partners \nare established, communicated, and coordinated internally and externally \no GV.SC-03: Cybersecurity supply chain risk management is integrated into cybersecurity \nand enterprise risk management, risk assessment, and improvement processes \no GV.SC-04: Suppliers are known and prioritized by criticality",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.024986249998619314,
+    "generation_seconds": 1.4281116660022235,
+    "generation_responses": [
+      "{\"answer\":\"Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving\",\"chunk_ids\":[\"p22-c1\"],\"refused\":false}"
+    ],
+    "total_seconds": 1.4542168750012934
+  },
+  {
+    "case_id": "nist-csf-17",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p20-c2",
+          "text": ". CSF 2.0 Core Function and Category names and identifiers\n\nThe CSF Core, Informative References, and Implementation Examples are available on the CSF\n2.0 website a nd through the CSF 2.0 Reference Tool, which allows users to explore t hem and\nexport them in human- and machine-readable formats. The CSF 2.0 Core is also available in a\nlegacy format s imilar to that of CSF 1.1.\n\nFunction Category Category Identifier\nGovern (GV) Organizational Context GV.OC\nRisk Management Strategy GV.RM\nRoles, Responsibilities, and Authorities GV.RR\nPolicy GV.PO\nOversight GV.OV\nCybersecurity Supply Chain Risk Management GV.SC\nIdentify (ID) Asset Management ID.AM\nRisk Assessment ID.RA\nImprovement ID.IM\nProtect (PR) Identity Management, Authentication, and Access Control PR.AA\nAwareness and Training PR.AT",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.5313381552696228
+      },
+      {
+        "chunk": {
+          "id": "p10-c2",
+          "text": "rsecurity outcomes that collectively comprise the Function.\nSubcategories further divide each Category into more specific outcomes of technical and\nmanagement activities. The Subcategories are not exhaustive, but they describe detailed\noutcomes that support each Category.\nThe Functions, Categories, and Subcategories apply to all ICT used by an organization, including\ninformation technology (IT), the Internet of Things (IoT), and operational technology (OT). They\nalso apply to all types of technology environments, including cloud, mobile, and artificial\nintelligence systems. The CSF Core is forward-looking and intended to apply to future changes\nin technologies and environments.",
+          "page": 10,
+          "method": "native"
+        },
+        "score": 0.5020959973335266
+      },
+      {
+        "chunk": {
+          "id": "p20-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n\n15\nAppendix A. CSF Core\nThis appendix describes the Functions, Categories, and Subcategories of the CSF Core. Table 1\nlists the CSF 2.0 Core Function and Category names and unique alphabetic identifiers. Each\nFunction name in the table is linked to its portion of the appendix. The order of Functions,\nCategories, and Subcategories of the Core is not alphabetical; it is intended to resonate most\nwith those charged with operationalizing risk management within an organization. The\nnumbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF\n1.1 Subcategories that were relocated in CSF 2.0.\nTable 1. CSF 2.0 Core Function and Category names and identifiers",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.5020089149475098
+      },
+      {
+        "chunk": {
+          "id": "p24-c4",
+          "text": "o PR.AA-03: Users, services, and hardware are authenticated\no PR.AA-04: Identity assertions are protected, conveyed, and verified",
+          "page": 24,
+          "method": "native"
+        },
+        "score": 0.479959636926651
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 25,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n \n  20 \no PR.AA-05: Access permissions, entitlements, and authorizations are defined in a policy, \nmanaged, enforced, and reviewed, and incorporate the principles of least privilege and \nseparation of duties \no PR.AA-06: Physical access to assets is managed, monitored, and enforced \ncommensurate with risk \n• Aw areness and Training (PR.AT): The organization’s personnel are provided with \ncybersecurity awareness and training so that they can perform their cybersecurity-related \ntasks \no P R.AT -01: Personnel are provided with awareness and training so that they possess the \nknowledge and skills to perform general tasks with cybersecurity risks in mind \no PR.AT-02: Individuals in specialized roles are provided with awareness and training so \nthat they possess the knowledge and skills to perform relevant tasks with cybersecurity \nrisks in mind \n• D ata Security (PR.DS): Data are managed consistent with the organization’s risk strategy to \nprotect the confidentiality, integrity, and availability of information \no P R.DS- 01: The confidentiality, integrity, and availability of data-at-rest are protected \no PR.DS-02: The confidentiality, integrity, and availability of data-in-transit are protected \no PR.DS-10: The confidentiality, integrity, and availability of data-in-use are protected \no PR.DS-11: Backups of data are created, protected, maintained, and tested \n• P latform Security (PR.PS): The hardware, software (e.g., firmware, operating systems, \napplications), and services of physical and virtual platforms are managed consistent with \nthe organization’s risk strategy to protect their confidentiality, integrity, and availability \no PR .PS -01: Configuration management practices are established and applied \no PR.PS-02: Software is maintained, replaced, and removed commensurate with risk \no PR.PS-03: Hardware is maintained, replaced, and removed commensurate with risk \no PR.PS-04: Log records are generated and made available for continuous monitoring \no PR.PS-05: Installation and execution of unauthorized software are prevented \no PR.PS-06: Secure software development practices are integrated, and their performance \nis monitored throughout the software development life cycle \n• T echnology Infrastructure Resilience (PR.IR): Security architectures are managed with the \norganization’s risk strategy to protect asset confidentiality, integrity, and availability, and \norganizational resilience \no P R.IR -01: Networks and environments are protected from unauthorized logical access \nand usage",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.02940337499967427,
+    "generation_seconds": 0.8849865420015703,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 0.9156678750005085
+  },
+  {
+    "case_id": "nist-csf-18",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p17-c4",
+          "text": "Conducting Risk Assessments fr om the NIST Risk Management\nFramework (RMF). For an organization using the NIST RMF and its suite of publications,\nthe CSF can be used to complement the RMF’s approach to selecting and prioritizing\ncontrols from SP 800-5 3, Security and Privacy Controls for Information Systems and\nOrganizations.\n• Privacy risks: While cybersecurity and privacy are independent disciplines, their\nobjectives overlap in certain circumstances, as illustrated in Fig. 6.",
+          "page": 17,
+          "method": "native"
+        },
+        "score": 0.6665198802947998
+      },
+      {
+        "chunk": {
+          "id": "p17-c2",
+          "text": "l risk\nmanagement language that executives will understand.\nNIST resources that describe the mutual relationship between cybersecurity risk management\nand ERM include:\n• NIST Cybersecurity Framework 2.0 – Enterprise Risk Management Quick-Start Guide\n• NIST Interagency Report (IR) 8286, Integrating Cybersecurity and Enterprise Risk\nManagement (ERM)\n• IR 8286A, Identifying and Estimating Cybersecurity Risk for Enterprise Risk Management\n• IR 8286B, Prioritizing Cybersecurity Risk for Enterprise Risk Management\n• IR 8286C, Staging Cybersecurity Risks for Enterprise Risk Management and Governance\nOversight\n• IR 8286D, Using Business Impact Analysis to Inform Risk Prioritization and Response\n• SP 800-221, Enterprise Impact of Information and Communications Technology Risk:",
+          "page": 17,
+          "method": "native"
+        },
+        "score": 0.5866024494171143
+      },
+      {
+        "chunk": {
+          "id": "p2-c3",
+          "text": "e.g., associations, professional organizations, regulators)\nwho set and communicate priorities for cybersecurity risk management.\nSupplemental Content\nNIST will continue to build and host additional resources to help organizations implement the\nCSF, including Quick Start Guides and Community Profiles. All resources are made publicly\navailable on the NIST CSF website. Suggestions for additional resources to reference on the\nNIST CSF website can always be shared with NIST at cyberframework@nist.gov.\nNote to Readers\nUnless otherwise noted, documents cited, referenced, or excerpted in this publication are not\nwholly incorporated into this publication.\nBefore version 2.0, the Cybersecurity Framework was called the “Framework for Improving",
+          "page": 2,
+          "method": "native"
+        },
+        "score": 0.5790943503379822
+      },
+      {
+        "chunk": {
+          "id": "p1-c1",
+          "text": "National Institute of Standards and Technology\nThis publication is available free of charge from: https://doi.org/10.6028/NIST.CSWP.29\nFebruary 26, 2024\nThe NIST Cybersecurity\nFramework (CSF) 2.0",
+          "page": 1,
+          "method": "native"
+        },
+        "score": 0.566371738910675
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [
+      {
+        "number": 17,
+        "text": "NIST CSWP 29  The NIST Cybersecurity Framework (CSF) 2.0 \nFebruary 26, 2024 \n  12 \norganizations by their nature may monitor risk at the enterprise level, while larger companies \nmay maintain separate risk management efforts integrated into the ERM. \nOrganizations can employ an ERM approach to balance a portfolio of risk considerations, \nincluding cybersecurity, and make informed decisions. Executives receive significant input \nabout current and planned risk activities as they integrate governance and risk strategies with \nresults from previous uses of the CSF. The CSF helps organizations to translate their \nterminology for cybersecurity and cybersecurity risk management into general risk \nmanagement language that executives will understand. \nNIST resources that describe the mutual relationship between cybersecurity risk management \nand ERM include:  \n• NIST Cybersecurity Framework 2.0 – Enterprise Risk Management Quick-Start Guide \n• NIST Interagency Report (IR) 8286, Integrating Cybersecurity and Enterprise Risk \nManagement (ERM)  \n• IR 8286A, Identifying and Estimating Cybersecurity Risk for Enterprise Risk Management \n• IR 8286B, Prioritizing Cybersecurity Risk for Enterprise Risk Management \n• IR 8286C, Staging Cybersecurity Risks for Enterprise Risk Management and Governance \nOversight \n• IR 8286D, Using Business Impact Analysis to Inform Risk Prioritization and Response \n• SP 800-221, Enterprise Impact of Information and Communications Technology Risk: \nGoverning and Managing ICT Risk Programs Within an Enterprise Risk Portfolio \n• SP 800-221A, Information and Communications Technology (ICT) Risk Outcomes: \nIntegrating ICT Risk Management Programs with the Enterprise Risk Portfolio \nAn organization may also find the CSF beneficial for integrating cybersecurity risk management \nwith individual ICT risk management programs, such as: \n• Cybersecurity risk management and assessment: The CSF can be integrated with \nestablished cybersecurity risk management and assessment programs, such as SP 800-\n37, Risk Management Framework for Information Systems and Organizations, and SP \n800-30, Guide for Conducting Risk Assessments fr om the NIST Risk Management \nFramework (RMF). For an organization using the NIST RMF and its suite of publications, \nthe CSF can be used to complement the RMF’s approach to selecting and prioritizing \ncontrols from SP 800-5 3, Security and Privacy Controls for Information Systems and \nOrganizations. \n• Privacy risks: While cybersecurity and privacy are independent disciplines, their \nobjectives overlap in certain circumstances, as illustrated in Fig. 6.",
+        "method": "native"
+      }
+    ],
+    "retrieval_seconds": 0.025311917001090478,
+    "generation_seconds": 0.7984999159998551,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 0.8247846250014845
+  },
+  {
+    "case_id": "nist-csf-19",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p20-c3",
+          "text": "tion, and Access Control PR.AA\nAwareness and Training PR.AT\nData Security PR.DS\nPlatform Security PR.PS\nTechnology Infrastructure Resilience PR.IR\nDetect (DE) Continuous Monitoring DE.CM\nAdverse Event Analysis DE.AE\nRespond (RS) Incident Management RS.MA\nIncident Analysis RS.AN\nIncident Response Reporting and Communication RS.CO\nIncident Mitigation RS.MI\nRecover (RC) Incident Recovery Plan Execution RC.RP\nIncident Recovery Communication RC.CO",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.4914903938770294
+      },
+      {
+        "chunk": {
+          "id": "p26-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n\n21\no PR.IR-02: The organization’s technology assets are protected from environmental\nthreats\no PR.IR-03: Mechanisms are implemented to achieve resilience requirements in normal\nand adverse situations\no PR.IR-04: Adequate resource capacity to ensure availability is maintained\n\nDETECT (DE): Possible cybersecurity attacks and compromises are found and analyzed\n• Continuous Monitoring (DE.CM): Assets are monitored to find anomalies, indicators of\ncompromise, and other potentially adverse events\no DE.CM-01: Networks and network services are monitored to find potentially adverse\nevents\no DE.CM-02: The physical environment is monitored to find potentially adverse events",
+          "page": 26,
+          "method": "native"
+        },
+        "score": 0.47305622696876526
+      },
+      {
+        "chunk": {
+          "id": "p20-c2",
+          "text": ". CSF 2.0 Core Function and Category names and identifiers\n\nThe CSF Core, Informative References, and Implementation Examples are available on the CSF\n2.0 website a nd through the CSF 2.0 Reference Tool, which allows users to explore t hem and\nexport them in human- and machine-readable formats. The CSF 2.0 Core is also available in a\nlegacy format s imilar to that of CSF 1.1.\n\nFunction Category Category Identifier\nGovern (GV) Organizational Context GV.OC\nRisk Management Strategy GV.RM\nRoles, Responsibilities, and Authorities GV.RR\nPolicy GV.PO\nOversight GV.OV\nCybersecurity Supply Chain Risk Management GV.SC\nIdentify (ID) Asset Management ID.AM\nRisk Assessment ID.RA\nImprovement ID.IM\nProtect (PR) Identity Management, Authentication, and Access Control PR.AA\nAwareness and Training PR.AT",
+          "page": 20,
+          "method": "native"
+        },
+        "score": 0.4084848165512085
+      },
+      {
+        "chunk": {
+          "id": "p24-c4",
+          "text": "o PR.AA-03: Users, services, and hardware are authenticated\no PR.AA-04: Identity assertions are protected, conveyed, and verified",
+          "page": 24,
+          "method": "native"
+        },
+        "score": 0.40606921911239624
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [],
+    "retrieval_seconds": 0.02389358300206368,
+    "generation_seconds": 0.8790207499987446,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 0.9047989169994253
+  },
+  {
+    "case_id": "nist-csf-20",
+    "status": "ok",
+    "hits": [
+      {
+        "chunk": {
+          "id": "p14-c1",
+          "text": "NIST CSWP 29 The NIST Cybersecurity Framework (CSF) 2.0\nFebruary 26, 2024\n9\n4. Introduction to Online Resources That Supplement the CSF\nNIST and other organizations have produced a suite of online resources that help organizations\nunderstand, adopt, and use the CSF. Since they are hosted online, these additional resources\ncan be updated more frequently than this document, which is updated infrequently to provide\nstability to its users, and be available in machine-readable formats. This section provides an\noverview of three types of online resources: Informative References, Implementation Examples,\nand Quick Start Guides.\nInformative References are mappings that indicate relationships between the Core and various",
+          "page": 14,
+          "method": "native"
+        },
+        "score": 0.5674005746841431
+      },
+      {
+        "chunk": {
+          "id": "p5-c4",
+          "text": "r their cybersecurity posture in context and then adapt the\nCSF to their specific needs.\nBuilding on previous versions, CSF 2.0 contains new features tha t highlight the importance of\ngovernance and supply chains. Special attention is paid to the QSGs to ensure that the CSF is\nrelevant and readily accessible by smaller organizations as well as their larger counterparts.\nNIST now provides Implementation Examples and Informative References, which are available\nonline and updated regularly. Creating current and target state Organizational Profiles helps\norganizations to compare where they are versus where they want or need to be and allows\nthem to implement and assess security controls more quickly.\nCybersecurity risks are expanding constantly, and managing those risks must be a continuous",
+          "page": 5,
+          "method": "native"
+        },
+        "score": 0.5594354271888733
+      },
+      {
+        "chunk": {
+          "id": "p14-c4",
+          "text": "SGs can help an organization implement the CSF because they\ndistill specific portions of the CSF into actionable “first steps” that an organization can consider\non the path to improving their cybersecurity posture and management of associated risks. The\nguides are revised in their own time frames, and new guides are added as needed.\nSuggestions for new Informative References for CSF 2.0 can always be shared with NIST at\nolir@nist.gov. Suggestions for other resources to reference on the NIST CSF website, including\nadditional QSG topics, should be directed to cyberframework@nist.gov.",
+          "page": 14,
+          "method": "native"
+        },
+        "score": 0.5378403067588806
+      },
+      {
+        "chunk": {
+          "id": "p31-c2",
+          "text": "Subcategories that detail each outcome.\nCSF Current Profile\nA part of an Organizational Profile that specifies the Core outcomes that an organization is currently achieving (or\nattempting to achieve) and characterizes how or to what extent each outcome is being achieved.\nCSF Function\nThe highest level of organization for cybersecurity outcomes. There are six CSF Functions: Govern, Identify,\nProtect, Detect, Respond, and Recover.\nCSF Implementation Example\nA concise, action-oriented, notional illustration of a way to help achieve a CSF Core outcome.\nCSF Informative Reference\nA mapping that indicates a relationship between a CSF Core outcome and an existing standard, guideline,\nregulation, or other content.\nCSF Organizational Profile",
+          "page": 31,
+          "method": "native"
+        },
+        "score": 0.5375261306762695
+      }
+    ],
+    "answer": {
+      "text": "NOT FOUND",
+      "citations": [],
+      "chunk_ids": [],
+      "refused": true
+    },
+    "error": null,
+    "extracted_evidence_pages": [],
+    "retrieval_seconds": 0.02277233299901127,
+    "generation_seconds": 0.9172450000005483,
+    "generation_responses": [
+      "{\"answer\":\"NOT FOUND\",\"chunk_ids\":[],\"refused\":true}"
+    ],
+    "total_seconds": 0.9409236669998791
+  }
+]

@@ -77,3 +77,10 @@ generation, extraction, and source indexes. Both reject their candidates and
 preserve the original production behavior. A successful comparison command does
 not imply promotion; inspect its acceptance gates and review legacy results
 separately.
+
+Final verification is recorded in [RELEASE.md](RELEASE.md). It includes the one-time
+24-question held-out run and a fresh ten-question legacy regression, both using
+the retained original generation/retrieval and now preserving raw model responses,
+including repair attempts if any. The held-out questions are no longer untouched;
+do not use reruns as new independent validation. Older control artifacts that
+lack raw attempts remain unchanged rather than being backfilled.

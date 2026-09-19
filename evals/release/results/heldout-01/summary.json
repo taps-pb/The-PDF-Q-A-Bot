@@ -1,0 +1,389 @@
+{
+  "native": {
+    "overall": {
+      "hit_at_4": {
+        "count": 17,
+        "denominator": 18,
+        "rate": 0.9444444444444444
+      },
+      "evidence_coverage_at_4": {
+        "count": 14,
+        "denominator": 18,
+        "rate": 0.7777777777777778
+      },
+      "answer_accuracy": {
+        "count": 11,
+        "denominator": 18,
+        "rate": 0.6111111111111112
+      },
+      "false_refusal_rate": {
+        "count": 5,
+        "denominator": 18,
+        "rate": 0.2777777777777778
+      },
+      "correct_refusal_rate": {
+        "count": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "unsupported_answer_rate": {
+        "count": 2,
+        "denominator": 13,
+        "rate": 0.15384615384615385
+      },
+      "operational_errors": 0,
+      "latency": {
+        "retrieval": {
+          "count": 24,
+          "median_seconds": 0.02755160449851246,
+          "p95_seconds": 0.0372615410014987
+        },
+        "generation": {
+          "count": 24,
+          "median_seconds": 1.2537152705008339,
+          "p95_seconds": 2.4099437500008207
+        }
+      }
+    },
+    "by_document": {
+      "nist-ai": {
+        "hit_at_4": {
+          "count": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "evidence_coverage_at_4": {
+          "count": 5,
+          "denominator": 6,
+          "rate": 0.8333333333333334
+        },
+        "answer_accuracy": {
+          "count": 3,
+          "denominator": 6,
+          "rate": 0.5
+        },
+        "false_refusal_rate": {
+          "count": 1,
+          "denominator": 6,
+          "rate": 0.16666666666666666
+        },
+        "correct_refusal_rate": {
+          "count": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "unsupported_answer_rate": {
+          "count": 2,
+          "denominator": 5,
+          "rate": 0.4
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 8,
+            "median_seconds": 0.02852424999946379,
+            "p95_seconds": 0.0372615410014987
+          },
+          "generation": {
+            "count": 8,
+            "median_seconds": 1.8771282705019985,
+            "p95_seconds": 2.4949642079991463
+          }
+        }
+      },
+      "nist-csf": {
+        "hit_at_4": {
+          "count": 5,
+          "denominator": 6,
+          "rate": 0.8333333333333334
+        },
+        "evidence_coverage_at_4": {
+          "count": 3,
+          "denominator": 6,
+          "rate": 0.5
+        },
+        "answer_accuracy": {
+          "count": 3,
+          "denominator": 6,
+          "rate": 0.5
+        },
+        "false_refusal_rate": {
+          "count": 3,
+          "denominator": 6,
+          "rate": 0.5
+        },
+        "correct_refusal_rate": {
+          "count": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 8,
+            "median_seconds": 0.02488739599903056,
+            "p95_seconds": 0.02940337499967427
+          },
+          "generation": {
+            "count": 8,
+            "median_seconds": 0.9911522705006064,
+            "p95_seconds": 2.3514712500000314
+          }
+        }
+      },
+      "osha": {
+        "hit_at_4": {
+          "count": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "evidence_coverage_at_4": {
+          "count": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "answer_accuracy": {
+          "count": 5,
+          "denominator": 6,
+          "rate": 0.8333333333333334
+        },
+        "false_refusal_rate": {
+          "count": 1,
+          "denominator": 6,
+          "rate": 0.16666666666666666
+        },
+        "correct_refusal_rate": {
+          "count": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 5,
+          "rate": 0.0
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 8,
+            "median_seconds": 0.02790720849770878,
+            "p95_seconds": 0.0399831249997078
+          },
+          "generation": {
+            "count": 8,
+            "median_seconds": 1.3709433959993476,
+            "p95_seconds": 1.8561734590002743
+          }
+        }
+      }
+    }
+  },
+  "ocr": {
+    "overall": {
+      "hit_at_4": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "evidence_coverage_at_4": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "answer_accuracy": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "false_refusal_rate": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "correct_refusal_rate": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "unsupported_answer_rate": {
+        "count": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "operational_errors": 0,
+      "latency": {
+        "retrieval": {
+          "count": 0,
+          "median_seconds": null,
+          "p95_seconds": null
+        },
+        "generation": {
+          "count": 0,
+          "median_seconds": null,
+          "p95_seconds": null
+        }
+      }
+    },
+    "by_variant": {
+      "scan": {
+        "hit_at_4": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "evidence_coverage_at_4": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "answer_accuracy": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "false_refusal_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "correct_refusal_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 0,
+            "median_seconds": null,
+            "p95_seconds": null
+          },
+          "generation": {
+            "count": 0,
+            "median_seconds": null,
+            "p95_seconds": null
+          }
+        }
+      },
+      "mixed": {
+        "hit_at_4": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "evidence_coverage_at_4": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "answer_accuracy": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "false_refusal_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "correct_refusal_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unsupported_answer_rate": {
+          "count": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "operational_errors": 0,
+        "latency": {
+          "retrieval": {
+            "count": 0,
+            "median_seconds": null,
+            "p95_seconds": null
+          },
+          "generation": {
+            "count": 0,
+            "median_seconds": null,
+            "p95_seconds": null
+          }
+        }
+      }
+    },
+    "pairs": []
+  },
+  "failures": [
+    {
+      "case_id": "osha-15",
+      "document_id": "osha",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual review by Codex root: Rank-one p80-c2 explicitly gives at least 20 feet when the barrier alternative is not used. NOT FOUND is a false refusal despite complete evidence."
+    },
+    {
+      "case_id": "nist-ai-13",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "unsupported_answer",
+      "notes": "AI-assisted manual review by Codex root: The displayed answer identifies gaps toward risk-management goals; p38-c3 supplies the comparison/gap clause and the preceding Target Profile goal definition, so f1 is supported semantically despite the final line break. However, the action-plan sentence is absent from every retrieved chunk. Full extracted page 38 contains it after p38-c3's cutoff, confirming retrieval loss rather than extraction loss. The proposed strategies/actions recommendation lacks cited support; it also omits the frozen category/subcategory-outcome detail, so f2 is incomplete. This is not proof of fabricated source content: the full source, unavailable to generation, does discuss action plans."
+    },
+    {
+      "case_id": "nist-ai-15",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "unsupported_answer",
+      "notes": "AI-assisted manual review by Codex root: Cited p40-c5/p41-c1 supply lifecycle-wide TEVV and the ideal separation of verification/validation actors from test/evaluation actors. The design-phase detail is supported by p41-c1. However, the added claim that the actors work together to manage lifecycle risks appears in retrieved p14-c3, not the cited p40-c5/p41-c1/p16-c1. Under the unchanged citation-level rubric, that material extra claim lacks cited support, as in development nist-ai-07."
+    },
+    {
+      "case_id": "nist-ai-16",
+      "document_id": "nist-ai",
+      "variant": "native",
+      "category": "generation_failure",
+      "notes": "AI-assisted manual review by Codex root: Rank-one p43-c4 explicitly names data, model, and concept drift as reasons for more frequent maintenance and corrective-maintenance triggers. NOT FOUND is a false refusal despite all three retrieved facts."
+    },
+    {
+      "case_id": "nist-csf-13",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "incomplete_retrieval",
+      "notes": "AI-assisted manual review by Codex root: Retrieved p18-c1 supplies embarrassment as a dignity-type effect but cuts off before stigma and the three tangible harms. Full extracted page 18 contains all five examples, confirming retrieval loss rather than extraction loss. NOT FOUND is a document-level false refusal with incomplete retrieved evidence."
+    },
+    {
+      "case_id": "nist-csf-17",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "incomplete_retrieval",
+      "notes": "AI-assisted manual review by Codex root: None of the four retrieved chunks contains PR.PS-05 or the unauthorized-software requirement. Full extracted page 25 contains it intact. NOT FOUND is a document-level false refusal caused by incomplete retrieval, not extraction loss."
+    },
+    {
+      "case_id": "nist-csf-18",
+      "document_id": "nist-csf",
+      "variant": "native",
+      "category": "incomplete_retrieval",
+      "notes": "AI-assisted manual review by Codex root: Retrieved p17-c4 starts after the requested publication-number mappings; the other chunks do not supply either mapping. Full extracted page 17 contains SP 800-37 and SP 800-30 with both titles intact. NOT FOUND is a document-level false refusal with incomplete retrieval."
+    }
+  ],
+  "failure_counts": {
+    "extraction_loss": 0,
+    "incomplete_retrieval": 3,
+    "generation_failure": 2,
+    "unsupported_answer": 2,
+    "operational_error": 0
+  },
+  "review": {
+    "reviewer": "Codex root AI-assisted manual review after the single frozen held-out run, using required facts, all retrieved chunks, actual citations, and extracted source pages for retrieval-loss checks. No tuning or annotation changes. Not independent human adjudication.",
+    "grades_sha256": "311fd6f4e24a51bc70367384b8a0ebd1ad9b6d16bea5b73f9d9ee1e0f13635e8",
+    "reviewed_at": "2026-09-19T12:09:12.302075+00:00"
+  }
+}

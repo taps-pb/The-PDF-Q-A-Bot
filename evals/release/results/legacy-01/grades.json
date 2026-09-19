@@ -1,0 +1,48 @@
+{
+  "800": {
+    "q1": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p5-c1 names OSHA and NIOSH in full; both agencies are correctly supplied."
+    },
+    "q2": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p7-c1 lists all seven core elements, including the full communication/coordination scope. The answer preserves all seven."
+    },
+    "q3": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p8-c2 supports general industry and the construction/maritime exclusions. All required facts are correct."
+    },
+    "q4": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p30-c2 supports monthly visual inspections, annual maintenance, and recording both actions. The answer includes all requirements."
+    },
+    "q5": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p72-c1 supports fit testing before first use and at least annually thereafter. Both conditions are included."
+    },
+    "q6": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p75-c2 supports at least 3 feet (0.9 meters) above the elevated surface. Both units and the minimum qualifier are retained."
+    },
+    "q7": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p90-c1 and p90-c4 support no-cost/confidential services; p90-c1 supplies priority for high-hazard worksites. All required facts are present."
+    },
+    "q8": {
+      "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND for the nonexistent guaranteed workers-compensation discount."
+    },
+    "q9": {
+      "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND for the nonexistent Acme Bakery officer name/direct phone assignment."
+    },
+    "q10": {
+      "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND for the nonexistent recommended ladder brand/model."
+    }
+  }
+}
