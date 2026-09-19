@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-09-19T11:54:19.807277+00:00",
+  "question_sha256": "189ff11a06a22b7347ba2975eb8cdf656bc52d638ed1dd6d60801400c7a71301",
+  "grades_sha256": "f2399d86c5616195ee1082b52c8840c43995448c963b48fa1b8538473c548d7c",
+  "official_three_size_experiment": false,
+  "selected_chunk_size": 800,
+  "selection_rule": "Highest hit@4, then accuracy, then refusal rate, then smaller size.",
+  "limitations": "Development set; page-level retrieval proxy; manual answer grading.",
+  "metrics": [
+    {
+      "chunk_size": 800,
+      "hit_at_4_count": 7,
+      "hit_at_4_denominator": 7,
+      "hit_at_4": 1.0,
+      "answer_accuracy_count": 3,
+      "answer_accuracy_denominator": 7,
+      "answer_accuracy": 0.42857142857142855,
+      "correct_refusal_count": 3,
+      "correct_refusal_denominator": 3,
+      "correct_refusal_rate": 1.0,
+      "operational_errors": 2
+    }
+  ]
+}

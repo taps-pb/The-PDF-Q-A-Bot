@@ -157,6 +157,8 @@ def run(pdf, questions, output, sizes=SIZES, retrieval_only=False):
                     record["status"] = "ok"
             except Exception as exc:
                 record["error"] = {"stage": stage, "message": str(exc)}
+            if stage == "answer" and hasattr(models, "last_generation_responses"):
+                record["generation_responses"] = list(models.last_generation_responses)
             record["total_seconds"] = time.perf_counter() - started
             result["results"].append(record)
             _write_json(path, result)

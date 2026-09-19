@@ -140,6 +140,7 @@ class LocalModels:
         return _vectors(response.embeddings, len(texts))
 
     def generate(self, question: str, hits: list[SearchHit]) -> Answer:
+        self.last_generation_responses = []
         question = _question(question)
         if not hits:
             return Answer("NOT FOUND", [], [], True)
@@ -165,6 +166,7 @@ class LocalModels:
                 keep_alive="30m",
             )
             content = response.message.content or ""
+            self.last_generation_responses.append(content)
             try:
                 return parse_answer(content, hits)
             except (ValueError, TypeError, KeyError) as exc:

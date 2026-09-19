@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "osha-01",
+    "split": "development",
+    "family": "housekeeping",
+    "category": "direct",
+    "question": "What type of waste cans should hold rags soaked in oil or paint?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Covered metal waste cans.",
+        "evidence": [
+          [
+            {
+              "page": 11,
+              "quote": "Covered metal waste cans are used for rags soaked in oil, flammable/combustible liquid, paint, etc ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-01",
+    "variant": "native"
+  },
+  {
+    "id": "osha-02",
+    "split": "development",
+    "family": "housekeeping",
+    "category": "numeric",
+    "question": "When blowing down is necessary instead of vacuuming and sweeping, what compressed-air pressure limit does the handbook give?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "30 psi.",
+        "evidence": [
+          [
+            {
+              "page": 11,
+              "quote": "When it is necessary to blow down in place of vacuuming and sweeping, compressed air pressure is limited to 30 psi"
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-02",
+    "variant": "native"
+  },
+  {
+    "id": "osha-03",
+    "split": "development",
+    "family": "fire-classes",
+    "category": "list",
+    "question": "Which fire extinguisher classes correspond to ordinary combustibles, energized electrical equipment, combustible metals, and kitchen cooking oils?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Class A for ordinary combustibles.",
+        "evidence": [
+          [
+            {
+              "page": 30,
+              "quote": "Class A - Ordinary combustible materials ."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Class C for energized electrical equipment.",
+        "evidence": [
+          [
+            {
+              "page": 30,
+              "quote": "Class C - Energized-electrical equipment ."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "Class D for combustible metals.",
+        "evidence": [
+          [
+            {
+              "page": 30,
+              "quote": "Class D – Combustible metals ."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "Class K for kitchens cooking with vegetable or animal oils and fats.",
+        "evidence": [
+          [
+            {
+              "page": 30,
+              "quote": "Class K – Kitchens; cooking with vegetable or animal oils and fats ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-03",
+    "variant": "native"
+  },
+  {
+    "id": "osha-04",
+    "split": "development",
+    "family": "lockout",
+    "category": "direct",
+    "question": "At what source should machinery be locked out, and which control devices should not be used as the lockout location?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "At the main power source.",
+        "evidence": [
+          [
+            {
+              "page": 49,
+              "quote": "Machinery or equipment is locked out at the main power source"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Not a push button, selector switch, or other control circuit type device.",
+        "evidence": [
+          [
+            {
+              "page": 49,
+              "quote": "not at a push button, selector switch, or other control circuit type device ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-04",
+    "variant": "native"
+  },
+  {
+    "id": "osha-05",
+    "split": "development",
+    "family": "ladder-defects",
+    "category": "identifier",
+    "question": "What tag wording does the handbook give for structurally defective ladders, and what happens to those ladders until repaired or replaced?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Dangerous: Do Not Use, or similar language.",
+        "evidence": [
+          [
+            {
+              "page": 76,
+              "quote": "Ladders with structural or other defects are immediately tagged “Dangerous: Do Not Use” or with similar language"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Removed from service until repaired or replaced.",
+        "evidence": [
+          [
+            {
+              "page": 76,
+              "quote": "removed from service until repaired or replaced ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-05",
+    "variant": "native"
+  },
+  {
+    "id": "osha-06",
+    "split": "development",
+    "family": "stair-width",
+    "category": "numeric",
+    "question": "What minimum standard-stair width does the handbook specify, in inches and centimeters?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "At least 22 inches (56 centimeters).",
+        "evidence": [
+          [
+            {
+              "page": 77,
+              "quote": "Standard stairs are at least 22 inches (56 centimeters) wide ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-06",
+    "variant": "native"
+  },
+  {
+    "id": "osha-07",
+    "split": "development",
+    "family": "ergonomics",
+    "category": "multi_passage",
+    "question": "What does ergonomics mean, and which type of ergonomic controls is most desirable when possible?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Fitting the job to the worker.",
+        "evidence": [
+          [
+            {
+              "page": 21,
+              "quote": "Ergonomics—fitting the job to the worker—helps prevent musculoskeletal disorders"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Engineering controls.",
+        "evidence": [
+          [
+            {
+              "page": 22,
+              "quote": "E ngineering controls are the most desirable when possible ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-07",
+    "variant": "native"
+  },
+  {
+    "id": "osha-08",
+    "split": "development",
+    "family": "reuse-rights",
+    "category": "direct",
+    "question": "Do I need permission to share the handbook, and is source credit required?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "No permission needed to share all or part; it is public domain and copyright-free.",
+        "evidence": [
+          [
+            {
+              "page": 5,
+              "quote": "This publication is in the public domain and copyright-free . You can share it, fully or partially, without permission ."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Source credit is appreciated but not required.",
+        "evidence": [
+          [
+            {
+              "page": 5,
+              "quote": "We appreciate, but do not require, source credit ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-08",
+    "variant": "native"
+  },
+  {
+    "id": "osha-09",
+    "split": "development",
+    "family": "paid-leave",
+    "category": "unanswerable",
+    "question": "How many days of paid annual leave must my small business provide under this handbook?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The handbook does not set paid annual leave allowances.",
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-09",
+    "variant": "native"
+  },
+  {
+    "id": "osha-10",
+    "split": "development",
+    "family": "alarm-brand",
+    "category": "unanswerable",
+    "question": "Which exact brand and model of fire alarm should I buy according to this handbook?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "Fire alarm practices are described without a purchasing brand or model recommendation.",
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-10",
+    "variant": "native"
+  },
+  {
+    "id": "osha-11",
+    "split": "development",
+    "family": "training-fees",
+    "category": "unanswerable",
+    "question": "What exact dollar fee will my company pay for an OSHA Training Institute Education Center course?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "Training resources are referenced, but no exact fee for a company or course is provided.",
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-11",
+    "variant": "native"
+  },
+  {
+    "id": "osha-12",
+    "split": "development",
+    "family": "inspection-calendar",
+    "category": "unanswerable",
+    "question": "On what exact date will OSHA next inspect Riverside Tools?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "No company-specific inspection calendar or Riverside Tools appointment appears.",
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "osha.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024"
+    },
+    "case_id": "osha-12",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-01",
+    "split": "development",
+    "family": "framework_update_schedule",
+    "category": "numeric",
+    "question": "By what year does NIST expect a review of the AI RMF with formal input from the AI community?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The review is expected no later than 2028.",
+        "evidence": [
+          [
+            {
+              "page": 3,
+              "quote": "a review with formal input from the AI community is expected to take place no later than 2028."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-01",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-02",
+    "split": "development",
+    "family": "core_function_names",
+    "category": "list",
+    "question": "List all four specific functions in the AI RMF Core.",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "GOVERN.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "MAP.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "MEASURE.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "MANAGE.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "These functions – GOVERN , MAP, MEASURE , and MANAGE"
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-02",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-03",
+    "split": "development",
+    "family": "risk_definition",
+    "category": "direct",
+    "question": "In the AI RMF definition, what two components make up the composite measure called risk?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The probability of an event occurring.",
+        "evidence": [
+          [
+            {
+              "page": 9,
+              "quote": "risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "The magnitude or degree of that event's consequences.",
+        "evidence": [
+          [
+            {
+              "page": 9,
+              "quote": "risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-03",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-04",
+    "split": "development",
+    "family": "reliability_accuracy_definitions",
+    "category": "multi_passage",
+    "question": "How do the AI RMF definitions of reliability and accuracy differ? Include the conditions and time requirement for reliability and the reference used for accuracy.",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Reliability is performing as required without failure for a given time interval under given conditions.",
+        "evidence": [
+          [
+            {
+              "page": 18,
+              "quote": "ability of an item to perform as required, without failure, for a given time interval, under given conditions"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Accuracy is closeness of observations, computations, or estimates to true values or values accepted as true.",
+        "evidence": [
+          [
+            {
+              "page": 19,
+              "quote": "closeness of results of observations, computations, or estimates to the true values or the values accepted as being true."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-04",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-05",
+    "split": "development",
+    "family": "privacy_design_methods",
+    "category": "list",
+    "question": "Which two data-minimizing methods for certain model outputs does the Privacy-Enhanced section name, and what accuracy tradeoff can privacy-enhancing techniques create under data sparsity?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "De-identification is a named data-minimizing method.",
+        "evidence": [
+          [
+            {
+              "page": 22,
+              "quote": "data minimizing methods such as de-identification and aggregation for certain model outputs"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Aggregation is a named data-minimizing method.",
+        "evidence": [
+          [
+            {
+              "page": 22,
+              "quote": "data minimizing methods such as de-identification and aggregation for certain model outputs"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "Under conditions such as data sparsity, privacy-enhancing techniques can reduce accuracy, affecting decisions about fairness and other values.",
+        "evidence": [
+          [
+            {
+              "page": 22,
+              "quote": "Under certain conditions such as data sparsity, privacy- enhancing techniques can result in a loss in accuracy, affecting decisions about fairness and other values in certain domains."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-05",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-06",
+    "split": "development",
+    "family": "bias_categories",
+    "category": "list",
+    "question": "What are the three major categories of AI bias identified by NIST, and can they occur without discriminatory intent?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Systemic bias.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Computational and statistical bias.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "Human-cognitive bias.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "Each category can occur without prejudice, partiality, or discriminatory intent.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "Each of these can occur in the absence of prejudice, partiality, or discriminatory intent."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-06",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-07",
+    "split": "development",
+    "family": "explainability_interpretability",
+    "category": "direct",
+    "question": "How does the Framework distinguish explainability from interpretability?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Explainability represents the mechanisms underlying AI system operation: how a decision was made.",
+        "evidence": [
+          [
+            {
+              "page": 21,
+              "quote": "Explainability refers to a representation of the mechanisms underlying AI systems’ oper- ation"
+            }
+          ],
+          [
+            {
+              "page": 22,
+              "quote": "Ex- plainability can answer the question of “how” a decision was made in the system."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Interpretability concerns the meaning of outputs in their functional context: why a decision was made and its meaning or context for the user.",
+        "evidence": [
+          [
+            {
+              "page": 21,
+              "quote": "interpretability refers to the meaning of AI systems’ output in the context of their designed functional purposes."
+            }
+          ],
+          [
+            {
+              "page": 22,
+              "quote": "Inter- pretability can answer the question of “why” a decision was made by the system and its meaning or context to the user."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-07",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-08",
+    "split": "development",
+    "family": "inventory_subcategory",
+    "category": "identifier",
+    "question": "Which GOVERN subcategory addresses inventorying AI systems, and how should those mechanisms be resourced?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "GOVERN 1.6 addresses mechanisms to inventory AI systems.",
+        "evidence": [
+          [
+            {
+              "page": 28,
+              "quote": "GOVERN 1.6: Mechanisms are in place to inventory AI systems"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "The mechanisms should be resourced according to organizational risk priorities.",
+        "evidence": [
+          [
+            {
+              "page": 28,
+              "quote": "GOVERN 1.6: Mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-08",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-09",
+    "split": "development",
+    "family": "risk_manager_salary",
+    "category": "unanswerable",
+    "question": "What median annual salary in US dollars does the Framework report for an AI risk manager?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The document describes AI actor roles and risk management responsibilities but contains no salary survey or median salary for an AI risk manager.",
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-09",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-10",
+    "split": "development",
+    "family": "llm_training_token_budget",
+    "category": "unanswerable",
+    "question": "How many training tokens does the AI RMF recommend for a seven-billion-parameter language model?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The document discusses model training risks and large language models, but gives no model-size-specific training token budget.",
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-10",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-11",
+    "split": "development",
+    "family": "certification_exam_score",
+    "category": "unanswerable",
+    "question": "What percentage score is required to pass the NIST AI RMF professional certification exam described in this document?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The document does not describe a NIST AI RMF professional certification exam or a passing percentage; references to training and certifications do not specify such an exam.",
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-11",
+    "variant": "native"
+  },
+  {
+    "id": "nist-ai-12",
+    "split": "development",
+    "family": "cloud_inference_pricing",
+    "category": "unanswerable",
+    "question": "What average price per thousand cloud inference requests does the Framework report?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The document mentions cloud services and computational costs but provides no inference pricing or average price per thousand requests.",
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "nist-ai.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023"
+    },
+    "case_id": "nist-ai-12",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-01",
+    "split": "development",
+    "family": "subcategory-numbering",
+    "category": "direct",
+    "question": "Why are there gaps in the numbering of CSF 2.0 Subcategories?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The gaps indicate CSF 1.1 Subcategories that were relocated in CSF 2.0; the numbering is intentionally not sequential.",
+        "evidence": [
+          [
+            {
+              "page": 20,
+              "quote": "The numbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF 1.1 Subcategories that were relocated in CSF 2.0."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-01",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-02",
+    "split": "development",
+    "family": "core-functions",
+    "category": "list",
+    "question": "List all six CSF Core Functions.",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "GOVERN.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "IDENTIFY.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "PROTECT.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "DETECT.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f5",
+        "text": "RESPOND.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f6",
+        "text": "RECOVER.",
+        "evidence": [
+          [
+            {
+              "page": 8,
+              "quote": "The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "There are six CSF Functions: Govern, Identify, Protect, Detect, Respond, and Recover."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-02",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-03",
+    "split": "development",
+    "family": "csf-tiers",
+    "category": "numeric",
+    "question": "How many CSF Tiers are there, and what name corresponds to each numbered Tier?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "There are four Tiers.",
+        "evidence": [
+          [
+            {
+              "page": 31,
+              "quote": "There are four Tiers: Partial (Tier 1), Risk Informed (Tier 2), Repeatable (Tier 3), and Adaptive (Tier 4)."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Tier 1 is Partial.",
+        "evidence": [
+          [
+            {
+              "page": 12,
+              "quote": "Partial (Tier 1)"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "Partial (Tier 1)"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "Tier 2 is Risk Informed.",
+        "evidence": [
+          [
+            {
+              "page": 12,
+              "quote": "Risk Informed (Tier 2)"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "Risk Informed (Tier 2)"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "Tier 3 is Repeatable.",
+        "evidence": [
+          [
+            {
+              "page": 12,
+              "quote": "Repeatable (Tier 3)"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "Repeatable (Tier 3)"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f5",
+        "text": "Tier 4 is Adaptive.",
+        "evidence": [
+          [
+            {
+              "page": 12,
+              "quote": "Adaptive (Tier 4)"
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "Adaptive (Tier 4)"
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-03",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-04",
+    "split": "development",
+    "family": "asset-prioritization",
+    "category": "list",
+    "question": "According to ID.AM-05, which four factors are used to prioritize assets?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Classification.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Criticality.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "Resources.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "Impact on the mission.",
+        "evidence": [
+          [
+            {
+              "page": 23,
+              "quote": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission"
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-04",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-05",
+    "split": "development",
+    "family": "backup-lifecycle",
+    "category": "multi_passage",
+    "question": "What does PR.DS-11 say to do with data backups, and what additional check does RC.RP-03 require before using backups for restoration?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "PR.DS-11 says backups of data are created, protected, maintained, and tested.",
+        "evidence": [
+          [
+            {
+              "page": 25,
+              "quote": "PR.DS-11: Backups of data are created, protected, maintained, and tested"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "RC.RP-03 says the integrity of backups and other restoration assets is verified before using them for restoration.",
+        "evidence": [
+          [
+            {
+              "page": 28,
+              "quote": "RC.RP-03: The integrity of backups and other restoration assets is verified before using them for restoration"
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-05",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-06",
+    "split": "development",
+    "family": "current-target-profiles",
+    "category": "direct",
+    "question": "How does a Current Profile differ from a Target Profile in what it describes?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "A Current Profile specifies outcomes currently achieved or attempted, and how or to what extent they are achieved.",
+        "evidence": [
+          [
+            {
+              "page": 11,
+              "quote": "Profile specifies the Core outcomes that an organization is currently achieving (or attempting to achieve) and characterizes how or to what extent each outcome is being achieved."
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "CSF Current Profile A part of an Organizational Profile that specifies the Core outcomes that an organization is currently achieving (or attempting to achieve) and characterizes how or to what extent each outcome is being achieved."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "A Target Profile specifies desired outcomes selected and prioritized to achieve cybersecurity risk management objectives.",
+        "evidence": [
+          [
+            {
+              "page": 11,
+              "quote": "A Target Profile specifies the desired outcomes that an organization has selected and prioritized for achieving its cybersecurity risk management objectives."
+            }
+          ],
+          [
+            {
+              "page": 31,
+              "quote": "CSF Target Profile A part of an Organizational Profile that specifies the desired Core outcomes that an organization has selected and prioritized for achieving its cybersecurity risk management objectives."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-06",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-07",
+    "split": "development",
+    "family": "negative-risk-response",
+    "category": "list",
+    "question": "Which four ways of handling negative risks are listed in Section 5?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Mitigating negative risks.",
+        "evidence": [
+          [
+            {
+              "page": 15,
+              "quote": "including mitigating, transferring, avoiding, or accepting negative risks"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Transferring negative risks.",
+        "evidence": [
+          [
+            {
+              "page": 15,
+              "quote": "including mitigating, transferring, avoiding, or accepting negative risks"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f3",
+        "text": "Avoiding negative risks.",
+        "evidence": [
+          [
+            {
+              "page": 15,
+              "quote": "including mitigating, transferring, avoiding, or accepting negative risks"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f4",
+        "text": "Accepting negative risks.",
+        "evidence": [
+          [
+            {
+              "page": 15,
+              "quote": "including mitigating, transferring, avoiding, or accepting negative risks"
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-07",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-08",
+    "split": "development",
+    "family": "resource-feedback-addresses",
+    "category": "identifier",
+    "question": "Which email address receives suggestions for new Informative References, and which receives suggestions for additional Quick Start Guide topics?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Suggestions for new Informative References go to olir@nist.gov.",
+        "evidence": [
+          [
+            {
+              "page": 14,
+              "quote": "Suggestions for new Informative References for CSF 2.0 can always be shared with NIST at olir@nist.gov."
+            }
+          ]
+        ]
+      },
+      {
+        "id": "f2",
+        "text": "Suggestions for additional Quick Start Guide topics go to cyberframework@nist.gov.",
+        "evidence": [
+          [
+            {
+              "page": 14,
+              "quote": "Suggestions for other resources to reference on the NIST CSF website, including additional QSG topics, should be directed to cyberframework@nist.gov."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-08",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-09",
+    "split": "development",
+    "family": "password-length-policy",
+    "category": "unanswerable",
+    "question": "What exact minimum password length in characters does CSF 2.0 mandate for ordinary user accounts?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The PDF gives identity and authentication outcomes but no mandatory numeric password length. External controls referenced by the framework are not reproduced as such a rule.",
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-09",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-10",
+    "split": "development",
+    "family": "historical-breach-statistics",
+    "category": "unanswerable",
+    "question": "How many organizations using the CSF suffered a data breach in 2023, according to this document?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "The PDF discusses cybersecurity risk management but provides no 2023 breach count for organizations using the CSF.",
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-10",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-11",
+    "split": "development",
+    "family": "csf-tiers",
+    "category": "unanswerable",
+    "question": "What minimum annual cybersecurity budget in US dollars per employee is required to qualify for Tier 4?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "Tier 4 describes a budget informed by the risk environment and risk tolerance, but specifies no dollar amount per employee or numeric qualification threshold.",
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-11",
+    "variant": "native"
+  },
+  {
+    "id": "nist-csf-12",
+    "split": "development",
+    "family": "vulnerability-score-threshold",
+    "category": "unanswerable",
+    "question": "What exact CVSS score threshold does this document prescribe for classifying a vulnerability as critical?",
+    "answerable": false,
+    "facts": [],
+    "absence_reason": "Risk Assessment discusses identifying vulnerabilities and prioritizing risk responses, but the PDF does not prescribe a CVSS criticality threshold.",
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "nist-csf.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024"
+    },
+    "case_id": "nist-csf-12",
+    "variant": "native"
+  },
+  {
+    "id": "osha-01",
+    "split": "development",
+    "family": "housekeeping",
+    "category": "direct",
+    "question": "What type of waste cans should hold rags soaked in oil or paint?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Covered metal waste cans.",
+        "evidence": [
+          [
+            {
+              "page": 11,
+              "quote": "Covered metal waste cans are used for rags soaked in oil, flammable/combustible liquid, paint, etc ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "variants/osha-scan.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "7c821fc1609a331d4f30d3017b4a81323a317ae18c2c5f2aa501e83d4e25af40",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024",
+      "case_id": "osha-01--scan",
+      "question_id": "osha-01",
+      "document_id": "osha",
+      "variant": "scan",
+      "source_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "rasterized_pages": [
+        11
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "auto"
+    },
+    "case_id": "osha-01--scan",
+    "variant": "scan"
+  },
+  {
+    "id": "osha-01",
+    "split": "development",
+    "family": "housekeeping",
+    "category": "direct",
+    "question": "What type of waste cans should hold rags soaked in oil or paint?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "Covered metal waste cans.",
+        "evidence": [
+          [
+            {
+              "page": 11,
+              "quote": "Covered metal waste cans are used for rags soaked in oil, flammable/combustible liquid, paint, etc ."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "osha",
+    "document": {
+      "id": "osha",
+      "filename": "variants/osha-mixed.pdf",
+      "title": "Small Business Safety and Health Handbook",
+      "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+      "sha256": "e8dd69d248cff5f47b88cead58e36510906586c20822380bc00cc0878f1cd6ae",
+      "pages": 98,
+      "edition": "NIOSH 2021-120, revised January 2024",
+      "case_id": "osha-01--mixed",
+      "question_id": "osha-01",
+      "document_id": "osha",
+      "variant": "mixed",
+      "source_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+      "rasterized_pages": [
+        11
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "force"
+    },
+    "case_id": "osha-01--mixed",
+    "variant": "mixed"
+  },
+  {
+    "id": "nist-ai-01",
+    "split": "development",
+    "family": "framework_update_schedule",
+    "category": "numeric",
+    "question": "By what year does NIST expect a review of the AI RMF with formal input from the AI community?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The review is expected no later than 2028.",
+        "evidence": [
+          [
+            {
+              "page": 3,
+              "quote": "a review with formal input from the AI community is expected to take place no later than 2028."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "variants/nist-ai-scan.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "47b92f4bf485aa5f7c0798bb63896bef999a0c32fcf539c92e23de88be7e160b",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023",
+      "case_id": "nist-ai-01--scan",
+      "question_id": "nist-ai-01",
+      "document_id": "nist-ai",
+      "variant": "scan",
+      "source_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "rasterized_pages": [
+        3
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "auto"
+    },
+    "case_id": "nist-ai-01--scan",
+    "variant": "scan"
+  },
+  {
+    "id": "nist-ai-01",
+    "split": "development",
+    "family": "framework_update_schedule",
+    "category": "numeric",
+    "question": "By what year does NIST expect a review of the AI RMF with formal input from the AI community?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The review is expected no later than 2028.",
+        "evidence": [
+          [
+            {
+              "page": 3,
+              "quote": "a review with formal input from the AI community is expected to take place no later than 2028."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-ai",
+    "document": {
+      "id": "nist-ai",
+      "filename": "variants/nist-ai-mixed.pdf",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sha256": "6be4f38d9f4dd8323afbb684074c85a72f9a7b7ba1c97cf82d191c7c13b4fd61",
+      "pages": 48,
+      "edition": "NIST AI 100-1, January 2023",
+      "case_id": "nist-ai-01--mixed",
+      "question_id": "nist-ai-01",
+      "document_id": "nist-ai",
+      "variant": "mixed",
+      "source_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "rasterized_pages": [
+        3
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "force"
+    },
+    "case_id": "nist-ai-01--mixed",
+    "variant": "mixed"
+  },
+  {
+    "id": "nist-csf-01",
+    "split": "development",
+    "family": "subcategory-numbering",
+    "category": "direct",
+    "question": "Why are there gaps in the numbering of CSF 2.0 Subcategories?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The gaps indicate CSF 1.1 Subcategories that were relocated in CSF 2.0; the numbering is intentionally not sequential.",
+        "evidence": [
+          [
+            {
+              "page": 20,
+              "quote": "The numbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF 1.1 Subcategories that were relocated in CSF 2.0."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "variants/nist-csf-scan.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "cfa6066038b83e80858d5d8ce4cedba08b053ae217b3a32a875bcbf8c6eb37f6",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024",
+      "case_id": "nist-csf-01--scan",
+      "question_id": "nist-csf-01",
+      "document_id": "nist-csf",
+      "variant": "scan",
+      "source_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "rasterized_pages": [
+        20
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "auto"
+    },
+    "case_id": "nist-csf-01--scan",
+    "variant": "scan"
+  },
+  {
+    "id": "nist-csf-01",
+    "split": "development",
+    "family": "subcategory-numbering",
+    "category": "direct",
+    "question": "Why are there gaps in the numbering of CSF 2.0 Subcategories?",
+    "answerable": true,
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The gaps indicate CSF 1.1 Subcategories that were relocated in CSF 2.0; the numbering is intentionally not sequential.",
+        "evidence": [
+          [
+            {
+              "page": 20,
+              "quote": "The numbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF 1.1 Subcategories that were relocated in CSF 2.0."
+            }
+          ]
+        ]
+      }
+    ],
+    "document_id": "nist-csf",
+    "document": {
+      "id": "nist-csf",
+      "filename": "variants/nist-csf-mixed.pdf",
+      "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "sha256": "a4f584127269663b576e2221881a586b1edfa0443eba19fd9e09e0a26a2e869d",
+      "pages": 32,
+      "edition": "NIST CSWP 29, February 26, 2024",
+      "case_id": "nist-csf-01--mixed",
+      "question_id": "nist-csf-01",
+      "document_id": "nist-csf",
+      "variant": "mixed",
+      "source_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+      "rasterized_pages": [
+        20
+      ],
+      "page_mapping": "identity",
+      "ocr_mode": "force"
+    },
+    "case_id": "nist-csf-01--mixed",
+    "variant": "mixed"
+  }
+]

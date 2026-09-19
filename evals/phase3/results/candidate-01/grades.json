@@ -1,0 +1,619 @@
+{
+  "osha-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: p11-c2 supports the complete covered-metal-can answer and the additional listed rag contaminants. All answer content is supported by the cited chunk."
+  },
+  "osha-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "osha-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "osha-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "osha-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "osha-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: p77-c1 supports the minimum 22 inches (56 centimeters); both units and the minimum qualifier are retained."
+  },
+  "osha-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "osha-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "osha-09": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. Correct NOT FOUND: retrieved handbook introduction, contents, and regulatory-assistance passages do not establish a paid annual leave allowance."
+  },
+  "osha-10": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. Correct NOT FOUND: retrieved fire-protection contents, regulatory references, and extinguisher practices provide no alarm brand/model purchase recommendation."
+  },
+  "osha-11": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. Correct NOT FOUND: p92-c1 says private-sector students pay tuition but gives no dollar fee; other retrieved passages do not supply one."
+  },
+  "osha-12": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. Correct NOT FOUND: retrieved tool/checklist and contents passages contain no Riverside Tools inspection appointment or date."
+  },
+  "osha-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited automatic-OCR p11-c2 supports covered metal cans for oil/flammable-liquid/paint rags. The required fact and all extra stated uses are supported."
+  },
+  "osha-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited forced-OCR p11-c2 supports the required covered-metal-can fact and all stated rag contaminants despite checkbox noise. The quote is a valid substring after whitespace collapsing."
+  },
+  "nist-ai-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "incomplete_retrieval",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual semantic review: the native extraction of physical page 3 contains the 2028 deadline, but the four hits are p1-c1, p8-c3, p8-c2, and p47-c1. These discuss the title, framework development, and general updates without the review deadline. NOT FOUND is therefore a false refusal caused by missing retrieved evidence, not demonstrated extraction loss."
+  },
+  "nist-ai-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "nist-ai-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": true,
+    "failure_category": "unsupported_answer",
+    "notes": "AI-assisted manual review by Codex root: The answer incorrectly substitutes appropriate methods/metrics and effectiveness of controls for probability and consequences. Its quotes are genuine substrings of cited p34-c1, but that MEASURE-function passage does not define the two components of risk. Neither expected fact is retrieved. This directly demonstrates that quote membership does not establish semantic support."
+  },
+  "nist-ai-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review by Codex root: The answer correctly gives reliability, including no failure, the time interval, and given conditions, supported by cited p18-c4. It entirely omits accuracy and its reference despite that evidence being retrieved. Only reliability is cited. This is an incomplete answer, not an invented claim."
+  },
+  "nist-ai-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "nist-ai-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review by Codex root: The answer correctly lists systemic, computational/statistical, and human-cognitive bias. It entirely omits whether these can arise without prejudice, partiality, or discriminatory intent. Cited p23-c1 contains the complete fourth fact, but the displayed claim does not. Quote validation does not enforce question completeness."
+  },
+  "nist-ai-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "operational_error",
+    "notes": "AI-assisted review: both generation attempts fail exact quote membership validation; no answer is emitted after the single permitted repair. This is an operational error, not a NOT FOUND refusal or a supported answer. Evidence-presence judgments are retained only after all ordered chunk objects exactly match the reviewed control. Raw attempts are preserved in results.json."
+  },
+  "nist-ai-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p28-c1 explicitly maps GOVERN 1.6 to inventorying AI systems and resourcing according to organizational risk priorities; both facts are correct."
+  },
+  "nist-ai-09": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual semantic review: the question requests a median annual salary absent from the source. Retrieved p1-c1, p2-c1, p8-c3, and p36-c4 provide publication information, framework development, and general resource allocation, not salary data. NOT FOUND is a correct uncited refusal."
+  },
+  "nist-ai-10": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual semantic review: no seven-billion-parameter training-token recommendation exists in the document. Retrieved p1-c1, p16-c1, p3-c3, and p3-c2 concern title, AI actors, feedback, and versioning; none supplies a token budget. NOT FOUND correctly refuses without citations."
+  },
+  "nist-ai-11": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual semantic review: the proposed professional certification exam and passing percentage are absent. Retrieved p1-c1, p2-c1, p3-c1, and p24-c1 contain publication details, updates, and framework-effectiveness evaluation rather than an exam. The exact NOT FOUND answer is a correct refusal."
+  },
+  "nist-ai-12": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual semantic review: the document does not report cloud inference pricing. Retrieved p3-c3, p1-c1, p3-c1, and p8-c3 contain feedback, title, updates, and framework-development material without a price per thousand requests. The model correctly returns NOT FOUND with no citations."
+  },
+  "nist-ai-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited OCR p3-c2 supports a review with formal community input no later than 2028. The answer's 'by 2028' is a correct paraphrase."
+  },
+  "nist-ai-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited forced-OCR p3-c2 supports expected review with formal community input no later than 2028. The answer preserves the qualification and date."
+  },
+  "nist-csf-01": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p20-c1 supports the relocation explanation for numbering gaps. The same semantic interpretation as the frozen control accepts this causal paraphrase."
+  },
+  "nist-csf-02": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f5": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f6": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p31-c2 explicitly lists all six Functions. The answer now provides all six correctly, without unsupported additions."
+  },
+  "nist-csf-03": {
+    "facts": {
+      "f1": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f4": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      },
+      "f5": {
+        "evidence_present": false,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": true,
+    "failure_category": "unsupported_answer",
+    "notes": "AI-assisted manual review by Codex root: The answer invents three Tiers and substitutes numbered labels for the requested names. Cited p29-c1 actually identifies Tier 1 as Partial and contains no support for the three-tier count. The four copied quotes all occur in that chunk, but do not support the generated claim. Only the expected Tier 1 name is present in retrieval/cited source; the answer fails all expected facts."
+  },
+  "nist-csf-04": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p23-c4 supports classification, criticality, resources, and impact on the mission for ID.AM-05. All four factors are correct."
+  },
+  "nist-csf-05": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": false
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review by Codex root: The answer correctly gives PR.DS-11's creation, protection, maintenance, and testing list, supported by cited p25-c2. It omits the RC.RP-03 integrity check before restoration despite that evidence being retrieved. The required second fact is neither answered nor cited."
+  },
+  "nist-csf-06": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": false,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "generation_failure",
+    "notes": "AI-assisted manual review by Codex root: Cited p11-c2 contains both full definitions. The answer now includes achieved or attempted outcomes, but omits how or to what extent outcomes are achieved, still required by frozen f1. The Target Profile definition is complete. All expressed claims are supported; this is an omission, not fabrication."
+  },
+  "nist-csf-07": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f3": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f4": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p15-c1 supports all four negative-risk responses: mitigating, transferring, avoiding, and accepting. No unsupported addition."
+  },
+  "nist-csf-08": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      },
+      "f2": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited p14-c4 supports both email addresses and their distinct purposes. Both answers are correct."
+  },
+  "nist-csf-09": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual review: retrieved pages 5, 14, 20, and 25 describe framework resources, categories, access policy, and training but no minimum password length. The frozen source review likewise found no numeric mandate. NOT FOUND is the correct refusal and makes no unsupported claim."
+  },
+  "nist-csf-10": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual review: retrieved glossary and contents passages on pages 31 and 4, plus the privacy paragraph on page 18, supply no count of organizations breached in 2023. The source benchmark records no such statistics. NOT FOUND is a correct refusal."
+  },
+  "nist-csf-11": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual review: passages on pages 31, 12, and 13 describe Tier names, rigor, progression, and cost-benefit considerations, but specify no dollar budget per employee. Source review confirms Tier 4 has no such numeric threshold. NOT FOUND correctly refuses the invented requirement."
+  },
+  "nist-csf-12": {
+    "facts": {},
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "Prior judgment reused after exact matching refusal and ordered retrieved chunks against the reviewed control. AI-assisted manual review: retrieved pages 24, 23, and 21 cover vulnerabilities, risk responses, asset criticality, and opportunities, without any CVSS score threshold. The PDF gives no numeric CVSS classification rule. NOT FOUND is a correct refusal."
+  },
+  "nist-csf-01--scan": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited automatic-OCR p20-c1 supports gaps caused by relocated CSF 1.1 Subcategories. The same semantic interpretation as the control applies."
+  },
+  "nist-csf-01--mixed": {
+    "facts": {
+      "f1": {
+        "evidence_present": true,
+        "answer_correct": true,
+        "citation_supported": true
+      }
+    },
+    "unsupported_claims": false,
+    "failure_category": "none",
+    "notes": "AI-assisted manual review by Codex root: Cited forced-OCR p20-c1 supports the relocation explanation; the synthetic header is not evidence. The causal answer is complete under the frozen semantic interpretation."
+  }
+}

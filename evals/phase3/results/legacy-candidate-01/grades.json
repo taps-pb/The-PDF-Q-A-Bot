@@ -1,0 +1,48 @@
+{
+  "800": {
+    "q1": {
+      "answer_correct": false,
+      "citation_supported": false,
+      "notes": "AI-assisted manual review by Codex root: Both responses fail exact-quote validation; no answer is emitted. Operational error, not a refusal."
+    },
+    "q2": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p7-c1 supports all seven core elements, including the complete communication/coordination scope. The answer lists all seven correctly."
+    },
+    "q3": {
+      "answer_correct": false,
+      "citation_supported": false,
+      "notes": "AI-assisted manual review by Codex root: Both responses fail exact-quote validation; no answer is emitted. Operational error, not a refusal."
+    },
+    "q4": {
+      "answer_correct": false,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p30-c2 supports the stated monthly visual inspection and recording, but the answer omits annual maintenance and recording that action. Incomplete under the frozen expected facts."
+    },
+    "q5": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p72-c1 supports fit testing before first use and at least annually thereafter; both facts are correct."
+    },
+    "q6": {
+      "answer_correct": true,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: Cited p75-c2 supports at least 3 feet (0.9 meters) above the elevated surface; both units and the minimum qualifier are preserved."
+    },
+    "q7": {
+      "answer_correct": false,
+      "citation_supported": true,
+      "notes": "AI-assisted manual review by Codex root: After one repair, cited p90-c1/p90-c4 support the stated no-cost/confidential services. The answer omits priority for high-hazard worksites, so completeness fails."
+    },
+    "q8": {
+      "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND for the nonexistent guaranteed compensation-premium discount."
+    },
+    "q9": {
+      "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND for the nonexistent Acme Bakery officer assignment and phone number."
+    },
+    "q10": {
+      "notes": "AI-assisted manual review by Codex root: Correct NOT FOUND for the nonexistent recommended ladder brand/model."
+    }
+  }
+}

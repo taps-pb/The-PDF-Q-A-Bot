@@ -329,6 +329,7 @@ def provenance(suite, split, models):
         "suite_sha256": sha(json.dumps(suite, sort_keys=True).encode()),
         "prompt_sha256": sha(pipeline.SYSTEM_PROMPT.encode()),
         "prompt_version": pipeline.PROMPT_VERSION,
+        "answer_schema": pipeline.ANSWER_SCHEMA,
         "generation": generation_parameters(pipeline.LocalModels.generate),
         "generation_implementation": inspect.getsource(pipeline.LocalModels.generate),
         "query_instruction": pipeline.QUERY_INSTRUCTION,
@@ -428,6 +429,8 @@ def run(suite_path, corpus, split, output):
             record["status"] = "ok"
         except Exception as exc:
             record["error"] = {"stage": stage, "message": str(exc)}
+        if stage == "answer" and hasattr(models, "last_generation_responses"):
+            record["generation_responses"] = list(models.last_generation_responses)
         record["total_seconds"] = time.perf_counter() - started
         records.append(record)
         _write_json(output / "results.json", records)

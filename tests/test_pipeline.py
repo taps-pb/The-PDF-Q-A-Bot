@@ -169,7 +169,27 @@ def test_model_repairs_once_then_reports_generation_failure():
     assert models.client.chat.call_count == 2
     assert models.client.chat.call_args.kwargs["think"] is False
     assert models.client.chat.call_args.kwargs["options"]["temperature"] == 0
+    assert models.last_generation_responses == ["invalid", "invalid"]
     assert answer("question", [], models).refused
+    assert models.last_generation_responses == []
+
+
+def test_generation_trace_preserves_repair_and_resets_before_model_failure():
+    models = LocalModels()
+    models.digest = Mock(return_value="digest")
+    models.client = Mock()
+    raw = '{"answer":"Three feet.","chunk_ids":["p1-c1"],"refused":false}'
+    models.client.chat.side_effect = [
+        SimpleNamespace(message=SimpleNamespace(content=text)) for text in ("invalid", raw)
+    ]
+    hits = [SearchHit(Chunk("p1-c1", "The ladder extends three feet.", 1, "native"), 0.9)]
+    result = answer("How far?", hits, models)
+    assert result.text == "Three feet." and result.citations == [1]
+    assert models.last_generation_responses == ["invalid", raw]
+    models.digest.side_effect = AppError("Model unavailable")
+    with pytest.raises(AppError, match="unavailable"):
+        answer("How far?", hits, models)
+    assert models.last_generation_responses == []
 
 
 def test_generation_keeps_untrusted_payload_separate_and_does_not_retry_valid_refusal():

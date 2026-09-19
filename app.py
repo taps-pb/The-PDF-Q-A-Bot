@@ -154,7 +154,8 @@ with st.form("question_form"):
     submit = st.form_submit_button("Find answer", type="primary", disabled=document is None)
 
 st.caption(
-    "Each question is independent. If the PDF does not support an answer, you will see NOT FOUND."
+    "Each question is independent. Answers may be wrong or incomplete; check the cited passages. "
+    "NOT FOUND means the model declined to answer."
 )
 if submit and document is not None:
     for key in ("last_answer", "last_hits", "last_question"):

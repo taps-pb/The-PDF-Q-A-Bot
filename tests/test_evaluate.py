@@ -105,6 +105,15 @@ def test_full_offline_run_report_and_preserved_history(tmp_path, monkeypatch):
             else []
         )
 
+    def answer(question, hits, models):
+        models.last_generation_responses = [question]
+        return Answer(
+            "Supported answer" if hits else "NOT FOUND",
+            [hit.chunk.page for hit in hits],
+            [hit.chunk.id for hit in hits],
+            not hits,
+        )
+
     fake = SimpleNamespace(
         PROMPT_VERSION="test-v1",
         LocalModels=lambda: SimpleNamespace(
@@ -112,12 +121,7 @@ def test_full_offline_run_report_and_preserved_history(tmp_path, monkeypatch):
         ),
         ingest=lambda *args: SimpleNamespace(manifest={"index_id": "test"}),
         retrieve=retrieve,
-        answer=lambda question, hits, models: Answer(
-            "Supported answer" if hits else "NOT FOUND",
-            [hit.chunk.page for hit in hits],
-            [hit.chunk.id for hit in hits],
-            not hits,
-        ),
+        answer=answer,
     )
     monkeypatch.setitem(sys.modules, "pdf_qa.pipeline", fake)
     run(pdf, questions, output)
@@ -126,6 +130,7 @@ def test_full_offline_run_report_and_preserved_history(tmp_path, monkeypatch):
     assert len(raw["results"]) == 10
     assert raw["results"][0]["hits"][0]["chunk"]["text"] == "Evidence"
     assert raw["results"][0]["generation_seconds"] >= 0
+    assert raw["results"][0]["generation_responses"] == [source["questions"][0]["question"]]
     with pytest.raises(AppError, match="already exists"):
         run(pdf, questions, output)
     _, _, grades = graded_records()
