@@ -119,3 +119,9 @@ and page citations. UI tests verify that mode/document switches clear previous
 results, missing models fail visibly, and disabling reranking restores dense
 retrieval. Existing dependencies retain their locked versions; only the optional
 ONNX/tokenizer/download packages and their dependencies are added.
+
+An additional Streamlit AppTest smoke exercised a synthetic PDF through the real
+upload/index/retrieve/rerank/generate flow and confirmed page citations and score
+labels. Only the upload widget was supplied synthetic bytes; inference was not
+mocked. Turning reranking off cleared results without unloading the document.
+The local server was restarted with the model directory configured for testing.
