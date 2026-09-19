@@ -46,4 +46,4 @@ Prompt, hybrid-retrieval, and quote-validation experiments failed quality gates;
 
 The one-time held-out run achieved **11/18 supported answers**, **6/6 correct refusals**, and zero operational errors. Five answerable questions were refused; two responses lacked complete cited support. These small-corpus, AI-assisted grades are not a production reliability guarantee.
 
-All **117 tests** pass, including local model/OCR checks. The final legacy regression retains 7/7 supported answers and 3/3 refusals. See [release results, limitations, and audit records](docs/RELEASE.md). Capstone complete; no further feature phase planned.
+All **117 tests** pass, including local model/OCR checks. The final legacy regression retains 7/7 supported answers and 3/3 refusals. See [release results, limitations, and audit records](docs/RELEASE.md).
