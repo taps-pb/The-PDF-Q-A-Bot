@@ -1,6 +1,6 @@
 # The PDF Q&A Bot
 
-Ask questions about one English PDF locally. Verify cited pages: answers can be wrong or incomplete. Refusals return `NOT FOUND`; operational errors appear separately.
+Query an English PDF locally. Verify cited pages: answers can be wrong or incomplete. Refusals return `NOT FOUND`; operational errors appear separately.
 
 ## Run locally
 
