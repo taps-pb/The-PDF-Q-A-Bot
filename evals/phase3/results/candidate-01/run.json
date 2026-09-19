@@ -1,0 +1,376 @@
+{
+  "schema_version": 2,
+  "suite_name": "phase2a-v1",
+  "split": "development",
+  "started_at": "2026-09-19T11:49:44.742092+00:00",
+  "completed_at": "2026-09-19T11:51:42.289540+00:00",
+  "code_revision": "dce4fd4e09ca3bbdc20662b96d735d6ff496ff07",
+  "dirty_state": "",
+  "lock_sha256": "14bdce32aacd61904851ac2f6c04fb8176ce223d47b66ee2abf226526ad420a9",
+  "pipeline_sha256": "63f01644c37f2fb160dd8036aa04322457acda09f9e620d5a0efa2a223a8ffc2",
+  "extraction_sha256": "b08edc7c1f282b44cfd4037d7d760137146c5a9c97e54703ea8f25ac963398fe",
+  "retrieval": {
+    "version": "dense-v1",
+    "method": "dense",
+    "score": "cosine"
+  },
+  "suite_sha256": "66e13939a36e8d89da9b08a2e80a4248876c022aeb5ce4425fadbd4365f917ef",
+  "prompt_sha256": "70d422ff8512651f23faf33a3dcb0ef956606b7fcc6fba1e7003d41bb9dfbc07",
+  "prompt_version": "quoted-claims-v1",
+  "answer_schema": {
+    "type": "object",
+    "properties": {
+      "claims": {
+        "type": "array",
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 12000
+            },
+            "evidence": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "chunk_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "quote": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 12000
+                  }
+                },
+                "required": [
+                  "chunk_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "text",
+            "evidence"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "refused": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "claims",
+      "refused"
+    ],
+    "additionalProperties": false
+  },
+  "grounding_sha256": "d0f3908b7f81cb9d9ab95efe6e96ae66366d8bfbae932870f4f80d6179f5d556",
+  "generation": {
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 1200
+    },
+    "think": false,
+    "keep_alive": "30m"
+  },
+  "generation_implementation": "    def generate(self, question: str, hits: list[SearchHit]) -> Answer:\n        self.last_generation_responses = []\n        question = _question(question)\n        if not hits:\n            return Answer(\"NOT FOUND\", [], [], True)\n        self.digest(self.answer_model)\n        payload = {\n            \"question\": question,\n            \"passages\": [\n                {\"id\": h.chunk.id, \"page\": h.chunk.page, \"text\": h.chunk.text} for h in hits\n            ],\n        }\n        messages = [\n            {\"role\": \"system\", \"content\": SYSTEM_PROMPT},\n            {\"role\": \"user\", \"content\": json.dumps(payload, ensure_ascii=False)},\n        ]\n        for attempt in range(2):\n            response = self._call(\n                self.client.chat,\n                model=self.answer_model,\n                messages=messages,\n                think=False,\n                format=ANSWER_SCHEMA,\n                options={\"temperature\": 0, \"seed\": 42, \"num_ctx\": 8192, \"num_predict\": 1200},\n                keep_alive=\"30m\",\n            )\n            content = response.message.content or \"\"\n            self.last_generation_responses.append(content)\n            try:\n                return parse_grounded_answer(content, hits)\n            except (ValueError, TypeError, KeyError) as exc:\n                if attempt:\n                    raise AppError(\n                        \"The local model returned an invalid answer twice. Retry the question. \"\n                        \"This is a generation error, not a NOT FOUND refusal.\"\n                    ) from exc\n                messages += [\n                    {\"role\": \"assistant\", \"content\": content},\n                    {\n                        \"role\": \"user\",\n                        \"content\": (\n                            \"Repair the JSON response. Every claim needs evidence with a \"\n                            \"supplied chunk_id and an exact quote from that same chunk. \"\n                            \"Use only text supported by the evidence; do not invent quotes. \"\n                            \"A refusal must have empty claims and refused true. \"\n                            \"Follow the system rules and response schema.\"\n                        ),\n                    },\n                ]\n        raise AssertionError(\"unreachable\")\n",
+  "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+  "settings": {
+    "chunk_size": 800,
+    "overlap": 60,
+    "ocr_mode": "auto"
+  },
+  "k": 4,
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "ollama": "0.34.1",
+    "tesseract": "tesseract 5.5.3"
+  },
+  "models": {
+    "answer": {
+      "name": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
+    },
+    "embedding": {
+      "name": "qwen3-embedding:0.6b",
+      "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+    }
+  },
+  "cases_sha256": "7553ecd7f7f101f4f78d7263b4887f8c8b5d44723110826c326dddc197d14c15",
+  "indexes": [
+    {
+      "document_id": "osha",
+      "variant": "native",
+      "ingest_seconds": 0.008158292002917733,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "94d12a75e3086f3dd196a050b12462aac8bf878209ce40d5f8b7e00d741d9a42",
+          "index.faiss": "9ffd64b6ce7150e17f75b950e4ae4e8bd67e492eb57a797ada1625ff6b87c7e7"
+        },
+        "chunk_count": 221,
+        "created_at": "2026-09-18T05:24:15.973948+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "osha-small-business.pdf",
+        "index_id": "d5986d1d3a2b1e11d0e070e10290754ebb8a6afabb3f2fe4cea342b7d8684a14",
+        "page_count": 98,
+        "pdf_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "auto",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "nist-ai",
+      "variant": "native",
+      "ingest_seconds": 0.01196275000256719,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "a746f3dd756f25fea7d0fac783de873feaf3b15059585071a0fe703a1b50abbb",
+          "index.faiss": "2bd1a614f584d5b0e52efac73b4a9f4341e5cf4126bf002c9c09c7f7c1ae5860"
+        },
+        "chunk_count": 171,
+        "created_at": "2026-09-18T06:04:28.037175+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "nist-ai.pdf",
+        "index_id": "012ee5be2ba512ffbbfa839c09f33a8c7b600de036e06c50b126024fd5e4edb0",
+        "page_count": 48,
+        "pdf_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "auto",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "nist-csf",
+      "variant": "native",
+      "ingest_seconds": 0.0153550830000313,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "e8444f3972ee09fd9aa4226ae86e677999b127e39697a1973ad211213b1b0605",
+          "index.faiss": "77f7311b93f42dce1fbc129a01849d7c0dfd9f4e626afb6da3dfcc474349f00b"
+        },
+        "chunk_count": 111,
+        "created_at": "2026-09-18T06:04:43.913390+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "nist-csf.pdf",
+        "index_id": "8fc75179faca07327276ec936ff4e5c6197d18d5867ec687dbaeda2dab8d0dc6",
+        "page_count": 32,
+        "pdf_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "auto",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "osha",
+      "variant": "scan",
+      "ingest_seconds": 0.014962375000322936,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "375aa28a86a24e3a45feb2bb469caf22bf4d0eb301377ff53f201a0b17d955fd",
+          "index.faiss": "bd4fa00d6e97abe3986d4d7a3cc3d22d9c5c392ab45fc19029c317898d06384b"
+        },
+        "chunk_count": 221,
+        "created_at": "2026-09-18T06:05:06.797397+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "osha-scan.pdf",
+        "index_id": "d8cd8dc62a8ddcc2334074c213ac2a37c7f3a008f1b85a5129460536779f6c86",
+        "page_count": 98,
+        "pdf_sha256": "7c821fc1609a331d4f30d3017b4a81323a317ae18c2c5f2aa501e83d4e25af40",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "auto",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "osha",
+      "variant": "mixed",
+      "ingest_seconds": 0.01118937499995809,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "e0f2a217dff6e6b44d05d993509b1add96ec8c45ea69f7dd5350a3701949ae3a",
+          "index.faiss": "090f6310dcc5e4d78b372004681ca483d14f6838cb393e1e623682ad2abecfcc"
+        },
+        "chunk_count": 225,
+        "created_at": "2026-09-18T06:06:18.711952+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "osha-mixed.pdf",
+        "index_id": "6752ef01266846edf6b9a1be2902d6b278aec73019693769fea8bc0d6b66566b",
+        "page_count": 98,
+        "pdf_sha256": "e8dd69d248cff5f47b88cead58e36510906586c20822380bc00cc0878f1cd6ae",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "force",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "nist-ai",
+      "variant": "scan",
+      "ingest_seconds": 0.011603750001086155,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "53f6ecd8763cd9beb7da9783ef51ecb3975d2a4c8b0c37c3348b724ad4897288",
+          "index.faiss": "1019340d236b35164519030dd34785aa6cf2b3167363eb270fb3283a3d94a753"
+        },
+        "chunk_count": 171,
+        "created_at": "2026-09-18T06:06:25.118469+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "nist-ai-scan.pdf",
+        "index_id": "8b923ca5bf9197ef9f74132131e0a099c95914440761f4352d0945eee6bf9256",
+        "page_count": 48,
+        "pdf_sha256": "47b92f4bf485aa5f7c0798bb63896bef999a0c32fcf539c92e23de88be7e160b",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "auto",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "nist-ai",
+      "variant": "mixed",
+      "ingest_seconds": 0.015564959001494572,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "110d8205158f23da086a8f264bb9ef0a1586930b8c958df5c8a53955df3da857",
+          "index.faiss": "b423f9f652141edf2bfbade5cd373342a54a866c3077a23ec5d8e1e812729169"
+        },
+        "chunk_count": 192,
+        "created_at": "2026-09-18T06:07:16.053838+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "nist-ai-mixed.pdf",
+        "index_id": "d30e4493dc7aeecd2e75ffc8bd2cb3c7ccced01504829b48037c6af4d73f9e50",
+        "page_count": 48,
+        "pdf_sha256": "6be4f38d9f4dd8323afbb684074c85a72f9a7b7ba1c97cf82d191c7c13b4fd61",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "force",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "nist-csf",
+      "variant": "scan",
+      "ingest_seconds": 0.01200504200096475,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "6031378d0dec3462cfe0065f726ea0058ba9a266045d1419afb1fcfd30fad5da",
+          "index.faiss": "b9f48edb59d920843d6487b9d3ce187cfa827d16a11396307ca187bde478d111"
+        },
+        "chunk_count": 111,
+        "created_at": "2026-09-18T06:07:20.337226+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "nist-csf-scan.pdf",
+        "index_id": "2f0a0c7e6bfa882d3509c8d2bef3f0ec871b2f3f831b2e62535f4f28a1684ee0",
+        "page_count": 32,
+        "pdf_sha256": "cfa6066038b83e80858d5d8ce4cedba08b053ae217b3a32a875bcbf8c6eb37f6",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "auto",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    },
+    {
+      "document_id": "nist-csf",
+      "variant": "mixed",
+      "ingest_seconds": 0.011032334001356503,
+      "manifest": {
+        "checksums": {
+          "chunks.json": "858e7d375c5ac6e3f0cb4ccd40069628baa6c92d185c95494cd97086038ad55f",
+          "index.faiss": "2c3e033810e5b3aedce8f092d3c2aab73bb8740f5b33de8ce0848347a779b27c"
+        },
+        "chunk_count": 119,
+        "created_at": "2026-09-18T06:07:54.047340+00:00",
+        "dimension": 1024,
+        "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "embedding_model": "qwen3-embedding:0.6b",
+        "extraction_version": 1,
+        "filename": "nist-csf-mixed.pdf",
+        "index_id": "1df08bcb8670fcb16a8641f71706793b6c7be0a0ddfef30fbee74fbb926efca8",
+        "page_count": 32,
+        "pdf_sha256": "a4f584127269663b576e2221881a586b1edfa0443eba19fd9e09e0a26a2e869d",
+        "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+        "settings": {
+          "chunk_size": 800,
+          "ocr_mode": "force",
+          "overlap": 60
+        },
+        "version": 1,
+        "warnings": []
+      }
+    }
+  ],
+  "results_sha256": "fa91fc266cff9b11b34646d2d1830d5d39428b6dfa0049cfad47978f88908673"
+}

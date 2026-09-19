@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-19T11:52:12.505283+00:00",
+  "completed_at": "2026-09-19T11:52:40.125894+00:00",
+  "sizes": [
+    800
+  ],
+  "retrieval_only": false,
+  "question_sha256": "189ff11a06a22b7347ba2975eb8cdf656bc52d638ed1dd6d60801400c7a71301",
+  "pdf_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+  "document": {
+    "title": "Small Business Safety and Health Handbook",
+    "edition": "NIOSH 2021-120, revised January 2024; OSHA 2209-01R 2024",
+    "url": "https://stacks.cdc.gov/view/cdc/148137/cdc_148137_DS1.pdf",
+    "downloaded": "2026-09-18",
+    "sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+    "pages": 98,
+    "page_numbering": "Physical PDF pages, one-based (printed page 1 is PDF page 5)",
+    "license": "Public domain; see PDF page 5",
+    "frozen_before_model_runs": true
+  },
+  "prompt_version": "quoted-claims-v1",
+  "models": {
+    "embedding": {
+      "name": "qwen3-embedding:0.6b",
+      "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+    },
+    "answer": {
+      "name": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
+    }
+  },
+  "chunk_size": 800,
+  "settings": {
+    "chunk_size": 800,
+    "overlap": 60,
+    "ocr_mode": "auto"
+  },
+  "index_manifest": {
+    "checksums": {
+      "chunks.json": "94d12a75e3086f3dd196a050b12462aac8bf878209ce40d5f8b7e00d741d9a42",
+      "index.faiss": "9ffd64b6ce7150e17f75b950e4ae4e8bd67e492eb57a797ada1625ff6b87c7e7"
+    },
+    "chunk_count": 221,
+    "created_at": "2026-09-18T05:24:15.973948+00:00",
+    "dimension": 1024,
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "extraction_version": 1,
+    "filename": "osha-small-business.pdf",
+    "index_id": "d5986d1d3a2b1e11d0e070e10290754ebb8a6afabb3f2fe4cea342b7d8684a14",
+    "page_count": 98,
+    "pdf_sha256": "afd26f4680071738e85730f398e4fa8d17b560aac042492938b9ec49fd7defa0",
+    "query_instruction": "Given a question, retrieve relevant document passages that answer the question.",
+    "settings": {
+      "chunk_size": 800,
+      "ocr_mode": "auto",
+      "overlap": 60
+    },
+    "version": 1,
+    "warnings": []
+  },
+  "ingest_seconds": 0.006806541001424193,
+  "results": [
+    {
+      "id": "q1",
+      "status": "error",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p2-c1",
+            "text": "DHHS (NIOSH) Publication Number 2021-120 (revised 01/2024) | OSHA Publication Number 2209-01R 2024\nSmall Business Safety\nand Health Handbook",
+            "page": 2,
+            "method": "native"
+          },
+          "score": 0.5228567123413086
+        },
+        {
+          "chunk": {
+            "id": "p5-c1",
+            "text": "1 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nAbout this Handbook\nThe Occupational Safety and Health\nAdministration (OSHA) and the National Institute\nfor Occupational Safety and Health (NIOSH)\ndeveloped this handbook to provide small\nbusiness employers with workplace safety and\nhealth information .\nThe handbook summarizes the benefits of an\neffective safety and health program, provides\nself-inspection checklists for employers to identify\nworkplace hazards, and reviews key workplace\nsafety and health resources for small businesses .\nThis handbook is a general guide . Employers\nshould not use it to assess compliance with the\nOccupational Safety and Health Act of 1970 (OSH\nAct) or federal OSHA standards . This handbook\ndoes not provide legal interpretations of the",
+            "page": 5,
+            "method": "native"
+          },
+          "score": 0.4850950837135315
+        },
+        {
+          "chunk": {
+            "id": "p1-c1",
+            "text": "Small Business Safety\nand Health Handbook\n\nOccupational Safety CL\nCENTERS FOR DISEASE ~~!\nCONTROL AND PREVENTION\n\nand Health Administration",
+            "page": 1,
+            "method": "ocr"
+          },
+          "score": 0.4798746407032013
+        },
+        {
+          "chunk": {
+            "id": "p98-c1",
+            "text": "DHHS (NIOSH) Publication Number 2021-120 (revised 01/2024) | OSHA Publication Number 2209-01R 2024",
+            "page": 98,
+            "method": "native"
+          },
+          "score": 0.4612422585487366
+        }
+      ],
+      "answer": null,
+      "retrieval_seconds": 0.030483541999274166,
+      "error": {
+        "stage": "answer",
+        "message": "The local model returned an invalid answer twice. Retry the question. This is a generation error, not a NOT FOUND refusal."
+      },
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"The Occupational Safety and Health Administration (OSHA) and the National Institute for Occupational Safety and Health (NIOSH) developed this handbook.\",\"evidence\":[{\"chunk_id\":\"p5-c1\",\"quote\":\"The Occupational Safety and Health Administration (OSHA) and the National Institute for Occupational Safety and Health (NIOSH) developed this handbook to provide small business employers with workplace safety and health information.\"}]}],\"refused\":false}",
+        "{\"claims\":[{\"text\":\"The Occupational Safety and Health Administration (OSHA) and the National Institute for Occupational Safety and Health (NIOSH) developed this handbook.\",\"evidence\":[{\"chunk_id\":\"p5-c1\",\"quote\":\"The Occupational Safety and Health Administration (OSHA) and the National Institute for Occupational Safety and Health (NIOSH) developed this handbook to provide small business employers with workplace safety and health information.\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 4.27882979199785
+    },
+    {
+      "id": "q2",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p7-c1",
+            "text": "3 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nImplementing a Safety and\nHealth Program\nOSHA’s Recommended Practices for Safety\nand Health Programs use a proactive approach\nto managing workplace safety and health,\nrecognizing that finding and fixing hazards\nbefore they cause injury or illness is a far\nmore effective approach . The Recommended\nPractices present a step-by-step approach to\nimplementing a successful safety and health\nprogram, built around seven core elements:\n• Management leadership\n• Worker participation\n• Hazard identification and assessment\n• Hazard prevention and control\n• Education and training\n• Program evaluation and improvement\n• Communication and coordination for host\nemployers, contractors, and staffing agencies\nOSHA’s website includes tools to help employers",
+            "page": 7,
+            "method": "native"
+          },
+          "score": 0.745355486869812
+        },
+        {
+          "chunk": {
+            "id": "p10-c1",
+            "text": "6 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nSafety and Health Programs Yes No N/A Comments\nForeseeable emergency scenarios are\nidentified and instructions are developed\non what to do in each case .\n  \nWorkers are consulted before significant\nchanges are made to the workplace, work\norganization, equipment, or materials in order\nto identify potential safety or health issues .\n  \nTime is set aside to discuss safety and health\nissues, with the goal of identifying ways to\nimprove the safety and health program .\n  \nAdditional Resources\n• OSHA: Recommended Practices for Safety and Health Programs\n• OSHA: $afety Pays Program\n• American Society of Safety Professionals: Guidance Manual — Keep Your People Safe in\nSmaller Organizations (GM-Z10 .10 1)",
+            "page": 10,
+            "method": "native"
+          },
+          "score": 0.6396728754043579
+        },
+        {
+          "chunk": {
+            "id": "p3-c1",
+            "text": "iii | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nContents\nAbout this Handbook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\nSafety and Health Programs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2\nValue of a Safety and Health Program . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2\nImplementing a Safety and Health Program . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3",
+            "page": 3,
+            "method": "native"
+          },
+          "score": 0.5977393388748169
+        },
+        {
+          "chunk": {
+            "id": "p7-c2",
+            "text": "ng agencies\nOSHA’s website includes tools to help employers\nimplement safety and health programs, including:\n• how to get started,\n• a safety and health program\nself-evaluation tool,\n• a safety and health program\nimplementation checklist, and\n• a safety and health program audit tool .\nYou can begin with a basic program, set simple\ngoals, and grow from there . If you focus on\nachieving goals, monitoring performance,\nand evaluating outcomes, your workplace\ncan progress to higher levels of safety and\nhealth achievement .\nBy developing and implementing a safety\nand health program, you are expressing and\ndocumenting your good faith and commitment\nto protecting your workers’ health and safety .\nDoing so does not usually require additional\nworkers or high costs . You can integrate safety",
+            "page": 7,
+            "method": "native"
+          },
+          "score": 0.5713791847229004
+        }
+      ],
+      "answer": {
+        "text": "The seven core elements of the Recommended Practices for Safety and Health Programs are management leadership, worker participation, hazard identification and assessment, hazard prevention and control, education and training, program evaluation and improvement, and communication and coordination for host employers, contractors, and staffing agencies.",
+        "citations": [
+          7
+        ],
+        "chunk_ids": [
+          "p7-c1"
+        ],
+        "refused": false
+      },
+      "retrieval_seconds": 0.03125983299833024,
+      "generation_seconds": 3.422729249999975,
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"The seven core elements of the Recommended Practices for Safety and Health Programs are management leadership, worker participation, hazard identification and assessment, hazard prevention and control, education and training, program evaluation and improvement, and communication and coordination for host employers, contractors, and staffing agencies.\",\"evidence\":[{\"chunk_id\":\"p7-c1\",\"quote\":\"• Management leadership\\n• Worker participation\\n• Hazard identification and assessment\\n• Hazard prevention and control\\n• Education and training\\n• Program evaluation and improvement\\n• Communication and coordination for host\\nemployers, contractors, and staffing agencies\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 3.454004999999597
+    },
+    {
+      "id": "q3",
+      "status": "error",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p8-c2",
+            "text": "s with this process at no cost .\nSelf-Inspection Checklists\nThe checklists in the handbook are intended\nfor general industry workplaces, but not for\nconstruction or maritime industries . They are a\nstarting point for identifying workplace hazards .\nThe checklists can give you some indication\nof where to begin taking action to make your\nbusiness safer and more healthful for your\nworkers . The checklists are based on several\nsources, including OSHA standards and generally\naccepted safety and health principles . Do not use\nthe checklists to assess your compliance with the\nOSH Act or OSHA standards .\nCompile information from your completed\nchecklists with workplace injury and illness\nrecords, worker training information, and process\nand equipment information (e .g ., maintenance",
+            "page": 8,
+            "method": "native"
+          },
+          "score": 0.7524375915527344
+        },
+        {
+          "chunk": {
+            "id": "p3-c2",
+            "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\nWorkplace Self-Inspection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\nSelf-Inspection Checklists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\nGeneral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\nSafety and Health Programs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5",
+            "page": 3,
+            "method": "native"
+          },
+          "score": 0.6982136964797974
+        },
+        {
+          "chunk": {
+            "id": "p8-c1",
+            "text": "4 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nWorkplace Self-Inspection\nAn effective way to identify workplace hazards\nis for knowledgeable and experienced workers\nto conduct routine safety and health inspections\n(i .e ., self-inspections) . The only way to know if\npotential hazards exist and if they are under\ncontrol is to assess work processes directly .\nSmall business employers should conduct\nroutine workplace self-inspections to:\n• identify hazards,\n• control identified hazards, and\n• monitor and evaluate hazard controls to verify\nthat they continue to be effective .\nConsultants from OSHA’s On-Site Consultation\nprograms in all states, the District of Columbia\nand most territories can help small business\nemployers with this process at no cost .\nSelf-Inspection Checklists",
+            "page": 8,
+            "method": "native"
+          },
+          "score": 0.6070972084999084
+        },
+        {
+          "chunk": {
+            "id": "p5-c1",
+            "text": "1 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nAbout this Handbook\nThe Occupational Safety and Health\nAdministration (OSHA) and the National Institute\nfor Occupational Safety and Health (NIOSH)\ndeveloped this handbook to provide small\nbusiness employers with workplace safety and\nhealth information .\nThe handbook summarizes the benefits of an\neffective safety and health program, provides\nself-inspection checklists for employers to identify\nworkplace hazards, and reviews key workplace\nsafety and health resources for small businesses .\nThis handbook is a general guide . Employers\nshould not use it to assess compliance with the\nOccupational Safety and Health Act of 1970 (OSH\nAct) or federal OSHA standards . This handbook\ndoes not provide legal interpretations of the",
+            "page": 5,
+            "method": "native"
+          },
+          "score": 0.6018886566162109
+        }
+      ],
+      "answer": null,
+      "retrieval_seconds": 0.027282833001663676,
+      "error": {
+        "stage": "answer",
+        "message": "The local model returned an invalid answer twice. Retry the question. This is a generation error, not a NOT FOUND refusal."
+      },
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"The handbook's self-inspection checklists are intended for general industry workplaces, and they are not intended for construction or maritime industries.\",\"evidence\":[{\"chunk_id\":\"p8-c2\",\"quote\":\"The checklists in the handbook are intended for general industry workplaces, but not for construction or maritime industries.\"}]}],\"refused\":false}",
+        "{\"claims\":[{\"text\":\"The handbook's self-inspection checklists are intended for general industry workplaces, and they are not intended for construction or maritime industries.\",\"evidence\":[{\"chunk_id\":\"p8-c2\",\"quote\":\"The checklists in the handbook are intended for general industry workplaces, but not for construction or maritime industries.\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 4.041930125000363
+    },
+    {
+      "id": "q4",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p30-c2",
+            "text": "materials .\n• Class B - Flammable liquids, gases or oils .\n• Class C - Energized-electrical equipment .\n• Class D – Combustible metals .\n• Class K – Kitchens; cooking with vegetable\nor animal oils and fats .\n  \nFire extinguishers are visually inspected\nmonthly, and the inspection is recorded .   \nFire extinguisher discharge nozzles are free\nfrom obstructions or blockage .   \nFire extinguishers are fully charged and in\ntheir designated places .   \nFire extinguishers receive an annual\nmaintenance check, and the maintenance\nis recorded .\n  \nAdditional Resources\n• OSHA Regulations: 29 CFR 1910 .15 7, Portable Fire Extinguishers\n• OSHA: Portable Fire Extinguishers\n• OSHA: Fire Safety",
+            "page": 30,
+            "method": "native"
+          },
+          "score": 0.7164922952651978
+        },
+        {
+          "chunk": {
+            "id": "p31-c1",
+            "text": "27 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nFire Suppression and Alarm Systems Yes No N/A Comments\nFire alarm system has been certified,\nis in proper working condition, and is\ntested annually .\n  \nTesting and maintenance of automatic\nsprinkler systems is performed by a qualified\nworker or sprinkler contractor .\n  \nAutomatic sprinkler system water control valves\nand pressure gages are checked periodically .   \nSprinkler heads subject to potential physical\ndamage are protected by metal guards .   \nProper clearance (minimum 18 inches) is\nmaintained below sprinkler heads .   \nStandpipes, fire hoses, and fire hose valves,\nare inspected regularly and tested annually .   \nPrivate fire hydrants are flushed at least\nonce a year and are on a routine preventive",
+            "page": 31,
+            "method": "native"
+          },
+          "score": 0.583331286907196
+        },
+        {
+          "chunk": {
+            "id": "p31-c2",
+            "text": "lushed at least\nonce a year and are on a routine preventive\nmaintenance schedule .\n  \nAdditional Resources\n• OSHA Regulations:\n– 29 CFR 1910 .15 8, Standpipe and Hose Systems\n– 29 CFR 1910 .15 9, Automatic Sprinkler Systems\n– 29 CFR 1910 .16 0, Fixed Extinguishing Systems, General\n– 29 CFR 1910 .16 1, Fixed Extinguishing Systems, Dry Chemical\n– 29 CFR 1910 .16 2, Fixed Extinguishing Systems, Gaseous Agent\n– 29 CFR 1910 .16 3, Fixed Extinguishing Systems, Water Spray and Foam\n– 29 CFR 1910 .16 4, Fire Detection Systems\n– 29 CFR 1910 .16 5, Employee Alarm Systems\n• OSHA: Fixed Extinguishing Systems\n• OSHA: Fire Detection Systems\n• OSHA: Employee Alarm Systems",
+            "page": 31,
+            "method": "native"
+          },
+          "score": 0.5418679118156433
+        },
+        {
+          "chunk": {
+            "id": "p30-c1",
+            "text": "26 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nFire Protection\nFire Extinguishers Yes No N/A Comments\nIf portable fire extinguishers are provided\nin the workplace, and designated workers\nare expected to use them, the workers are\nprovided with initial training in their use and\nat least annually thereafter .\n  \nPortable fire extinguishers of the appropriate\ntypes(s) are provided in adequate numbers,\nand mounted in readily accessible locations .\nNOTE: Refer to National Fire Protection\nAssociation standard #10 (NFPA 10) for\nguidance on types, numbers, and locations .\n  \nFire extinguishers are selected and provided\nfor the types of materials in the areas where\nthey are to be used .\n• Class A - Ordinary combustible materials .\n• Class B - Flammable liquids, gases or oils .",
+            "page": 30,
+            "method": "native"
+          },
+          "score": 0.514396071434021
+        }
+      ],
+      "answer": {
+        "text": "Fire extinguishers should be visually inspected monthly and the inspection should be recorded.",
+        "citations": [
+          30
+        ],
+        "chunk_ids": [
+          "p30-c2"
+        ],
+        "refused": false
+      },
+      "retrieval_seconds": 0.03113008299987996,
+      "generation_seconds": 2.5614137920019857,
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"Fire extinguishers should be visually inspected monthly and the inspection should be recorded.\",\"evidence\":[{\"chunk_id\":\"p30-c2\",\"quote\":\"Fire extinguishers are visually inspected monthly, and the inspection is recorded .\"},{\"chunk_id\":\"p30-c2\",\"quote\":\"Fire extinguishers are visually inspected monthly, and the inspection is recorded .\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 2.5925568749989907
+    },
+    {
+      "id": "q5",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p72-c1",
+            "text": "68 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nRespiratory Protection Yes No N/A Comments\nWorkers designated to wear tight-fitting\nrespirators are fit-tested before their first use\nof a respirator and at least annually thereafter .\n  \nWorkers are trained in the respiratory hazards\nto which they may be exposed .   \nWorkers are trained at least annually in the\nproper use of respirators, including putting\non and removing them, any limitations on\ntheir use, and their maintenance .\n  \nRespirators are stored in a manner and\nlocation to protect them from damage,\ncontamination, dust, sunlight, extreme\ntemperatures, excessive moisture, and\ndamaging chemicals, and are packed\nor stored to prevent deformation of the\nfacepiece and exhalation valve .\n  ",
+            "page": 72,
+            "method": "native"
+          },
+          "score": 0.7577681541442871
+        },
+        {
+          "chunk": {
+            "id": "p71-c2",
+            "text": "ituations; and\ncleaning, disinfecting, storing, inspecting,\nrepairing, discarding, and otherwise\nmaintaining respirators .\n  \nAs part of the respiratory protection\nprogram, workers are trained on the correct\nusage and limitations of the respirators .\n  \nRespirators are National Institute for\nOccupational Safety and Health (NIOSH)-\napproved for the particular application .\n  \nRespirators are regularly inspected, cleaned,\nsanitized and maintained .   \nBefore workers first use, or are fit-tested for, a\nrespirator, they receive a medical evaluation\nin accordance with 29 CFR 1910 .1 34(e) .\n  ",
+            "page": 71,
+            "method": "native"
+          },
+          "score": 0.7005992531776428
+        },
+        {
+          "chunk": {
+            "id": "p71-c1",
+            "text": "67 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nRespiratory Protection\nRespiratory Protection Yes No N/A Comments\nTo the extent feasible, engineering\ncontrols are used to prevent atmospheric\ncontamination in the workplace .\n  \nHazards that require the use of respiratory\nprotection have been identified .   \nAppropriate respirators are provided for\nworker use .   \nA written respiratory protection program\nhas been established and implemented\nin accordance with the requirements of\n29 CFR 1910 .1 34(c) .\n  \nThe written respiratory protection program\nprovides workers with worksite-specific\nprocedures for: selecting respirators; proper\nuse of respirators in routine and reasonably\nforeseeable emergencies situations; and\ncleaning, disinfecting, storing, inspecting,",
+            "page": 71,
+            "method": "native"
+          },
+          "score": 0.5132788419723511
+        },
+        {
+          "chunk": {
+            "id": "p72-c2",
+            "text": "t deformation of the\nfacepiece and exhalation valve .\n  \nEmergency respirators are kept accessible\nto the work area, and the storage location is\nmarked as containing emergency respirators .\n  \nAdditional Resources\n• OSHA Regulations: 29 CFR 1910 .134 , Respiratory Protection\n• OSHA: Respiratory Protection\n• OSHA: Small Entity Compliance Guide – Respiratory Protection Standard\n• NIOSH: Respirators",
+            "page": 72,
+            "method": "native"
+          },
+          "score": 0.5122700929641724
+        }
+      ],
+      "answer": {
+        "text": "Workers wearing tight-fitting respirators should be fit-tested before their first use of a respirator and at least annually thereafter.",
+        "citations": [
+          72
+        ],
+        "chunk_ids": [
+          "p72-c1"
+        ],
+        "refused": false
+      },
+      "retrieval_seconds": 0.027804124998510815,
+      "generation_seconds": 2.2740339579977444,
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"Workers wearing tight-fitting respirators should be fit-tested before their first use of a respirator and at least annually thereafter.\",\"evidence\":[{\"chunk_id\":\"p72-c1\",\"quote\":\"Workers designated to wear tight-fitting respirators are fit-tested before their first use of a respirator and at least annually thereafter .\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 2.301849832998414
+    },
+    {
+      "id": "q6",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p75-c2",
+            "text": "or other unstable bases to obtain\nadditional height .\n  \nWorkers face the ladder and maintain\nthree points of contact (two hands and a\nfoot, or two feet and a hand) on the ladder\nwhen climbing .\n  \nWorkers do not carry any object or load that\ncould cause them to lose balance and fall\nwhile climbing the ladder .\n  \nWorkers do not use ladders that are broken;\nhave missing steps, rungs, or cleats; broken\nside rails; or other faulty equipment .\n  \nWorkers do not use the top step of ordinary\nstepladders as a step .   \nWhen portable ladders are used to gain\naccess to elevated platforms, roofs, etc ., t he\nladder always extends at least 3 feet (0 .9\nmeters) above the elevated surface .\n  ",
+            "page": 75,
+            "method": "native"
+          },
+          "score": 0.7233723402023315
+        },
+        {
+          "chunk": {
+            "id": "p76-c1",
+            "text": "72 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPortable Ladders Yes No N/A Comments\nThe tops of non-self-supporting ladders are\nplaced so that both side rails are supported .   \nWorkers secure the base of a portable ladder\nto prevent slipping, or otherwise lash or hold\nit in place when used on unstable, slanted, or\nuneven surfaces .\n  \nMetal ladders are made with\ncorrosion-resistant materials or\nprotected against corrosion .\n  \nPortable metal ladders are legibly marked with\nsigns reading “CAUTION - Do Not Use Around\nElectrical Equipment” or equivalent wording .\n  \nWorkers do not use ladders as guys, braces,\nskids, gin poles, or for other than their\nintended purposes .\n  \nWorkers adjust extension ladders while\nstanding at the base and not while standing on",
+            "page": 76,
+            "method": "native"
+          },
+          "score": 0.6290320754051208
+        },
+        {
+          "chunk": {
+            "id": "p75-c1",
+            "text": "71 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPortable Ladders Yes No N/A Comments\nAll ladders are maintained in good condition;\njoints between steps and side rails are\ntight, all hardware and fittings are securely\nattached, and moveable parts operating\nfreely without binding or undue play .\n  \nLadders used on slippery surfaces are\nsecured and stabilized .   \nLadders are not placed in front of\npassageways, doorways, or driveways where\nthey can be displaced by other activities or\ntraffic unless they are secured to prevent\naccidental displacement or are guarded by a\ntemporary barricade to keep the activities or\ntraffic away from the ladder .\n  \nLadders are not placed on boxes, barrels,\nlifts, or other unstable bases to obtain\nadditional height .\n  ",
+            "page": 75,
+            "method": "native"
+          },
+          "score": 0.6264157891273499
+        },
+        {
+          "chunk": {
+            "id": "p76-c2",
+            "text": "adders while\nstanding at the base and not while standing on\nthe ladder or from a position above the ladder .\n  \nAll ladders are routinely inspected for damage .   \nLadders with structural or other defects are\nimmediately tagged “Dangerous: Do Not\nUse” or with similar language and removed\nfrom service until repaired or replaced .\n  \nSteps on step stools; and ladder rungs, steps\nand cleats, are equally spaced at distances\nrequired by 29 CFR 1910 .23( b) .\n  \nAdditional Resources\n• OSHA Regulations: 29 CFR 1910 .23 , Ladders\n• OSHA: Portable Ladder Safety QuickCard\n• NIOSH - Ladder Safety App",
+            "page": 76,
+            "method": "native"
+          },
+          "score": 0.601526141166687
+        }
+      ],
+      "answer": {
+        "text": "When portable ladders are used to gain access to elevated platforms, roofs, etc., the ladder always extends at least 3 feet (0 .9 meters) above the elevated surface.",
+        "citations": [
+          75
+        ],
+        "chunk_ids": [
+          "p75-c2"
+        ],
+        "refused": false
+      },
+      "retrieval_seconds": 0.03492395799912629,
+      "generation_seconds": 2.9206030419991293,
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"When portable ladders are used to gain access to elevated platforms, roofs, etc., the ladder always extends at least 3 feet (0 .9 meters) above the elevated surface.\",\"evidence\":[{\"chunk_id\":\"p75-c2\",\"quote\":\"When portable ladders are used to gain access to elevated platforms, roofs, etc ., t he ladder always extends at least 3 feet (0 .9 meters) above the elevated surface .\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 2.9555456249981944
+    },
+    {
+      "id": "q7",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p90-c4",
+            "text": "valid .\nIf you are a small business employer interested in\nno-cost, confidential consultation visit by highly\ntrained consultants, or to locate the consultation\nprogram in your state, visit OSHA’s On-Site\nConsultation Program webpage or call (800) 321-\n6742 (OSHA) .",
+            "page": 90,
+            "method": "native"
+          },
+          "score": 0.785829484462738
+        },
+        {
+          "chunk": {
+            "id": "p90-c1",
+            "text": "86 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nSafety and Health Assistance for\nSmall Businesses\nThe following are some key workplace safety and health\nresources for small businesses. For more information, see\nOSHA’s Small Business webpage.\nOSHA Resources\nOn-Site Consultation Program\nThe OSHA On-Site Consultation Program offers\nno-cost and confidential occupational safety\nand health services to small and medium-\nsized businesses in all 50 states, the District\nof Columbia, and several U .S . territories,\nwith priority given to high-hazard worksites .\nHighly trained safety and occupational health\nprofessionals (i .e ., consultants) from On-Site\nConsultation programs established within state\nagencies or universities work with employers to\nidentify safety and health hazards in workplaces",
+            "page": 90,
+            "method": "native"
+          },
+          "score": 0.7269977331161499
+        },
+        {
+          "chunk": {
+            "id": "p90-c2",
+            "text": "ployers to\nidentify safety and health hazards in workplaces\nand how to fix them . Consultants also advise\nemployers on how to comply with OSHA\nstandards, train and educate workers, and assist\nwith establishing and improving safety and\nhealth programs .\nConsultation services are voluntary . To take\nadvantage of this resource, employers request\na consultation visit from their local Consultation\nprogram and determine the scope of the visit .\nThe visit may focus on a single concern at a\nfacility or it may involve a thorough hazard\nassessment of an entire facility and its operations .\nBenefits of working with Consultation\nprograms include:\n• better workplace safety and health conditions,\n• enhanced morale and welfare, and\n• savings related to reductions in injury and illness",
+            "page": 90,
+            "method": "native"
+          },
+          "score": 0.645544171333313
+        },
+        {
+          "chunk": {
+            "id": "p91-c5",
+            "text": "cement information,\nhazard identification and controls, and\nbest practices and other resources to assist\nemployers, workers, and safety and health\nprofessionals ensure safer workplaces .\n• QuickTakes . Employers and safety and health\nprofessionals can sign-up for QuickTakes at\nwww .osha .gov/quicktakes . OSHA’s free, twice-\nmonthly online newsletter provides the latest\nnews about OSHA initiatives and resources .",
+            "page": 91,
+            "method": "native"
+          },
+          "score": 0.5104472637176514
+        }
+      ],
+      "answer": {
+        "text": "OSHA On-Site Consultation services are no-cost and confidential.",
+        "citations": [
+          90
+        ],
+        "chunk_ids": [
+          "p90-c1",
+          "p90-c4"
+        ],
+        "refused": false
+      },
+      "retrieval_seconds": 0.03338466700006393,
+      "generation_seconds": 4.775291040998127,
+      "generation_responses": [
+        "{\"claims\":[{\"text\":\"OSHA On-Site Consultation services are no-cost and confidential.\",\"evidence\":[{\"chunk_id\":\"p90-c1\",\"quote\":\"The OSHA On-Site Consult, Consultation services are voluntary . To take advantage of this resource, employers request a consultation visit from their local Consultation program and determine the scope of the visit .\"},{\"chunk_id\":\"p90-c4\",\"quote\":\"If you are a small business employer interested in no-cost, confidential consultation visit by highly trained consultants\"}]}],\"refused\":false}",
+        "{\"claims\":[{\"text\":\"OSHA On-Site Consultation services are no-cost and confidential.\",\"evidence\":[{\"chunk_id\":\"p90-c1\",\"quote\":\"The OSHA On-Site Consultation Program offers no-cost and confidential occupational safety and health services\"},{\"chunk_id\":\"p90-c4\",\"quote\":\"If you are a small business employer interested in no-cost, confidential consultation visit by highly trained consultants\"}]}],\"refused\":false}"
+      ],
+      "total_seconds": 4.8087025830027414
+    },
+    {
+      "id": "q8",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p5-c1",
+            "text": "1 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nAbout this Handbook\nThe Occupational Safety and Health\nAdministration (OSHA) and the National Institute\nfor Occupational Safety and Health (NIOSH)\ndeveloped this handbook to provide small\nbusiness employers with workplace safety and\nhealth information .\nThe handbook summarizes the benefits of an\neffective safety and health program, provides\nself-inspection checklists for employers to identify\nworkplace hazards, and reviews key workplace\nsafety and health resources for small businesses .\nThis handbook is a general guide . Employers\nshould not use it to assess compliance with the\nOccupational Safety and Health Act of 1970 (OSH\nAct) or federal OSHA standards . This handbook\ndoes not provide legal interpretations of the",
+            "page": 5,
+            "method": "native"
+          },
+          "score": 0.5113910436630249
+        },
+        {
+          "chunk": {
+            "id": "p2-c1",
+            "text": "DHHS (NIOSH) Publication Number 2021-120 (revised 01/2024) | OSHA Publication Number 2209-01R 2024\nSmall Business Safety\nand Health Handbook",
+            "page": 2,
+            "method": "native"
+          },
+          "score": 0.5089693069458008
+        },
+        {
+          "chunk": {
+            "id": "p1-c1",
+            "text": "Small Business Safety\nand Health Handbook\n\nOccupational Safety CL\nCENTERS FOR DISEASE ~~!\nCONTROL AND PREVENTION\n\nand Health Administration",
+            "page": 1,
+            "method": "ocr"
+          },
+          "score": 0.5012444853782654
+        },
+        {
+          "chunk": {
+            "id": "p6-c2",
+            "text": "nd illnesses\n• Improve compliance with laws and regulations\n• Reduce costs, including significant reductions\nin workers’ compensation premiums\n• Engage workers\n• Enhance social responsibility goals\n• Increase productivity and enhance overall\nbusiness operations\nSmall employers like you place a high value on\nthe well-being of your workers . Like many small\nbusinesses, you may employ family members and\npersonal acquaintances . And, if you don’t know\nyour workers before they are hired, the size of your\nworkplace will promote the closeness and concern\nfor one another that small businesses value .\nOSHA and NIOSH provide helpful resources and\nwant to work with you to promote a safe and\nhealthful workplace . Employers that make job\nsafety and health a real part of their everyday",
+            "page": 6,
+            "method": "native"
+          },
+          "score": 0.4809482991695404
+        }
+      ],
+      "answer": {
+        "text": "NOT FOUND",
+        "citations": [],
+        "chunk_ids": [],
+        "refused": true
+      },
+      "retrieval_seconds": 0.02915479100192897,
+      "generation_seconds": 0.6795444580020558,
+      "generation_responses": [
+        "{\"claims\":[],\"refused\":true}"
+      ],
+      "total_seconds": 0.7087134579996928
+    },
+    {
+      "id": "q9",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p13-c2",
+            "text": "l the violation\nhas been abated, or for three working days,\nwhichever is later .\n  \nEmergency telephone numbers are\nposted where they can be readily found\nin case of emergency .\n  \nAdditional Resources\n• OSHA Regulations:\n– 29 CFR 1903 .2, P osting of OSHA Notice\n– 29 CFR 1903 .16 , Posting of Citations\n• OSHA: Free Workplace Poster – Job Safety and Health – It’s the Law!",
+            "page": 13,
+            "method": "native"
+          },
+          "score": 0.4092399775981903
+        },
+        {
+          "chunk": {
+            "id": "p3-c4",
+            "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nElectrical Safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13\nErgonomics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17\nExit Routes and Emergency Planning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19\nDoors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19",
+            "page": 3,
+            "method": "native"
+          },
+          "score": 0.40284299850463867
+        },
+        {
+          "chunk": {
+            "id": "p96-c3",
+            "text": "w York, NY 10014\n(212) 337-2378 (212) 337-2371 Fax\nRegion 3\nPhiladelphia Regional Office\n(DE, DC, MD*, PA, VA*, WV)\n1835 Market Street\nMailstop OSHA-RO/19\nPhiladelphia, PA 19103\n(215) 861-4900 (215) 861-4904 Fax\nRegion 4\nAtlanta Regional Office\n(AL, FL, GA, KY*, MS, NC*, SC*, TN*)\nSam Nunn Atlanta Federal Center\n61 Forsyth Street, SW, Room 6T50\nAtlanta, GA 30303\n(678) 237-0400 (678) 237-0447 Fax\nRegion 5\nChicago Regional Office\n(IL *, IN*, MI*, MN*, OH, WI)\nJohn C . Kluczynski Federal Building\n230 South Dearborn Street, Room 3244\nChicago, IL 60604\n(312) 353-2220 (312) 353-7774 Fax\nRegion 6\nDallas Regional Office\n(AR, LA, NM*, OK, TX)\nA . Maceo Smith Federal Building\n525 Griffin Street, Room 602\nDallas, TX 75202\n(972) 850-4145 (972) 850-4149 Fax",
+            "page": 96,
+            "method": "native"
+          },
+          "score": 0.38974815607070923
+        },
+        {
+          "chunk": {
+            "id": "p97-c1",
+            "text": "93 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nRegion 7\nKansas City Regional Office\n(IA*, KS, MO, NE)\nTwo Pershing Square Building\n2300 Main Street, Suite 1010\nKansas City, MO 64108-2416\n(816) 283-8745 (816) 283-0547 Fax\nRegion 8\nDenver Regional Office\n(CO, MT, ND, SD, UT*, WY*)\nCesar Chavez Memorial Building\n1244 Speer Boulevard, Suite 551\nDenver, CO 80204\n(720) 264-6550 (720) 264-6585 Fax\nRegion 9\nSan Francisco Regional Office\n(AZ*, CA*, HI*, NV*, and American Samoa,\nGuam\nand the Northern Mariana Islands)\nSan Francisco Federal Building\n90 7th Street, Suite 2650\nSan Francisco, CA 94103\n(415) 625-2547 (415) 625-2534 Fax\nRegion 10\nSeattle Regional Office\n(AK*, ID, OR*, WA*)\n909 1st Ave, Suite 201A\nSeattle, WA 98104\nMailing address:\n20425 72nd Ave South, Suite 150A\nKent, WA 98032-2388",
+            "page": 97,
+            "method": "native"
+          },
+          "score": 0.3887118101119995
+        }
+      ],
+      "answer": {
+        "text": "NOT FOUND",
+        "citations": [],
+        "chunk_ids": [],
+        "refused": true
+      },
+      "retrieval_seconds": 0.02979350000168779,
+      "generation_seconds": 1.3796546250014217,
+      "generation_responses": [
+        "{\"claims\":[],\"refused\":true}"
+      ],
+      "total_seconds": 1.4094721250003204
+    },
+    {
+      "id": "q10",
+      "status": "ok",
+      "hits": [
+        {
+          "chunk": {
+            "id": "p76-c1",
+            "text": "72 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPortable Ladders Yes No N/A Comments\nThe tops of non-self-supporting ladders are\nplaced so that both side rails are supported .   \nWorkers secure the base of a portable ladder\nto prevent slipping, or otherwise lash or hold\nit in place when used on unstable, slanted, or\nuneven surfaces .\n  \nMetal ladders are made with\ncorrosion-resistant materials or\nprotected against corrosion .\n  \nPortable metal ladders are legibly marked with\nsigns reading “CAUTION - Do Not Use Around\nElectrical Equipment” or equivalent wording .\n  \nWorkers do not use ladders as guys, braces,\nskids, gin poles, or for other than their\nintended purposes .\n  \nWorkers adjust extension ladders while\nstanding at the base and not while standing on",
+            "page": 76,
+            "method": "native"
+          },
+          "score": 0.6226401329040527
+        },
+        {
+          "chunk": {
+            "id": "p75-c1",
+            "text": "71 | SMALL BUSINESS SAFETY AND HEALTH HANDBOOK\nPortable Ladders Yes No N/A Comments\nAll ladders are maintained in good condition;\njoints between steps and side rails are\ntight, all hardware and fittings are securely\nattached, and moveable parts operating\nfreely without binding or undue play .\n  \nLadders used on slippery surfaces are\nsecured and stabilized .   \nLadders are not placed in front of\npassageways, doorways, or driveways where\nthey can be displaced by other activities or\ntraffic unless they are secured to prevent\naccidental displacement or are guarded by a\ntemporary barricade to keep the activities or\ntraffic away from the ladder .\n  \nLadders are not placed on boxes, barrels,\nlifts, or other unstable bases to obtain\nadditional height .\n  ",
+            "page": 75,
+            "method": "native"
+          },
+          "score": 0.5977948307991028
+        },
+        {
+          "chunk": {
+            "id": "p75-c2",
+            "text": "or other unstable bases to obtain\nadditional height .\n  \nWorkers face the ladder and maintain\nthree points of contact (two hands and a\nfoot, or two feet and a hand) on the ladder\nwhen climbing .\n  \nWorkers do not carry any object or load that\ncould cause them to lose balance and fall\nwhile climbing the ladder .\n  \nWorkers do not use ladders that are broken;\nhave missing steps, rungs, or cleats; broken\nside rails; or other faulty equipment .\n  \nWorkers do not use the top step of ordinary\nstepladders as a step .   \nWhen portable ladders are used to gain\naccess to elevated platforms, roofs, etc ., t he\nladder always extends at least 3 feet (0 .9\nmeters) above the elevated surface .\n  ",
+            "page": 75,
+            "method": "native"
+          },
+          "score": 0.5968278646469116
+        },
+        {
+          "chunk": {
+            "id": "p76-c2",
+            "text": "adders while\nstanding at the base and not while standing on\nthe ladder or from a position above the ladder .\n  \nAll ladders are routinely inspected for damage .   \nLadders with structural or other defects are\nimmediately tagged “Dangerous: Do Not\nUse” or with similar language and removed\nfrom service until repaired or replaced .\n  \nSteps on step stools; and ladder rungs, steps\nand cleats, are equally spaced at distances\nrequired by 29 CFR 1910 .23( b) .\n  \nAdditional Resources\n• OSHA Regulations: 29 CFR 1910 .23 , Ladders\n• OSHA: Portable Ladder Safety QuickCard\n• NIOSH - Ladder Safety App",
+            "page": 76,
+            "method": "native"
+          },
+          "score": 0.5673702955245972
+        }
+      ],
+      "answer": {
+        "text": "NOT FOUND",
+        "citations": [],
+        "chunk_ids": [],
+        "refused": true
+      },
+      "retrieval_seconds": 0.03271425000275485,
+      "generation_seconds": 1.009844249998423,
+      "generation_responses": [
+        "{\"claims\":[],\"refused\":true}"
+      ],
+      "total_seconds": 1.0425726249995932
+    }
+  ]
+}

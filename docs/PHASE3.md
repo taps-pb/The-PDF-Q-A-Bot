@@ -77,3 +77,11 @@ manual grades or external testing mean pending promotion, not an implicit pass.
 The independent tester receives the interface in a copy-paste chat prompt and
 works separately on synthetic cases without concurrent live inference. The main
 agent reviews the tester's findings with the user before any merge or push.
+
+## Recorded outcome (after the single candidate run)
+
+The candidate fails promotion: native supported accuracy is 8/24 versus 12/24,
+with nine operational errors and two unsupported answers. Legacy accuracy is
+3/7. See [the full results](PHASE3-RESULTS.md). No inference code was retuned.
+The branch remains isolated pending the user's independent tester report;
+production is unchanged and nothing has been merged or pushed.
