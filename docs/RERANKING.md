@@ -84,3 +84,38 @@ reported separately because they repeat native questions. Latencies include
 query embedding, digest checks, retrieval, and optional reranking, but exclude
 indexing and model loading (recorded separately). Dense runs first for each pair;
 these single-run timings are descriptive, not a controlled speed benchmark.
+
+## Measured result
+
+The frozen implementation `ea3f27c57d60378e82a8cea1db70d1d597523da2` ran once on
+the development suite on 2026-09-19. [Artifacts](../evals/reranking/results/development-01/)
+include exact local model hashes, index manifests, source-code hashes, ranked
+passages, timings, and the paired summary. The checkout was clean before the run.
+
+| Metric | Dense top four | Dense 20, rerank to four |
+|---|---:|---:|
+| Native expected-page hit@4 | 21/24 (87.5%) | 24/24 (100%) |
+| OCR expected-page hit@4 | 6/6 | 6/6 |
+| Operational errors across 42 cases | 0 | 0 |
+| Native retrieval median | 0.031 s | 0.157 s |
+| Native retrieval p95 | 0.040 s | 0.280 s |
+
+The three page-hit gains are `nist-ai-01`, `nist-ai-03`, and `nist-csf-03`.
+There are no page-hit regressions. The native set includes 24 answerable and
+12 unanswerable questions; the latter are not included in the page-hit denominator.
+Retrieval still returns passages for unanswerable questions; this run does not
+test whether the generator refuses them correctly.
+
+**Reranking remains optional, off by default.** This result supports improved
+page retrieval on these development documents, not improved answer accuracy,
+complete evidence coverage, or generalization to new documents. The earlier
+hybrid experiment demonstrates why these distinctions matter. The held-out set
+was not rerun. No model, settings, or annotations were tuned after this result.
+
+Verification: **133 tests pass**, including the existing real OCR/model checks,
+real cross-encoder scoring with socket connections blocked, and an end-to-end
+two-PDF test using real embeddings, saved-index reload, reranking, generation,
+and page citations. UI tests verify that mode/document switches clear previous
+results, missing models fail visibly, and disabling reranking restores dense
+retrieval. Existing dependencies retain their locked versions; only the optional
+ONNX/tokenizer/download packages and their dependencies are added.

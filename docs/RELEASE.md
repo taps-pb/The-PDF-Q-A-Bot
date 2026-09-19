@@ -1,5 +1,9 @@
 # Final verification and handoff
 
+Post-release extension: the user subsequently requested [optional local
+reranking](RERANKING.md). Dense search remains the default. The results below
+describe the original dense release, not reranked answer accuracy.
+
 ## Scope frozen before held-out inference
 
 The user authorized blockers-only completion on 2026-09-19. No new product

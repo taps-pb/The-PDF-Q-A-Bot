@@ -1,0 +1,42 @@
+{
+  "native": {
+    "answerable": 24,
+    "cases": 36,
+    "dense": {
+      "page_hit_at_4": 21,
+      "errors": 0,
+      "median_seconds": 0.03140124999845284,
+      "p95_seconds": 0.039945708000232116
+    },
+    "reranked": {
+      "page_hit_at_4": 24,
+      "errors": 0,
+      "median_seconds": 0.1567686034977669,
+      "p95_seconds": 0.2801254894984595
+    },
+    "gains": [
+      "nist-ai-01",
+      "nist-ai-03",
+      "nist-csf-03"
+    ],
+    "regressions": []
+  },
+  "ocr": {
+    "answerable": 6,
+    "cases": 6,
+    "dense": {
+      "page_hit_at_4": 6,
+      "errors": 0,
+      "median_seconds": 0.022532896502525546,
+      "p95_seconds": 0.03189982225194399
+    },
+    "reranked": {
+      "page_hit_at_4": 6,
+      "errors": 0,
+      "median_seconds": 0.15959016650231206,
+      "p95_seconds": 0.25563125024928013
+    },
+    "gains": [],
+    "regressions": []
+  }
+}

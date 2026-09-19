@@ -1,6 +1,6 @@
 # The PDF Q&A Bot
 
-Ask questions about one English PDF and inspect its evidence. This local Streamlit app uses native extraction, Tesseract OCR, FAISS, and Ollama. Answers cite physical PDF pages; expandable passages show cosine similarity scores. Refusals return `NOT FOUND`; operational errors appear separately. Answers can be wrong or incomplete: verify cited passages.
+Ask questions about one English PDF using local Streamlit, native extraction, Tesseract OCR, FAISS, and Ollama. Answers cite PDF pages; expandable passages show retrieval scores. Refusals return `NOT FOUND`; operational errors appear separately. Verify cited passages: answers can be wrong or incomplete.
 
 ## Run locally
 
@@ -24,7 +24,7 @@ Downloads need internet once; processing stays local. Uploads are limited to 50 
 
 ## Measured choices
 
-The OSHA/NIOSH development evaluation uses seven answerable and three unanswerable questions, graded through AI-assisted manual evidence review:
+The OSHA/NIOSH development evaluation uses seven answerable and three unanswerable questions, with AI-assisted manual grading:
 
 | Chunk characters | Hit@4 | Supported accuracy | Correct refusals |
 |---|---|---|---|
@@ -42,8 +42,10 @@ At 1500 characters, the ladder-height answer was refused despite complete eviden
 
 Prompt, hybrid-retrieval, and quote-validation experiments failed quality gates; none replaced the original pipeline.
 
+Optional [local reranking](docs/RERANKING.md) improved development page hit@4 from 21/24 to 24/24. Answer-quality gains remain unverified.
+
 ## Final verification
 
 The one-time held-out run achieved **11/18 supported answers**, **6/6 correct refusals**, and zero operational errors. Five answerable questions were refused; two responses lacked complete cited support. These small-corpus, AI-assisted grades are not a production reliability guarantee.
 
-All **117 tests** pass, including local model/OCR checks. The final legacy regression retains 7/7 supported answers and 3/3 refusals. See [release results, limitations, and audit records](docs/RELEASE.md).
+All **133 tests** pass, including local model/OCR and reranking checks. The dense legacy regression retains 7/7 supported answers and 3/3 refusals. See [release results and limitations](docs/RELEASE.md).
