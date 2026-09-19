@@ -46,6 +46,8 @@ def test_provenance_records_actual_generation_settings_without_network(monkeypat
     assert metadata["runtime"]["ollama"] == "test-version"
     assert metadata["models"]["answer"]["digest"] == "digest-local-answer"
     assert len(metadata["lock_sha256"]) == len(metadata["prompt_sha256"]) == 64
+    assert len(metadata["grounding_sha256"]) == 64
+    assert metadata["answer_schema"]["required"] == ["claims", "refused"]
 
 
 def test_generation_provenance_rejects_unrecognized_implementation():
@@ -259,6 +261,7 @@ def test_run_and_report_with_local_fakes_preserve_history(corpus, tmp_path, monk
         )
 
     def answer(text, hits, models):
+        models.last_generation_responses = [text]
         if text == "alpha question 02?":
             raise AppError("Synthetic generation failure")
         return Answer(
@@ -268,7 +271,7 @@ def test_run_and_report_with_local_fakes_preserve_history(corpus, tmp_path, monk
             not hits,
         )
 
-    monkeypatch.setattr(pipeline, "LocalModels", lambda: object())
+    monkeypatch.setattr(pipeline, "LocalModels", SimpleNamespace)
     monkeypatch.setattr(pipeline, "ingest", ingest)
     monkeypatch.setattr(pipeline, "retrieve", retrieve)
     monkeypatch.setattr(pipeline, "answer", answer)
@@ -294,6 +297,8 @@ def test_run_and_report_with_local_fakes_preserve_history(corpus, tmp_path, monk
     assert failed["error"]["stage"] == "answer"
     assert failed["hits"] and failed["retrieval_seconds"] is not None
     assert failed["generation_seconds"] is None
+    assert failed["generation_responses"] == ["alpha question 02?"]
+    assert records[0]["generation_responses"] == ["alpha question 01?"]
     assert (output / "review.md").exists()
     with pytest.raises(AppError, match="already exists"):
         suite.run(manifest, documents, "development", output)
